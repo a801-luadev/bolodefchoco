@@ -22,6 +22,7 @@ local _TEAM = {
 		["Lou#3859"] = "HE",
 		["Massi#0015"] = "AR",
 		["Mcsplash#0010"] = "EN",
+		["Nectarinel#6133"] = "EN",
 		["Mlledebby#0015"] = "FR",
 		["Papero#9240"] = "EN",
 		["Perlchen#0000"] = "DE",

@@ -14,7 +14,6 @@ local _TEAM = {
 		["Fiend#8212"] = "EN",
 		["Holaaae#4729"] = "EN",
 		["Iuliluca#0000"] = "RO",
-		["Jixnn#0000"] = "BR",
 		["Katburger#0015"] = "EN",
 		["Kiddoru#0000"] = "LT",
 		["Kingapysia#0000"] = "PL",
@@ -64,7 +63,8 @@ local _TEAM = {
 		["Tortuegreen#0000"] = "FR",
 		["Turkitutu#0000"] = "AR",
 		["Velspar#0000"] = "EN",
-		["Warfenix#0095"] = "ES"
+		["Warfenix#0095"] = "ES",
+		["Zigwin#0000"] = "RU"
 	},
 	fc = {
 		["Acer#0010"] = "EN",

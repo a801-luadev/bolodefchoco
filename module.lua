@@ -10003,6 +10003,8 @@ modules.dance = function()
 end
 
 modules.ranking = function()
+	local PAGES = 20
+
 	ui.menu = function(text, playerName, x, y, w, h)
 		local id = 300 - 8
 
@@ -10036,10 +10038,10 @@ modules.ranking = function()
 	local infoName, totalPages, info = { "Name", "Rounds", "Cheese", "First", "Normal Saves", "Hard Mode", "Divine Mode" }, 0
 
 	local displayData = function(playerName)
-		local page = (((playerName and playerData[playerName] or 1) - 1) * 18) + 1
+		local page = (((playerName and playerData[playerName] or 1) - 1) * PAGES) + 1
 
 		local numbers, counter, data, color = { }, 0, { }
-		for i = page, page + 17 do
+		for i = page, page + (PAGES - 1) do
 			if not info[i] then break end
 			color = (i % 2 == 1 and "<N>" or "<N2>")
 
@@ -10147,7 +10149,7 @@ modules.ranking = function()
 			ranking[i][2] = dotNumber(ranking[i][2])
 		end
 		info = ranking
-		totalPages = math.ceil(len / 18)
+		totalPages = math.ceil(len / PAGES)
 
 		for playerName in next, tfm.get.room.playerList do
 			eventNewPlayer(playerName, true)
@@ -10404,6 +10406,8 @@ modules.survup = function()
 end
 
 modules.triberanking = function()
+	local PAGES = 20
+
 	ui.menu = function(text, playerName, x, y, w, h)
 		local id = 300 - 8
 
@@ -10437,10 +10441,10 @@ modules.triberanking = function()
 	local infoName, totalPages, info = { "Name", "Members", "Rounds", "Cheese", "First", "Saves" }, 0
 
 	local displayData = function(playerName)
-		local page = (((playerName and playerData[playerName] or 1) - 1) * 18) + 1
+		local page = (((playerName and playerData[playerName] or 1) - 1) * PAGES) + 1
 
 		local numbers, counter, data, color = { }, 0, { }
-		for i = page, page + 17 do
+		for i = page, page + (PAGES - 1) do
 			if not info[i] then break end
 			color = (i % 2 == 1 and "<N>" or "<N2>")
 
@@ -10546,7 +10550,7 @@ modules.triberanking = function()
 			ranking[i][3] = dotNumber(ranking[i][3])
 		end
 		info = ranking
-		totalPages = math.ceil(len / 18)
+		totalPages = math.ceil(len / PAGES)
 
 		for playerName in next, tfm.get.room.playerList do
 			eventNewPlayer(playerName, true)

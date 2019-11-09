@@ -10003,7 +10003,7 @@ modules.dance = function()
 end
 
 modules.ranking = function()
-	local PAGES = 20
+	local PAGE_LINES = 20
 
 	ui.menu = function(text, playerName, x, y, w, h)
 		local id = 300 - 8
@@ -10038,10 +10038,10 @@ modules.ranking = function()
 	local infoName, totalPages, info = { "Name", "Rounds", "Cheese", "First", "Normal Saves", "Hard Mode", "Divine Mode" }, 0
 
 	local displayData = function(playerName)
-		local page = (((playerName and playerData[playerName] or 1) - 1) * PAGES) + 1
+		local page = (((playerName and playerData[playerName] or 1) - 1) * PAGE_LINES) + 1
 
 		local numbers, counter, data, color = { }, 0, { }
-		for i = page, page + (PAGES - 1) do
+		for i = page, page + (PAGE_LINES - 1) do
 			if not info[i] then break end
 			color = (i % 2 == 1 and "<N>" or "<N2>")
 
@@ -10135,10 +10135,10 @@ modules.ranking = function()
 		lastUpdate, data = string.match(data, "^(%d+)(.+)")
 		lastUpdate = lastUpdate * 1000
 
-		local ranking = string.split(data, "[^%[]+")
+		local ranking = string.split(data, "[^\002]+")
 		local len = #ranking
 		for i = 1, len do
-			ranking[i] = string.split(ranking[i], "[^%]]+")
+			ranking[i] = string.split(ranking[i], "[^\001]+")
 			for k = 1, #infoName do
 				if k == 1 then
 					ranking[i][k] = string.gsub(ranking[i][k], "#%d+", "<G><font size='10'>%1</font></G>", 1)
@@ -10149,7 +10149,7 @@ modules.ranking = function()
 			ranking[i][2] = dotNumber(ranking[i][2])
 		end
 		info = ranking
-		totalPages = math.ceil(len / PAGES)
+		totalPages = math.ceil(len / PAGE_LINES)
 
 		for playerName in next, tfm.get.room.playerList do
 			eventNewPlayer(playerName, true)
@@ -10406,7 +10406,7 @@ modules.survup = function()
 end
 
 modules.triberanking = function()
-	local PAGES = 20
+	local PAGE_LINES = 20
 
 	ui.menu = function(text, playerName, x, y, w, h)
 		local id = 300 - 8
@@ -10441,10 +10441,10 @@ modules.triberanking = function()
 	local infoName, totalPages, info = { "Name", "Members", "Rounds", "Cheese", "First", "Saves" }, 0
 
 	local displayData = function(playerName)
-		local page = (((playerName and playerData[playerName] or 1) - 1) * PAGES) + 1
+		local page = (((playerName and playerData[playerName] or 1) - 1) * PAGE_LINES) + 1
 
 		local numbers, counter, data, color = { }, 0, { }
-		for i = page, page + (PAGES - 1) do
+		for i = page, page + (PAGE_LINES - 1) do
 			if not info[i] then break end
 			color = (i % 2 == 1 and "<N>" or "<N2>")
 
@@ -10538,10 +10538,10 @@ modules.triberanking = function()
 		lastUpdate, data = string.match(data, "^(%d+)(.+)")
 		lastUpdate = lastUpdate * 1000
 
-		local ranking = string.split(data, "[^%[]+")
+		local ranking = string.split(data, "[^\002]+")
 		local len = #ranking
 		for i = 1, len do
-			ranking[i] = string.split(ranking[i], "[^%]]+")
+			ranking[i] = string.split(ranking[i], "[^\001]+")
 			for k = 2, #infoName do
 				if k ~= 3 then
 					ranking[i][k] = dotNumber(ranking[i][k]) .. (k > 2 and (" <BL><font size='8'>" .. (math.ceil((ranking[i][k] / ranking[i][3]) * 1000) / 10) .. "%</font></BL>") or '')
@@ -10550,7 +10550,7 @@ modules.triberanking = function()
 			ranking[i][3] = dotNumber(ranking[i][3])
 		end
 		info = ranking
-		totalPages = math.ceil(len / PAGES)
+		totalPages = math.ceil(len / PAGE_LINES)
 
 		for playerName in next, tfm.get.room.playerList do
 			eventNewPlayer(playerName, true)

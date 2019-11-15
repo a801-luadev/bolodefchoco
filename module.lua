@@ -19,7 +19,6 @@ local _TEAM = {
 		["Kingapysia#0000"] = "PL",
 		["Lanadelrey#1407"] = "EN",
 		["Lou#3859"] = "HE",
-		["Massi#0015"] = "AR",
 		["Mcsplash#0010"] = "EN",
 		["Nectarinel#6133"] = "EN",
 		["Mlledebby#0015"] = "FR",

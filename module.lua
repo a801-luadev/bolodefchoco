@@ -225,7 +225,6 @@ local _TEAM = {
 		["Vulli#0015"] = "EN",
 		["Warfenix#0095"] = "ES",
 		["Wercade#0095"] = "RU",
-		["Wolfyfoxy#7673"] = "BR",
 		["Wrfg#0000"] = "CN",
 		["Xiaojiemei#0095"] = "ID",
 		["Yosska#0010"] = "NL",

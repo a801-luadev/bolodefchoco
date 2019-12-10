@@ -84,7 +84,6 @@ local _TEAM = {
 		["Bemmh#0020"] = "EN",
 		["Bijububu#0010"] = "BR",
 		["Bodykudo#0000"] = "AR",
-		["Bolix#0010"] = "ES",
 		["Bortverde#0015"] = "BR",
 		["Brownie#9752"] = "EN",
 		["Cassette#4972"] = "FR",
@@ -229,6 +228,7 @@ local _TEAM = {
 		["Zoefke#0010"] = "NL"
 	},
 	sent = {
+		["Adami#0010"] = "BR",
 		["Amegake#0015"] = "PL",
 		["Archaeron#0010"] = "DE",
 		["Asmodan#0010"] = "PH",
@@ -10560,6 +10560,56 @@ modules.triberanking = function()
 	tfm.exec.newGame('<C><P L="920" /><Z><S><S L="920" H="136" X="460" Y="446" T="6" P="0,0,0.3,0.2,0,0,0,0" /><S L="10" H="10" X="-5" Y="360" T="12" P="0,0,0,0,0,0,0,0" /><S L="10" X="925" H="10" Y="360" T="12" P="0,0,0,0,0,0,0,0" /><S L="920" X="460" H="10" Y="334" T="12" P="0,0,0,0,0,0,0,0" /></S><D><DS Y="360" X="460" /></D><O /></Z></C>')
 end
 
+modules.vanillatroll = function()
+	tfm.exec.disableAutoNewGame(true);
+	mapas={"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","@6135200","@5932565","@6110650","@6526938","@6498941","@6085234","@5018552","@5528077","@5018625","@5858647","@1395371","@6207985","@6218403","@6329560","@6345898","@6179538","@5622009","@5875455","@6192664","@5018731","@5858583","@5858585","@5966424","@5966445","@5704644","@6173496","@5436800","@6329565","@5018771","@6184390","@5858595","@5966432","@6094395","@5836826","@5858595","@5858625","@5858639","@3195916","@6124832","@612721","1@5602310","@6244710","@6250422","@6299335","@5595910","@6526776","@6498946","@6813933","@585864","@6147952","@6474382","@3765697"}
+	system.disableChatCommandDisplay("gag")
+
+	function eventChatCommand(n, message)
+	if message:sub(0,3) == "gag" then
+	tfm.exec.newGame(message:sub(5))
+				elseif message:sub(0,3) == "1b1" then
+					for name in next, tfm.get.room.playerList do
+		tfm.exec.changePlayerSize(name,message:sub(5))
+	end
+	end
+	end
+
+	function eventNewPlayer()
+		tfm.exec.setUIMapName("Vanilla com mapas troll")
+	end
+
+	function nextRound()
+		tfm.exec.newGame(mapas[math.random(#mapas)]);
+	end
+
+	function eventNewGame()
+		tfm.exec.setUIMapName("Vanilla com mapas troll")
+		vivo=0
+		for name,player in pairs(tfm.get.room.playerList) do
+			vivo=vivo+1
+		end
+	end
+
+
+
+	function eventPlayerDied(name)
+		vivo=vivo-1
+	end
+
+	function eventPlayerWon(name)
+		vivo=vivo-1
+	end
+
+	function eventLoop(tempoPassado, tempoFaltando)
+		if vivo == 0 or tempoFaltando < 1000 then
+			nextRound();
+		end
+	end
+
+	nextRound();
+end
+
 local tribeModule = { }
 
 tribeModule["*\3Tournament'"] = function()
@@ -12119,6 +12169,11 @@ else
 			name = "survup",
 			owner = "Blank#3495",
 			desc = "Tool to practice going up with cannons as mouse."
+		},
+		{
+			name = "vanillatroll",
+			owner = "?",
+			desc = "Play troll vanilla maps."
 		},
 	}
 	table.sort(moduleList, function(a, b) return a.name < b.name end)

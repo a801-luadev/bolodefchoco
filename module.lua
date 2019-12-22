@@ -42,6 +42,7 @@ local _TEAM = {
 		["Haku#0807"] = "ES",
 		["Heniyengui#0000"] = "AR",
 		["Jordy#0010"] = "NL",
+		["King_seniru#5890"] = "EN",
 		["Laagaadoo#0000"] = "BR",
 		["Makinit#0095"] = "NL",
 		["Massi#0015"] = "AR",

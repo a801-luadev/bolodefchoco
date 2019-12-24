@@ -10620,6 +10620,139 @@ modules.vanillatroll = function()
 	nextRound();
 end
 
+modules.perguntas = function()
+	for _, k in next, {'AutoNewGame','AllShamanSkills','AutoTimeLeft','PhysicalConsumables','AfkDeath','AutoScore','MortCommand'} do
+	tfm.exec['disable' .. k]()
+	end
+
+	tfm.exec.newGame("@7667450")
+	data={}
+
+	system.disableChatCommandDisplay("q")
+	system.disableChatCommandDisplay("skip")
+	system.disableChatCommandDisplay("help")
+
+	for name,player in pairs(tfm.get.room.playerList) do
+		newData={
+		["p"]=0;
+		}
+		data[name] = newData;
+	end
+
+	function eventNewGame()
+			textBox()
+			tfm.exec.setGameTime(63,true)
+			answer=""
+			for name,player in pairs(tfm.get.room.playerList) do
+				if true then
+					tfm.exec.setPlayerScore(name, 0)
+				end
+			end
+			local players = { }
+			for k, v in next, tfm.get.room.playerList do
+				if (v.score > 0) then
+					return
+				end
+				if (v.isShaman) then
+					tfm.exec.setShaman(k, false)
+				end
+				players[#players + 1] = k
+			end
+			tfm.exec.setShaman(players[math.random(#players)])
+			for name,player in pairs(tfm.get.room.playerList) do
+				if tfm.get.room.playerList[name].isShaman then
+					tfm.exec.chatMessage(name, "está fazendo as perguntas!", nil)
+					tfm.exec.chatMessage("Você é o shaman! Digite !q para fazer uma pergunta ou !skip para passar a vez.", name)
+				end
+			end
+	end
+
+	function eventLoop(p,f)
+			if f < 0.1 then
+			tfm.exec.newGame("@7667450")
+		end
+	end
+
+	function eventSummoningEnd(name,type,x,y,angle,vx,vy,obj)
+		for name,player in pairs(tfm.get.room.playerList) do
+			if tfm.get.room.playerList[name].isShaman then
+				tfm.exec.chatMessage("Não é permitido usar itens de shaman!",nil)
+				tfm.exec.newGame("@7667450")
+			end
+		end
+	end
+
+	function eventChatCommand(name,message)
+			if message == "skip" then
+				if tfm.get.room.playerList[name].isShaman or name == "Lehox#1845" or name == "Kingtenso#0000" then
+					tfm.exec.newGame("@7667450")    
+			end
+		end
+		if message == "help" then
+				ui.addPopup(0, 0, "\n<p align = 'center'><font size='35' face='Agency FB'><b>Corrida de Perguntas</b></font></p><font size='18' color='#CC0000'><b>Sobre:</b></font><font size='13'> <b>Corrida de Perguntas </b>é um module não-oficial. O minigame consiste em um Shaman que irá realizar perguntas para os demais jogadores responder. O primeiro jogador a acertar 5 perguntas ganha o jogo e se torna o próximo Shaman. <b>Digite !q para fazer uma pergunta quando for sua vez de ser o Shaman.\n <font size='18'color='#CC0000'<b>Créditos: </b></font><font size='15' \n >Desenvolvido por <b>Lehox</b></font> <b>Conceptismo e Kingtenso.</b> </font>", name, 153, 87, 487, true)
+			end
+		if message == "q" then
+				if tfm.get.room.playerList[name].isShaman then
+					ui.addPopup (1,2,'Pergunta:',name,300,150,200,false)
+			end
+		end
+	end
+
+	eventPopupAnswer = function(id,name,r)
+		if id == 1 then ui.updateTextArea(7,'<p align="center"><font size="14"><b>'..r..'</b></font><p>')
+						ui.addPopup (2,2,'Resposta:',name,300,150,200,false)
+		elseif id == 2 then answer,answerButton = r:lower(),true tfm.exec.setGameTime(61,true) end
+	end
+	 
+	function eventChatMessage(name,message)
+		if message == answer then
+				if tfm.get.room.playerList[name].isShaman then
+					tfm.exec.newGame("@7667450")
+			end
+			end
+			if not tfm.get.room.playerList[name].isShaman then
+				if message == answer then
+					tfm.exec.setGameTime(61)
+				data[name].p=data[name].p+1
+				answer=""
+				tfm.exec.setPlayerScore(name,1,true)
+					if data[name].p == 1 then
+					tfm.exec.movePlayer(name,340,192,false,1,1,false)
+				elseif data[name].p == 2 then
+					tfm.exec.movePlayer(name,500,192,false,1,1,false)
+				elseif data[name].p == 3 then
+					tfm.exec.movePlayer(name,655,192,false,1,1,false)
+				elseif data[name].p == 4 then
+					tfm.exec.movePlayer(name,815,192,false,1,1,false)
+				elseif data[name].p == 5 then
+					tfm.exec.movePlayer(name,975,192,false,1,1,false)
+					tfm.exec.newGame("@7667450")
+				end
+			end
+			end
+	end
+
+	textBox = function()
+		ui.addTextArea (2,'',nil,20,30,760,50,'0x66402d','0x66402d',1,true)
+		ui.addTextArea (3,'',nil,21,31,758,48,'0x8a583c','0x8a583c',1,true)
+		ui.addTextArea (4,'',nil,23,33,754,44,'0x0d191b','0x0d191b',1,true)
+		ui.addTextArea (5,'',nil,25,35,750,40,'0x2d5a61','0x2d5a61',1,true)
+		ui.addTextArea (6,'',nil,25,36,750,38,'0x142b2e','0x142b2e',1,true)
+	ui.addTextArea (7,'<p align="center"><font size="14"><b>Aguardando pergunta...</b></font><p>',nil,25,36,750,38,nil,nil,0,true)
+	end
+
+	function eventNewPlayer(name)
+			tfm.exec.chatMessage("Bem vindo ao module Corrida de Perguntas! Digite !help para mais informações.", name)
+		tfm.exec.respawnPlayer(name)
+		newData={
+		["p"]=0;
+		}
+		data[name] = newData;
+	end
+
+	tfm.exec.setUIMapName("Corrida de Perguntas")
+end
+
 local tribeModule = { }
 
 tribeModule["*\3Tournament'"] = function()
@@ -12061,6 +12194,9 @@ tribeModule["*\3make tfm api great again"] = tribeModule["*\3Familia de Tocutoel
 modules.shades_666 = function()
 	if tfm.get.room.community ~= 'sk' then return end
 	tfm.exec.setRoomMaxPlayers(1)
+	tfm.exec.disableAutoShaman()
+	tfm.exec.disableAutoNewGame()
+	tfm.exec.newGame(4306038)
 	tribeModule["*\3Editeur"]()
 end
 
@@ -12191,6 +12327,11 @@ else
 			owner = "?",
 			desc = "Play troll vanilla maps."
 		},
+		{
+			name = "perguntas",
+			owner = "Kingtenso#0000",
+			desc = "Old #breno0perguntas"
+		}
 	}
 	table.sort(moduleList, function(a, b) return a.name < b.name end)
 

@@ -172,6 +172,7 @@ local _TEAM = {
 		["Natiibobr#0000"] = "PL",
 		["Nattorei#0010"] = "EN",
 		["Nicor22#0000"] = "ES",
+		["Noooooooorr#0000"] = "AR",
 		["Notearl#0000"] = "DE",
 		["Null#0010"] = "EN",
 		["Obemice#0095"] = "ES",
@@ -215,6 +216,7 @@ local _TEAM = {
 		["Titivillus#0010"] = "TR",
 		["Toasteis#7402"] = "EN",
 		["Tortuegreen#0000"] = "FR",
+		["Turkitutu#0000"] = "AR",
 		["Verdomice#0095"] = "ES",
 		["Visne#0010"] = "TR",
 		["Vulli#0015"] = "EN",
@@ -10623,6 +10625,12 @@ modules.perguntas = function()
 	 
 	local stageNames = { "I", "II", "III", "IV", "V" }
 	local totalStages = #stageNames
+	
+	local chooseShaman = true
+	local newShaman, nextShaman
+	local currentQuestion, currentAnswer
+	local skip = 0
+	local hasSkipped = { }
 	 
 	local displayStageNames = function(playerName)
 		for i = 1, totalStages do
@@ -10630,38 +10638,38 @@ modules.perguntas = function()
 		end
 	   
 		ui.setMapName("Perguntas")
+		if newShaman then
+			ui.setShamanName(newShaman)
+		end
 	end
 	 
 	local setPlayerData = function(playerName)
 		playerData[playerName] = {
-			currentStage = 0,
-			hasSkipped = false
+			currentStage = 0
 		}
 	   
 		tfm.exec.setPlayerScore(playerName, 0)
 	end
 	 
-	local chooseShaman = true
-	local newShaman, nextShaman
-	local currentQuestion, currentAnswer
-	local skip = 0
-	 
 	local getNewShaman = function()
-		if nextShaman then
+		if nextShaman and playerData[nextShaman] then
 			return nextShaman
 		end
 	 
 		local scores, counter = { }, 0
 		local hasMoreThanZeroPoints = false
-	   
-		for playerName, data in next, tfm.get.room.playerList do
+		
+		local score
+		for playerName, data in next, playerData do
+			score = tfm.get.room.playerList[playerName].score
+		
 			counter = counter + 1
 			scores[counter] = {
 				playerName = playerName,
-				score = data.score
+				score = score
 			}
 		   
-			if data.score > 0 then
+			if score > 0 then
 				hasMoreThanZeroPoints = true
 			end
 		end
@@ -10677,8 +10685,9 @@ modules.perguntas = function()
 		end
 	end
 	 
-	local resetAllScores = function()
-		for playerName in next, tfm.get.room.playerList do
+	local resetAllPlayerData = function()
+		for playerName, data in next, playerData do
+			data.currentStage = 0
 			tfm.exec.setPlayerScore(playerName, 0)
 		end
 	end
@@ -10688,16 +10697,25 @@ modules.perguntas = function()
 			tfm.exec.movePlayer(playerName, 125, 365)
 		end
 	end
-	 
-	local startChooseFlow = function()
+
+	local displayAnswer = function()
+		if not currentAnswer then return end
+		tfm.exec.chatMessage("A resposta da pergunta era <B>" .. currentAnswer .. "</B>.")
+	end
+	
+	local startChooseFlow = function(ignoreAnswer)
 		if newShaman then
 			tfm.exec.respawnPlayer(newShaman)
 			newShaman = nil
+		end
+		if not ignoreAnswer then
+			displayAnswer()
 		end
 	 
 		currentQuestion = nil
 		currentAnswer = nil
 		skip = 0
+		hasSkipped = { }
 		chooseShaman = true
 	 
 		moveAllToSpawnPoint()
@@ -10711,14 +10729,7 @@ modules.perguntas = function()
 		if not currentQuestion then return end
 		ui.addTextArea(0, "<p align='center'><font size='20'>" .. currentQuestion, playerName, 5, 50, 400, nil, nil, nil, .75, true)
 	end
-	 
-	local resetAllPlayerData = function()
-		for playerName, data in next, playerData do
-			data.hasSkipped = false
-			data.currentStage = 0
-		end
-	end
-	 
+	
 	eventNewPlayer = function(playerName)
 		setPlayerData(playerName)
 		displayStageNames(playerName)
@@ -10750,11 +10761,11 @@ modules.perguntas = function()
 	 
 			newShaman = getNewShaman()
 			nextShaman = nil
-		   
+
+			tfm.exec.setShaman(newShaman)
 			tfm.exec.killPlayer(newShaman)
 			tfm.exec.chatMessage("<J>Você é o shaman! Digite <B>!q</B> para fazer a pergunta", newShaman)
 		   
-			resetAllScores()
 			resetAllPlayerData()
 	 
 			ui.setShamanName(newShaman)
@@ -10783,8 +10794,8 @@ modules.perguntas = function()
 		if command == "help" then
 			tfm.exec.chatMessage("<CEP>O minigame consiste em um Shaman que irá realizar perguntas para os demais jogadores responder. O primeiro jogador a acertar 5 perguntas ganha o jogo e se torna o próximo Shaman. Digite !q para fazer uma pergunta quando for sua vez de ser o Shaman.", playerName)
 		elseif command == "skip" then
-			if playerData[playerName].hasSkipped then return end
-			playerData[playerName].hasSkipped = true
+			if hasSkipped[playerName] then return end
+			hasSkipped[playerName] = true
 	 
 			local half = math.ceil(tfm.get.room.uniquePlayers / 2)
 		   
@@ -10793,7 +10804,7 @@ modules.perguntas = function()
 				tfm.exec.chatMessage("<R>".. newShaman .. " perdeu a vez")
 				startChooseFlow()
 			else
-				tfm.exec.chatMessage("Skip (" .. skip .. " / " .. half .. ")")
+				tfm.exec.chatMessage("Skip", playerName)
 			end
 		end
 	end
@@ -10811,27 +10822,31 @@ modules.perguntas = function()
 			currentAnswer = string.lower(answer)
 		   
 			displayQuestion()
+			tfm.exec.setGameTime(60)
+
 			tfm.exec.chatMessage("A resposta para sua pergunta: " .. currentAnswer, playerName)
 		end
 	end
 	 
 	eventChatMessage = function(playerName, message)
 		if chooseShaman then return end
-		if message ~= currentAnswer then return end
+		if string.lower(message) ~= currentAnswer then return end
 		if playerName == newShaman then
 			return startChooseFlow()
 		end
+		tfm.exec.chatMessage("<VP>".. playerName .. " acertou!")
+		displayAnswer()
+
 		currentAnswer = nil
 	 
 		tfm.exec.movePlayer(playerName, 500 + playerData[playerName].currentStage * 200, 365)
 		playerData[playerName].currentStage = playerData[playerName].currentStage + 1
 	   
 		tfm.exec.setPlayerScore(playerName, 1, true)
-		tfm.exec.chatMessage("<VP>".. playerName .. " acertou!")
 	   
 		if playerData[playerName].currentStage == totalStages then
 			nextShaman = playerName
-			startChooseFlow()
+			startChooseFlow(true)
 		else
 			tfm.exec.setGameTime(60)
 			ui.removeTextArea(0)
@@ -10839,20 +10854,44 @@ modules.perguntas = function()
 	end
 	 
 	eventPlayerLeft = function(playerName)
+		playerData[playerName] = nil
+
 		if chooseShaman then return end
-		if playerName ~= newShaman then return end
-	   
+		if playerName ~= newShaman and playerName ~= nextShaman then return end
+
 		startChooseFlow()
 	end
 
+	eventPlayerRespawn = function(playerName)
+		tfm.exec.setShaman(playerName, false)
+	end
+	
 	tfm.exec.disableAutoNewGame()
 	tfm.exec.disableAutoShaman()
 	tfm.exec.disableAfkDeath()
 	tfm.exec.disableMortCommand()
+	tfm.exec.disableAutoScore()
+	tfm.exec.disablePhysicalConsumables()
 	 
 	system.disableChatCommandDisplay()
 	 
 	tfm.exec.newGame('<C><P DS="m;45,365,65,365,85,365,105,365,125,365,145,365,165,365,185,365,205,365,225,365,245,365,265,365,285,365,305,365,325,365,345,365" L="1400" /><Z><S><S L="400" H="20" X="1390" Y="200" T="10" P=",,.3,,270,,," /><S L="400" X="10" H="20" Y="200" T="10" P=",,.3,,90,,," /><S L="400" X="390" H="20" Y="200" T="10" P=",,.3,,270,,," /><S L="400" H="20" X="400" Y="200" T="10" P=",,.3,,90,,," /><S L="400" H="20" X="590" Y="200" T="10" P=",,.3,,270,,," /><S L="400" X="790" H="20" Y="200" T="10" P=",,.3,,270,,," /><S L="400" H="20" X="990" Y="200" T="10" P=",,.3,,270,,," /><S L="400" X="1190" H="20" Y="200" T="10" P=",,.3,,270,,," /><S L="400" X="600" H="20" Y="200" T="10" P=",,.3,,90,,," /><S L="400" H="20" X="800" Y="200" T="10" P=",,.3,,90,,," /><S L="400" X="1000" H="20" Y="200" T="10" P=",,.3,,90,,," /><S L="400" H="20" X="1200" Y="200" T="10" P=",,.3,,90,,," /><S L="1400" X="700" H="20" Y="10" T="10" P=",,.3,,180,,," /><S L="1400" H="20" X="700" Y="390" T="10" P=",,.3,,,,," /></S><D /><O /></Z></C>')
+end
+
+modules.data = function()
+	eventNewPlayer = function(n)
+		system.loadPlayerData(n)
+	end
+	for n in next, tfm.get.room.playerList do eventNewPlayer(n) end
+
+	eventPlayerDataLoaded = function(n, data)
+		local treeStage, wizardDefeats, santaSaves = data:match("xm19={(%d+),(%d+),(%d+),")
+		if not treeStage then
+			tfm.exec.chatMessage("<R>You don't have Chaostmas data", n)
+		else
+			tfm.exec.chatMessage("<PT>Tree stage: <VI>" .. treeStage .. "\n<PT>Wizard defeats: <VI>" .. wizardDefeats .. "\n<PT>Santa saves: <VI>" .. santaSaves, n)
+		end
+	end
 end
 
 local tribeModule = { }

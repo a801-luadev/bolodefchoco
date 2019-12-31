@@ -86,6 +86,7 @@ local _TEAM = {
 		["Bodykudo#0000"] = "AR",
 		["Bortverde#0015"] = "BR",
 		["Brownie#9752"] = "EN",
+		["Cagataymylov#0000"] = "AR",
 		["Cassette#4972"] = "FR",
 		["Cate#0010"] = "BR",
 		["Censere#0015"] = "EN",
@@ -102,6 +103,7 @@ local _TEAM = {
 		["Distances#0095"] = "NL",
 		["Djealvi#0010"] = "ID",
 		["Doraemons#0010"] = "CN",
+		["Eliterecon#0020"] = "EN",
 		["Etoile#0095"] = "EN",
 		["Excasr#0010"] = "BR",
 		["Exsilium#0010"] = "EN",
@@ -12331,15 +12333,6 @@ end
 tribeModule["*\3Editeur"] = tribeModule["*\3Familia de Tocutoeltuco"]
 
 tribeModule["*\3make tfm api great again"] = tribeModule["*\3Familia de Tocutoeltuco"]
-
-modules.shades_666 = function()
-	if tfm.get.room.community ~= 'sk' then return end
-	tfm.exec.setRoomMaxPlayers(1)
-	tfm.exec.disableAutoShaman()
-	tfm.exec.disableAutoNewGame()
-	tfm.exec.newGame(4306038)
-	tribeModule["*\3Editeur"]()
-end
 
 local isRoom = string.byte(tfm.get.room.name, 2) ~= 3
 local src = modules

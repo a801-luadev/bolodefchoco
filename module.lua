@@ -10710,7 +10710,7 @@ modules.perguntas = function()
 		end
 
 		for player = 1, counter do
-			playerData[playerData[player]] = nil
+			playerData[gc[player]] = nil
 		end
 	end
 

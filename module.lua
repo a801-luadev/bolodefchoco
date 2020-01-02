@@ -10648,8 +10648,7 @@ modules.perguntas = function()
 	do
 		local setPlayerScore = tfm.exec.setPlayerScore
 		tfm.exec.setPlayerScore = function(playerName, score, add)
-			if not playerData[playerName] then return end
-			playerData[playerName].score = (add and (playerData[playerName] + score) or score)
+			playerData[playerName].score = (add and (playerData[playerName].score + score) or score)
 			setPlayerScore(playerName, score, add)
 		end
 	end
@@ -10665,7 +10664,7 @@ modules.perguntas = function()
 	end
 	 
 	local getNewShaman = function()
-		if nextShaman and playerData[nextShaman] then
+		if nextShaman and playerData[nextShaman] and playerData[nextShaman].isInRoom then
 			return nextShaman
 		end
 	 
@@ -10716,7 +10715,7 @@ modules.perguntas = function()
 	end
 
 	local movePlayerToStage = function(playerName)
-		tfm.exec.movePlayer(playerName, 500 + playerData[playerName].currentStage * 200, 365)
+		tfm.exec.movePlayer(playerName, 300 + playerData[playerName].currentStage * 200, 365)
 	end
 	 
 	local moveAllToSpawnPoint = function()
@@ -10753,7 +10752,7 @@ modules.perguntas = function()
 	end
 	 
 	local displayQuestion = function(playerName)
-		if not currentQuestion or not currentAnswer then return end
+		if not currentAnswer then return end
 		ui.addTextArea(0, "<p align='center'><font size='20'>" .. currentQuestion, playerName, 5, 50, 400, nil, nil, nil, .75, true)
 	end
 	
@@ -10761,13 +10760,12 @@ modules.perguntas = function()
 		tfm.exec.respawnPlayer(playerName)
 		if chooseShaman or not playerData[playerName] then
 			setPlayerData(playerName)
-	   
-			displayQuestion(playerName)
-		else
+		elseif playerData[playerName].currentStage > 0 then
 			movePlayerToStage(playerName)
 			tfm.exec.setPlayerScore(playerName, playerData[playerName].score)
 		end
 
+		displayQuestion(playerName)
 		displayStageNames(playerName)
 		tfm.exec.chatMessage("<J>Bem vindo ao module Corrida de Perguntas! Digite !help para mais informações.", playerName)
 	end
@@ -10868,8 +10866,8 @@ modules.perguntas = function()
 
 		currentAnswer = nil
 	 
-		movePlayerToStage(playerName)
 		playerData[playerName].currentStage = playerData[playerName].currentStage + 1
+		movePlayerToStage(playerName)
 	   
 		tfm.exec.setPlayerScore(playerName, 1, true)
 	   

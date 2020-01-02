@@ -10643,10 +10643,21 @@ modules.perguntas = function()
 			ui.setShamanName(newShaman)
 		end
 	end
-	 
+
+	do
+		local setPlayerScore = tfm.exec.setPlayerScore
+		tfm.exec.setPlayerScore = function(playerName, score, add)
+			if not playerData[playerName] then return end
+			playerData[playerName].score = (add and (playerData[playerName] + score) or score)
+			setPlayerScore(playerName, score, add)
+		end
+	end
+
 	local setPlayerData = function(playerName)
 		playerData[playerName] = {
-			currentStage = 0
+			currentStage = 0,
+			score = 0,
+			isInRoom = true
 		}
 	   
 		tfm.exec.setPlayerScore(playerName, 0)
@@ -10662,16 +10673,14 @@ modules.perguntas = function()
 		
 		local score
 		for playerName, data in next, playerData do
-			if string.sub(playerName, -5, -5) == '#' then -- Not souris
-				score = tfm.get.room.playerList[playerName].score
-		
+			if data.isInRoom and string.sub(playerName, -5, -5) == '#' then -- Not souris
 				counter = counter + 1
 				scores[counter] = {
 					playerName = playerName,
-					score = score
+					score = data.score
 				}
 		   
-				if score > 0 then
+				if data.score > 0 then
 					hasMoreThanZeroPoints = true
 				end
 			end
@@ -10689,10 +10698,24 @@ modules.perguntas = function()
 	end
 	 
 	local resetAllPlayerData = function()
+		local gc, counter = { }, 0
+
 		for playerName, data in next, playerData do
 			data.currentStage = 0
 			tfm.exec.setPlayerScore(playerName, 0)
+			if not data.isInRoom then
+				counter = counter + 1
+				gc[counter] = playerName
+			end
 		end
+
+		for player = 1, counter do
+			playerData[playerData[player]] = nil
+		end
+	end
+
+	local movePlayerToStage = function(playerName)
+		tfm.exec.movePlayer(playerName, 500 + playerData[playerName].currentStage * 200, 365)
 	end
 	 
 	local moveAllToSpawnPoint = function()
@@ -10734,12 +10757,17 @@ modules.perguntas = function()
 	end
 	
 	eventNewPlayer = function(playerName)
-		setPlayerData(playerName)
-		displayStageNames(playerName)
-	   
-		displayQuestion(playerName)
 		tfm.exec.respawnPlayer(playerName)
+		if chooseShaman or not playerData[playerName] then
+			setPlayerData(playerName)
+	   
+			displayQuestion(playerName)
+		else
+			movePlayerToStage(playerName)
+			tfm.exec.setPlayerScore(playerName, playerData[playerName].score)
+		end
 
+		displayStageNames(playerName)
 		tfm.exec.chatMessage("<J>Bem vindo ao module Corrida de Perguntas! Digite !help para mais informações.", playerName)
 	end
 	 
@@ -10764,13 +10792,12 @@ modules.perguntas = function()
 	 
 			newShaman = getNewShaman()
 			nextShaman = nil
+			resetAllPlayerData()
 
 			tfm.exec.setShaman(newShaman)
 			tfm.exec.killPlayer(newShaman)
 			tfm.exec.chatMessage("<J>Você é o shaman! Digite <B>!q</B> para fazer a pergunta", newShaman)
 		   
-			resetAllPlayerData()
-	 
 			ui.setShamanName(newShaman)
 			tfm.exec.chatMessage("<CEP>".. newShaman .. " estará fazendo as perguntas agora")
 		   
@@ -10840,7 +10867,7 @@ modules.perguntas = function()
 
 		currentAnswer = nil
 	 
-		tfm.exec.movePlayer(playerName, 500 + playerData[playerName].currentStage * 200, 365)
+		movePlayerToStage(playerName)
 		playerData[playerName].currentStage = playerData[playerName].currentStage + 1
 	   
 		tfm.exec.setPlayerScore(playerName, 1, true)
@@ -10855,7 +10882,7 @@ modules.perguntas = function()
 	end
 	 
 	eventPlayerLeft = function(playerName)
-		playerData[playerName] = nil
+		playerData[playerName].isInRoom = false
 
 		if chooseShaman then return end
 		if playerName ~= newShaman and playerName ~= nextShaman then return end

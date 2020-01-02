@@ -10730,7 +10730,6 @@ modules.perguntas = function()
 	end
 	
 	local startChooseFlow = function(ignoreAnswer)
-		tfm.exec.chatMessage("[TESTE] startChooseFlow " .. tostring(debug.traceback()))
 		if newShaman then
 			tfm.exec.respawnPlayer(newShaman)
 			newShaman = nil
@@ -10790,12 +10789,10 @@ modules.perguntas = function()
 		end
 
 		if chooseShaman then
-			tfm.exec.chatMessage("[TESTE] ESPERANDO PARA PODER SELECIONAR NOVO SHAMAN " .. tostring(remainingTime))
 			if remainingTime > 0 then return end
 			chooseShaman = false
 
 			newShaman = getNewShaman()
-			tfm.exec.chatMessage("[TESTE] NOVO SHAMAN " .. tostring(newShaman))
 			nextShaman = nil
 			resetAllPlayerData()
 
@@ -10809,7 +10806,6 @@ modules.perguntas = function()
 			tfm.exec.setGameTime(60)
 		else
 			if remainingTime <= 0 then
-				tfm.exec.chatMessage("[TESTE] TEMPO &lt;= 0 " .. tostring(remainingTime))
 				startChooseFlow()
 			end
 		end

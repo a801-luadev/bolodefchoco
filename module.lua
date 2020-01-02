@@ -311,6 +311,7 @@ local _TEAM = {
 		["Bisharch#4886"] = "TR",
 		["Bodykudo#0000"] = "AR",
 		["Bolodefchoco#0000"] = "BR",
+		["Danielthemouse#6206"] = "HE",
 		["Derpfacederp#0000"] = "EE",
 		["Don#3072"] = "HU",
 		["Error_404#0000"] = "AR",

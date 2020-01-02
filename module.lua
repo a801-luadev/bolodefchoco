@@ -10761,9 +10761,12 @@ modules.perguntas = function()
 		tfm.exec.respawnPlayer(playerName)
 		if chooseShaman or not playerData[playerName] then
 			setPlayerData(playerName)
-		elseif playerData[playerName].currentStage > 0 then
-			movePlayerToStage(playerName)
-			tfm.exec.setPlayerScore(playerName, playerData[playerName].score)
+		else
+			playerData[playerName].isInRoom = true
+			if playerData[playerName].currentStage > 0 then
+				movePlayerToStage(playerName)
+				tfm.exec.setPlayerScore(playerName, playerData[playerName].score)
+			end
 		end
 
 		displayQuestion(playerName)

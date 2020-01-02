@@ -160,7 +160,6 @@ local _TEAM = {
 		["Mesmera#0015"] = "PL",
 		["Miau#0015"] = "BR",
 		["Migotka#0010"] = "PL",
-		["Miku#0095"] = "PL",
 		["Milkycoffee#0015"] = "PL",
 		["Minkee#0095"] = "EN",
 		["Mishska#0010"] = "RU",

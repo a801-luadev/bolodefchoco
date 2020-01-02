@@ -10806,7 +10806,7 @@ modules.perguntas = function()
 			tfm.exec.setGameTime(60)
 		else
 			if remainingTime <= 0 then
-				tfm.exec.chatMessage("[TESTE] TEMPO <= 0 " .. tostring(remainingTime))
+				tfm.exec.chatMessage("[TESTE] TEMPO &lt;= 0 " .. tostring(remainingTime))
 				startChooseFlow()
 			end
 		end

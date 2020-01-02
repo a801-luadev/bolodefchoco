@@ -10630,8 +10630,8 @@ modules.perguntas = function()
 	local chooseShaman = true
 	local newShaman, nextShaman
 	local currentQuestion, currentAnswer
-	local skip = 0
-	local hasSkipped = { }
+	--local skip = 0
+	--local hasSkipped = { }
 	 
 	local displayStageNames = function(playerName)
 		for i = 1, totalStages do
@@ -10662,16 +10662,18 @@ modules.perguntas = function()
 		
 		local score
 		for playerName, data in next, playerData do
-			score = tfm.get.room.playerList[playerName].score
+			if string.sub(playerName, -5, -5) == '#' then -- Not souris
+				score = tfm.get.room.playerList[playerName].score
 		
-			counter = counter + 1
-			scores[counter] = {
-				playerName = playerName,
-				score = score
-			}
+				counter = counter + 1
+				scores[counter] = {
+					playerName = playerName,
+					score = score
+				}
 		   
-			if score > 0 then
-				hasMoreThanZeroPoints = true
+				if score > 0 then
+					hasMoreThanZeroPoints = true
+				end
 			end
 		end
 	   
@@ -10715,8 +10717,8 @@ modules.perguntas = function()
 	 
 		currentQuestion = nil
 		currentAnswer = nil
-		skip = 0
-		hasSkipped = { }
+		--skip = 0
+		--hasSkipped = { }
 		chooseShaman = true
 	 
 		moveAllToSpawnPoint()
@@ -10727,7 +10729,7 @@ modules.perguntas = function()
 	end
 	 
 	local displayQuestion = function(playerName)
-		if not currentQuestion then return end
+		if not currentQuestion or not currentAnswer then return end
 		ui.addTextArea(0, "<p align='center'><font size='20'>" .. currentQuestion, playerName, 5, 50, 400, nil, nil, nil, .75, true)
 	end
 	
@@ -10782,30 +10784,28 @@ modules.perguntas = function()
 	 
 	eventChatCommand = function(playerName, command)
 		if chooseShaman then return end
+
+		if command == "help" then
+			tfm.exec.chatMessage("<CEP>O minigame consiste em um Shaman que irá realizar perguntas para os demais jogadores responder. O primeiro jogador a acertar 5 perguntas ganha o jogo e se torna o próximo Shaman. Digite !q para fazer uma pergunta quando for sua vez de ser o Shaman.", playerName)
+		--elseif command == "skip" then
+			--if hasSkipped[playerName] then return end
+			--hasSkipped[playerName] = true
 	 
-		if playerName == newShaman then
+			--local half = math.ceil(tfm.get.room.uniquePlayers / 2)
+		   
+			--skip = skip + 1
+			--if skip >= half then
+			--	tfm.exec.chatMessage("<R>".. newShaman .. " perdeu a vez")
+			--	startChooseFlow()
+			--else
+			--	tfm.exec.chatMessage("Skip", playerName)
+			--end
+		elseif playerName == newShaman then
 			if command == 'q' then
 				ui.addPopup(0, 2, "Digite sua pergunta", newShaman, 200, 170, 400, true)
 			elseif command == "skip" then
 				tfm.exec.chatMessage("<R>".. playerName .. " pulou a vez")
 				startChooseFlow()
-				return
-			end
-		end
-		if command == "help" then
-			tfm.exec.chatMessage("<CEP>O minigame consiste em um Shaman que irá realizar perguntas para os demais jogadores responder. O primeiro jogador a acertar 5 perguntas ganha o jogo e se torna o próximo Shaman. Digite !q para fazer uma pergunta quando for sua vez de ser o Shaman.", playerName)
-		elseif command == "skip" then
-			if hasSkipped[playerName] then return end
-			hasSkipped[playerName] = true
-	 
-			local half = math.ceil(tfm.get.room.uniquePlayers / 2)
-		   
-			skip = skip + 1
-			if skip >= half then
-				tfm.exec.chatMessage("<R>".. newShaman .. " perdeu a vez")
-				startChooseFlow()
-			else
-				tfm.exec.chatMessage("Skip", playerName)
 			end
 		end
 	end
@@ -12340,7 +12340,7 @@ local module
 
 if isRoom then
 	module = string.match(tfm.get.room.name, "%d+([%a_]+)")
-module = string.lower(tostring(module))
+	module = string.lower(tostring(module))
 else
 	src = tribeModule
 	module = tfm.get.room.name

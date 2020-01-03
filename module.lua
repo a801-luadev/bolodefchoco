@@ -76,6 +76,7 @@ local _TEAM = {
 		["Aquawings#2537"] = "BR",
 		["Arcanacra#0010"] = "PL",
 		["Archaeron#0010"] = "DE",
+		["Arki#0113"] = "BR",
 		["Asmodan#0010"] = "PH",
 		["Bapereira#0000"] = "BR",
 		["Batt_mellamy#0015"] = "EN",
@@ -402,7 +403,7 @@ local pairsByIndexes = function(list, f)
 		if out[i] ~= nil then
 			return out[i], list[out[i]]
 		end
-    end
+	end
 end
 
 table.remove = function(list, pos)
@@ -3008,7 +3009,7 @@ modules.arrow = function()
 	  BWIN = "<BV>~ [Équipe bleue] ~ On a gagné !"
 		},
   nl = {
-	  WELCOME = "<J>Welkom bij Arrow, kies je team en ga vechten! </ J> <ROSE> Druk op de spatiebalk om pijlen te schieten</ROSE>",         
+	  WELCOME = "<J>Welkom bij Arrow, kies je team en ga vechten! </ J> <ROSE> Druk op de spatiebalk om pijlen te schieten</ROSE>",		 
 	  RedTeam = "<a href='event:redTeam'><p align=‘center'>Lid van het rode team worden",
 	  BlueTeam = "<a href='event:blueTeam'><p align=‘center'>Lid van het blauwe team worden",
 	  AWIN = "<D>~ [Jury] Geen winnaars!",
@@ -3492,7 +3493,7 @@ modules.mastermind = function()
 	local str = "<p align='center'><font size='20'>"
 
 	local displayInterface = function(playerName)
-		ui.addTextArea(-2, "<p align='center'><font size='16'>  Guessed    Exist   Match", playerName, 5, 25, 220, 365, 1, 1, .5, true)
+		ui.addTextArea(-2, "<p align='center'><font size='16'>  Guessed	Exist   Match", playerName, 5, 25, 220, 365, 1, 1, .5, true)
 		ui.addTextArea(-1, "<p align='center'><font size='16'>Enter number [0-9]", playerName, 233, 25, 243, 365, 1, 1, .5, true)
 		ui.addTextArea(0, str, playerName, 233, 100, 243, nil, 1, 1, 0, true)
 
@@ -3505,7 +3506,7 @@ modules.mastermind = function()
 			y = 60 + (i * 48)
 			ui.addTextArea(displayFields - 2, str, playerName, 15, y, 80, 30, 1, 1, .7, true)
 			ui.addTextArea(displayFields - 1, str, playerName, 115, y, 40, 30, 1, 1, .7, true)
-			ui.addTextArea(displayFields    , str, playerName, 175, y, 40, 30, 1, 1, .7, true)
+			ui.addTextArea(displayFields	, str, playerName, 175, y, 40, 30, 1, 1, .7, true)
 		end
 	end
 
@@ -8197,7 +8198,7 @@ modules.evt_pizzeria = function()
 	--[[ Interface ]]--
 	local market = function(playerName, update)
 		if not update then
-			ui.menu("<p align='center'><font size='20'><a href='event:button.market.previous'><B><J>«</J></B></a>     " .. translation().ui.market .. "     <a href='event:button.market.next'><B><J>»</J></B></a>\n", playerName, 265, 112, 270, 175)
+			ui.menu("<p align='center'><font size='20'><a href='event:button.market.previous'><B><J>«</J></B></a>	 " .. translation().ui.market .. "	 <a href='event:button.market.next'><B><J>»</J></B></a>\n", playerName, 265, 112, 270, 175)
 		end
 
 		local o = ingredient.plant[playerFlashData[playerName].marketIndex]
@@ -8288,7 +8289,7 @@ modules.evt_pizzeria = function()
 		local obj = (type == 1 and "freezer" or "cabinet")
 
 		if not update then
-			ui.menu("<p align='center'><font size='20'><a href='event:button.storage.previous." .. type .. "'><B><J>«</J></B></a>     " .. translation().ui[obj] .. "     <a href='event:button.storage.next." .. type .. "'><B><J>»</J></B></a>\n<font size='10'>( " .. #playerData[playerName].storage[type] .. " / " .. limits[obj] .. " )", playerName, 265, 120, 270, 175)
+			ui.menu("<p align='center'><font size='20'><a href='event:button.storage.previous." .. type .. "'><B><J>«</J></B></a>	 " .. translation().ui[obj] .. "	 <a href='event:button.storage.next." .. type .. "'><B><J>»</J></B></a>\n<font size='10'>( " .. #playerData[playerName].storage[type] .. " / " .. limits[obj] .. " )", playerName, 265, 120, 270, 175)
 		end
 
 		local stored = playerData[playerName].storage[type][playerFlashData[playerName].storageIndex]
@@ -8313,7 +8314,7 @@ modules.evt_pizzeria = function()
 
 	local garbage = function(playerName, update)
 		if not update then
-			ui.menu("<p align='center'><font size='20'><a href='event:button.garbage.previous'><B><J>«</J></B></a>     " .. translation().ui.garbage .. "     <a href='event:button.garbage.next'><B><J>»</J></B></a>\n", playerName, 265, 112, 270, 175)
+			ui.menu("<p align='center'><font size='20'><a href='event:button.garbage.previous'><B><J>«</J></B></a>	 " .. translation().ui.garbage .. "	 <a href='event:button.garbage.next'><B><J>»</J></B></a>\n", playerName, 265, 112, 270, 175)
 		end
 
 		local stored = playerFlashData[playerName].concatenatedStorage[playerFlashData[playerName].garbageIndex]
@@ -10563,13 +10564,13 @@ end
 modules.vanillatroll = function()
 	tfm.exec.disableAutoNewGame(true);
 	mapas={"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","@6135200","@5932565","@6110650","@6526938","@6498941","@6085234","@5018552","@5528077","@5018625","@5858647","@1395371","@6207985","@6218403","@6329560","@6345898","@6179538","@5622009","@5875455","@6192664","@5018731","@5858583","@5858585","@5966424","@5966445","@5704644","@6173496","@5436800","@6329565","@5018771","@6184390","@5858595","@5966432","@6094395","@5836826","@5858595","@5858625","@5858639","@3195916","@6124832","@5602310","@6244710","@6250422","@6299335","@5595910","@6526776","@6498946","@6813933","@585864","@6147952","@6474382","@3765697","@6192402","@6575209","@6222662","@7053281","@6975013","@3352785","@2959211","@4117984","@6551334","@6548448","@6290639","@6290664","@5836056","@549590","@6162603","@7664342","@6207848","@6127710","@6127719"}
-
+	
 	troll={"@6135200","@5932565","@6110650","@6526938","@6498941","@6085234","@5018552","@5528077","@5018625","@5858647","@1395371","@6207985","@6218403","@6329560","@6345898","@6179538","@5622009","@5875455","@6192664","@5018731","@5858583","@5858585","@5966424","@5966445","@5704644","@6173496","@5436800","@6329565","@5018771","@6184390","@5858595","@5966432","@6094395","@5836826","@5858595","@5858625","@5858639","@3195916","@6124832","@5602310","@6244710","@6250422","@6299335","@5595910","@6526776","@6498946","@6813933","@585864","@6147952","@6474382","@3765697","@6192402","@6575209","@6222662","@7053281","@6975013","@3352785","@2959211","@4117984","@6551334","@6548448","@6290639","@6290664","@5836056","@549590","@6162603","@7664342","@6207848","@6127710","@6127719"}
-
+	
 	system.disableChatCommandDisplay("kjm")
 	system.disableChatCommandDisplay("o9p")
 	system.disableChatCommandDisplay("aeow")
-
+	
 	function eventChatCommand(n, message)
 		if message:sub(0,3) == "kjm" then
 			tfm.exec.newGame(message:sub(5))
@@ -10581,16 +10582,16 @@ modules.vanillatroll = function()
 			tfm.exec.newGame(troll[math.random(#troll)]);
 	end
 	end
-
+	
 	function eventNewPlayer()
 		tfm.exec.setUIMapName("Vanilla com mapas troll")
 		tfm.exec.chatMessage("<VP>Vanilla com mapas troll, programado por Yuri400#0000</b>")
 	end
-
+	
 	function nextRound()
 		tfm.exec.newGame(mapas[math.random(#mapas)]);
 	end
-
+	
 	function eventNewGame()
 		tfm.exec.setUIMapName("Vanilla com mapas troll")
 		vivo=0
@@ -10599,27 +10600,60 @@ modules.vanillatroll = function()
 		tfm.exec.setNameColor("Yuri400#0000",0xFF0000)
 		end
 	end
-
-
-
+	
 	function eventPlayerDied(name)
 		vivo=vivo-1
 	end
-
+	
 	function eventPlayerWon(name)
 		vivo=vivo-1
 	end
-
+	
 	function eventLoop(tempoPassado, tempoFaltando)
 		if vivo == 0 or tempoFaltando < 1000 then
 			nextRound();
 		end
 	end
-
+	
 	nextRound();
 end
 
 modules.perguntas = function()
+	local texts = {
+		br = {
+			title = "Perguntas",
+			displayAnswer = "A resposta da pergunta era <B>%s</B>.",
+			choosing = "Escolhendo Shaman...",
+			welcome = "<J>Bem vindo ao module Corrida de Perguntas! Digite !help para mais informações.",
+			introShaman = "<J>Você é o shaman! Digite <B>!q</B> para fazer a pergunta",
+			newShaman = "<CEP>%s estará fazendo as perguntas agora",
+			help = "<CEP>O minigame consiste em um Shaman que irá realizar perguntas para os demais jogadores responder. O primeiro jogador a acertar 5 perguntas ganha o jogo e se torna o próximo Shaman. Digite !q para fazer uma pergunta quando for sua vez de ser o Shaman.",
+			enterQuestion = "Digite sua pergunta",
+			skip = "<R>%s pulou a vez",
+			seeQuestion = "Sua pergunta: %s",
+			enterAnswer = "Digite a resposta da sua pergunta",
+			seeAnswer = "A resposta para sua pergunta: %s",
+			win = "<VP>%s acertou!"
+		},
+		es = {
+			title = "Preguntas",
+			displayAnswer = "La respuesta a la pregunta era <B>%s</B>.",
+			choosing = "Eligiendo el Chamán...",
+			welcome = "<J>¡Bienvenido al modulo Carrera de preguntas! Escribe !help para más información.",
+			introShaman = "<J>¡Eres el Chamán! Escribe <B>!q</B> para hacer la pregunta",
+			newShaman = "<CEP>%s hará las preguntas ahora",
+			help = "<CEP>El minijuego consiste en un Chamán que hará preguntas para que otros jugadores respondan. El primer jugador en acertar 5 preguntas gana el juego y se convierte en el próximo chamán. Escribe !q para hacer una pregunta cuando sea su turno como chamán.",
+			enterQuestion = "Escriba su pregunta",
+			skip = "<R>%s saltó su turno",
+			seeQuestion = "Su pregunta es: %s",
+			enterAnswer = "Escribe la respuesta para su pregunta",
+			seeAnswer = "La respuesta para su pregunta es: %s",
+			win = "<VP>¡%s obtuvo la respuesta correcta!"
+		}
+	}
+	local translation = tfm.get.room.community
+	translation = texts[translation] or texts.br
+	
 	local initModuleTimer = 1000
 
 	local playerData = { }
@@ -10638,7 +10672,7 @@ modules.perguntas = function()
 			ui.addTextArea(i, "<p align='center'><font size='30' color='#000000'><B>" .. stageNames[i], playerName, 390 + (i - 1) * 200, 180, 200, nil, 1, 1, 0, false)
 		end
   
-		ui.setMapName("Perguntas")
+		ui.setMapName(translation.title)
 		if newShaman then
 			ui.setShamanName(newShaman)
 		end
@@ -10725,7 +10759,7 @@ modules.perguntas = function()
 
 	local displayAnswer = function()
 		if not currentAnswer then return end
-		tfm.exec.chatMessage("A resposta da pergunta era <B>" .. currentAnswer .. "</B>.")
+		tfm.exec.chatMessage(string.format(translation.displayAnswer, currentAnswer))
 	end
 	
 	local startChooseFlow = function(ignoreAnswer)
@@ -10747,7 +10781,7 @@ modules.perguntas = function()
 
 		ui.removeTextArea(0)
 		tfm.exec.setGameTime(5)
-		tfm.exec.chatMessage("Escolhendo Shaman...")
+		tfm.exec.chatMessage(translation.choosing)
 	end
 
 	local displayQuestion = function(playerName)
@@ -10769,7 +10803,7 @@ modules.perguntas = function()
 
 		displayQuestion(playerName)
 		displayStageNames(playerName)
-		tfm.exec.chatMessage("<J>Bem vindo ao module Corrida de Perguntas! Digite !help para mais informações.", playerName)
+		tfm.exec.chatMessage(translation.welcome, playerName)
 	end
 
 	eventNewGame = function()
@@ -10797,10 +10831,10 @@ modules.perguntas = function()
 
 			tfm.exec.setShaman(newShaman)
 			tfm.exec.killPlayer(newShaman)
-			tfm.exec.chatMessage("<J>Você é o shaman! Digite <B>!q</B> para fazer a pergunta", newShaman)
+			tfm.exec.chatMessage(translation.introShaman, newShaman)
 
 			ui.setShamanName(newShaman)
-			tfm.exec.chatMessage("<CEP>".. newShaman .. " estará fazendo as perguntas agora")
+			tfm.exec.chatMessage(string.format(translation.newShaman, newShaman))
 
 			tfm.exec.setGameTime(60)
 		else
@@ -10814,7 +10848,7 @@ modules.perguntas = function()
 		if chooseShaman then return end
 
 		if command == "help" then
-			tfm.exec.chatMessage("<CEP>O minigame consiste em um Shaman que irá realizar perguntas para os demais jogadores responder. O primeiro jogador a acertar 5 perguntas ganha o jogo e se torna o próximo Shaman. Digite !q para fazer uma pergunta quando for sua vez de ser o Shaman.", playerName)
+			tfm.exec.chatMessage(translation.help, playerName)
 		--elseif command == "skip" then
 			--if hasSkipped[playerName] then return end
 			--hasSkipped[playerName] = true
@@ -10830,9 +10864,9 @@ modules.perguntas = function()
 			--end
 		elseif playerName == newShaman then
 			if command == 'q' then
-				ui.addPopup(0, 2, "Digite sua pergunta", newShaman, 200, 170, 400, true)
+				ui.addPopup(0, 2, translation.enterQuestion, newShaman, 200, 170, 400, true)
 			elseif command == "skip" then
-				tfm.exec.chatMessage("<R>".. playerName .. " pulou a vez")
+				tfm.exec.chatMessage(string.format(translation.skip, playerName))
 				startChooseFlow()
 			end
 		end
@@ -10845,15 +10879,15 @@ modules.perguntas = function()
 			currentAnswer = nil
 			currentQuestion = answer
 
-			tfm.exec.chatMessage("Sua pergunta: " .. answer, playerName)
-			ui.addPopup(1, 2, "Digite a resposta da sua pergunta", playerName, 200, 170, 400, true)
+			tfm.exec.chatMessage(string.format(translation.seeQuestion, answer), playerName)
+			ui.addPopup(1, 2, translation.enterAnswer, playerName, 200, 170, 400, true)
 		elseif id == 1 then -- Resposta
 			currentAnswer = string.lower(answer)
 	  
 			displayQuestion()
 			tfm.exec.setGameTime(60)
 
-			tfm.exec.chatMessage("A resposta para sua pergunta: " .. currentAnswer, playerName)
+			tfm.exec.chatMessage(string.format(translation.seeAnswer, currentAnswer), playerName)
 		end
 	end
 
@@ -10863,7 +10897,7 @@ modules.perguntas = function()
 		if playerName == newShaman then
 			return startChooseFlow()
 		end
-		tfm.exec.chatMessage("<VP>".. playerName .. " acertou!")
+		tfm.exec.chatMessage(string.format(translation.win, playerName))
 		displayAnswer()
 
 		currentAnswer = nil
@@ -11888,7 +11922,7 @@ tribeModule["*\3Familia de Tocutoeltuco"] = function()
 
 
 		local type_func_map = {
-	 [ "nil"     ] = encode_nil,
+	 [ "nil"	 ] = encode_nil,
 	 [ "table"   ] = encode_table,
 	 [ "string"  ] = encode_string,
 	 [ "number"  ] = encode_number,
@@ -11928,7 +11962,7 @@ tribeModule["*\3Familia de Tocutoeltuco"] = function()
 		local space_chars   = create_set(" ", "\t", "\r", "\n")
 		local delim_chars   = create_set(" ", "\t", "\r", "\n", "]", "}", ",")
 		local escape_chars  = create_set("\\", "/", '"', "b", "f", "n", "r", "t", "u")
-		local literals      = create_set("true", "false", "null")
+		local literals	  = create_set("true", "false", "null")
 
 		local literal_map = {
 	 [ "true"  ] = true,

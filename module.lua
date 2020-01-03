@@ -76,7 +76,6 @@ local _TEAM = {
 		["Aquawings#2537"] = "BR",
 		["Arcanacra#0010"] = "PL",
 		["Archaeron#0010"] = "DE",
-		["Arki#0113"] = "BR",
 		["Asmodan#0010"] = "PH",
 		["Bapereira#0000"] = "BR",
 		["Batt_mellamy#0015"] = "EN",

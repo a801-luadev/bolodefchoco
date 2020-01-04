@@ -1,0 +1,30 @@
+name: build
+
+on: [push]
+
+jobs:
+  build:
+    if: "contains(github.event.head_commit.message, '[build]')"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Lua
+      uses: leafo/gh-actions-lua@v5
+      with:
+        luaVersion: "5.2"
+
+    - name: Create local changes
+      run: lua test.lua
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "Auto Builder"
+        git add *
+        git commit -m "Generate build"
+
+    - name: Push
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}

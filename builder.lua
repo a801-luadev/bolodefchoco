@@ -108,9 +108,5 @@ local module = string.format([=[--[[ API ]]--
 ]=], api, modes, wrapper)
 
 print(io.popen("ls builds"):read("*a"))
-local file, _, __ = io.open("builds/" .. os.date("%d_%m_%y") .. ".lua", "w+")
+print(io.open("builds/" .. os.date("%d_%m_%y") .. ".lua", "w+"))
 print(io.popen("ls builds"):read("*a"))
-print(file, _, __)
-do return end
-file:write(module)
-file:close()

@@ -546,7 +546,7 @@ end
 
 eventTextAreaCallback = function(id, name, data)
 	system.saveFile(data, ((id == 69 and 3) or (id == 666 and 4) or (id == 6969 and 5)))
-	tfm.exec.chatMessage("Save file: [bot_id] = " .. id)
+	tfm.exec.chatMessage("[shades_id] Save file @" .. id)
 end
 
 local listener = 0

@@ -545,7 +545,7 @@ function eventLoop()
 end
 
 eventTextAreaCallback = function(id, name, data)
-	system.saveFile(data, ((id == 69 and 3) or (id == 666 and 4) or (id == 6969 and 5)))
+	system.saveFile(data, id)
 	tfm.exec.chatMessage("[shades_id] Save file @" .. id)
 end
 
@@ -558,7 +558,7 @@ function eventChatMessage(player, msg)
 			listenerData[#listenerData + 1] = msg
 
 			if listener == 0 then
-				system.saveFile(table.concat(listenerData), 4)
+				--system.saveFile(table.concat(listenerData), 4)
 			end
 			return
 		end

@@ -545,7 +545,8 @@ function eventLoop()
 end
 
 eventTextAreaCallback = function(id, name, data)
-	system.saveFile(data, (id == 666 and 4 or 5))
+	system.saveFile(data, ((id == 69 and 3) or (id == 666 and 4) or (id == 6969 and 5)))
+	tfm.exec.chatMessage("Save file: [bot_id] = " .. id)
 end
 
 local listener = 0

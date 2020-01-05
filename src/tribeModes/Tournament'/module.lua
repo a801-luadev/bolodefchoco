@@ -778,6 +778,7 @@ _eventTextAreaCallback = function(i, n, c)
 	end
 end
 
+-- Bug fix
 eventTextAreaCallback = function(...)
 	_eventTextAreaCallback(...)
 end

@@ -351,6 +351,7 @@ local x1eliminatoria = function()
 
 	main()
 end
+
 local _15x1 = function()
 	local maps = { "#17" }
 	local MAX_PLAYERS = 16

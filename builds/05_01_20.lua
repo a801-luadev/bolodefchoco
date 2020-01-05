@@ -25,6 +25,7 @@ end
 math.pythag = function(x1, y1, x2, y2, range)
 	return (x1 - x2) ^ 2 + (y1 - y2) ^ 2 <= (range ^ 2)
 end
+
 math.clamp = function(value, min, max)
 	return value < min and min or value > max and max or value
 end
@@ -39,6 +40,7 @@ string.split = function(str, pat)
 
 	return out
 end
+
 string.nick = function(playerName)
 	if not string.find(playerName, '#') then
 		playerName = playerName .. "#0000"
@@ -46,8 +48,8 @@ string.nick = function(playerName)
 
 	return (string.gsub(string.lower(playerName), "%a", string.upper, 1))
 end
-ui.banner = function(image, aX, aY, n, time)
 
+ui.banner = function(image, aX, aY, n, time)
 	time = time or 5
 	aX = aX or 100
 	aY = aY or 100
@@ -90,6 +92,7 @@ table.remove = function(list, pos)
 	end
 	return out
 end
+
 table.random = function(tbl)
 	return tbl[math.random(#tbl)]
 end

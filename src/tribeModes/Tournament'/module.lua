@@ -1,17 +1,3 @@
-do
-	local _, nickname = pcall(nil)
-	tfm.get.room.owner = "Pidoninho#0000"
-end
-
-local has = false
-for k, v in next, tfm.get.room.playerList do
-	if k == tfm.get.room.owner then
-		has = true
-		break
-	end
-end
-if not has then return system.exit() end
-
 local empty = function() end
 _eventTextAreaCallback = empty
 _eventNewPlayer = empty

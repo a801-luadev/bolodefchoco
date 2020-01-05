@@ -49,7 +49,6 @@ string.nick = function(playerName)
 end
 
 ui.banner = function(image, aX, aY, n, time)
-
 	time = time or 5
 	aX = aX or 100
 	aY = aY or 100

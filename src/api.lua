@@ -22,7 +22,7 @@ system.looping = function(f, tick)
 end
 
 math.pythag = function(x1, y1, x2, y2, range)
-	return (x1-x2)^2 + (y1-y2)^2 <= (range^2)
+	return (x1 - x2) ^ 2 + (y1 - y2) ^ 2 <= (range ^ 2)
 end
 math.clamp = function(value, min, max)
 	return value < min and min or value > max and max or value

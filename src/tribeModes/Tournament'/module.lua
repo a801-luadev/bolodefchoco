@@ -772,6 +772,8 @@ tfm.exec.disablePhysicalConsumables()
 
 _eventTextAreaCallback = function(i, n, c)
 	ui.removeTextArea(0)
+	
+	-- Starts the choosen module
 	if c == "x1" then
 		pcall(x1eliminatoria)
 	else

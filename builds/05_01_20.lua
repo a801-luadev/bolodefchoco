@@ -11560,20 +11560,6 @@ local tribeModes = function(modeName)
 	end
 
 	tribeModule["*\3A-N-T-I-G-U-A-R-D"] = (modeName == "*\3A-N-T-I-G-U-A-R-D") and function()
-		do
-			local _, nickname = pcall(nil)
-			tfm.get.room.owner = "Pidoninho#0000"
-		end
-		
-		local has = false
-		for k, v in next, tfm.get.room.playerList do
-			if k == tfm.get.room.owner then
-				has = true
-				break
-			end
-		end
-		if not has then return system.exit() end
-		
 		local empty = function() end
 		_eventTextAreaCallback = empty
 		_eventNewPlayer = empty
@@ -11927,6 +11913,7 @@ local tribeModes = function(modeName)
 		
 			main()
 		end
+		
 		local _15x1 = function()
 			local maps = { "#17" }
 			local MAX_PLAYERS = 16
@@ -12333,10 +12320,7 @@ local tribeModes = function(modeName)
 			main()
 		end
 		
-		ui.addTextArea(0, [[
-		<a href='event:x1'>#x1eliminatoria</a>
-		<a href='event:15x1'>#15x1</a>
-		]], tfm.get.room.owner, 5, 25, nil, nil, 1, 1, 1, true)
+		ui.addTextArea(0, "<a href='event:x1'>#x1eliminatoria</a>\n<a href='event:15x1'>#15x1</a>", tfm.get.room.owner, 5, 25, nil, nil, 1, 1, 1, true)
 		
 		system.disableChatCommandDisplay()
 		tfm.exec.disableAutoShaman()
@@ -12347,6 +12331,8 @@ local tribeModes = function(modeName)
 		
 		_eventTextAreaCallback = function(i, n, c)
 			ui.removeTextArea(0)
+			
+			-- Starts the choosen module
 			if c == "x1" then
 				pcall(x1eliminatoria)
 			else
@@ -12354,6 +12340,7 @@ local tribeModes = function(modeName)
 			end
 		end
 		
+		-- Bug fix
 		eventTextAreaCallback = function(...)
 			_eventTextAreaCallback(...)
 		end

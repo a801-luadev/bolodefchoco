@@ -758,10 +758,7 @@ local _15x1 = function()
 	main()
 end
 
-ui.addTextArea(0, [[
-<a href='event:x1'>#x1eliminatoria</a>
-<a href='event:15x1'>#15x1</a>
-]], tfm.get.room.owner, 5, 25, nil, nil, 1, 1, 1, true)
+ui.addTextArea(0, "<a href='event:x1'>#x1eliminatoria</a>\n<a href='event:15x1'>#15x1</a>", tfm.get.room.owner, 5, 25, nil, nil, 1, 1, 1, true)
 
 system.disableChatCommandDisplay()
 tfm.exec.disableAutoShaman()

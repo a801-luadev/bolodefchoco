@@ -1,18 +1,28 @@
 local isTribeHouse = string.byte(tfm.get.room.name, 2) == 3
 
-local getMode = function(modes, modeName)
+local getMode
+getMode = function(modeName)
+	local modes
+
 	if modeName then
 		if isTribeHouse then
-			tribeModes(modeName)
+			modes = tribeModes(modeName)
 		else
 			modeName = string.lower(modeName) -- Tribe houses won't be lowered to avoid conflicts
-			roomModes(modeName)
+			modes = roomModes(modeName)
 		end
 	else
 		modeName = "main"
+		modes = modules
 	end
 
-	return modes[modeName] or modules["main"], modeMetaInfo[modeName] or modeMetaInfo["main"]
+	local meta = modeMetaInfo[modeName] or modeMetaInfo["main"]
+	if meta.alias then
+		isTribeHouse = meta.alias.isTribeHouse
+		return getMode(meta.alias.modeName)
+	end
+
+	return modes[modeName] or modules["main"], meta
 end
 
 local startMode = function(gameMode)
@@ -68,7 +78,7 @@ local loadTeams = function()
 end
 
 if isTribeHouse then -- Is tribe house
-	local gameMode, meta = getMode(tribeModule, tfm.get.room.name)
+	local gameMode, meta = getMode(tfm.get.room.name)
 
 	if meta.owners then
 		if not checkOwners(meta.owners) then
@@ -83,7 +93,7 @@ if isTribeHouse then -- Is tribe house
 	startMode(gameMode)
 else
 	local modeName, argsPos = string.match(tfm.get.room.name, "%d+([%a_]+)()")
-	local gameMode, meta = getMode(modules, modeName)
+	local gameMode, meta = getMode(modeName)
 
 	if meta.hasAdmin then
 		roomAdmins(argsPos)

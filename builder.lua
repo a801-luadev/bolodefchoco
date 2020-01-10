@@ -22,6 +22,7 @@ end
 
 local readFile = function(fileName)
 	local file = io.open(fileName, 'r')
+	if not file then return end
 	local content = file:read("*a")
 	file:close()
 	return content
@@ -33,16 +34,18 @@ local getMode = function(path, src, srcName, notOptimize)
 	local file, module, package
 
 	package = readFile(path .. "package.lua")
-	module = readFile(path .. "module.lua")
 
 	local name = load("return " .. package)().name
+	modeMetaInfo[#modeMetaInfo + 1] = insertTabInEveryLine(string.format("[%q] = %s,", name, package), 1)
+	
+	module = readFile(path .. "module.lua")
+	if not module then return end
+
 	if not notOptimize then
 		module = string.format("\t%s[%q] = (modeName == %q) and function()\n%s\n\tend", srcName, name, name, insertTabInEveryLine(module, 2))
 	else
 		module = string.format("\t%s[%q] = function()\n%s\n\tend", srcName, name, insertTabInEveryLine(module, 2))
 	end
-
-	modeMetaInfo[#modeMetaInfo + 1] = insertTabInEveryLine(string.format("[%q] = %s", name, package), 1) .. ","
 
 	if src then
 		src[#src + 1] = module
@@ -86,10 +89,14 @@ end
 
 local roomModes = function(modeName)
 %s
+
+	return modules
 end
 
 local tribeModes = function(modeName)
 %s
+
+	return tribeModule
 end]=], modeMetaInfo, main, modules, tribeModule)
 
 ----------------------------------------------

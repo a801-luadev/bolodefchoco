@@ -279,10 +279,10 @@ local modeMetaInfo = {
 		description = "\"Alive or Dead\" prototype"
 	},
 	
-	["*\3Tournament'"] = {
-		name = "*\3Tournament'",
-		authors = { "Bolodefchoco#0000", "Pidoninho#0000" },
-		owners = { "Pidoninho#0000" }
+	["*\3A-N-T-I-G-U-A-R-D"] = {
+		name = "*\3A-N-T-I-G-U-A-R-D",
+		authors = { "Fly#8215" },
+		owners = { "Fly#8215" }
 	},
 	
 	["*\3Editeur"] = {
@@ -301,10 +301,10 @@ local modeMetaInfo = {
 		}
 	},
 	
-	["*\3A-N-T-I-G-U-A-R-D"] = {
-		name = "*\3A-N-T-I-G-U-A-R-D",
-		authors = { "Fly#8215" },
-		owners = { "Fly#8215" }
+	["*\3Tournament'"] = {
+		name = "*\3Tournament'",
+		authors = { "Bolodefchoco#0000", "Pidoninho#0000" },
+		owners = { "Pidoninho#0000" }
 	},
 	
 }
@@ -10966,7 +10966,7 @@ local roomModes = function(modeName)
 end
 
 local tribeModes = function(modeName)
-	tribeModule["*\3Tournament'"] = (modeName == "*\3Tournament'") and function()
+	tribeModule["*\3A-N-T-I-G-U-A-R-D"] = (modeName == "*\3A-N-T-I-G-U-A-R-D") and function()
 		local keys = { [8] = "Backspace", [9] = "Tab", [13] = "Enter", [16] = "Shift", [17] = "Control", [18] = "Alt", [19] = "Pause/break", [20] = "Caps Lock", [27] = "Escape", [32] = "Spacebar", [33] = "Page Up", [34] = "Page Down", [35] = "End", [36] = "Home", [37] = "Left Arrow", [38] = "Up Arrow", [39] = "Right Arrow", [40] = "Down Arrow", [45] = "Insert", [46] = "Delete", [48] = "0", [49] = "1", [50] = "2", [51] = "3", [52] = "4", [53] = "5", [54] = "6", [55] = "7", [56] = "8", [57] = "9", [65] = "A", [66] = "B", [67] = "C", [68] = "D", [69] = "E", [70] = "F", [71] = "G", [72] = "H", [73] = "I", [74] = "K", [75] = "J", [76] = "L", [77] = "M", [78] = "N", [79] = "O", [80] = "P", [81] = "Q", [82] = "R", [83] = "S", [84] = "T", [85] = "U", [86] = "V", [87] = "W", [88] = "X", [89] = "Y", [90] = "Z", [91] = "Windows (Left)", [92] = "Windows (Right)", [93] = "Application Key", [96] = "0 (Numbpad)", [97] = "1 (Numbpad)", [98] = "2 (Numbpad)", [99] = "3 (Numbpad)", [100] = "4 (Numbpad)", [101] = "5 (Numbpad)", [102] = "6 (Numbpad)", [103] = "7 (Numbpad)", [104] = "8 (Numbpad)", [105] = "9 (Numbpad)", [106] = "* Asterix (Numbpad)", [107] = "+ Plus (Numbpad)", [109] = "- Minus (Numbpad)", [110] = ". (or ,) Decimal Point", [111] = "/ Forward Slash (Numbpad)", [112] = "F1", [113] = "F2", [114] = "F3", [115] = "F4", [116] = "F5", [117] = "F6", [118] = "F7", [119] = "F8", [120] = "F9", [121] = "F10", [122] = "F11", [123] = "F12", [144] = "Numlock", [145] = "Scroll Lock", [186] = "; Semicolon", [187] = "= Equals", [188] = ", Comma", [189] = "- Hyphen", [190] = ". Period", [191] = "/ Forward Slash", [192] = "` Grave Accent", [193] = "Unknown", [219] = "[ Open Bracket", [220] = "\\ Backslash", [221] = "] Close Bracket", [222] = "' Single quote" }
 		
 		local admin
@@ -11571,7 +11571,7 @@ local tribeModes = function(modeName)
 		
 	end
 
-	tribeModule["*\3A-N-T-I-G-U-A-R-D"] = (modeName == "*\3A-N-T-I-G-U-A-R-D") and function()
+	tribeModule["*\3Tournament'"] = (modeName == "*\3Tournament'") and function()
 		local empty = function() end
 		_eventTextAreaCallback = empty
 		_eventNewPlayer = empty
@@ -12425,8 +12425,8 @@ local startMode = function(gameMode)
 end
 
 local checkOwners = function(owners)
-	for playerName in next, tfm.get.room.playerList do
-		if owners[playerName] then
+	for _, playerName in next, owners do
+		if tfm.get.room.playerList[playerName] then
 			return true
 		end
 	end

@@ -39,8 +39,8 @@ local startMode = function(gameMode)
 end
 
 local checkOwners = function(owners)
-	for playerName in next, tfm.get.room.playerList do
-		if owners[playerName] then
+	for _, playerName in next, owners do
+		if tfm.get.room.playerList[playerName] then
 			return true
 		end
 	end

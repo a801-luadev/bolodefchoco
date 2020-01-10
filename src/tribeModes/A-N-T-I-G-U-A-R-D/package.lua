@@ -1,5 +1,5 @@
 {
-	name = "*\3Tournament'",
-	authors = { "Bolodefchoco#0000", "Pidoninho#0000" },
-	owners = { "Pidoninho#0000" }
+	name = "*\3A-N-T-I-G-U-A-R-D",
+	authors = { "Fly#8215" },
+	owners = { "Fly#8215" }
 }

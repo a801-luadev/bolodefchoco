@@ -19,6 +19,9 @@ getMode = function(modeName)
 	local meta = modeMetaInfo[modeName] or modeMetaInfo["main"]
 	if meta.alias then
 		isTribeHouse = meta.alias.isTribeHouse
+		if meta.alias.community then
+			tfm.get.room.community = meta.alias.community
+		end
 		return getMode(meta.alias.modeName)
 	end
 

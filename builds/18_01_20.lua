@@ -9381,7 +9381,7 @@ local roomModes = function(modeName)
 			if playerName ~= newShaman then return end
 		
 			answer = string.trim(answer)
-			if answer ~= '' then return end
+			if answer == '' then return end
 		
 			if id == 0 then -- Pergunta
 				currentAnswer = nil

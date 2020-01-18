@@ -48,6 +48,10 @@ string.nick = function(playerName)
 	return (string.gsub(string.lower(playerName), "%a", string.upper, 1))
 end
 
+string.trim = function(str)
+	return (string.gsub(tostring(str), "^ *(.*) *$", "%1"))
+end
+
 ui.banner = function(image, aX, aY, n, time)
 	time = time or 5
 	aX = aX or 100

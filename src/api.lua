@@ -32,10 +32,10 @@ end
 string.split = function(str, pat)
 	local out, counter = { }, 0
 
-	string.gsub(str, pat, function(value)
+	for value in string.gmatch(str, pat) do
 		counter = counter + 1
 		out[counter] = tonumber(value) or value
-	end)
+	end
 
 	return out
 end

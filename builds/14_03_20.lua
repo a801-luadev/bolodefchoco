@@ -33,10 +33,10 @@ end
 string.split = function(str, pat)
 	local out, counter = { }, 0
 
-	string.gsub(str, pat, function(value)
+	for value in string.gmatch(str, pat) do
 		counter = counter + 1
 		out[counter] = tonumber(value) or value
-	end)
+	end
 
 	return out
 end
@@ -10196,7 +10196,6 @@ local roomModes = function(modeName)
 		maps = {"@7686143", "@7116265", "@7115212", "@7115134", "@7686473", "@7686475", "@7686481", "@7686479", "@7686715", "@7615565", "@7519027", "@7687793", "@7520354", "@7520442", "@7519258", "@7521273", "@7615568", "@7115166", "@5965735", "@6268044", "@6515535", "@6690430", "@6692309", "@7686473", "@7687784"}
 		keys = {66, 67, 78, 86, 88}
 		miceInfo = {}
-		ui.setMapName("#Sizerace")
 		tfm.exec.disableAfkDeath()
 		tfm.exec.disableAutoNewGame()
 		tfm.exec.setGameTime(90)
@@ -10204,7 +10203,6 @@ local roomModes = function(modeName)
 		tfm.exec.newGame(maps[math.random(#maps)])
 		
 		function eventNewGame()
-		ui.setMapName("#Sizerace")
 		tfm.exec.disableAfkDeath()
 		tfm.exec.setGameTime(90)
 		end
@@ -10216,11 +10214,6 @@ local roomModes = function(modeName)
 		
 		function eventPlayerWon(nick)
 		tfm.exec.changePlayerSize(nick, 1)
-		if tfm.get.room.playerList[nick].community=="pl" then
-			tfm.exec.chatMessage("<font color='#fff000'>Gracz " .. nick .. " właśnie wygrał rundę!")
-		else
-			tfm.exec.chatMessage("<font color='#fff000'>Player " .. nick .. " has just won the round!")
-		end
 		end
 		
 		function eventKeyboard(nick, key)

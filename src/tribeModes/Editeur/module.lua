@@ -575,3 +575,5 @@ function eventChatMessage(player, msg)
 end
 
 tfm.exec.disableAutoNewGame()
+
+tfm.exec.chatMessage("<J>/!\\")

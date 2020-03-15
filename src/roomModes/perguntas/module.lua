@@ -104,7 +104,7 @@ local getNewShaman = function()
 		end)
 
 		return scores[1].playerName
-	else
+	elseif counter > 0 then
 		return scores[math.random(counter)].playerName
 	end
 end

@@ -37,7 +37,7 @@ local getMode = function(path, src, srcName, notOptimize)
 
 	local name = load("return " .. package)().name
 	modeMetaInfo[#modeMetaInfo + 1] = insertTabInEveryLine(string.format("[%q] = %s,", name, package), 1)
-	
+
 	module = readFile(path .. "module.lua")
 	if not module then return end
 

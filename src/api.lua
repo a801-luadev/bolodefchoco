@@ -64,9 +64,10 @@ ui.banner = function(image, aX, aY, n, time)
 end
 
 local pairsByIndexes = function(list, f)
-	local out = {}
+	local out, counter = { }, 0
 	for index in next, list do
-		out[#out + 1] = index
+		counter = counter + 1
+		out[counter] = index
 	end
 	table.sort(out, f)
 

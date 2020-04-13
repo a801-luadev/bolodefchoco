@@ -81,7 +81,7 @@ eventNewPlayer = function(playerName)
 	tfm.exec.respawnPlayer(playerName)
 	info[playerName] = 1
 	tfm.exec.chatMessage("<VP>This is the personal room of <B>Bolodefchoco</B>.\n• Join our official Discord server to get help with Lua and modules: <B>https://discord.gg/quch83R</B>", playerName)
-	tfm.exec.chatMessage("<CEP>\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#7AC9C4'>,moduleteam</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#EF98AA'>,fashionsquad</font>\\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#F3D165'>,shelpers</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#FF9C00'>,funcorp</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#2ECF73'>,sentinel</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#2F7FCC'>,mapcrew</font>", playerName)
+	tfm.exec.chatMessage("<CEP>\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#7AC9C4'>,moduleteam</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#EF98AA'>,fashionsquad</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#F3D165'>,shelpers</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#FF9C00'>,funcorp</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#2ECF73'>,sentinel</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#2F7FCC'>,mapcrew</font>", playerName)
 	tfm.exec.chatMessage("<VP>Type <B>!donate</B> if you would like to donate for this module!", playerName)
 	tfm.exec.chatMessage("<N2>Ξ " .. playerName, "Bolodefchoco#0000")
 end

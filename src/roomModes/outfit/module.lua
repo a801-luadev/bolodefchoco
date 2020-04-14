@@ -218,6 +218,7 @@ local shop = {
 		[35] = { "Laço de Borboleta", 600, 80 },
 		[36] = { "Touca-rato de inverno", 500, 80 },
 		[37] = { "Brinco de sino dourado", 100, 20 },
+		[51] = { "Brinco Kickstarter", 50, 5 },
 	};
 	mouth = {
 		[0] = { "-", 0, 0 },
@@ -350,6 +351,10 @@ local shop = {
 		[28] = { "Cabelo do Arnold", 300, 50 }, -- Checar preço
 		[33] = { "Penteado Poney com Coroa", 400, 50 },
 		[34] = { "Penteado Poney", 400, 50 },
+		[35] = { "Penteado Arlequina", 400, 60 },
+		[53] = { "Penteado Schezo Wegey", 300, 30 },
+		[54] = { "Penteado Emma", 400, 50 },
+		[55] = { "Penteado Ray", 400, 50 },
 	};
 	tail = {
 		[0] = { "-", 0, 0 },
@@ -398,11 +403,24 @@ local shop = {
 		[11] = { "Olho azul vidrado", 170, 60 },
 		[12] = { "Olho cílios verticais", 120, 30 },
 		[13] = { "Olho fechado", 160, 50 },
+		[14] = { "Olho raivoso laranja", 200, 80 },
+		[15] = { "Olho raivoso roxo", 250, 100 },
+		[16] = { "Olho raivoso rosa", 250, 100 },
+		[17] = { "Olho grande lilás", 180, 70 },
+		[18] = { "Olho grande verde", 180, 70 },
+		[19] = { "Olho grande azul", 180, 70 },
+		[20] = { "Olho grande laranja", 180, 70 },
+		[22] = { "Olho grande amarelo", 180, 70 },
+		[23] = { "Olho grande vermelho", 180, 70 },
+		[24] = { "Olho grande rosa", 180, 70 },
+		[25] = { "Olho grande marrom", 180, 70 },
+		[26] = { "Olho grande cinza", 180, 70 },
 	},
 	hand = {
 		[0] = { "-", 0, 0 },
 		[1] = { "Nabo", 1200, 200 },
 		[2] = { "Pulseira", 1100, 180 },
+		[21] = { "Rosa", 1100, 180 },
 	},
 	fur = {
 		[-7] = { "Cor preta", 3000, 150 },
@@ -500,6 +518,7 @@ local shop = {
 		[95] = { "Pelo de Eevee", 5500, 500 },
 		[96] = { "Pelo de Carneiro", 5500, 400 },
 		[97] = { "Pelo de Gambá claro", 5500, 400 },
+		[110] = { "Pelo de Tigre branco", 10000, 500 },
 	};
 }
 

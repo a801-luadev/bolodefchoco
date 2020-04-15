@@ -1,9 +1,24 @@
 local texts = {
+	en = {
+		title = "Questions",
+		displayAnswer = "The answer for the question was <B>%s</B>.",
+		choosing = "Choosing Shaman...",
+		welcome = "<J>Welcome to the Questions module! Type !help to learn more.",
+		introShaman = "<J>You're the shaman! Type <B>!q</B> to ask",
+		newShaman = "<CEP>%s is the one asking now",
+		help = "<CEP>The module consists in a Shaman that is going to ask questions for the other players - these that have to answer. The first player getting 5 correct answers for the questions wins the game and becomes the next Shaman. Type !q to make a question when it is your Shaman turn.",
+		enterQuestion = "Type your question",
+		skip = "<R>%s skipped their turn",
+		seeQuestion = "Your question: %s",
+		enterAnswer = "Type the answer of the question",
+		seeAnswer = "The answer for your question: %s",
+		win = "<VP>%s got it right!"
+	},
 	br = {
 		title = "Perguntas",
 		displayAnswer = "A resposta da pergunta era <B>%s</B>.",
 		choosing = "Escolhendo Shaman...",
-		welcome = "<J>Bem vindo ao module Corrida de Perguntas! Digite !help para mais informações.",
+		welcome = "<J>Bem vindo ao module Perguntas! Digite !help para mais informações.",
 		introShaman = "<J>Você é o shaman! Digite <B>!q</B> para fazer a pergunta",
 		newShaman = "<CEP>%s estará fazendo as perguntas agora",
 		help = "<CEP>O minigame consiste em um Shaman que irá realizar perguntas para os demais jogadores responder. O primeiro jogador a acertar 5 perguntas ganha o jogo e se torna o próximo Shaman. Digite !q para fazer uma pergunta quando for sua vez de ser o Shaman.",
@@ -18,7 +33,7 @@ local texts = {
 		title = "Preguntas",
 		displayAnswer = "La respuesta a la pregunta era <B>%s</B>.",
 		choosing = "Eligiendo el Chamán...",
-		welcome = "<J>Bienvenido al module Carrera de preguntas! Escribe !help para más información.",
+		welcome = "<J>Bienvenido al module Preguntas! Escribe !help para más información.",
 		introShaman = "<J>Eres el Chamán! Escribe <B>!q</B> para hacer la pregunta",
 		newShaman = "<CEP>%s hará las preguntas ahora",
 		help = "<CEP>El minijuego consiste en un Chamán que hará preguntas para que otros jugadores respondan. El primer jugador en acertar 5 preguntas gana el juego y se convierte en el próximo chamán. Escribe !q para hacer una pregunta cuando sea su turno como chamán.",
@@ -31,7 +46,7 @@ local texts = {
 	}
 }
 local translation = tfm.get.room.community
-translation = texts[translation] or texts.br
+translation = texts[translation] or texts.en
 
 local initModuleTimer = 1000
 

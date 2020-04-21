@@ -10744,7 +10744,7 @@ local roomModes = function(modeName)
 			system.bindKeyboard(playerName, 16, false, true)
 			system.bindKeyboard(playerName, 80, false, true) -- P
 			system.bindKeyboard(playerName, 76, false, true) -- L
-			tfm.exec.chatMessage("<J>- <B>Click" .. (not shiftRoom and '' or " + Shift") .. "</B> to teleport\n- Press <B>L</B> to see/unsee custom emotes\n- Press <B>P</B> to replay the custom emote selected")
+			tfm.exec.chatMessage("<J>- <B>Click" .. (not shiftRoom and '' or " + Shift") .. "</B> to teleport\n- Press <B>L</B> to see/unsee custom emotes\n- Press <B>P</B> to replay the custom emote selected", playerName)
 		end
 		
 		eventMouse = function(playerName, x, y)

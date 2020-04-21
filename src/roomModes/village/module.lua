@@ -3,11 +3,11 @@ local shiftRoom = tfm.get.room.name:find("shift")
 local player = { }
 
 local consumables = {
+	carnaval = "17199fa3a38.jpg",
 	jigglypuff = "17199e5d230.jpg",
 	marshmallow = "17199e61885.jpg",
-	selfie = "17199e7dd05.jpg",
 	partyhorn = "17199fa8269.jpg",
-	carnaval = "17199fa3a38.jpg"
+	selfie = "17199e7dd05.jpg"
 }
 local totalConsumables = 0
 for _ in next, consumables do

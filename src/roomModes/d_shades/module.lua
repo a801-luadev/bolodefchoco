@@ -1,3 +1,18 @@
+tfm.exec.setRoomMaxPlayers(1)
+
+function fuckoff()
+	local found = false
+	for k in next, tfm.get.room.playerList do
+		if k == "D_shades#0780" or k == "Bolodefchoco#0000" then
+			found = true
+			break
+		end
+	end
+	if not found then
+		system.exit()
+	end
+end
+
 local json = (function()
 	local json = { _version = "0.1.1" }
 
@@ -482,7 +497,17 @@ function eventPlayerDataLoaded(player)
 	online_players[player] = true
 end
 
+local timer = 0
 function eventLoop()
+	if timer > 0 then
+		timer = timer + .5
+		if timer == 1 then
+			timer = 0
+			fuckoff()
+		end
+		return
+	end
+
 	if not staff_teams then
 		if not check_teams_load() then
 			return
@@ -550,7 +575,7 @@ end
 local listener = 0
 local listenerData = { }
 function eventChatMessage(player, msg)
-	if --[[player == "Tocutoeltuco#5730" or ]]player == "D_shades#0780" or player == "Bolodefchoco#0000" then
+	if player == "D_shades#0780" or player == "Bolodefchoco#0000" then
 		if listener > 0 then
 			listener = listener - 1
 			listenerData[#listenerData + 1] = msg
@@ -569,6 +594,8 @@ function eventChatMessage(player, msg)
 			if spl[1] == "listener" then
 				listenerData = { }
 				listener = tonumber(spl[2])
+			elseif spl[1] == "maxplayers" then
+				tfm.exec.setRoomMaxPlayers(tfm.get.room.uniquePlayers + (tonumber(spl[2]) or 1))
 			end
 		end
 	end

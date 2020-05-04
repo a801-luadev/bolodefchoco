@@ -186,7 +186,7 @@ local shop = {
 		--[183] = { "Chapéu da Selene", 0, 0, true },
 		--[184] = { "Bandana da May", 0, 0, true },
 		[185] = { "Chapéu da Fashion Squad", 0, 0, },
-		--[186] = { "Chapéu da Lillie", 0, 0, true },
+		[186] = { "Chapéu da Lillie", 500, 60, true },
 		--[187] = { "Chapéu do Carrots", 0, 0, true },
 		--[188] = { Chapéu Shako", 0, 0, true },
 		--[189] = { "Tiara de rena", 0, 0, true },
@@ -198,6 +198,7 @@ local shop = {
 		--[195] = { "Chapéu de São Patrício", 0, 0, true },
 		--[196] = { "Tiara de abelha", 0, 0, true },
 		[197] = { "Touca de bebê", 400, 50, true },
+		[198] = { "Chapéu de pombo", 1500, 100, true },
 	};
 	eye = {
 		[0] = { "-", 0, 0 },
@@ -532,6 +533,7 @@ local shop = {
 		--[35] = { "Borboleta", 0, 0, true },
 		--[36] = { "Lampião", 0, 0, true },
 		[37] = { "Trouxa de roupa", 1200, 120, true },
+		[38] = { "Piñata", 1500, 120, true },
 	};
 	contact_lens = {
 		[0] = { "-", 0, 0 },
@@ -559,6 +561,7 @@ local shop = {
 		[24] = { "Olho grande rosa", 180, 70 },
 		[25] = { "Olho grande marrom", 180, 70 },
 		[26] = { "Olho grande cinza", 180, 70 },
+		[27] = { "Olho simples preto", 100, 30, },
 	},
 	hand = {
 		[0] = { "-", 0, 0 },
@@ -580,12 +583,13 @@ local shop = {
 		--[16] = { "Espada", 0, 0, true },
 		--[17] = { "Varinha de coração", 0, 0, true },
 		--[18] = { "Tridente", 0, 0, true },
-		--[19] = { "Bastão de Baiseball", 0, 0, true },
+		[19] = { "Bastão de Baiseball", 1400, 250, true },
 		--[20] = { "Chave Inglesa", 0, 0, true },
 		[21] = { "Rosa", 1100, 180 },
 		--[22] = { "Estpátula do Bob Esponja", 0, 0, true },
 		[23] = { "Chocalho", 1200, 200, true },
 		[24] = { "Ovo de Páscoa", 1100, 180, true },
+		[25] = { "Presente", 1200, 200, true },
 	},
 	fur = {
 		[-7] = { "Cor preta", 3000, 150 },
@@ -739,6 +743,7 @@ local shop = {
 		--[151] = { "Rato de Sorvete", 0, 0, true },
 		[152] = { "Pelo de Sapo", 5000, 400, true },
 		[153] = { "Pelo Divindade", 6000, 400, true },
+		[154] = { "Pelo de cupcake", 6000, 400, true },
 	};
 }
 

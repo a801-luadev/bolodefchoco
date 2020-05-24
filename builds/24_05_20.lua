@@ -9238,7 +9238,7 @@ local roomModes = function(modeName)
 		currentspawnpos = {0, 0}
 		
 		--CONSTANTS
-		MAPTIME = 3600
+		MAPTIME = 60*6
 		DASHCOOLDOWN = 1000
 		JUMPCOOLDOWN = 3000
 		REWINDCOOLDONW = 10000

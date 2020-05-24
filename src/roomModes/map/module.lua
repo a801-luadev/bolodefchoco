@@ -18,7 +18,7 @@ eventNewGame = function()
 	for t = O, -1 do
 		ui.removeTextArea(t)
 	end
-	o = 0
+	O = 0
 
 	local xml = tfm.get.room.xmlMapInfo
 	if xml then

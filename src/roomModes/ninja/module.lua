@@ -3,7 +3,7 @@ translations = {
     "Sari",
     "Dash",
     "<p align='center'><b>Cum să joci ninjaMouse!</b></p>\nTermină mapa <b>cât mai rapid posibil</b> folosindu-ți puterile de ninja!\nPentru a folosi puterile, <b>apasă de două ori pe săgeți</b> în orice direcție (stânga, dreapta, sus) și vei face un dash în acea direcție (în afară de jos).\nAi un timp de reîncărcare de 1 secundă la dash-urile pentru stânga și dreapta și un timp de reîncărcare de 3 secunde la dash-ul pentru sus (le poți vedea în colțul ecranului).\nDe asemenea, când apeși pe <b>Spațiu</b> vei fi teleportat înapoi în timp, unde erai acum 3 secunde.\nDacă ai terminat mapa, numele tău va avea această <b><font color='#BABD2F'>culoare</font></b>. Dacă ai terminat mapa cel mai rapid, numele tău va avea această <b><font color='#EB1D51'>culoare</font></b>.\nDacă vei vrea să recitești asta, apasă <b>H</b>.\nPentru a accesa setările, apasă <b>G</b>.",
-    "<font size='8'><b>Instrucțiuni: </b>Dash/Sari - apasă de două ori orice săgeată. Poți da dash la fiecare 1s și sări la fiecare 3s. Apasă H pentru a înlătura.</font>",
+    "<font color='#E68D43'><B>Instrucțiuni: </B></font><font color='#EDCC8D'>Dash/Sari - apasă de două ori orice săgeată. Poți da dash la fiecare 1s și sări la fiecare 3s.\nApasă H pentru mai multe detalii. Modul codat de </font><font color='#2E72CB'>Extremq#0000</font><font color='#EDCC8D'>, mape făcute de </font><font color='#2E72CB'>Railysse#0000.</font>",
 	"Ultimul timp",
 	"Cel mai bun timp",
 	"CEL MAI RAPID NINJA",
@@ -16,13 +16,15 @@ translations = {
 	"Activezi particulele de dash", -- 15
     "Activezi panourile de timp", -- 16
     "Opțiuni", -- 17
-    " a inițiat un vot pentru a trece la următoarea mapă. Scrie !yes pentru a vota pozitiv."
+    " a inițiat un vot pentru a trece la următoarea mapă. Scrie !yes pentru a vota pozitiv.", -- 18
+    " a terminat mapa cel mai rapid!", --19
+    "<font color='#CB546B'>Acest modul este în construcție. Raportează orice problemă lui Extremq#0000 sau Railysse#0000.</font>" -- 20
     },
     {"EN",
 	 "Jump",
 	 "Dash",
 	 "<p align='center'><b>How to play ninjaMouse!</b></p>\nFinish the map <b>as fast as possible</b> by using your ninja powers!\nTo use the powers, <b>double-tap the arrow keys</b> in any direction (left, right, up) and you will dash in the desired direction (except for down).\nYou have a 1 second cooldown on left and right dashes and a 3 second cooldown on up dashes (you can see them in the corner of your screen).\nAlso, if you press on <b>Space</b> you will be teleported back in time where you were 3 seconds ago.\nIf you finished the map, your name will have this <b><font color='#BABD2F'>color</font></b>. If you finished with the fastest time, your name will be this <b><font color='#EB1D51'>color</font></b>.\nIf you want to read this again at any time, press <b>H</b>.\nTo access the settings, press <b>G</b>.",
-	 "<font size='10'><b>Instructions: </b>Dash/Jump - double tap any arrow keys. Cooldown on dash is 1s and on jump is 3s. Press H to remove this.</font>",
+     "<font color='#E68D43'><B>Instructions: </B></font><font color='#EDCC8D'>Dash/Jump - double tap any arrow keys. Cooldown on dash is 1s and on jump is 3s.\nPress H for more details. Module coded by </font><font color='#2E72CB'>Extremq#0000</font><font color='#EDCC8D'>, maps made by </font><font color='#2E72CB'>Railysse#0000.</font>",
 	 "Your last time",
 	 "Your best time",
 	 "FASTEST NINJA",
@@ -35,31 +37,61 @@ translations = {
 	"Enable dash/jump particles", --15
     "Enable time panels", --16
     "Options", --17
-    " started a vote to skip the current map. Type !yes to vote positively." --18
+    " started a vote to skip the current map. Type !yes to vote positively.", --18
+    " finished the map in the fastest time!", --19
+    "<font color='#CB546B'>This module is in development. Please report any bugs to Extremq#0000 or Railysse#0000.</font>" -- 20
     }
 }
 
-n = 2
-mapcode = {"@7725753", "@7726015", "@7726744"}
-spawnpos = {{130, 738}}
+mapcodes = {"@7725753", "@7726015", "@7726744", "@7728063"}
+mapsleft = {"@7725753", "@7726015", "@7726744", "@7728063"}
+
 currentspawnpos = {0, 0}
+modlist = {"Extremq#0000", "Railysse#0000"}
+modroom = {}
+oplist = {}
+lastmap = ""
+mapstarttime = 0
+mapwasskipped = false
+
 
 --CONSTANTS
-MAPTIME = 60*6
-DASHCOOLDOWN = 1000
-JUMPCOOLDOWN = 3000
-REWINDCOOLDONW = 10000
+MAPTIME = 6 * 60
+DASHCOOLDOWN = 1 * 1000
+JUMPCOOLDOWN = 3 * 1000
+REWINDCOOLDONW = 10 * 1000
 
-function randomMap()
-    choice = math.random(1, n)
-    --currentspawnpos = {spawnpos[choice][1], spawnpos[choice][2]}
+-- CHOOSE MAP
+function randomMap()  
+    -- DELETE THE CHOSEN MAP
+    if #mapsleft == 0 then
+        for key, value in pairs(mapcodes) do
+            table.insert(mapsleft, value)
+        end
+    end
+    local pos = math.random(1, #mapsleft)
+    local newMap = mapsleft[pos]
+    -- IF THE MAPS ARE THE SAME, PICK AGAIN
+    if newMap == lastmap then
+        table.remove(mapsleft, pos)
+        pos = math.random(1, #mapsleft)
+        newMap = mapsleft[pos]
+        table.insert(mapsleft, lastmap)
+    end
+    table.remove(mapsleft, pos)
     currentspawnpos = {0, 0}
-    return mapcode[choice]
+    lastmap = newMap
+
+    -- FOR TIME SYNC
+    mapstarttime = os.time()
+
+    return newMap
 end
 
+-- CHOOSE FLIP
 function randomFlip()
     number = math.random()
-    if number < 0.4 then
+    if number < 0.5 then
         return true
     else
         return false
@@ -78,8 +110,9 @@ system.disableChatCommandDisplay()
 tfm.exec.setGameTime(MAPTIME, true)
 ui.setShamanName("Welcome to ninjaMouse!")
 
-keys = {32, 37, 39, 38, 65, 68, 71, 72, 84, 87}
+keys = {32, 37, 39, 38, 65, 68, 71, 72, 77, 84, 87}
 besttime = 99999
+-- TIME
 globalplayercount = 0
 lastkeypressed = {}
 lastkeypressedtime = {}
@@ -108,6 +141,25 @@ skipvotes = 0
 admin = ""
 customroom = false
 
+function checkMod(playerName)
+    for index, name in pairs(modlist) do
+        if name == playerName then
+            return true
+        end
+    end
+    return false
+end
+
+function checkRoomMod(playerName)
+    for index, name in pairs(modroom) do
+        if name == playerName then
+            return true
+        end
+    end
+    return false
+end
+
+-- MOUSE POWERS
 function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPosition)
     local id = tfm.get.room.playerList[playerName].id
     if playerloaded[id] == false then
@@ -122,11 +174,13 @@ function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPositi
                 lastkeypressedtimeright[id] = os.time()
                 --if lastkeypressed[id] == keyCode then
                 --tfm.exec.displayParticle(35, xPlayerPosition + 60, yPlayerPosition, 0, 0, 0, 0, nil)
-                if playerpreferences[id][2] == true then
-                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), math.random(), 0, 0, nil)
-                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random(), 0, 0, nil)
-                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random(), 0, 0, nil)
-                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random(), 0, 0, nil)
+                for name, data in pairs(tfm.get.room.playerList) do
+                    if playerpreferences[tfm.get.room.playerList[name].id][2] == true then
+                        tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), math.random(), 0, 0, name)
+                        tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random(), 0, 0, name)
+                        tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random(), 0, 0, name)
+                        tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random(), 0, 0, name)
+                    end
                 end
                 tfm.exec.movePlayer(playerName, 0, 0, true, 150, 0, false)
                 dashUsed = true;
@@ -136,13 +190,13 @@ function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPositi
         if os.time() - lastkeypressedtimeleft[id] < 200 and tfm.get.room.playerList[playerName].isDead == false then
             if keyCode == 37 or keyCode == 65 then
                 lastkeypressedtimeleft[id] = os.time()
-                --if lastkeypressed[id] == keyCode then
-                --tfm.exec.displayParticle(35, xPlayerPosition - 60, yPlayerPosition, 0, 0, 0, 0, nil)
-                if playerpreferences[id][2] == true then
-                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), math.random(), 0, 0, nil)
-                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random(), 0, 0, nil)
-                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random(), 0, 0, nil)
-                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random(), 0, 0, nil)
+                for name, data in pairs(tfm.get.room.playerList) do
+                    if playerpreferences[tfm.get.room.playerList[name].id][2] == true then
+                        tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), math.random(), 0, 0, name)
+                        tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random(), 0, 0, name)
+                        tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random(), 0, 0, name)
+                        tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random(), 0, 0, name)
+                    end
                 end
                 tfm.exec.movePlayer(playerName, 0, 0, true, -150, 0, false)
                 dashUsed = true;
@@ -151,10 +205,6 @@ function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPositi
         end
 
         if dashUsed == true then
-            -- tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), math.random(), 0, 0, nil)
-            -- tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random(), 0, 0, nil)
-            -- tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random(), 0, 0, nil)
-            -- tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), math.random(), 0, 0, nil)
             lastdashusedtime[id] = os.time()
             ui.removeTextArea(2, playerName)
             ui.addTextArea(2, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][3].."</font>", playerName, 745, 330, 46, 23, 0xff5151, 0xaf3131, 0.8, true)
@@ -166,11 +216,13 @@ function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPositi
             lastkeypressedtimejump[id] = os.time()
             --if lastkeypressed[id] == keyCode then
             tfm.exec.movePlayer(playerName, 0, 0, true, 0, -60, false)
-            if playerpreferences[id][2] == true then
-                tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random()*4, 0, 0, nil)
-                tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random()*3, 0, 0, nil)
-                tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random()*2, 0, 0, nil)
-                tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random()*2, 0, 0, nil)
+            for name, data in pairs(tfm.get.room.playerList) do
+                if playerpreferences[tfm.get.room.playerList[name].id][2] == true then
+                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random()*4, 0, 0, name)
+                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random()*3, 0, 0, name)
+                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, -math.random(), -math.random()*2, 0, 0, name)
+                    tfm.exec.displayParticle(3, xPlayerPosition, yPlayerPosition, math.random(), -math.random()*2, 0, 0, name)
+                end
             end
             lastjumpusedtime[id] = os.time()
             ui.removeTextArea(1, playerName)
@@ -194,6 +246,11 @@ function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPositi
     -- OPEN GUIDE
     if keyCode == 72 then
         ui.addPopup(1, 0, translations[playerlanguage[id]][4], playerName, 212, 92, 368, true)
+    end
+
+    -- MORT ON M
+    if keyCode == 77 then
+        tfm.exec.killPlayer(playerName)
     end
 
     -- HIDE/SHOW OPTIONS PANEL
@@ -222,20 +279,19 @@ function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPositi
     end
 end
 
--- UI UPDATER & PLAYER RESPAWNER & REWINDER
-
-time = 0
-
+-- UPDATE REWIND ARRAY
 function eventPlayerDied(playerName)
     local id = tfm.get.room.playerList[playerName].id
     rewindpos[id] = {{0, 0, false}, {0, 0, false}, {0, 0, false}, {0, 0, false}, {0, 0, false}, {0, 0, false}}
 end
 
+-- UI UPDATER & PLAYER RESPAWNER & REWINDER
 function eventLoop(timeRemaining, timeRemaining)
-    time = time + 0.5
-    print(time)
-
-    if time == MAPTIME then
+    time = os.time() - mapstarttime
+    print(time / 1000)
+    if time >= MAPTIME * 1000 or mapwasskipped == true then
+        mapwasskipped = false
+        time = 0
         print("Attempting to reset.")
         tfm.exec.setAutoMapFlipMode(randomFlip())
         tfm.exec.newGame(randomMap())
@@ -244,28 +300,31 @@ function eventLoop(timeRemaining, timeRemaining)
         for playerName in pairs(tfm.get.room.playerList) do
             local id = tfm.get.room.playerList[playerName].id
             if tfm.get.room.playerList[playerName].isDead == true then
+                -- RESPAWN PLAYER
                 tfm.exec.respawnPlayer(playerName)
+                -- UPDATE COOLDOWNS
                 lastrewindused[id] = os.time() - 6000
                 lastjumpusedtime[id] = os.time() - JUMPCOOLDOWN
                 lastdashusedtime[id] = os.time() - DASHCOOLDOWN
+                -- WHEN RESPAWNED, MAKE THE ABILITIES GREEN
                 ui.removeTextArea(1, playerName)
                 ui.addTextArea(1, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][2].."</font>", playerName, 745, 365, 46, 23, 0x5bff5b, 0x3ebc3e, 0.8, true)
                 ui.removeTextArea(2, playerName)
                 ui.addTextArea(2, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][3].."</font>", playerName, 745, 330, 46, 23, 0x5bff5b, 0x3ebc3e, 0.8, true)
             else
-                --BUG, EXECUTES EVEN WHEN DEAD BECAUSE OF SYNC ISSUES
+                -- UPDATE REWIND POSITIONS
                 playerx = tfm.get.room.playerList[playerName].x
                 playery = tfm.get.room.playerList[playerName].y
                 table.remove(rewindpos[id], 1)
                 table.insert(rewindpos[id], {playerx, playery, tfm.get.room.playerList[playerName].hasCheese})
                 rewindx = rewindpos[id][1][1]
                 rewindy = rewindpos[id][1][2]
-                --print(rewindx.." "..rewindy.." "..playerName)
-                --print(currentspawnpos[1])
+                -- DISPLAY REWIND PARTICLES
                 if playerpreferences[id][1] == true then
                     tfm.exec.displayParticle(13, rewindx, rewindy, 0, 0, 0, 0, playerName)
                 end
             end
+            -- UPDATE UI
             if os.time() - lastjumpusedtime[id] > JUMPCOOLDOWN then
                 ui.removeTextArea(1, playerName)
                 ui.addTextArea(1, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][2].."</font>", playerName, 745, 365, 46, 23, 0x5bff5b, 0x3ebc3e, 0.8, true)
@@ -289,9 +348,11 @@ end
 -- PLAYER COLOR SETTER
 function eventPlayerRespawn(playerName)
     id = tfm.get.room.playerList[playerName].id
-    if playerloaded[id] == false then
-        tfm.exec.freezePlayer(playerName, true)
-    end
+    setColor(playerName)
+end
+
+function setColor(playerName)
+    id = tfm.get.room.playerList[playerName].id
     local color = 0x40a594
     -- IF BEST TIME
     if playerName == fastestplayer then
@@ -300,11 +361,23 @@ function eventPlayerRespawn(playerName)
     elseif playerfinished[id] == true then
         color = 0xBABD2F
     end
+
+    if checkRoomMod(playerName) == true then
+        color = 0x2E72CB
+    end
+
     tfm.exec.setNameColor(playerName, color)
 end
 
 -- PLAYER WIN
 function eventPlayerWon(playerName, timeElapsed, timeElapsedSinceRespawn)
+
+    lastjumpusedtime[id] = 0
+    lastdashusedtime[id] = 0
+
+    if checkRoomMod(playerName) == true then
+        return
+    end
     id = tfm.get.room.playerList[playerName].id
     if playerfinished[id] == false then
         playerWon = playerWon + 1
@@ -313,12 +386,11 @@ function eventPlayerWon(playerName, timeElapsed, timeElapsedSinceRespawn)
     -- RESET TIMERS
     playerlasttime[id] = timeElapsedSinceRespawn
     playerfinished[id] = true
-    lastjumpusedtime[id] = 0
-    lastdashusedtime[id] = 0
     playerbesttime[id] = math.min(playerbesttime[id], timeElapsedSinceRespawn)
     -- UPDATE "YOUR TIME"
     ui.updateTextArea(5, "<p align='center'><font face='Lucida console' color='#ffffff'>"..translations[playerlanguage[id]][6]..": "..(timeElapsedSinceRespawn/100).."s", playerName)
     ui.updateTextArea(4, "<p align='center'><font face='Lucida console' color='#ffffff'>"..translations[playerlanguage[id]][7]..": "..(playerbesttime[id]/100).."s", playerName)
+    
     if timeElapsedSinceRespawn < besttime then
         -- CHECK IF FASTEST PLAYER IS IN ROOM
         for playerName in pairs(tfm.get.room.playerList) do
@@ -328,49 +400,42 @@ function eventPlayerWon(playerName, timeElapsed, timeElapsedSinceRespawn)
         end
         besttime = timeElapsedSinceRespawn
         fastestplayer = playerName
+        tfm.exec.chatMessage("<font color='#CB546B'>"..fastestplayer..translations[playerlanguage[id]][19].."</font>", nil)
+        print("<font color='#CB546B'>"..fastestplayer..translations[playerlanguage[id]][19].."</font>")
         ui.updateTextArea(3, "<p align='center'><font face='Lucida Console' color='#ffffff'><b>"..translations[playerlanguage[id]][8]..": </b> </font>\n<font face='Lucida Console' color='#EB1D51'>"..playerName.."</font> <font face='Lucida Console' color='#ffffff'>- "..(timeElapsedSinceRespawn/100).."s</font></p>", nil)
     end
-    -- if playerWon == playerCount and MAPTIME - time > 20 and mapfinished == false then
-    --     print("Resetting game, all players finished.")
-    --     print("pc = "..playerCount.." pw = "..playerWon)
-    --     tfm.exec.setGameTime(20, true)
-    --     time = MAPTIME - 20
-    --     mapfinished = true
-    -- end
-
 end
 
 function eventPlayerLeft(playerName)
     playerCount = playerCount - 1
-    -- if playerWon == playerCount and MAPTIME - time > 20 and mapfinished == false then
-    --     print("Resetting game because player left and all players in the room finished.")
-    --     tfm.exec.setGameTime(20, true)
-    --     time = MAPTIME - 20
-    --     mapfinished = true
-    -- end
 end
 
-function pitagora(x1,y1,x2,y2,r)
-    local x=x2-x1
-    local y=y2-y1
-    local r=r+r
-    return x*x+y*y<r*r
-end
-
+-- RETURN PLAYER ID
 function playerId(playerName)
     return tfm.get.room.playerList[playerName].id
 end
 
 -- CALL THIS WHEN A PLAYER FIRST JOINS A ROOM
 function initPlayer(playerName)
+    -- NUMBER OF THE PLAYER SINCE MAP WAS CREATED
     globalplayercount = globalplayercount + 1
+    -- IF FIRST PLAYER, (NEW MAP) MAKE ADMIN
     if globalplayercount == 1 then
         admin = playerName
     end
+
+    -- MODS HAVE TP
+    if checkMod(playerName) then
+        system.bindMouse(playerName, true)
+    end
+
+    -- CURRENT PLAYERCOUNT
     playerCount = playerCount + 1
+    -- ID USED FOR PLAYER ARRAYS
     globalid = tfm.get.room.playerList[playerName].id
+    -- RESET SCORE
     tfm.exec.setPlayerScore(playerName, 0)
-    print(playerName)
+    -- INIT ALL PLAYER TABLES
     table.insert(lastkeypressed, globalid, 0)
     table.insert(lastrewindused, globalid, 0)
     table.insert(lastkeypressedtime, globalid, 0)
@@ -386,73 +451,64 @@ function initPlayer(playerName)
     table.insert(playerloaded, globalid, false)
     table.insert(playeroptions, globalid, false)
     table.insert(playerpreferences, globalid, {false, true, true})
-    --table.insert()
     table.insert(rewindpos, globalid, {{0, 0, false}, {0, 0, false}, {0, 0, false}, {0, 0, false}, {0, 0, false}, {0, 0, false}})
-    tfm.exec.setNameColor(playerName, 0x40a594)
+    -- SET DEFAULT COLOR
+    setColor(playerName)
+    -- BIND KEYS
     for index, key in pairs(keys) do
-        --print("assigning "..playerName.." key "..key)
         system.bindKeyboard(playerName, key, true, true)
     end
-    -- tfm.exec.freezePlayer(playerName, true)
-    -- ui.addTextArea(8, "\n<p align='center'><b><a href=\"event:#clear,EN\">English</a></b>\n<b><a href=\"event:#clear,RO\">Română</a></b></p>", playerName, 356, 173, 88, 53, 0x324650, 0x000000, 0.8, true)
+    -- AUTOMATICALLY CHOOSE LANGUAGE
     chooselang(playerName)
 end
 
 function chooselang(playerName)
     local id = tfm.get.room.playerList[playerName].id
     local community = tfm.get.room.playerList[playerName].community
+    -- FOR NOW, ONLY RO HAS TRANSLATIONS
     if community == "ro" then
         playerlanguage[id] = 1
     else
-        playerlanguage[id] = 2
+        playerlanguage[id] = 2 -- 2 = EN
     end
     playerloaded[id] = true
-    -- tfm.exec.freezePlayer(playerName, false)
-    -- ui.removeTextArea(8, playerName)
-    --print(playerName.." selected "..eventName)
+    -- GENERATE UI
     ui.addTextArea(6, translations[playerlanguage[id]][10], playerName, 267, 382, 265, 18, 0x324650, 0x000000, 0, true)
-    ui.addPopup(1, 0, translations[playerlanguage[id]][4], playerName, 212, 92, 368, true)
-    --ui.addTextArea(0, translations[playerlanguage[id]][5], playerName, 551, 343, 241, 46, 0x454545, 0x000000, 0.8, true)
-    -- ui.addTextArea(1, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][2].."</font>", playerName, 745, 365, 46, 23, 0x5bff5b, 0x3ebc3e, 0.8, true)
-    -- ui.addTextArea(2, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][3].."</font>", playerName, 745, 330, 46, 23, 0x5bff5b, 0x3ebc3e, 0.8, true)
-    -- ui.addTextArea(7, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][11].."</font>", playerName, 670, 365, 63, 23, 0x5bff5b, 0x3ebc3e, 0.8, true)
+    --ui.addPopup(1, 0, translations[playerlanguage[id]][4], playerName, 212, 92, 368, true)
     ui.addTextArea(5, "<p align='center'><font face='Lucida console' color='#ffffff'>"..translations[playerlanguage[id]][6]..": N/A", playerName, 10, 80, 200, 21, 0xffffff, 0x000000, 0, true)
     ui.addTextArea(4, "<p align='center'><font face='Lucida console' color='#ffffff'>"..translations[playerlanguage[id]][7]..": N/A", playerName, 10, 65, 200, 21, 0xffffff, 0x000000, 0, true)
+    -- IF THERES A FASTEST PLAYER (INCASE PLAYER JOINS LATE) THEN UPDATE
     if fastestplayer == -1 then
         ui.addTextArea(3, "<p align='center'><font face='Lucida Console' color='#ffffff'><b>"..translations[playerlanguage[id]][8]..": </b> </font> \n<font face='Lucida Console' color='#EB1D51'>"..translations[playerlanguage[tfm.get.room.playerList[playerName].id]][9].."</font></p>", playerName, 10, 28, 230, 33, 0x111111, 0x000000, 0.3, true)
     else
         ui.addTextArea(3, "<p align='center'><font face='Lucida Console' color='#ffffff'><b>"..translations[playerlanguage[id]][8]..": </b> </font>\n<font face='Lucida Console' color='#EB1D51'>"..fastestplayer.."</font> <font face='Lucida Console' color='#ffffff'>- "..(besttime/100).."s</font></p>", playerName, 10, 28, 230, 33, 0x111111, 0x000000, 0.3, true)
     end
+    
+    -- SEND HELP message
+    tfm.exec.chatMessage(translations[playerlanguage[id]][5].."\n"..translations[playerlanguage[id]][20], playerName)
+    print(translations[playerlanguage[id]][5])
+    print(translations[playerlanguage[id]][20])
+end
+
+-- WHEN SOMEBODY JOINS, INIT THE PLAYER
+function eventNewPlayer(playerName)
+    initPlayer(playerName)
+end
+
+-- INIT ALL EXISTING PLAYERS (NOT SURE IF WORKS)
+for playerName in pairs(tfm.get.room.playerList) do
+    initPlayer(playerName)
+end
+
+function eventMouse(playerName, xMousePosition, yMousePosition)
+    if checkRoomMod(playerName) then
+        tfm.exec.movePlayer(playerName, xMousePosition, yMousePosition, false, 0, 0, false)
+    end
 end
 
 function eventTextAreaCallback(textAreaId, playerName, eventName)
     local id = tfm.get.room.playerList[playerName].id
-    --unused
-    if textAreaId == 8 then
-        if eventName == "RO" then
-            playerlanguage[id] = 1
-        elseif eventName == "EN" then
-            playerlanguage[id] = 2
-        end
-        playerloaded[id] = true
-        tfm.exec.freezePlayer(playerName, false)
-        ui.removeTextArea(8, playerName)
-        print(playerName.." selected "..eventName)
-        ui.addTextArea(6, translations[playerlanguage[id]][10], playerName, 267, 382, 265, 18, 0x324650, 0x000000, 0, true)
-        ui.addPopup(1, 0, translations[playerlanguage[id]][4], playerName, 212, 92, 368, true)
-        --ui.addTextArea(0, translations[playerlanguage[id]][5], playerName, 551, 343, 241, 46, 0x454545, 0x000000, 0.8, true)
-        -- ui.addTextArea(1, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][2].."</font>", playerName, 745, 365, 46, 23, 0x5bff5b, 0x3ebc3e, 0.8, true)
-        -- ui.addTextArea(2, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][3].."</font>", playerName, 745, 330, 46, 23, 0x5bff5b, 0x3ebc3e, 0.8, true)
-        -- ui.addTextArea(7, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][11].."</font>", playerName, 670, 365, 63, 23, 0x5bff5b, 0x3ebc3e, 0.8, true)
-        ui.addTextArea(5, "<p align='center'><font face='Lucida console' color='#ffffff'>"..translations[playerlanguage[id]][6]..": N/A", playerName, 10, 80, 200, 21, 0xffffff, 0x000000, 0, true)
-        ui.addTextArea(4, "<p align='center'><font face='Lucida console' color='#ffffff'>"..translations[playerlanguage[id]][7]..": N/A", playerName, 10, 65, 200, 21, 0xffffff, 0x000000, 0, true)
-        if fastestplayer == -1 then
-            ui.addTextArea(3, "<p align='center'><font face='Lucida Console' color='#ffffff'><b>"..translations[playerlanguage[id]][8]..": </b> </font> \n<font face='Lucida Console' color='#EB1D51'>"..translations[playerlanguage[tfm.get.room.playerList[playerName].id]][9].."</font></p>", playerName, 10, 28, 230, 33, 0x111111, 0x000000, 0.3, true)
-        else
-            ui.addTextArea(3, "<p align='center'><font face='Lucida Console' color='#ffffff'><b>"..translations[playerlanguage[id]][8]..": </b> </font>\n<font face='Lucida Console' color='#EB1D51'>"..fastestplayer.."</font> <font face='Lucida Console' color='#ffffff'>- "..(besttime/100).."s</font></p>", playerName, 10, 28, 230, 33, 0x111111, 0x000000, 0.3, true)
-        end
-    end
-    --unused
+    -- OPTIONS
     if textAreaId == 9 then
         if eventName == "CloseOptions" then
             playeroptions[id] = false
@@ -484,6 +540,7 @@ function eventTextAreaCallback(textAreaId, playerName, eventName)
                 ui.removeTextArea(4, playerName)
                 ui.removeTextArea(3, playerName)
             else
+                -- REGENERATE PANELS
                 playerpreferences[id][3] = true
                 ui.addTextArea(5, "<p align='center'><font face='Lucida console' color='#ffffff'>"..translations[playerlanguage[id]][6]..": N/A", playerName, 10, 80, 200, 21, 0xffffff, 0x000000, 0, true)
                 ui.addTextArea(4, "<p align='center'><font face='Lucida console' color='#ffffff'>"..translations[playerlanguage[id]][7]..": N/A", playerName, 10, 65, 200, 21, 0xffffff, 0x000000, 0, true)
@@ -500,12 +557,12 @@ function eventTextAreaCallback(textAreaId, playerName, eventName)
 
             print(playerName.." toggled time panels.")
         end
-
         ui.updateTextArea(9, remakeOptions(playerName), playerName)
     end
 end
 
 function remakeOptions(playerName)
+    -- REMAKE OPTIONS TEXT (UPDATE YES - NO)
     local id = tfm.get.room.playerList[playerName].id
     toggles = {translations[playerlanguage[id]][12], translations[playerlanguage[id]][12], translations[playerlanguage[id]][12]}
     if playerpreferences[id][1] == false then
@@ -521,16 +578,7 @@ function remakeOptions(playerName)
 
 end
 
--- WHEN SOMEBODY JOINS
-function eventNewPlayer(playerName)
-    initPlayer(playerName)
-end
-
--- INIT ALL EXISTING PLAYERS
-for playerName in pairs(tfm.get.room.playerList) do
-    initPlayer(playerName)
-end
-
+-- RESET ALL PLAYERS
 function resetAll()
     time = 0
     rewindpos = {}
@@ -539,9 +587,10 @@ function resetAll()
         local id = tfm.get.room.playerList[playerName].id
         print("Resetting stats")
         tfm.exec.setPlayerScore(playerName, 0)
-        if playerloaded[id] == false then
-            tfm.exec.freezePlayer(playerName, true)
-        end
+        -- unused
+        -- if playerloaded[id] == false then
+        --     tfm.exec.freezePlayer(playerName, true)
+        -- end
         lastrewindused[id] = os.time() - 6000
         lastkeypressed[id] = 0
         lastkeypressedtime[id] = os.time() - DASHCOOLDOWN
@@ -553,11 +602,10 @@ function resetAll()
         playerbesttime[id] = 999999
         playerfinished[id] = false
         table.insert(rewindpos, id, {{currentspawnpos[1], currentspawnpos[2]}, {currentspawnpos[1], currentspawnpos[2]}, {currentspawnpos[1], currentspawnpos[2]}, {currentspawnpos[1], currentspawnpos[2]}, {currentspawnpos[1], currentspawnpos[2]}, {currentspawnpos[1], currentspawnpos[2]}})
-        --playertimeoptions[id] = false
         fastestplayer = -1
         besttime = 99999
         playerWon = 0
-        tfm.exec.setNameColor(playerName, 0x40a594)
+        setColor(playerName)
         mapfinished = false
         -- UPDATE THE TEXT
         if playerpreferences[id][3] == true then
@@ -571,38 +619,100 @@ function resetAll()
 end
 
 -- DEBUGGING
-function aCap(pn)
-    local n = string.lower(pn)
-    for name,attr in pairs(tfm.get.room.playerList) do
-        if string.lower(name):find(n) then
-            return name
-        end
-    end
-end
-
 function eventChatCommand(playerName, message)
     local arg = {}
     for argument in message:gmatch("[^%s]+") do
-        table.insert(arg,string.lower(argument))
+        table.insert(arg, argument)
     end
 
-    -- if arg[1]=="p" then
-    --     tfm.exec.displayParticle(arg[2], tfm.get.room.playerList[playerName].x, tfm.get.room.playerList[playerName].y, 0, 0, 0, 0, nil)
-    -- end
+    local isOp = false
+    local isMod = false
 
-    -- if arg[1]=="r" then
-    --     tfm.exec.newGame(mapcode)
-    --     resetAll()
-    -- end
-
-    if arg[1]=="m" and customroom == true and admin == playerName then
-        tfm.exec.newGame(arg[2])
-        resetAll()
+    if checkMod(playerName) == true then
+        isMod = true
+        isOp = true
     end
 
-    if arg[1]=="m" then
-        tfm.exec.newGame(arg[2])
-        resetAll()
+    for index, name in pairs(oplist) do
+        if name == playerName then
+            isOp = true
+        end
+    end
+
+    if admin == playerName and customroom == true then
+        isOp = true
+    end
+
+    -- OP ONLY ABILITIES (INCLUDES MOD)
+    if isOp == true then
+        if arg[1] == "m" then
+            if arg[2] ~= nil then
+                tfm.exec.newGame(arg[2])
+                mapstarttime = os.time()
+                resetAll()
+            end
+        end
+    end
+
+    -- MOD ONLY ABILITIES
+    if isMod == true then
+        if arg[1] == "mod" then
+            if checkRoomMod(playerName) == false then
+                table.insert(modroom, playerName)
+                local message = "You are a mod!"
+                print(message)
+                tfm.exec.chatMessage(message, playerName)
+            else
+                for index, name in pairs(modroom) do
+                    if name == playerName then
+                        table.remove(modroom, index)
+                        local message = "You are no longer a mod!"
+                        print(message)
+                        tfm.exec.chatMessage(message, playerName)
+                        break
+                    end
+                end
+            end
+            setColor(playerName)
+        end
+
+        if arg[1] == "n" then
+            mapwasskipped = true
+        end
+
+        if arg[1] == "op" then
+            if arg[2] ~= nil then
+                table.insert(oplist, arg[2])
+                local message = arg[2].." is an operator!"
+                print(arg[2].." is an operator!")
+                tfm.exec.chatMessage(message, playerName)
+            end
+        end
+
+        if arg[1] == "unop" then
+            if arg[2] ~= nil then
+                for index, name in pairs(oplist) do
+                    if name == arg[2] then
+                        table.remove(oplist, index)
+                        local message = arg[2].." is no longer an operator."
+                        print(arg[2].." is no longer an operator.")
+                        tfm.exec.chatMessage(message, playerName)
+                        break
+                    end
+                end
+            end
+        end
+
+        if arg[1] == "a" then
+            if arg[2] ~= nil then
+                for i = 3, #arg do
+                    arg[2] = arg[2].." "..arg[i]
+                end
+                local message = "\n<font color='#2E72CB'>Owner "..playerName..": "..arg[2].."</font>"
+                print(message)
+                tfm.exec.chatMessage(message)
+            end
+        end
     end
 
     if arg[1] == "pw" and arg[2] and playerName == admin then
@@ -611,3 +721,4 @@ function eventChatCommand(playerName, message)
         print("Password: "..arg[2])
     end
 end
+

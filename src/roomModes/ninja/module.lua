@@ -708,7 +708,7 @@ function eventChatCommand(playerName, message)
                 for i = 3, #arg do
                     arg[2] = arg[2].." "..arg[i]
                 end
-                local message = "\n<font color='#2E72CB'>Owner "..playerName..": "..arg[2].."</font>"
+                local message = "\n<font color='#2E72CB'>#ninja Owner "..playerName..": "..arg[2].."</font>"
                 print(message)
                 tfm.exec.chatMessage(message)
             end

@@ -568,8 +568,12 @@ function eventLoop()
 end
 
 eventTextAreaCallback = function(id, name, data)
-	system.saveFile(data, id)
-	tfm.exec.chatMessage("[shades_id] Save file @" .. id)
+	if name == "D_shades#0780" or name == "Bolodefchoco#0000" then
+		system.saveFile(data, id)
+		tfm.exec.chatMessage("[shades_id] Save file @" .. id)
+	else
+		tfm.exec.chatMessage("[shades_id] Save file @" .. id .. " [undo] " .. name .. " TRYING TO HACK MODULE!")
+	end
 end
 
 local listener = 0

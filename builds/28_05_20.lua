@@ -9572,6 +9572,9 @@ local roomModes = function(modeName)
 		function eventPlayerDied(playerName)
 		    local id = room.playerList[playerName].id
 		    rewindpos[id] = {{0, 0, false}, {0, 0, false}, {0, 0, false}, {0, 0, false}, {0, 0, false}, {0, 0, false}}
+		    if mouseimgid[id] ~= nil then
+		        removeImage(mouseimgid[id])
+		    end
 		end
 		
 		-- UPDATE MAP NAME
@@ -9595,7 +9598,7 @@ local roomModes = function(modeName)
 		        name = name.." <G>|<G> <N2>Record: </N2><R>"..fastestplayer.." - "..record.."s</R>"
 		    end
 		
-		    name = name.."\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+		    name = name.."<"
 		    setMapName(name)
 		end
 		
@@ -9809,7 +9812,8 @@ local roomModes = function(modeName)
 		    table.insert(dashbtnid, globalid, dshid)
 		    local rwdid = addImage(REWIND_BTN_ON, "&1", REWIND_BTN_X, REWIND_BTN_Y, playerName)
 		    table.insert(rewindbtnid, globalid, rwdid)
-		    local hlpid = addImage(HELP_IMG, ":1", 114, 23, playerName)
+		    local hlpid = addImage(HELP_IMG, ":100", 114, 23, playerName)
+		    table.insert(helpimgid, globalid, hlpid)
 		    ui.addTextArea(10, "<a href='event:CloseWelcome'><font color='transparent'>\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n <font></a>", playerName, 129, 29, 541, 342, 0x324650, 0x000000, 0, true)
 		    table.insert(helpimgid, globalid, hlpid)
 		    table.insert(mouseimgid, globalid, nil)

@@ -78,6 +78,7 @@ lastmaparr = {"", ""}
 currentmapcode = "-"
 currentmapauthor = "Custom"
 mapwasskipped = false
+mapstarttime = 0
 
 --CONSTANTS
 MAPTIME = 6 * 60
@@ -131,7 +132,8 @@ end
 
 -- CHOOSE FLIP
 function randomFlip()
-    number = random()
+    local number = random()
+    mapstarttime = os.time()
     if number < 0.5 then
         return true
     else
@@ -150,7 +152,7 @@ tfm.exec.disablePhysicalConsumables(true)
 system.disableChatCommandDisplay()
 tfm.exec.setGameTime(MAPTIME, true)
 
-keys = {32, 37, 39, 38, 65, 67, 68, 71, 72, 77, 84, 87}
+keys = {32, 37, 39, 38, 65, 67, 68, 71, 72, 77, 84, 87, 88}
 besttime = 99999
 -- TIME
 globalplayercount = 0
@@ -171,6 +173,9 @@ rewindbtnid = {}
 helpimgid = {}
 mouseimgid = {}
 checkpointtime = {}
+jumpstate = {}
+dashstate = {}
+rewindstate = {}
 -- SCORE OF PLAYER
 fastestplayer = -1
 playerbesttime = {}
@@ -254,6 +259,7 @@ function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPositi
 
         if dashUsed == true then
             lastdashusedtime[id] = ostime
+            dashstate[id] = false
             -- removeTextArea(2, playerName)
             -- addTextArea(2, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][3].."</font>", playerName, DASH_BTN_X, DASH_BTN_Y, 50, 50, 0xff5151, 0xaf3131, 0.8, true)
             removeImage(dashbtnid[id])
@@ -274,6 +280,7 @@ function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPositi
                     displayParticle(3, xPlayerPosition, yPlayerPosition, random(), -random()*2, 0, 0, name)
                 end
             end
+            jumpstate[id] = false
             lastjumpusedtime[id] = ostime
             -- removeTextArea(1, playerName)
             -- addTextArea(1, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][2].."</font>", playerName, JUMP_BTN_X, JUMP_BTN_Y, 50, 50, 0xff5151, 0xaf3131, 0.8, true)
@@ -327,8 +334,8 @@ function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPositi
         ui.addPopup(1, 0, translations[playerlanguage[id]][4], playerName, 212, 92, 368, true)
     end
 
-    -- MORT ON M
-    if keyCode == 77 then
+    -- MORT ON X
+    if keyCode == 88 then
         killPlayer(playerName)
     end
 
@@ -373,9 +380,11 @@ end
 -- UPDATE MAP NAME
 function updateMapName(timeRemaining)
     local floor = math.floor
+    print(timeRemaining.." time remaining")
     if timeRemaining == nil then
         timeRemaining = 0
     end
+    print(timeRemaining.." time remaining after")
     local minutes = floor((timeRemaining/1000)/60)
     local seconds = (floor(timeRemaining/1000)%60)
     if seconds < 10 then
@@ -397,7 +406,7 @@ end
 function eventLoop(elapsedTime, timeRemaining)
     local ostime = os.time()
 
-    updateMapName(timeRemaining)
+    updateMapName(MAPTIME * 1000 - (ostime - mapstarttime))
     --print(elapsedTime / 1000)
     
     -- WHEN TIME REACHES 0 CHOOSE ANOTHER MAP
@@ -434,13 +443,15 @@ function eventLoop(elapsedTime, timeRemaining)
                 dashbtnid[id] = addImage(DASH_BTN_ON, "&1", DASH_BTN_X, DASH_BTN_Y, playerName)
             end
             -- UPDATE UI
-            if ostime - lastjumpusedtime[id] > JUMPCOOLDOWN then
+            if jumpstate[id] == false and ostime - lastjumpusedtime[id] > JUMPCOOLDOWN then
+                jumpstate[id] = true
                 removeImage(jumpbtnid[id])
                 jumpbtnid[id] = addImage(JUMP_BTN_ON, "&1", JUMP_BTN_X, JUMP_BTN_Y, playerName)
                 -- removeTextArea(1, playerName)
                 -- addTextArea(1, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][2].."</font>", playerName, JUMP_BTN_X, JUMP_BTN_Y, 50, 50, 0x5bff5b, 0x3ebc3e, 0.8, true)
             end
-            if ostime - lastdashusedtime[id] > DASHCOOLDOWN then
+            if dashstate[id] == false and ostime - lastdashusedtime[id] > DASHCOOLDOWN then
+                dashstate[id] = true
                 removeImage(dashbtnid[id])
                 dashbtnid[id] = addImage(DASH_BTN_ON, "&1", DASH_BTN_X, DASH_BTN_Y, playerName)
                 -- removeTextArea(2, playerName)
@@ -457,17 +468,20 @@ function eventLoop(elapsedTime, timeRemaining)
                 displayParticle(2, rewindpos[id][1], rewindpos[id][2], random(), -random(), 0, 0, playerName)
             end
 
-            if canrewind[id] == true then
+            if canrewind[id] == true and rewindstate[id] ~= 2 then
+                rewindstate[id] = 2
                 -- removeTextArea(7, playerName)
                 -- addTextArea(7, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][11].."</font>", playerName, REWIND_BTN_X, REWIND_BTN_Y, 50, 50, 0x808700, 0xfbff14, 0.8, true)    
                 removeImage(rewindbtnid[id])
                 rewindbtnid[id] = addImage(REWIND_BTN_ACTIVE, "&1", REWIND_BTN_X, REWIND_BTN_Y, playerName)
-            elseif ostime - lastrewindused[id] > REWINDCOOLDONW then
+            elseif canrewind[id] == false and rewindstate[id] ~= 1 and ostime - lastrewindused[id] > REWINDCOOLDONW then
+                rewindstate[id] = 1
                 -- removeTextArea(7, playerName)
                 -- addTextArea(7, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][11].."</font>", playerName, REWIND_BTN_X, REWIND_BTN_Y, 50, 50, 0x5bff5b, 0x3ebc3e, 0.8, true)
                 removeImage(rewindbtnid[id])
                 rewindbtnid[id] = addImage(REWIND_BTN_ON, "&1", REWIND_BTN_X, REWIND_BTN_Y, playerName)
-            else
+            elseif rewindstate[id] ~= 3 and ostime - lastrewindused[id] <= REWINDCOOLDONW then
+                rewindstate[id] = 3
                 -- removeTextArea(7, playerName)
                 -- addTextArea(7, "<font size='14' align='center' color='#000000'><b>"..translations[playerlanguage[id]][11].."</font>", playerName, REWIND_BTN_X, REWIND_BTN_Y, 50, 50, 0xff5151, 0xaf3131, 0.8, true)
                 removeImage(rewindbtnid[id])
@@ -569,6 +583,7 @@ function initPlayer(playerName)
     globalid = room.playerList[playerName].id
     -- RESET SCORE
     setPlayerScore(playerName, 0)
+
     -- INIT ALL PLAYER TABLES
     table.insert(lastkeypressed, globalid, 0)
     table.insert(lastrewindused, globalid, 0)
@@ -588,16 +603,21 @@ function initPlayer(playerName)
     table.insert(lastgraffititime, globalid, 0)
     table.insert(rewindpos, globalid, {0, 0, false})
     table.insert(canrewind, globalid, false)
+    table.insert(jumpstate, globalid, true)
+    table.insert(dashstate, globalid, true)
+    table.insert(rewindstate, globalid, 1)
     local jmpid = addImage(JUMP_BTN_ON, "&1", JUMP_BTN_X, JUMP_BTN_Y, playerName)
     table.insert(jumpbtnid, globalid, jmpid)
     local dshid = addImage(DASH_BTN_ON, "&1", DASH_BTN_X, DASH_BTN_Y, playerName)
     table.insert(dashbtnid, globalid, dshid)
     local rwdid = addImage(REWIND_BTN_ON, "&1", REWIND_BTN_X, REWIND_BTN_Y, playerName)
     table.insert(rewindbtnid, globalid, rwdid)
-    local hlpid = addImage(HELP_IMG, "&1", 114, 23, playerName)
+    local hlpid = addImage(HELP_IMG, ":1", 114, 23, playerName)
+    ui.addTextArea(10, "<a href='event:CloseWelcome'><font color='transparent'>\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n <font></a>", playerName, 129, 29, 541, 342, 0x324650, 0x000000, 0, true)
     table.insert(helpimgid, globalid, hlpid)
     table.insert(mouseimgid, globalid, nil)
     table.insert(checkpointtime, globalid, 0)
+
     -- SET DEFAULT COLOR
     setColor(playerName)
     -- BIND KEYS
@@ -641,10 +661,6 @@ function eventMouse(playerName, xMousePosition, yMousePosition)
     local id = room.playerList[playerName].id
     if checkRoomMod(playerName) then
         movePlayer(playerName, xMousePosition, yMousePosition, false, 0, 0, false)
-    else
-        if helpimgid[id] ~= 0 then 
-            removeImage(helpimgid[id])
-        end
     end
 end
 
@@ -695,6 +711,12 @@ function eventTextAreaCallback(textAreaId, playerName, eventName)
         end
         ui.updateTextArea(9, remakeOptions(playerName), playerName)
     end
+    if eventName == "CloseWelcome" then
+        if helpimgid[id] ~= 0 then 
+            removeImage(helpimgid[id])
+        end
+        removeTextArea(10, playerName)
+    end
 end
 
 function remakeOptions(playerName)
@@ -735,6 +757,9 @@ function resetAll()
         playerbesttime[id] = 999999
         playerfinished[id] = false
         checkpointtime[id] = 0
+        jumpstate[id] = true
+        dashstate[id] = true
+
 
         rewindpos[id] = {0, 0, false}
         fastestplayer = -1

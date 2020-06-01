@@ -9926,7 +9926,7 @@ local roomModes = function(modeName)
 		        for index, value in pairs(room.playerList) do
 		            local _id = room.playerList[index].id
 		            local message = "<font color='#CB546B'>"..fastestplayer..translations[playerlanguage[_id]][19].." Time: "..(besttime/100).."s</font>"
-		            chatMessage(message, nil)
+		            chatMessage(message, index)
 		            print(message)
 		        end
 		    end

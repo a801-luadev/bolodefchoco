@@ -82,8 +82,8 @@ translations = {
     }
 }
 
-mapcodes = {"@7725753", "@7726015", "@7726744", "@7728063"}
-mapsleft = {"@7725753", "@7726015", "@7726744", "@7728063"}
+mapcodes = {{"@7725753", "Railysse#0000"}, {"@7726015", "Railysse#0000"}, {"@7726744", "Railysse#0000"}, {"@7728063", "Railysse#0000"}}
+mapsleft = {{"@7725753", "Railysse#0000"}, {"@7726015", "Railysse#0000"}, {"@7726744", "Railysse#0000"}, {"@7728063", "Railysse#0000"}}
 
 currentspawnpos = {0, 0}
 modlist = {"Extremq#0000", "Railysse#0000"}
@@ -91,6 +91,8 @@ modroom = {}
 oplist = {}
 lastmap = ""
 lastmaparr = {"", ""}
+currentmapcode = "-"
+currentmapauthor = "Custom"
 mapwasskipped = false
 mapstarttime = 0
 
@@ -129,17 +131,21 @@ function randomMap()
         end
     end
     local pos = random(1, #mapsleft)
-    local newMap = mapsleft[pos]
+    local newMap = mapsleft[pos][1]
+    local newArr = {newMap, mapsleft[pos][2]}
     -- IF THE MAPS ARE THE SAME, PICK AGAIN
     if newMap == lastmap then
         table.remove(mapsleft, pos)
         pos = random(1, #mapsleft)
-        newMap = mapsleft[pos]
+        newMap = mapsleft[pos][1]
         table.insert(mapsleft, lastmap)
     end
+    currentmapauthor = newArr[2]
+    currentmapcode = newArr[1]
     table.remove(mapsleft, pos)
     currentspawnpos = {0, 0}
     lastmap = newMap
+    lastmaparr = {newArr[1], newArr[2]}
     return newMap
 end
 
@@ -371,7 +377,7 @@ function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPositi
     if keyCode == 77 then
         if menuimgid[id] == -1 then
             addTextArea(12, "<font color='#E9E9E9' size='10'><a href='event:ShopOpen'>             "..translations[playerlanguage[id]][25].."</a>\n\n\n\n<a href='event:StatsOpen'>             "..translations[playerlanguage[id]][26].."</a>\n\n\n\n<a href='event:LeaderOpen'>             "..translations[playerlanguage[id]][27].."</a>\n\n\n\n<a href='event:SettingsOpen'>             "..translations[playerlanguage[id]][28].."</a>\n\n\n\n<a href='event:AboutOpen'>             "..translations[playerlanguage[id]][29].."</a>", playerName, 13, 103, 184, 220, 0x324650, 0x000000, 0, true)
-            menuimgid[id] = addImage(MENU_BUTTONS, ":10", MENU_BTN_X, MENU_BTN_Y, playerName)
+            menuimgid[id] = addImage(MENU_BUTTONS, "&1", MENU_BTN_X, MENU_BTN_Y, playerName)
         else
             closePage(playerName)
         end
@@ -410,9 +416,6 @@ end
 -- UPDATE MAP NAME
 function updateMapName(timeRemaining)
     local floor = math.floor
-    local currentmapauthor = room.xmlMapInfo.author
-    local currentmapcode = "@"..room.xmlMapInfo.mapCode
-
     if timeRemaining == nil then
         timeRemaining = 0
     end
@@ -768,7 +771,7 @@ function eventMouse(playerName, xMousePosition, yMousePosition)
         if -100 <= uiMouseX and uiMouseX <= 250 then
             if menuimgid[id] == -1 then
                 addTextArea(12, "<font color='#E9E9E9' size='10'><a href='event:ShopOpen'>             "..translations[playerlanguage[id]][25].."</a>\n\n\n\n<a href='event:StatsOpen'>             "..translations[playerlanguage[id]][26].."</a>\n\n\n\n<a href='event:LeaderOpen'>             "..translations[playerlanguage[id]][27].."</a>\n\n\n\n<a href='event:SettingsOpen'>             "..translations[playerlanguage[id]][28].."</a>\n\n\n\n<a href='event:AboutOpen'>             "..translations[playerlanguage[id]][29].."</a>", playerName, 13, 103, 184, 220, 0x324650, 0x000000, 0, true)
-                menuimgid[id] = addImage(MENU_BUTTONS, ":10", MENU_BTN_X, MENU_BTN_Y, playerName)
+                menuimgid[id] = addImage(MENU_BUTTONS, "&1", MENU_BTN_X, MENU_BTN_Y, playerName)
             else
                 closePage(playerName)
             end
@@ -1087,4 +1090,3 @@ function eventChatCommand(playerName, message)
         chatMessage("Password: "..arg[2])
     end
 end
-

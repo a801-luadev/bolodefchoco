@@ -180,7 +180,7 @@ local shop = {
 		--[177] = { "Chapéu de quati", 0, 0, true },
 		--[178] = { "Concha de Slowking", 0, 0, true },
 		--[179] = { "Chapéu de Verka Serduchka", 0, 0, true },
-		--[180] = { "Chapéu da Marisa Kirisame", 0, 0, true },
+		[180] = { "Chapéu da Marisa Kirisame", 500, 60, true },
 		--[181] = { "Chapéu de crânio de Gnar", 0, 0, true },
 		[182] = { "Chapéu de palha com flor", 0, 0, },
 		--[183] = { "Chapéu da Selene", 0, 0, true },
@@ -300,6 +300,8 @@ local shop = {
 		--[56] = { "Brinco de coração", 0, 0, true },
 		--[57] = { "Rosa", 0, 0, true },
 		[58] = { "Ovos de Páscoa", 0, 0, },
+		[59] = { "Penas de Shaman", 0, 0, },
+		[60] = { "Arco-íris", 0, 0, },
 	};
 	mouth = {
 		[0] = { "-", 0, 0 },
@@ -372,6 +374,7 @@ local shop = {
 		--[67] = { "Pedaço de melancia", 0, 0, true },
 		--[68] = { "Caveira Mexicana", 0, 0, true },
 		--[69] = { "Mordaça", 0, 0, true },
+		[70] = { "Pedaço de pizza", 500, 40, true },
 	};
 	neck = {
 		[0] = { "-", 0, 0 },
@@ -419,6 +422,7 @@ local shop = {
 		--[42] = { "Cachecol da Ylgr", 0, 0, true },
 		--[43] = { "Laço com estrela", 0, 0, true },
 		[44] = { "Gravata de morcego", 0, 0 },
+		--[45] = { "Colar do N", 0, 0 },
 	};
 	hair_style = {
 		[0] = { "-", 0, 0 },
@@ -493,6 +497,8 @@ local shop = {
 		--[69] = { "Cabelo da Isabelle", 0, 0, true },
 		--[70] = { "Cabelo da Cozy Glow", 0, 0, true },
 		[71] = { "Penteado Dawn", 400, 60, true },
+		--[72] = { "Cabelo do N", 0, 0, true },
+		[73] = { "Cabelo da Sugar Belle", 400, 50, true },
 	};
 	tail = {
 		[0] = { "-", 0, 0 },
@@ -742,7 +748,9 @@ local shop = {
 		--[151] = { "Pelo de Sorvete", 0, 0, true },
 		[152] = { "Pelo de Sapo", 5000, 400, true },
 		[153] = { "Pelo Divindade", 6000, 400, true },
-		[154] = { "Pelo de cupcake", 6000, 400, true },
+		[154] = { "Pelo de Cupcake", 6000, 400, true },
+		--[155] = { "Pelo de Furão", 0, 0, true },
+		[156] = { "Pelo de Lagarto Leopardo", 6000, 400, true },
 	};
 }
 

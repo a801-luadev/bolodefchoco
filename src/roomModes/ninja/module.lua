@@ -102,7 +102,7 @@ mapsleft = {"@7725753", "@7726015", "@7726744", "@7728063", "@7731641", "@773063
 -- mapsleft = {"@7732115"}
 
 currentspawnpos = {0, 0}
-modlist = {"Extremq#0000", "Railysse#0000"}
+modlist = {"Extremq#0000", "Railysse#0000", "Melibellule#0001"}
 modroom = {}
 oplist = {}
 lastmap = ""
@@ -796,6 +796,21 @@ function initPlayer(playerName)
             timesRewinded = 0
         }
         playerpreferences[globalid] = {false, true, false}
+    else 
+        local hasFound = false
+        for key, value in pairs(playerSortedBestTime) do
+            if value[1] == playerName then
+                playerbesttime[globalid] = value[2]
+                playerlasttime[globalid] = value[2]
+                hasFound = true
+                break
+            end
+        end
+        if hasFound == false then
+            playerbesttime[globalid] = 999999
+            playerlasttime[globalid] = 999999
+            playerfinished[globalid] = false
+        end
     end
     playerlanguage[globalid] = 2
     playerloaded[globalid] = false
@@ -1099,8 +1114,8 @@ function resetAll()
     hasShownStats = false
 
     for index, value in pairs(playerbesttime) do
-        playerbesttime[id] = 999999
-        playerlasttime[id] = 999999
+        playerbesttime[index] = 999999
+        playerlasttime[index] = 999999
     end
 
     for playerName in pairs(room.playerList) do
@@ -1137,12 +1152,12 @@ function resetAll()
                 ui.updateTextArea(4, "<p align='center'><font face='Lucida console' color='#ffffff'>"..translations[playerlanguage[id]][7]..": N/A", playerName)
                 ui.updateTextArea(5, "<p align='center'><font face='Lucida console' color='#ffffff'>"..translations[playerlanguage[id]][6]..": N/A", playerName)
             end
+            
         else
             killPlayer(playerName)
         end
     end
     tfm.exec.setGameTime(MAPTIME, true)
-    updateMapName(MAPTIME)
 end
 
 -- DEBUGGING

@@ -54,8 +54,9 @@ local getMode = function(path, src, srcName, notOptimize)
 	end
 end
 
+local isWindows = string.sub(package.config, 1, 1) == "\\"
 local getModes = function(folder, ...)
-	local file = io.popen("ls \"src/" .. folder .. "\"")
+	local file = io.popen((isWindows and "dir /b" or "ls") .. " \"src/" .. folder .. "\"")
 	local list = string.split(file:read("*a"), "[^\r\n]+")
 	file:close()
 

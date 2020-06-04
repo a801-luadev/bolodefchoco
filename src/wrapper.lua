@@ -80,7 +80,7 @@ local loadTeams = function()
 	end
 end
 
-if isTribeHouse then -- Is tribe house
+if isTribeHouse then
 	local gameMode, meta = getMode(tfm.get.room.name)
 
 	if meta.owners then
@@ -98,12 +98,12 @@ else
 	local modeName, argsPos = string.match(tfm.get.room.name, "%d+([%a_]+)()")
 	local gameMode, meta = getMode(modeName)
 
-	if meta.hasAdmin then
-		roomAdmins(argsPos)
-	end
-
 	if meta.loadTeams then
 		loadTeams(gameMode)
+	end
+
+	if meta.hasAdmin then
+		roomAdmins(argsPos)
 	end
 
 	startMode(gameMode)

@@ -374,7 +374,7 @@ local shop = {
 		--[67] = { "Pedaço de melancia", 0, 0, true },
 		--[68] = { "Caveira Mexicana", 0, 0, true },
 		--[69] = { "Mordaça", 0, 0, true },
-		[70] = { "Pedaço de pizza", 500, 40, true },
+		[70] = { "Fatia de pizza", 500, 40, true },
 	};
 	neck = {
 		[0] = { "-", 0, 0 },

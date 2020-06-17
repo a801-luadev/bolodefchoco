@@ -298,7 +298,7 @@ local shop = {
 		--[54] = { "Antenas do Saiki Kusuo", 0, 0, true },
 		--[55] = { "Morcegos", 0, 0, true },
 		--[56] = { "Brinco de coração", 0, 0, true },
-		--[57] = { "Rosa", 0, 0, true },
+		[57] = { "Rosa", 600, 40, true },
 		[58] = { "Ovos de Páscoa", 0, 0, },
 		[59] = { "Penas de Shaman", 0, 0, },
 		[60] = { "Arco-íris", 0, 0, },
@@ -423,6 +423,7 @@ local shop = {
 		--[43] = { "Laço com estrela", 0, 0, true },
 		[44] = { "Gravata de morcego", 0, 0 },
 		--[45] = { "Colar do N", 0, 0 },
+		[46] = { "Lenço da Daphne Blake", 400, 40 },
 	};
 	hair_style = {
 		[0] = { "-", 0, 0 },
@@ -499,6 +500,7 @@ local shop = {
 		[71] = { "Penteado Dawn", 400, 60, true },
 		--[72] = { "Cabelo do N", 0, 0, true },
 		[73] = { "Cabelo da Sugar Belle", 400, 50, true },
+		[74] = { "Cabelo da Daphne Blake", 400, 60, true },
 	};
 	tail = {
 		[0] = { "-", 0, 0 },
@@ -693,7 +695,7 @@ local shop = {
 		[95] = { "Pelo de Eevee", 5500, 500, true },
 		[96] = { "Pelo de Carneiro", 5500, 400, true },
 		[97] = { "Pelo de Gambá claro", 5500, 400, true },
-		--[98] = { "Rato de Bolo Red Velvet", 0, 0, true },
+		[98] = { "Rato de Bolo Red Velvet", 5500, 400, true },
 		--[99] = { "Pelo de Marill", 0, 0, true },
 		--[100] = { "Pelo de Banana com chocolate", 0, 0, true },
 		--[101] = { "Pelo de Veado", 0, 0, true },
@@ -751,6 +753,7 @@ local shop = {
 		[154] = { "Pelo de Cupcake", 6000, 400, true },
 		--[155] = { "Pelo de Furão", 0, 0, true },
 		[156] = { "Pelo de Lagarto Leopardo", 6000, 400, true },
+		[157] = { "Pelo de Corgi", 6000, 400, true },
 	};
 }
 

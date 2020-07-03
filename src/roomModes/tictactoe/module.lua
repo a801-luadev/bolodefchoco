@@ -56,7 +56,6 @@ local mapxml = '<C><P F="0" /><Z><S><S L="800" H="49" X="400" Y="376" T="6" P="0
 
 tfm.exec.newGame(mapxml)
 ui.setMapName("Tic Tac Toe")
-tfm.exec.setGameTime(300)
 
 -----------------
 local tttGUI = {"-", "-", "-", "-", "-", "-", "-", "-", "-"}
@@ -105,6 +104,7 @@ function eventTextAreaCallback (textareaid, p, event)
 			end
 
 			tttDisplay()
+			tfm.exec.setGameTime(300)
 		end
 	else
 		if not winner and not gametie then
@@ -285,10 +285,10 @@ function tttDisplay()
 	local x = 400 - 105/2
 	local y = 200 - 155/2
 	for i = 1, 9 do
-		if not selected[i] then
-			ui.addTextArea(12+i, "<font size='26'><a href='event:pos" .. i .. "'>" .. tttGUI[i] .. "</a></font>", nil, ((i-1)%3)*40 + x, math.floor((i-1)/3)*40 + y, nil, nil, nil, nil, 0)
-		else
-			ui.addTextArea(12+i, "<font size='26'>" .. tttGUI[i] .. "</font>", nil, ((i-1)%3)*40 + x, math.floor((i-1)/3)*40 + y, nil, nil, nil, nil, 0)
+		ui.addTextArea(12+i, "<font size='26'>" .. tttGUI[i] .. "</font>", nil, ((i-1)%3)*40 + x, math.floor((i-1)/3)*40 + y, nil, nil, nil, nil, 0)
+
+		if not selected[i] and (not winner or not gametie) then
+			ui.addTextArea(12+i, "<font size='26'><a href='event:pos" .. i .. "'>" .. tttGUI[i] .. "</a></font>", turn, ((i-1)%3)*40 + x, math.floor((i-1)/3)*40 + y, nil, nil, nil, nil, 0)
 		end
 	end
 end
@@ -296,7 +296,6 @@ end
 function restart()
 	tfm.exec.newGame(mapxml)
 	ui.setMapName("Tic Tac Toe")
-	tfm.exec.setGameTime(300)
 	selected = {}
 	turn = nil
 	winner = nil
@@ -319,7 +318,7 @@ function restartGameButton()
 end
 
 function eventLoop(elapsed, remaining)
-	if remaining <= 0 then
+	if remaining <= 0 and (players.x and players.o) then
 		gametie = true
 		restartGameButton()
 	end

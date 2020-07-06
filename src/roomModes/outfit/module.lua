@@ -463,7 +463,7 @@ local shop = {
 		[34] = { "Penteado Poney", 400, 50 },
 		[35] = { "Penteado Arlequina", 400, 60 },
 		--[36] = { "Cabelo do Chibiusa", 0, 0, true },
-		--[37] = { "Cabelo Ombre", 0, 0, true },
+		--[37] = { "Cabelo Ombre Feminino", 0, 0, true },
 		--[38] = { "Cabelo Verde com trança", 0, 0, true },
 		--[39] = { "Cabelo de Rockeiro", 0, 0, true },
 		--[40] = { "Cabelo do Izuku", 0, 0, true },
@@ -501,6 +501,7 @@ local shop = {
 		--[72] = { "Cabelo do N", 0, 0, true },
 		[73] = { "Cabelo da Sugar Belle", 400, 50, true },
 		[74] = { "Cabelo da Daphne Blake", 400, 60, true },
+		[75] = { "Cabelo Ombre Masculino", 400, 60, true },
 	};
 	tail = {
 		[0] = { "-", 0, 0 },
@@ -598,6 +599,7 @@ local shop = {
 		[23] = { "Chocalho", 1200, 200, true },
 		[24] = { "Ovo de Páscoa", 1100, 180, true },
 		[25] = { "Presente", 1200, 200, true },
+		[26] = { "Saco de pipoca", 1200, 200, true },
 	},
 	fur = {
 		[-7] = { "Cor preta", 3000, 150 },
@@ -720,7 +722,7 @@ local shop = {
 		--[121] = { "Pelo de Ursinhos Carinhosos", 0, 0, true },
 		--[122] = { "Pelo de Axolote", 0, 0, true },
 		--[123] = { "Pelo de Pássaro Azul Chapim", 0, 0, true },
-		--[124] = { "Pelo de Abacaxi", 0, 0, true },
+		[124] = { "Pelo de Abacaxi", 5000, 400, true },
 		--[125] = { "Pelo de Mariposa", 0, 0, true },
 		--[126] = { "Pelo de Petauro de Açúcar", 0, 0, true },
 		--[127] = { "Pelo Branco elegante", 0, 0, true },
@@ -754,6 +756,7 @@ local shop = {
 		--[155] = { "Pelo de Furão", 0, 0, true },
 		[156] = { "Pelo de Lagarto Leopardo", 6000, 400, true },
 		[157] = { "Pelo de Corgi", 6000, 400, true },
+		[158] = { "Pelo de Cabra", 6000, 400, true },
 	};
 }
 

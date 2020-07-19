@@ -424,6 +424,7 @@ local shop = {
 		[44] = { "Gravata de morcego", 0, 0 },
 		--[45] = { "Colar do N", 0, 0 },
 		[46] = { "Lenço da Daphne Blake", 400, 40 },
+		[47] = { "Gravata da Kagamine Rin", 600, 80 },
 	};
 	hair_style = {
 		[0] = { "-", 0, 0 },
@@ -540,7 +541,7 @@ local shop = {
 		--[33] = { "Golfinho", 0, 0, true },
 		--[34] = { "Laço", 0, 0, true },
 		[35] = { "Borboleta", 1500, 180, true },
-		--[36] = { "Lampião", 0, 0, true },
+		[36] = { "Lampião", 1200, 120, true },
 		[37] = { "Trouxa de roupa", 1200, 120, true },
 		[38] = { "Piñata", 1500, 120, true },
 	};
@@ -579,8 +580,8 @@ local shop = {
 		--[3] = { "Bola de Futebol", 0, 0, true },
 		--[4] = { "Arma d'água", 0, 0, true },
 		--[5] = { "Varinha", 0, 0, true },
-		--[6] = { "Bóia", 0, 0, true },
-		--[7] = { "Pokeball", 0, 0, true },
+		[6] = { "Bóia", 1200, 200, true },
+		[7] = { "Pokeball", 1400, 250, true },
 		--[8] = { "Urso de pelúcia", 0, 0, true },
 		--[9] = { "Xícara de café", 0, 0, true },
 		--[10] = { "Varinha mágica", 0, 0, true },
@@ -600,6 +601,7 @@ local shop = {
 		[24] = { "Ovo de Páscoa", 1100, 180, true },
 		[25] = { "Presente", 1200, 200, true },
 		[26] = { "Saco de pipoca", 1200, 200, true },
+		[27] = { "Bola de Hugby", 1200, 200, true },
 	},
 	fur = {
 		[-7] = { "Cor preta", 3000, 150 },
@@ -734,7 +736,7 @@ local shop = {
 		--[133] = { "Pelo de Chinchila", 0, 0, true },
 		--[134] = { "Pelo de Mega Audino", 0, 0, true },
 		--[135] = { "Pelo de Suco", 0, 0, true },
-		--[136] = { "Pelo de Flor", 0, 0, true },
+		[136] = { "Pelo de Flor", 5000, 400, true },
 		--[137] = { "Pelo de Porco", 0, 0, true },
 		--[138] = { "Pelo de Lagosta", 0, 0, true },
 		--[139] = { "Pelo de Dom-fafe", 0, 0, true },
@@ -757,6 +759,7 @@ local shop = {
 		[156] = { "Pelo de Lagarto Leopardo", 6000, 400, true },
 		[157] = { "Pelo de Corgi", 6000, 400, true },
 		[158] = { "Pelo de Cabra", 6000, 400, true },
+		[159] = { "Pelo de Kitsune", 7000, 500, true },
 	};
 }
 

@@ -503,6 +503,7 @@ local shop = {
 		[73] = { "Cabelo da Sugar Belle", 400, 50, true },
 		[74] = { "Cabelo da Daphne Blake", 400, 60, true },
 		[75] = { "Cabelo Ombre Masculino", 400, 60, true },
+		[76] = { "Cabelo do Todoroki", 400, 60, true },
 	};
 	tail = {
 		[0] = { "-", 0, 0 },
@@ -544,6 +545,7 @@ local shop = {
 		[36] = { "Lampião", 1200, 120, true },
 		[37] = { "Trouxa de roupa", 1200, 120, true },
 		[38] = { "Piñata", 1500, 120, true },
+		[39] = { "Martisor", 1500, 120, true },
 	};
 	contact_lens = {
 		[0] = { "-", 0, 0 },
@@ -760,6 +762,7 @@ local shop = {
 		[157] = { "Pelo de Corgi", 6000, 400, true },
 		[158] = { "Pelo de Cabra", 6000, 400, true },
 		[159] = { "Pelo de Kitsune", 7000, 500, true },
+		[160] = { "Pelo de Lince", 6000, 400, true },
 	};
 }
 

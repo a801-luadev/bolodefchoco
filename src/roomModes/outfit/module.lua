@@ -164,7 +164,7 @@ local shop = {
 		--[161] = { "Chapéu de cogumelo", 0, 0, true },
 		--[162] = { "Chapéu de melancia", 0, 0, true },
 		--[163] = { "Chapéu do Capitão America", 0, 0, true },
-		--[164] = { "Capacete do Loki", 0, 0, true },
+		[164] = { "Capacete do Loki", 500, 60, true },
 		--[165] = { "Durião", 0, 0, true },
 		[166] = { "Cabeça de cavalo", 1000, 100, true },
 		--[167] = { "Cérebro", 0, 0, true },
@@ -420,7 +420,7 @@ local shop = {
 		[40] = { "Laço do Dia dos Namorados", 400, 50, true },
 		--[41] = { "Coleira do Scooby-Doo", 0, 0, true },
 		--[42] = { "Cachecol da Ylgr", 0, 0, true },
-		--[43] = { "Laço com estrela", 0, 0, true },
+		[43] = { "Laço com estrela", 400, 50, true },
 		[44] = { "Gravata de morcego", 0, 0 },
 		--[45] = { "Colar do N", 0, 0 },
 		[46] = { "Lenço da Daphne Blake", 400, 40 },
@@ -503,6 +503,7 @@ local shop = {
 		[73] = { "Cabelo da Sugar Belle", 400, 50, true },
 		[74] = { "Cabelo da Daphne Blake", 400, 60, true },
 		[75] = { "Cabelo Ombre Masculino", 400, 60, true },
+		[76] = { "Cabelo do Todoroki", 400, 60, true },
 	};
 	tail = {
 		[0] = { "-", 0, 0 },
@@ -544,6 +545,7 @@ local shop = {
 		[36] = { "Lampião", 1200, 120, true },
 		[37] = { "Trouxa de roupa", 1200, 120, true },
 		[38] = { "Piñata", 1500, 120, true },
+		[39] = { "Martisor", 1500, 120, true },
 	};
 	contact_lens = {
 		[0] = { "-", 0, 0 },
@@ -731,7 +733,7 @@ local shop = {
 		--[128] = { "Pelo de Aligátor", 0, 0, true },
 		--[129] = { "Pelo de Martim Pescador", 0, 0, true },
 		--[130] = { "Pelo de Mega Charizard X", 0, 0, true },
-		--[131] = { "Pelo de Gnar", 0, 0, true },
+		[131] = { "Pelo de Gnar", 5000, 400, true },
 		--[132] = { "Pelo de Carpa", 0, 0, true },
 		--[133] = { "Pelo de Chinchila", 0, 0, true },
 		--[134] = { "Pelo de Mega Audino", 0, 0, true },
@@ -760,6 +762,7 @@ local shop = {
 		[157] = { "Pelo de Corgi", 6000, 400, true },
 		[158] = { "Pelo de Cabra", 6000, 400, true },
 		[159] = { "Pelo de Kitsune", 7000, 500, true },
+		[160] = { "Pelo de Lince", 6000, 400, true },
 	};
 }
 

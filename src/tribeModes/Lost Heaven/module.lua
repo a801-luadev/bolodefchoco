@@ -712,6 +712,7 @@ function eventNewPlayer(playerName)
 	playersData[playerName] = {
 		timeToBeSized = 0
 	}
+	tfm.exec.chatMessage("<font color = '#FFFF00'>Добро пожаловать в библиотеку Lost Heaven!</font>", playerName)
 end
 
 -- Функция вызывается когда игрок сдох

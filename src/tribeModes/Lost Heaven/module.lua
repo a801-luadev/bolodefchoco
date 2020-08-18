@@ -37,7 +37,7 @@ function firstBookClick(playerName)
     вышеперечисленное, чтобы узнать причину 
     напишите мне (Naomikio#0000) или в сообщения группы.
     ]==]
-    ui.addPopup(1,0, text, playerName, 210, 30, 400,true)
+    ui.addPopup(1,0, text, playerName, 210, 30, 600,true)
 end
 
 -- 2-6я книги, мне ☻☺похуй☺☻ (История племени)
@@ -155,9 +155,9 @@ local text1 = [==[
 		elseif popupID == 2002 then
 			ui.addPopup(2003,0, text3, playerName, 110, 30, 600,true)
 		elseif popupID == 1700 then
-			ui.addPopup(1701,1, text5, playerName, 210, 30, 400,true)
+			ui.addPopup(1701,1, text5, playerName, 210, 30, 600,true)
 		elseif popupID == 1701 then
-			ui.addPopup(1702,0, text6, playerName, 210, 30, 400,true)
+			ui.addPopup(1702,0, text6, playerName, 210, 30, 600,true)
 		end
 	end
 end
@@ -207,8 +207,8 @@ function sevenBookClick(playerName)
         Здесь покоятся вмороженные в лед отступники, и главный
         из них — Люцифер, падший ангел.
     ]==]
-    ui.addPopup(7001,0, text1, playerName, 210, 50, 400,true)
-    ui.addPopup(7000,0, text0, playerName, 210, 50, 400,true)
+    ui.addPopup(7001,0, text1, playerName, 210, 50, 600,true)
+    ui.addPopup(7000,0, text0, playerName, 210, 50, 600,true)
 end
 
 -- 8я книга (Обжорство)
@@ -299,8 +299,8 @@ function fifteenBookClick(playerName)
         находитесь здесь! Не создавайте пространственных
         парадоксов!)
     ]==]        
-    ui.addPopup(1501,0, text1, playerName, 210, 50, 400,true)
-    ui.addPopup(1500,0, text0, playerName, 210, 50, 400,true)
+    ui.addPopup(1501,0, text1, playerName, 210, 50, 600,true)
+    ui.addPopup(1500,0, text0, playerName, 210, 50, 600,true)
 end
 
 -- 16я книга (Звания и как их получить)
@@ -378,9 +378,9 @@ function sixteenBookClick(playerName)
 
     ]==]   
 
-    ui.addPopup(1602,0, text2, playerName, 210, 50, 400,true)
-    ui.addPopup(1601,0, text1, playerName, 210, 50, 400,true)
-    ui.addPopup(1600,0, text0, playerName, 210, 50, 400,true)
+    ui.addPopup(1602,0, text2, playerName, 210, 50, 600,true)
+    ui.addPopup(1601,0, text1, playerName, 210, 50, 600,true)
+    ui.addPopup(1600,0, text0, playerName, 210, 50, 600,true)
 end
 
 -- 17я книга (Руководство для Еретиков и Обманщиков)
@@ -411,7 +411,7 @@ function seventeenBookClick(playerName)
 
 	Открыть следующую страницу?
     ]==]
-    ui.addPopup(1700,1, text4, playerName, 210, 20, 400,true)
+    ui.addPopup(1700,1, text4, playerName, 210, 20, 600,true)
 end
 
 
@@ -436,7 +436,7 @@ function eighteenBookClick(playerName)
         vk.com/photo-195009903_457239294        
     ]==]
 
-    ui.addPopup(1800,0, text0, playerName, 210, 50, 400,true)
+    ui.addPopup(1800,0, text0, playerName, 210, 50, 600,true)
 end
 
 

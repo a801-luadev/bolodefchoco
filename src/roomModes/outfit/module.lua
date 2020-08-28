@@ -169,7 +169,7 @@ local shop = {
 		[166] = { "Cabeça de cavalo", 1000, 100, true },
 		--[167] = { "Cérebro", 0, 0, true },
 		--[168] = { "Chapéu de bruxa com doces", 0, 0, true },
-		--[169] = { "Sombrero do Dia dos Mortos", 0, 0, true },
+		[169] = { "Sombrero do Dia dos Mortos", 800, 100, true },
 		[170] = { "Capuz do Decidueye", 500, 60, true },
 		--[171] = { "Folha", 0, 0, true },
 		--[172] = { "Boné do Dipper Pines", 0, 0, true },
@@ -302,6 +302,7 @@ local shop = {
 		[58] = { "Ovos de Páscoa", 0, 0, },
 		[59] = { "Penas de Shaman", 0, 0, },
 		[60] = { "Arco-íris", 0, 0, },
+		[61] = { "Brinco do Tanjiro Kamado", 400, 50, },
 	};
 	mouth = {
 		[0] = { "-", 0, 0 },
@@ -504,6 +505,7 @@ local shop = {
 		[74] = { "Cabelo da Daphne Blake", 400, 60, true },
 		[75] = { "Cabelo Ombre Masculino", 400, 60, true },
 		[76] = { "Cabelo do Todoroki", 400, 60, true },
+		[77] = { "Cabelo do Tanjiro Kamado ", 400, 60, true },
 	};
 	tail = {
 		[0] = { "-", 0, 0 },
@@ -763,6 +765,7 @@ local shop = {
 		[158] = { "Pelo de Cabra", 6000, 400, true },
 		[159] = { "Pelo de Kitsune", 7000, 500, true },
 		[160] = { "Pelo de Lince", 6000, 400, true },
+		[161] = { "Pelo de Estrela Funky", 6000, 400, true },
 	};
 }
 

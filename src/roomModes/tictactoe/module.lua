@@ -75,6 +75,7 @@ local possibilities = {
 local gametie = false
 local turn = nil
 local outsideTheRoom = {}
+local nextPlay = os.time() + 500 -- Avoid duplicate clicks
 
 function eventTextAreaCallback (textareaid, p, event)
 	if not turn then
@@ -111,13 +112,22 @@ function eventTextAreaCallback (textareaid, p, event)
 			if match(event, "pos%d") then
 				local pos = tonumber(match(event, "%d"))
 
-				if turn == players.x then
-					tttGUI[pos] = "<font color='#101010'>X</font>"
-				else
-					tttGUI[pos] = "<font color='#101010'>O</font>"
-				end
+				if not tttGUI[pos] and (nextPlay and os.time() > nextPlay) then
+					if turn == players.x then
+						tttGUI[pos] = "<font color='#101010'>X</font>"
+					else
+						tttGUI[pos] = "<font color='#101010'>O</font>"
+					end
 
-				selected = selected + 1
+					selected = selected + 1
+					nextPlay = os.time() + 500
+
+					if turn == players.x then
+						turn = players.o
+					else
+						turn = players.x
+					end
+				end
 			end
 
 			for k, v in next, possibilities do
@@ -129,16 +139,13 @@ function eventTextAreaCallback (textareaid, p, event)
 
 				local values = table.concat(found, ""):gsub("<.->", "")
 
-				if values == "XXX" or values == "OOO" then
-					winner = turn
+				if values == "XXX" then
+					winner = players.x
+					break
+				elseif values == "OOO" then
+					winner = players.o
 					break
 				end
-			end
-
-			if turn == players.x then
-				turn = players.o
-			else
-				turn = players.x
 			end
 
 			if selected == 9 and not winner and not gametie then
@@ -196,14 +203,14 @@ function eventNewPlayer(p)
 end
 
 function eventPlayerLeft(p)
+	outsideTheRoom[lower(p)] = true
+
 	if not turn then
 		if lower(p) == players.x then
 			players.x = nil
 		elseif lower(p) == players.o then
 			players.o = nil
 		end
-
-		outsideTheRoom[lower(p)] = true
 
 		playerSelector()
 	else
@@ -297,8 +304,8 @@ function tttDisplay()
 end
 
 function restart()
-	tfm.exec.newGame(mapxml)
 	ui.setMapName("Tic Tac Toe")
+	tfm.exec.setGameTime(300)
 	turn = nil
 	winner = nil
 	gametie = false
@@ -306,6 +313,7 @@ function restart()
 	players.o = nil
 	tttGUI = {}
 	selected = 0
+	nextPlay = os.time() + 500
 
 	for i = 0, 25 do
 		ui.removeTextArea(i)

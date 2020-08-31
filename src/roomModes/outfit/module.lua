@@ -302,7 +302,9 @@ local shop = {
 		[58] = { "Ovos de Páscoa", 0, 0, },
 		[59] = { "Penas de Shaman", 0, 0, },
 		[60] = { "Arco-íris", 0, 0, },
-		[61] = { "Brinco do Tanjiro Kamado", 400, 50, },
+		[61] = { "Conchas", 0, 0, true },
+		[62] = { "Brinco do Tanjiro Kamado", 400, 50, },
+		[63] = { "Máscara do Lif", 600, 80, true },
 	};
 	mouth = {
 		[0] = { "-", 0, 0 },
@@ -426,6 +428,7 @@ local shop = {
 		--[45] = { "Colar do N", 0, 0 },
 		[46] = { "Lenço da Daphne Blake", 400, 40 },
 		[47] = { "Gravata da Kagamine Rin", 600, 80 },
+		[48] = { "Sombrinha japonesa", 600, 70 },
 	};
 	hair_style = {
 		[0] = { "-", 0, 0 },
@@ -587,9 +590,9 @@ local shop = {
 		[6] = { "Bóia", 1200, 200, true },
 		[7] = { "Pokeball", 1400, 250, true },
 		--[8] = { "Urso de pelúcia", 0, 0, true },
-		--[9] = { "Xícara de café", 0, 0, true },
+		[9] = { "Xícara de café", 1100, 200, true },
 		--[10] = { "Varinha mágica", 0, 0, true },
-		--[11] = { "Mão do Thanos", 0, 0, true },
+		[11] = { "Mão do Thanos", 1600, 270, true },
 		--[12] = { "Pirulito de bengala", 0, 0, true },
 		--[13] = { "Algodão-doce", 0, 0, true },
 		--[14] = { "Microfone", 0, 0, true },
@@ -736,7 +739,7 @@ local shop = {
 		[129] = { "Pelo de Martim Pescador", 5000, 400, true },
 		--[130] = { "Pelo de Mega Charizard X", 0, 0, true },
 		[131] = { "Pelo de Gnar", 5000, 400, true },
-		--[132] = { "Pelo de Carpa", 0, 0, true },
+		[132] = { "Pelo de Carpa", 5000, 400, true },
 		--[133] = { "Pelo de Chinchila", 0, 0, true },
 		--[134] = { "Pelo de Mega Audino", 0, 0, true },
 		--[135] = { "Pelo de Suco", 0, 0, true },
@@ -766,6 +769,7 @@ local shop = {
 		[159] = { "Pelo de Kitsune", 7000, 500, true },
 		[160] = { "Pelo de Lince", 6000, 400, true },
 		[161] = { "Pelo de Estrela Funky", 6000, 400, true },
+		[162] = { "Pelo de Linguado", 6000, 400, true },
 	};
 }
 

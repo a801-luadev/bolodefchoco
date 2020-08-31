@@ -58,7 +58,8 @@ tfm.exec.newGame(mapxml)
 ui.setMapName("Tic Tac Toe")
 
 -----------------
-local tttGUI = {"-", "-", "-", "-", "-", "-", "-", "-", "-"}
+local tttGUI = {}
+local selected = 0
 
 local possibilities = {
 	{1, 2, 3},
@@ -73,8 +74,8 @@ local possibilities = {
 
 local gametie = false
 local turn = nil
-local selected = {}
 local outsideTheRoom = {}
+local nextPlay = os.time() + 500 -- Avoid duplicate clicks
 
 function eventTextAreaCallback (textareaid, p, event)
 	if not turn then
@@ -108,44 +109,51 @@ function eventTextAreaCallback (textareaid, p, event)
 		end
 	else
 		if not winner and not gametie then
-			for i = 1,9 do
-				if event == "pos" .. i and i ~= selected[i] then
-					if lower(p) == turn then
-						if turn == players.x then
-							tttGUI[i] = "<font color='#101010'>X</font>"
-							turn = players.o
-						else
-							tttGUI[i] = "<font color='#101010'>O</font>"
-							turn = players.x
-						end
+			if match(event, "pos%d") then
+				local pos = tonumber(match(event, "%d"))
 
-						selected[i] = i
+				if not tttGUI[pos] and (nextPlay and os.time() > nextPlay) then
+					if turn == players.x then
+						tttGUI[pos] = "<font color='#101010'>X</font>"
+					else
+						tttGUI[pos] = "<font color='#101010'>O</font>"
+					end
+
+					selected = selected + 1
+					nextPlay = os.time() + 500
+
+					if turn == players.x then
+						turn = players.o
+					else
+						turn = players.x
 					end
 				end
 			end
 
-			for p, k in next, possibilities do
+			for k, v in next, possibilities do
 				local found = {}
 
-				for n, value in next, k do
-					found[#found + 1] = tttGUI[value]
+				for _k, _v in next, v do
+					found[#found + 1] = tttGUI[_v]
+				end
 
-					if table.concat(found, ", ") == "<font color='#101010'>X</font>, <font color='#101010'>X</font>, <font color='#101010'>X</font>" then
-						winner = players.x
-						tfm.exec.setPlayerScore(winner, 1, true)
-						restartGameButton()
-	                elseif table.concat(found, ", ") == "<font color='#101010'>O</font>, <font color='#101010'>O</font>, <font color='#101010'>O</font>" then
-	                	winner = players.o
-	                end
-	            end
+				local values = table.concat(found, ""):gsub("<.->", "")
+
+				if values == "XXX" then
+					winner = players.x
+					break
+				elseif values == "OOO" then
+					winner = players.o
+					break
+				end
 			end
 
-			tttDisplay()
-
-			if #selected == 9 and not winner and not gametie then
+			if selected == 9 and not winner and not gametie then
 				gametie = true
 				restartGameButton()
 			end
+
+			tttDisplay()
 		end
 
 		if event == "reset" then
@@ -161,6 +169,8 @@ function eventChatCommand(p, cmd)
 	for v in string.gmatch(cmd, "%S+") do
 		args[#args + 1] = v
 	end
+
+	args[1] = lower(args[1])
 
 	if args[1] == "help" then
 		tfm.exec.chatMessage(languages[lang]["help"], p)
@@ -193,14 +203,14 @@ function eventNewPlayer(p)
 end
 
 function eventPlayerLeft(p)
+	outsideTheRoom[lower(p)] = true
+
 	if not turn then
 		if lower(p) == players.x then
 			players.x = nil
 		elseif lower(p) == players.o then
 			players.o = nil
 		end
-
-		outsideTheRoom[lower(p)] = true
 
 		playerSelector()
 	else
@@ -285,24 +295,25 @@ function tttDisplay()
 	local x = 400 - 105/2
 	local y = 200 - 155/2
 	for i = 1, 9 do
-		ui.addTextArea(12+i, "<font size='26'>" .. tttGUI[i] .. "</font>", nil, ((i-1)%3)*40 + x, math.floor((i-1)/3)*40 + y, nil, nil, nil, nil, 0)
+		ui.addTextArea(12+i, "<font size='26'>" .. (tttGUI[i] or "-") .. "</font>", nil, ((i-1)%3)*40 + x, math.floor((i-1)/3)*40 + y, nil, nil, nil, nil, 0)
 
-		if not selected[i] and (not winner or not gametie) then
-			ui.addTextArea(12+i, "<font size='26'><a href='event:pos" .. i .. "'>" .. tttGUI[i] .. "</a></font>", turn, ((i-1)%3)*40 + x, math.floor((i-1)/3)*40 + y, nil, nil, nil, nil, 0)
+		if not tttGUI[i] and (not winner or not gametie) then
+			ui.addTextArea(12+i, "<font size='26'><a href='event:pos" .. i .. "'>-</a></font>", turn, ((i-1)%3)*40 + x, math.floor((i-1)/3)*40 + y, nil, nil, nil, nil, 0)
 		end
 	end
 end
 
 function restart()
-	tfm.exec.newGame(mapxml)
 	ui.setMapName("Tic Tac Toe")
-	selected = {}
+	tfm.exec.setGameTime(300)
 	turn = nil
 	winner = nil
 	gametie = false
 	players.x = nil
 	players.o = nil
-	tttGUI = {"-", "-", "-", "-", "-", "-", "-", "-", "-"}
+	tttGUI = {}
+	selected = 0
+	nextPlay = os.time() + 500
 
 	for i = 0, 25 do
 		ui.removeTextArea(i)

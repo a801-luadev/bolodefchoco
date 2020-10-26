@@ -15,6 +15,8 @@ languages = {
 		["start"] = "Iniciar",
 		["restart"] = "Reiniciar",
 		["win"] = "O vencedor foi %s!",
+		["welcome"] = "<J>Bem-vindo ao Tic Tac Toe. Veja a lista de comandos disponíveis digitando</J> <BL>!help</BL><J>.</J>",
+		["notroomowner"] = "<J>Você não é um dono da sala. Para criar sua própria sala digite:</J> <BL>/room #bolodefchoco0tictactoe %s</BL>",
 		["help"] = "!help: mostra os comandos disponíveis.\n!reset: reinicia a partida.\n!admin: adiciona ou remove um administrador."
 	},
 	["en"] = {
@@ -22,6 +24,8 @@ languages = {
 		["start"] = "Start",
 		["restart"] = "Restart",
 		["win"] = "The winner was %s!",
+		["welcome"] = "<J>Welcome to Tic Tac Toe. See available commands by typing</J> <BL>!help</BL><J>.</J>",
+		["notroomowner"] = "<J>You are not a room owner. To create your own room type:</J> <BL>/room #bolodefchoco0tictactoe %s</BL>",
 		["help"] = "!help: shows available commands.\n!reset: restart the match.\n!admin: add or remove an administrator."
 	},
 	["es"] = {
@@ -29,6 +33,8 @@ languages = {
 		["start"] = "Comenzar",
 		["restart"] = "Reiniciar",
 		["win"] = "El ganador fue %s!",
+		["welcome"] = "<J>Bienvenido a Tic Tac Toe. Vea la lista de comandos disponibles escribiendo</J> <BL>!help</BL><J>.</J>",
+		["notroomowner"] = "<J>No eres el dueño de la sala. Para crear la tuya escribe:</J> <BL>/room #bolodefchoco0tictactoe %s</BL>",
 		["help"] = "!help: muestra los comandos disponibles.\n!reset: reiniciar el partido.\n!admin: agrega o elimina un administrador."
 	},
 }
@@ -199,6 +205,11 @@ function eventNewPlayer(p)
 		tttDisplay()
 	else
 		playerSelector()
+	end
+
+	tfm.exec.chatMessage(languages[lang]["welcome"], p)
+	if not owners[p] then
+		tfm.exec.chatMessage(format(languages[lang]["notroomowner"], p), p)
 	end
 end
 

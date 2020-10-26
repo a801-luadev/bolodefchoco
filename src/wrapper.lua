@@ -95,7 +95,7 @@ if isTribeHouse then
 
 	startMode(gameMode)
 else
-	local modeName, argsPos = string.match(tfm.get.room.name, "%d+([%a_]+)()")
+	local modeName, argsPos = string.match(tfm.get.room.name, "[%d ]+([%a_]+)()")
 	local gameMode, meta = getMode(modeName)
 
 	if meta.loadTeams then

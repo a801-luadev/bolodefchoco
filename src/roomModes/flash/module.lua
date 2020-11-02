@@ -29,6 +29,11 @@ eventSummoningEnd = function(_, _, _, _, _, obj)
 end
 
 eventChatCommand = function(_, c)
+	local map = c:match("^np (.+)$")
+	if map then
+		return tfm.exec.newGame(map)
+	end
+
 	local name, img, x, y = c:match("^i (%S+) (%S+) ?(%d*) ?(%d*)$")
 	if not objects[name] then return end
 
@@ -55,6 +60,9 @@ eventNewPlayer = function(p)
 	tfm.exec.setShaman(p)
 end
 
-for p in next, tfm.get.room.playerList do
-	eventNewPlayer(p)
+eventNewGame = function()
+	for p in next, tfm.get.room.playerList do
+		eventNewPlayer(p)
+	end
 end
+eventNewGame()

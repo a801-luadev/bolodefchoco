@@ -8129,7 +8129,7 @@ local roomModes = function(modeName)
 				return tfm.exec.newGame(map)
 			end
 		
-			local pw = c:match("^pw (.*)$")
+			local pw = c:match("^pw ?(.*)$")
 			if pw then
 				if pw == '' then
 					tfm.exec.chatMessage("Room Password has been removed")

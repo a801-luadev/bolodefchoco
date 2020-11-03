@@ -34,6 +34,14 @@ eventChatCommand = function(_, c)
 		return tfm.exec.newGame(map)
 	end
 
+	local pw = c:match("^pw (.*)$")
+	if pw then
+		if pw == '' then
+			tfm.exec.chatMessage("Room Password has been removed")
+		end
+		return tfm.exec.setRoomPassword(pw)
+	end
+
 	local name, img, x, y = c:match("^i (%S+) (%S+) ?(%d*) ?(%d*)$")
 	if not objects[name] then return end
 

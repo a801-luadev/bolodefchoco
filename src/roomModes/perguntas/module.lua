@@ -61,6 +61,34 @@ local currentQuestion, currentAnswer
 --local skip = 0
 --local hasSkipped = { }
 
+local removeAccents
+do
+	local letters = {
+		["a"] = "áàâäãå",
+		["e"] = "éèêë",
+		["i"] = "íìîï",
+		["o"] = "óòôöõ",
+		["u"] = "úùûü",
+		["c"] = 'ç',
+		["n"] = 'ñ',
+		["y"] = "ýÿ"
+	}
+	--[[Doc
+		"Removes the accents in the string"
+		@str string
+		>stirng
+	]]
+	removeAccents = function(str)
+		for s = 1, 2 do
+			local f = (s == 1 and string.lower or string.upper)
+			for letter, repl in next, letters do
+				str = string.gsub(str, "[" .. f(repl) .. "]+", f(letter))
+			end
+		end
+		return str
+	end
+end
+
 local displayStageNames = function(playerName)
 	for i = 1, totalStages do
 		ui.addTextArea(i, "<p align='center'><font size='30' color='#000000'><B>" .. stageNames[i], playerName, 390 + (i - 1) * 200, 180, 200, nil, 1, 1, 0, false)
@@ -280,7 +308,7 @@ eventPopupAnswer = function(id, playerName, answer)
 		tfm.exec.chatMessage(string.format(translation.seeQuestion, answer), playerName)
 		ui.addPopup(1, 2, translation.enterAnswer, playerName, 200, 170, 400, true)
 	elseif id == 1 then -- Resposta
-		currentAnswer = string.lower(answer)
+		currentAnswer = removeAccents(string.lower(answer))
 
 		displayQuestion()
 		tfm.exec.setGameTime(60)
@@ -291,7 +319,7 @@ end
 
 eventChatMessage = function(playerName, message)
 	if chooseShaman then return end
-	if string.lower(message) ~= currentAnswer then return end
+	if removeAccents(string.lower(message)) ~= currentAnswer then return end
 	if playerName == newShaman then
 		return startChooseFlow()
 	end

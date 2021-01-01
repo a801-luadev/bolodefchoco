@@ -64,14 +64,33 @@ local currentQuestion, currentAnswer
 local removeAccents
 do
 	local letters = {
-		["a"] = "áàâäãå",
-		["e"] = "éèêë",
-		["i"] = "íìîï",
-		["o"] = "óòôöõ",
-		["u"] = "úùûü",
-		["c"] = 'ç',
-		["n"] = 'ñ',
-		["y"] = "ýÿ"
+		{ 'á', 'a' },
+		{ 'à', 'a' },
+		{ 'â', 'a' },
+		{ 'ä', 'a' },
+		{ 'ã', 'a' },
+		{ 'å', 'a' },
+		{ 'é', 'e' },
+		{ 'è', 'e' },
+		{ 'ê', 'e' },
+		{ 'ë', 'e' },
+		{ 'í', 'i' },
+		{ 'ì', 'i' },
+		{ 'î', 'i' },
+		{ 'ï', 'i' },
+		{ 'ó', 'o' },
+		{ 'ò', 'o' },
+		{ 'ô', 'o' },
+		{ 'ö', 'o' },
+		{ 'õ', 'o' },
+		{ 'ú', 'u' },
+		{ 'ù', 'u' },
+		{ 'û', 'u' },
+		{ 'ü', 'u' },
+		{ 'ç', 'c' },
+		{ 'ñ', 'n' },
+		{ 'ý', 'y' },
+		{ 'ÿ', 'y' }
 	}
 	--[[Doc
 		"Removes the accents in the string"
@@ -81,8 +100,9 @@ do
 	removeAccents = function(str)
 		for s = 1, 2 do
 			local f = (s == 1 and string.lower or string.upper)
-			for letter, repl in next, letters do
-				str = string.gsub(str, "[" .. f(repl) .. "]+", f(letter))
+			for i = 1, #letters do
+				i = letters[i]
+				str = string.gsub(str, f(i[1]), f(i[2]))
 			end
 		end
 		return str

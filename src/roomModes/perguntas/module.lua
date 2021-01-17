@@ -320,6 +320,7 @@ eventPopupAnswer = function(id, playerName, answer)
 
 	answer = string.trim(answer)
 	if answer == '' then return end
+	answer = answer:gsub("<", "&lt;"):gsub(">", "&gt;")
 
 	if id == 0 then -- Pergunta
 		currentAnswer = nil

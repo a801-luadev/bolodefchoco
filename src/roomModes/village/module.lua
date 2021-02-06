@@ -22,14 +22,16 @@ eventNewPlayer = function(playerName)
 		displayingEmotes = false,
 		images = { },
 		imagesLen = 0,
-		cooldown = 0
+		cooldown = 0,
+		shamanToggle = false
 	}
 	system.bindMouse(playerName, true)
 	system.bindKeyboard(playerName, 16, true, true) -- Shift
 	system.bindKeyboard(playerName, 16, false, true)
 	system.bindKeyboard(playerName, 80, false, true) -- P
 	system.bindKeyboard(playerName, 76, false, true) -- L
-	tfm.exec.chatMessage("<J>- <B>Click" .. (not shiftRoom and '' or " + Shift") .. "</B> to teleport\n- Press <B>L</B> to see/unsee custom emotes\n- Press <B>P</B> to replay the custom emote selected", playerName)
+	system.bindKeyboard(playerName, 75, false, true) -- K
+	tfm.exec.chatMessage("<J>- <B>Click" .. (not shiftRoom and '' or " + Shift") .. "</B> to teleport\n- Press <B>L</B> to see/unsee custom emotes\n- Press <B>P</B> to replay the custom emote selected\n- Press <B>K</B> to toggle your shaman state", playerName)
 end
 
 eventMouse = function(playerName, x, y)
@@ -70,6 +72,9 @@ eventKeyboard = function(playerName, key, down)
 		end
 
 		data.displayingEmotes = not data.displayingEmotes
+	elseif key == 75 then
+		data.shamanToggle = not data.shamanToggle
+		tfm.exec.setShaman(playerName, data.shamanToggle)
 	end
 end
 
@@ -79,6 +84,12 @@ eventTextAreaCallback = function(_, playerName, callback)
 	player[playerName].lastEmote = callback
 end
 
+eventSummoningEnd = function(_, _, _, _, _, objData)
+	tfm.exec.removeObject(objData.id)
+end
+
 for playerName in next, tfm.get.room.playerList do
 	eventNewPlayer(playerName)
 end
+
+tfm.exec.disableAllShamanSkills()

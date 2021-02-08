@@ -17,7 +17,7 @@ local module = {
 
 --[[ Development ]]--
 local team = {
-	developer = { "Bolodefchoco#0000" },
+	developer = { "Bolodefchoco#0015" },
 	artist = { "Liiliiith#0000" },
 	others = { "Acer#1412", "Bishomilad#0000", "Heniyengui#0000", "Nettoork#0000" }
 }

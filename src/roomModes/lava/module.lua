@@ -135,7 +135,7 @@ eventChatCommand = function(name, command)
 end
 
 eventNewPlayer = function(name)
-	tfm.exec.chatMessage("<D>Seja bem-vindo a sala #lava. Essa é uma versão remasterizada feita por Nettoork#0000 de uma das primeiras versões do minigame que atualmente pertence à Sr_Timbo#6367.</D>\n<ROSE>Para vencer a partida, sobreviva subindo em objetos de shaman que serão jogadores de forma aleatória pelo mapa, e logo após o chão se transformará em lava.</ROSE>\n<BV>Sistema anti bug do X implementado, caso encontre algum erro reporte para <B>Bolodefchoco#0000</B></BV>", name)
+	tfm.exec.chatMessage("<D>Seja bem-vindo a sala #lava. Essa é uma versão remasterizada feita por Nettoork#0000 de uma das primeiras versões do minigame que atualmente pertence à Sr_Timbo#6367.</D>\n<ROSE>Para vencer a partida, sobreviva subindo em objetos de shaman que serão jogadores de forma aleatória pelo mapa, e logo após o chão se transformará em lava.</ROSE>\n<BV>Sistema anti bug do X implementado, caso encontre algum erro reporte para <B>Bolodefchoco#0015</B></BV>", name)
 	if not db[name] then
 		db[name] = {
 			isBanned = false,

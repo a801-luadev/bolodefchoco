@@ -12,7 +12,7 @@ tfm.exec.disableAutoNewGame()
 local module = {
 	name = "hw8",
 	team = {
-		"Bolodefchoco#0000",
+		"Bolodefchoco#0015",
 		"Albinoska#0000"
 	},
 	prize = {

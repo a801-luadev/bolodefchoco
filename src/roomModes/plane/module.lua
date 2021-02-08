@@ -89,7 +89,7 @@ function addPlanes(n)
 	ui.addTextArea(1008, "<p align='center'><b><J><a href='event:plane8'>B-747</J></a></b>", n, 200, 3259, 95, 23, 0x000001, 0x000001, 1, false)
 	ui.addTextArea(1009, "<p align='center'><b><J><a href='event:plane9'>A350 XWB</J></a></b>", n, 200, 3282, 95, 23, 0x000001, 0x000001, 1, false)
 	ui.addTextArea(1010, "<p align='center'><b><J><a href='event:plane10'>Concorde</J></a></b>", n, 295, 3282, 95, 23, 0x000001, 0x000001, 1, false)
-	if n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0000" or n=="Blank#3495" or n=="Sebafrancuz#0000" then
+	if n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0015" or n=="Blank#3495" or n=="Sebafrancuz#0000" then
 		ui.addTextArea(1011, "<p align='center'><b><J><a href='event:plane11'>SR 71B</J></a></b>", n, 200, 3305, 95, 23, 0x000001, 0x000001, 1, false)
 	end
 end
@@ -400,7 +400,7 @@ function eventTextAreaCallback(id,n,a)
 		data[n].accelerationSpeed=5
 		tfm.exec.killPlayer(n)
 	elseif a=="plane11" then
-		if n=="Blank#3495" or n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0000" or n=="Sebafrancuz#0000" then
+		if n=="Blank#3495" or n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0015" or n=="Sebafrancuz#0000" then
 			data[n].using="165d4baf672.png"
 			data[n].speedLim=900
 			data[n].accelerationSpeed=8

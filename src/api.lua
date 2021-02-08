@@ -1,6 +1,6 @@
 math.randomseed(os.time())
 local owners = {
-	["Bolodefchoco#0000"] = true
+	["Bolodefchoco#0015"] = true
 }
 
 local _TEAM = { _loaded = false }

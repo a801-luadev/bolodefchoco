@@ -1,4 +1,4 @@
-admin = { ["Blank#3495"] = true, ["Thewarsnipe#0000"] = true, ["Tocutoeltuco#0000"]= true, ["Bolodefchoco#0000"] = true, ["Meltedfruit#0000"] = true }
+admin = { ["Blank#3495"] = true, ["Thewarsnipe#0000"] = true, ["Tocutoeltuco#0000"]= true, ["Bolodefchoco#0015"] = true, ["Meltedfruit#0000"] = true }
 banlist = { }
 lang = { }
 t = {false , 17}
@@ -20,7 +20,7 @@ translation = {
 <BL>If you have/face any issues, don't hesitate to <N>/c Blank#3495.
 		]],
 		credits = [[<N>Code: <R>Blank#3495
-<N>Translations: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+<N>Translations: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 	},
 	bg = {
 		help = [[<N>!map <код> <BL>- Зарежда даден код или нова P10 (survivor) карта.
@@ -34,7 +34,7 @@ translation = {
 <BL>Ако имате/видите проблеми, не се колебайте, пишете на <N>/c Blank#3495.
 		]],
 		credits = [[<N>Код: <R>Blank#3495
-<N>превод: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+<N>превод: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 	},
 	es = {
 		help = [[<N>!map &lt;código> <BL>- Carga el mapa dado, o un mapa P10 (survivor).
@@ -48,7 +48,7 @@ translation = {
 <BL>Si tenés algún problema, no dudes en susurrar a <N>/c Blank#3495.
 		]],
 		credits = [[<N>Código: <R>Blank#3495
-<N>Traducciones: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+<N>Traducciones: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 	},
 	pt = {
 		help = [[<N>!map &lt;código> <BL>- Carrega um código dado, ou um mapa P10 (survivor).
@@ -62,7 +62,7 @@ translation = {
 <BL>Se você encontrar qualquer problema, não hesite em entrar contato com <N>/c Blank#3495.
 		]],
 		credits = [[<N>Código: <R>Blank#3495
-<N>Traduções: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+<N>Traduções: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 	},
 	tr = {
 		help = [[<N>!map <code> <BL>- Yazılan harita kodunu açar, ya da yeni bir P10 (survivor) haritası.
@@ -74,7 +74,7 @@ translation = {
 <BL>Eğer bir probleminiz/bir sorunuz olursa, Çekinmeden <N>/c Blank#3495.
 		]],
 		credits = [[<N>Cod: <R>Blank#3495
-<N>Çeviriler: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+<N>Çeviriler: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 	}
 }
 translation.br = translation.pt

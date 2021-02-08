@@ -1,7 +1,7 @@
 --[[ API ]]--
 math.randomseed(os.time())
 local owners = {
-	["Bolodefchoco#0000"] = true
+	["Bolodefchoco#0015"] = true
 }
 
 local _TEAM = { _loaded = false }
@@ -111,212 +111,212 @@ local modeMetaInfo = {
 	["main"] = {
 		name = "main",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		loadTeams = true,
 		isPrivate = true
 	},
-	
+
 	["agario"] = {
 		name = "agario",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Agar.io prototype"
 	},
-	
+
 	["arrow"] = {
 		name = "arrow",
 		hasAdmin = false,
 		authors = { "Sla#3700" },
 		description = "Shoot arrows"
 	},
-	
+
 	["bolo"] = {
 		name = "bolo",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Play with cakes"
 	},
-	
+
 	["d_shades"] = {
 		name = "d_shades",
 		authors = { "Tocutoeltuco#0000" },
 		loadTeams = true,
 		isPrivate = true
 	},
-	
+
 	["dance"] = {
 		name = "dance",
 		hasAdmin = false,
 		authors = { "Aviener#0000" },
 		description = "Get ready to have fun and move your body. Follow the movements displayed on screen to get points and win the game."
 	},
-	
+
 	["data"] = {
 		name = "data",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "See your current event data"
 	},
-	
+
 	["evt_halloween_muertos"] = {
 		name = "evt_halloween_muertos",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Halloween 2018 - Day of the Dead event"
 	},
-	
+
 	["evt_pizzeria"] = {
 		name = "evt_pizzeria",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Pizzeria 2018 - event"
 	},
-	
+
 	["funcorp"] = {
 		name = "funcorp",
 		hasAdmin = true,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Copy of the funcorp mode / strm rooms"
 	},
-	
+
 	["id"] = {
 		name = "id",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "See your player id"
 	},
-	
+
 	["lava"] = {
 		name = "lava",
 		hasAdmin = false,
-		authors = { "Nettoork#0000", "Bolodefchoco#0000" },
+		authors = { "Nettoork#0000", "Bolodefchoco#0015" },
 		description = "The floor is lava"
 	},
-	
+
 	["lsmap"] = {
 		name = "lsmap",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Illustration of a lsmap suggestion"
 	},
-	
+
 	["map"] = {
 		name = "map",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Mini-maps"
 	},
-	
+
 	["mastermind"] = {
 		name = "mastermind",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Find the number based on the matches"
 	},
-	
+
 	["mess"] = {
 		name = "mess",
 		hasAdmin = false,
 		authors = { "Nettoork#0000" },
 		description = "Racing that changes the ground types according to the time"
 	},
-	
+
 	["outfit"] = {
 		name = "outfit",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "See someone's outfit and its price"
 	},
-	
+
 	["perguntas"] = {
 		name = "perguntas",
 		hasAdmin = true,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Old #breno0perguntas"
 	},
-	
+
 	["plane"] = {
 		name = "plane",
 		hasAdmin = false,
 		authors = { "Fuzzyfirsdog#0000" },
 		description = "Fly with planes"
 	},
-	
+
 	["preguntas"] = {
 		name = "preguntas",
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		alias = {
 			isTribeHouse = false,
 			community = "es",
 			modeName = "perguntas"
 		}
 	},
-	
+
 	["quiz"] = {
 		name = "quiz",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Quiz prototype"
 	},
-	
+
 	["ranking"] = {
 		name = "ranking",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Official Transformice Leaderboard (top 100) (cheeseformice)."
 	},
-	
+
 	["survup"] = {
 		name = "survup",
 		hasAdmin = false,
 		authors = { "Blank#3495" },
 		description = "Tool to practice going up with cannons as mouse."
 	},
-	
+
 	["tictactoe"] = {
 		name = "tictactoe",
 		hasAdmin = true,
 		authors = { "Natsmiro#0000" },
 		description = "Play Tic Tac Toe with your friends."
 	},
-	
+
 	["triberanking"] = {
 		name = "triberanking",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Official Transformice Tribes Leaderboard (top 100) (cheeseformice)."
 	},
-	
+
 	["vanillatroll"] = {
 		name = "vanillatroll",
 		hasAdmin = false,
 		authors = { "Yuri400#0000" },
 		description = "Play troll vanilla maps."
 	},
-	
+
 	["village"] = {
 		name = "village",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Teleport in village map"
 	},
-	
+
 	["vivooumorto"] = {
 		name = "vivooumorto",
 		hasAdmin = false,
 		authors = { "Sla#3700" },
 		description = "\"Alive or Dead\" prototype"
 	},
-	
+
 	["*\3A-N-T-I-G-U-A-R-D"] = {
 		name = "*\3A-N-T-I-G-U-A-R-D",
 		authors = { "Fly#8215" },
 		owners = { "Fly#8215" }
 	},
-	
+
 	["*\3B O L O"] = {
 		name = "*\3B O L O",
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		owners = { "Txnene#0000", "Lil_ever#0000", "Alessio#2918", "Bardi#9940", "Danielito#7675", "Catallena#9690" },
 		alias = {
 			isTribeHouse = false,
@@ -325,10 +325,10 @@ local modeMetaInfo = {
 		}
 	}
 	,
-	
+
 	["*\3C H E R N O B Y L'"] = {
 		name = "*\3C H E R N O B Y L'",
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		owners = { "Juuzou#8668", "Nanny#8819", "Biellnight#0415", "Otaku_foxy#0000" },
 		alias = {
 			isTribeHouse = false,
@@ -336,7 +336,7 @@ local modeMetaInfo = {
 			modeName = "perguntas"
 		}
 	},
-	
+
 	["*\3Editeur"] = {
 		name = "*\3Editeur",
 		authors = { "Tocutoeltuco#0000" },
@@ -345,16 +345,16 @@ local modeMetaInfo = {
 			modeName = "d_shades"
 		}
 	},
-	
+
 	["*\3Lost Heaven"] = {
 		name = "*\3Lost Heaven",
 		authors = { "Keras#9975" },
 	}
 	,
-	
+
 	["*\3Parcours du Combattant"] = {
 		name = "*\3Parcours du Combattant",
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		owners = { "Matheusratih#0000" },
 		alias = {
 			isTribeHouse = false,
@@ -362,20 +362,20 @@ local modeMetaInfo = {
 			modeName = "perguntas"
 		}
 	},
-	
+
 	["*\3ProdigioSS"] = {
 		name = "*\3ProdigioSS",
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		owners = { "Victorck6#6662" },
 		alias = {
 			isTribeHouse = false,
 			modeName = "perguntas"
 		}
 	},
-	
+
 	["*\3The impossible is just an opinion"] = {
 		name = "*\3The impossible is just an opinion",
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		owners = { "K_sy#0000" },
 		alias = {
 			isTribeHouse = false,
@@ -383,13 +383,13 @@ local modeMetaInfo = {
 			modeName = "perguntas"
 		}
 	},
-	
+
 	["*\3Tournament'"] = {
 		name = "*\3Tournament'",
-		authors = { "Bolodefchoco#0000", "Pidoninho#0000" },
+		authors = { "Bolodefchoco#0015", "Pidoninho#0000" },
 		owners = { "Pidoninho#0000" }
 	},
-	
+
 }
 
 do -- Main
@@ -419,13 +419,13 @@ do -- Main
 				}
 			}
 		end
-		
+
 		local str = "<font color='#%s' face='Verdana'><B>%s online at %s</B><font size='3'>\n\n</font><font face='Lucida console'>"
-		
+
 		local loaded = { }
 		local updateList = function(playerName)
 			if not public then return end
-		
+
 			local Y
 			for k = 1, #public do
 				if not playerName or not public[k].str then
@@ -441,7 +441,7 @@ do -- Main
 			end
 			ui.addTextArea(0, "<p align='center'><a href='event:@list'><VP>?", playerName, 780, 380, 15, 15, 1, 1, .6, true)
 		end
-		
+
 		local checkTeams = function()
 			if _TEAM._loaded then
 				setPublic()
@@ -449,7 +449,7 @@ do -- Main
 			end
 			return false
 		end
-		
+
 		local moduleList, moduleListCounter
 		do
 			moduleList, moduleListCounter = { }, 0
@@ -461,9 +461,9 @@ do -- Main
 			end
 			modeMetaInfo = nil
 		end
-		
+
 		local info = { }
-		
+
 		local openList = function(playerName)
 			local module = moduleList[info[playerName]]
 			ui.addTextArea(1, "<p align='center'><font size='22'><FC><a href='event:" .. module.name .. (module.hasAdmin and ("0" .. playerName) or "") .. "'>" .. string.upper(module.name) .. "</a>\n\n<font size='13'><p align='left'><J>Owner(s) : <V>" .. table.concat(module.authors, ", ") .. "\n\n<N>" .. (module.description or ""), playerName, 475, 165 + 60, 250, 146, 1, 1, .6, true)
@@ -471,7 +471,7 @@ do -- Main
 			ui.addTextArea(3, "<VP><p align='center'><font size='15'><a href='event:@right'>»</a>\n", playerName, 705, 325 + 54, 20, 20, 1, 1, .6, true)
 			ui.addTextArea(4, "<VP><p align='center'><font size='14'><a href='event:@close'>Close</a>\n", playerName, 505, 325 + 54, 190, 20, 1, 1, .6, true)
 		end
-		
+
 		eventNewPlayer = function(playerName)
 			updateList(playerName)
 			tfm.exec.respawnPlayer(playerName)
@@ -479,10 +479,10 @@ do -- Main
 			tfm.exec.chatMessage("<VP>This is the personal room of <B>Bolodefchoco</B>.\n• Join our official Discord server to get help with Lua and modules: <B>https://discord.gg/quch83R</B>", playerName)
 			tfm.exec.chatMessage("<CEP>\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#7AC9C4'>,moduleteam</font>\n\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#EF98AA'>,fashionsquad</font>\n\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#F3D165'>,shelpers</font>\n\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#FF9C00'>,funcorp</font>\n\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#2ECF73'>,sentinel</font>\n\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#2F7FCC'>,mapcrew</font>", playerName)
 			tfm.exec.chatMessage("<VP>Type <B>!donate</B> if you would like to donate for this module!", playerName)
-			tfm.exec.chatMessage("<N2>Ξ " .. playerName, "Bolodefchoco#0000")
+			tfm.exec.chatMessage("<N2>Ξ " .. playerName, "Bolodefchoco#0015")
 		end
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
-		
+
 		eventPlayerDataLoaded = function(user)
 			if loaded[user] then return end
 			loaded[user] = true
@@ -498,7 +498,7 @@ do -- Main
 				ui.addTextArea(0, "<p align='center'><a href='event:@list'><VP>?", playerName, 780, 380, 15, 15, 1, 1, .6, true)
 			end
 		end
-		
+
 		eventTextAreaCallback = function(id, playerName, callback)
 			if id < 0 then
 				tfm.exec.chatMessage("<J>/c " .. callback, playerName)
@@ -510,14 +510,14 @@ do -- Main
 					if info[playerName] < 1 then
 						info[playerName] = moduleListCounter
 					end
-		
+
 					openList(playerName)
 				elseif callback == "@right" then
 					info[playerName] = info[playerName] + 1
 					if info[playerName] > moduleListCounter then
 						info[playerName] = 1
 					end
-		
+
 					openList(playerName)
 				elseif callback == "@close" then
 					for i = 1, 4 do
@@ -528,7 +528,7 @@ do -- Main
 				end
 			end
 		end
-		
+
 		local timer = 0
 		eventLoop = function()
 			if not public then
@@ -536,7 +536,7 @@ do -- Main
 					return
 				end
 			end
-		
+
 			timer = timer + .5
 			if timer == .5 or timer == 60 then
 				timer = .5
@@ -544,7 +544,7 @@ do -- Main
 				updateList()
 			end
 		end
-		
+
 		tfm.exec.disableAutoNewGame()
 		tfm.exec.disableAutoShaman()
 		tfm.exec.disableAfkDeath()
@@ -552,11 +552,11 @@ do -- Main
 		tfm.exec.disablePhysicalConsumables()
 		system.disableChatCommandDisplay("donate")
 		tfm.exec.newGame('<C><P /><Z><S><S c="4" L="800" o="E0E0E" X="400" H="400" Y="200" T="12" P=",,,,,,," /><S c="4" L="10" o="6A7495" X="-2" H="10" Y="216" T="12" P=",,,,45,,," /><S c="4" L="10" o="6A7495" X="802" H="10" Y="216" T="12" P=",,,,45,,," /><S L="400" X="600" H="97" Y="420" T="6" P=",,.3,.2,,,," /><S L="10" X="395" H="71" Y="335" T="12" P=",,,,,,," /><S L="10" H="71" X="805" Y="335" T="12" P=",,,,,,," /></S><D><DS Y="360" X="600" /></D><O /></Z></C>')
-		
+
 		eventNewGame = function()
 			ui.setMapName("Ba dum tss")
 		end
-		
+
 		local a,b,c,d,e,f=string.match,string.sub,string.gsub,string.gmatch,string.char,string.rep;local g=math.max;local h=table.unpack;local function i(j)local k=0;for l in next,j do k=type(l)=="number"and l or k end;return k end;do local m=h;h=function(j,k,n)return m(j,k or 1,n or i(j))end end;local o;local function p(q)local r={}for k in next,q do r[k]=true end;for k in next,q["*nil"]do r[k]=true end;return r end;local function s(q,r)return setmetatable({["*parentDefined"]=q~=o and setmetatable(r or p(q),{__index=q["*parentDefined"]})or{},["*nil"]={},["*parent"]=q},{__index=function(j,t)if not rawget(j,"*nil")[t]then if rawget(j,"*parentDefined")[t]then return q[t]else return o[t]end end end,__newindex=function(j,u,v)rawset(j,u,v)if v==nil then j["*nil"][u]=true else j["*nil"][u]=nil end end})end;local function w(j,t,v,x)if j==x then while j~=o do if rawget(j,t)~=nil or j["*nil"][t]then if v==nil then j["*nil"][t]=true end;break else j=j["*parent"]end end end;j[t]=v end;local y,z={},{}local A;local B={["or"]=function(C,D,...)return A(C,...)or A(D,...)end,["and"]=function(C,D,...)return A(C,...)and A(D,...)end,["<"]=function(C,D,...)return A(C,...)<A(D,...)end,[">"]=function(C,D,...)return A(C,...)>A(D,...)end,["<="]=function(C,D,...)return A(C,...)<=A(D,...)end,[">="]=function(C,D,...)return A(C,...)>=A(D,...)end,["~="]=function(C,D,...)return A(C,...)~=A(D,...)end,["=="]=function(C,D,...)return A(C,...)==A(D,...)end,[".."]=function(C,D,...)return A(C,...)..A(D,...)end,["+"]=function(C,D,...)return A(C,...)+A(D,...)end,["-"]=function(C,D,...)return A(C,...)-A(D,...)end,["*"]=function(C,D,...)return A(C,...)*A(D,...)end,["/"]=function(C,D,...)return A(C,...)/A(D,...)end,["//"]=function(C,D,...)return math.floor(A(C,...)/A(D,...))end,["%"]=function(C,D,...)return A(C,...)%A(D,...)end,["^"]=function(C,D,...)return A(C,...)^A(D,...)end}local E={"(.*%d)(or)(%d.*)","(.*%d)(and)(%d.*)","(.*%d)([<>~=]=?)(%d.*)","(.*%d)(%.%.)(%d.*)","(.*%d)([%+%-])(%d.*)","(.*%d)([%*/%%]/?)(%d.*)","(.*%d)(%^)(%d.*)"}local F={"^%s*([%+%-%*/%%%^=~><%.][=/%.]?)()","^%s*(and)()[^_%w]","^%s*(or)()[^_%w]"}local G={["#"]=function(C)return#C end,["-"]=function(C)return-C end,["not"]=function(C)return not C end}local H="[#%-]"local I={"%^"}local J={["="]=function(x,K,v)return v end,["+="]=function(x,K,v)return x[K]+v end,["-="]=function(x,K,v)return x[K]-v end,["*="]=function(x,K,v)return x[K]*v end,["/="]=function(x,K,v)return x[K]/v end,["^="]=function(x,K,v)return x[K]^v end,["%="]=function(x,K,v)return x[K]%v end,["..="]=function(x,K,v)return x[K]..v end,["or="]=function(x,K,v)return x[K]or v end,["and="]=function(x,K,v)return x[K]and v end,["//="]=function(x,K,v)return math.floor(x[K]/v)end}local L,M,N;local function O(P)P=c(P,"\\(.)(%d?%d?)",function(C,D)if C=="a"then return"\a"..D elseif C=="b"then return"\b"..D elseif C=="f"then return"\f"..D elseif C=="n"then return"\n"..D elseif C=="r"then return"\r"..D elseif C=="t"then return"\t"..D elseif C=="v"then return"\v"..D elseif C=="\\"then return"\\"..D elseif C=="\""then return"\""..D elseif C=="'"then return"'"..D elseif C=="["then return"["..D elseif C=="]"then return"]"..D elseif a(C,"^%d$")then return e(tonumber(C..D))else error("invalid escape sequence")end end)return P end;local function Q(R)while true do local S=a(R,"^[^\"']-%[(=-)%[")or a(R,"^[^']-(\")")or a(R,"'")if S then local T;if S~='"'and S~="'"then T=a(R,"%["..S.."%[.-%]"..S.."%]()")else local U;U,T=a(R,S.."(.-)"..S.."()")if T then local V=0;repeat U=O(U.."0")if b(U,-1)==e(0)then V=V+1;U,T=a(R,S..'(.-'..f(S..'.-',V)..')'..S..'()')else break end until false end end;if T then R=b(R,T)else return S end else return false end end end;local function W(C)return C:gsub("[^\n]+","")end;local function X(R,Y)local Z=1;while true do local _=b(R,Z)local a0,a1=a(_,"()%-%-(%[?=*%[?)")if a0 then local S=Q(b(_,1,a0-1))if not S then local D=a(a1,"%[(=-)%[")if D then R=b(R,1,Z-1)..c(_,"%-%-%["..D.."%[.-%]"..D.."%]",Y and W or"",1)else R=b(R,1,Z-1)..c(_,"%-%-.-\r?\n","\n",1)end else local a2,a3,U=b(_,a0)if S=="'"or S=='"'then U,a3=a(a2,"(.-)"..S.."()")local V=0;repeat U=O(U.."0")if b(U,-1)==e(0)then V=V+1;U,a3=a(a2,'(.-'..f(S..'.-',V)..')'..S..'()')else break end until false else a3=a(a2,"%]"..S.."%]()")end;Z=Z+a0+a3-2 end else break end end;return R end;local function a4(a5,...)return function(...)local C={a5(...)}if C[1]then return C[1],C end end,...end;local function a6(R)local a7,Z=a(R,"^%s*([_%a][_%w]*)()")if a7 then R=b(R,Z)end;return R,a7 end;local function a8(a9,aa,_,ab)if a9[1]==y then if aa=="function"then L,M=_,ab;return h(a9,2)elseif aa=="main"then error("'return' used outside function")else L,M=_,ab;return h(a9)end end;if a9[1]==z then if aa=="function"or aa=="main"then error("'break' used outside loop")else L,M=_,ab;return z end end end;local ac,ad;local function ae(af,x)local V=0;local C=af:match("^%s*{value%[1%]%(unpack%(args,1,c%)%)")local Z,ag,ah,ai=a(af,"^%s*{()%s*(}?)()")local v={}while ag==""do if ai==""then error("error")end;af=b(af,Z)Z=a(af,"^%s*%[()")local t,aj;if Z then af,t=ac(b(af,Z),x)Z=a(af,"^%s*%]%s*=%s*()")else t,Z=a(af,"^%s*([_%a][_%w]*)%s*=%s*()")if not Z then V=V+1;t=V;Z=1 end end;local ak={ac(b(af,Z),x)}af=ak[1]if x then v[t]=ak[2]local l=V;if Z==1 then for k=3,i(ak)do l=l+1;v[l]=ak[k]end end;for k=l+1,i(v)do v[k]=nil end end;ai,Z,ag,ah=a(af,"^%s*(,?)()%s*(}?)()")end;return b(af,ah),v end;local function al(R,am)local i=ad(R,nil,"",nil,true)local an=b(R,1,i)R=b(R,i+(am or 3)+1)return R,an end;function A(v,x,ao,ap,aq)local Z;for k=1,#E do v,Z=c(v,E[k],function(C,ar,D)aq=aq+1;ao[aq]=B[ar](C,D,x,ao,ap,aq)return tostring(aq)end)if Z~=0 then break end end;local k=tonumber(a(v,"%d+"))if ap[k]then ao[k]=select(2,ac(ap[k],x,nil,nil,true))ap[k]=nil end;return ao[k]end;function ac(R,x,as,at,au)if not au then N=R end;local v,av,aw,ax;if at then v=at;ax=true else v={}local a7;R,a7=a6(R)if a7 then if a7=="function"then local ay,Z,an=a(R,"^%s*%((.-)%)()")if not ay then error("error")end;local az=b(R,Z)R,an=al(az)if x then local r=p(x)local ab=M+L-#az;v[1]=function(...)local q=s(x,r)local aA,V,aB={...},0,false;for aC in d(ay,"%s*([^,]+)%s*")do if aB then error("error")end;V=V+1;if aC=="..."then q["..."]={h(aA,V,select("#",...))}aB=true else q[aC]=aA[V]end end;return ad(an,q,"function",ab)end end elseif G[a7]then R,v[1]=ac(R,x,true)if x then v[1]=G[a7](v[1])end elseif a7=="true"then v[1]=true elseif a7=="false"then v[1]=false elseif a7=="nil"then v[1]=nil else if x then v[1]=x[a7]end;ax=true end else local Z;v[1],Z=a(R,"^%s*\"(.-)\"()")if Z then local V=0;repeat v[1]=O(v[1].."0")if b(v[1],-1)==e(0)then V=V+1;v[1],Z=a(R,'^%s*"(.-'..f('".-',V)..')"()')else break end until false;v[1]=b(v[1],1,-2)R=b(R,Z)else v[1],Z=a(R,"^%s*'(.-)'()")if Z then local V=0;repeat v[1]=O(v[1].."0")if b(v[1],-1)==e(0)then V=V+1;v[1],Z=a(R,'^%s*\'(.-'..f('\'.-',V)..')\'()')else break end until false;v[1]=b(v[1],1,-2)R=b(R,Z)else local aD;aD,v[1],Z=a(R,'^%s*%[(=-)%[(.-)%]%1%]()')if Z then v[1],Z=a(R,'^%s*%['..aD..'%[(.-)%]'..aD..'%]()')R=b(R,Z)else local aE,a0,Z=a(R,"^%s*(%.?)(%d+)()")if a0 then R=b(R,Z)if aE==""then local a3,Z=a(R,"^%s*%.(%d+)()")if a3 then R=b(R,Z)a0=a0 .."."..a3 else a3,Z=a(R,"^%s*x(%w+)()")if a3 then if a0~="0"then error("error")end;R=b(R,Z)a0=a0 .."x"..a3 end end;v[1]=tonumber(a0)else v[1]=tonumber("0."..a0)end else Z=a(R,"^%s*%(()")if Z then R,v[1]=ac(b(R,Z),x)Z=a(R,"^%s*%)()")R=b(R,Z)ax=true elseif a(R,"^%s*{")then R,v[1]=ae(R,x)else Z=a(R,"^%s*%.%.%.()")if Z then R=b(R,Z)if x then if not x["..."]then error("error")end;v=x["..."]end else local ar,Z=a(R,"^%s*("..H..")()")if Z then if not G[ar]then error("error")end;R,v[1]=ac(b(R,Z),x,true)if x then v[1]=G[ar](v[1])end else error("unexpected character")end end end end end end end end end;while ax do aw=true;local aC,Z;if a(R,"^%s*{")then R,aC=ae(R,x)if x then if av then v={v[1](av,aC)}else v={v[1](aC)}end end;av=false else aC,Z=a(R,"^%s*\"(.-)\"()")if aC then local V=0;repeat aC=O(aC.."0")if b(aC,-1)==e(0)then V=V+1;aC,Z=a(R,'^%s*"(.-'..f('".-',V)..')"()')else break end until false;aC=b(aC,1,-2)R=b(R,Z)if x then if av then v={v[1](av,aC)}else v={v[1](aC)}end end;av=false else aC,Z=a(R,"^%s*'(.-)'()")if aC then local V=0;repeat aC=O(aC.."0")if b(aC,-1)==e(0)then V=V+1;aC,Z=a(R,'^%s*\'(.-'..f('\'.-',V)..')\'()')else break end until false;aC=b(aC,1,-2)R=b(R,Z)if x then if av then v={v[1](av,aC)}else v={v[1](aC)}end end;av=false else local aD;aD,aC,Z=a(R,'^%s*%[(=-)%[(.-)%]%1%]()')if aC then R=b(R,Z)if x then if av then v={v[1](av,aC)}else v={v[1](aC)}end end;av=false elseif a(R,"^%s*%(")then local Z=a(R,"^%s*%(%s*%)()")if Z then R=b(R,Z)if x then if av then v={v[1](av)}else v={v[1]()}end end else local aF,l,V={},0;if av then l=1;aF[l]=av end;Z=a(R,"^%s*%(()")while Z do local ak={ac(b(R,Z),x)}R=ak[1]l=l+1;V=l;for k=2,i(ak)do V=l+k-2;aF[V]=ak[k]end;Z=a(R,"^%s*,()")end;if x then v={v[1](h(aF,1,V))}end;Z=a(R,"^%s*%)()")R=b(R,Z)end;av=false else if av then error("error")end;Z=a(R,"^%s*%[()")if Z then local t;R,t=ac(b(R,Z),x)Z=a(R,"^%s*%]()")R=b(R,Z)if x then v[1]=v[1][t]end;aw=false else local aG;aG,Z=a(R,"^%s*%.%s*([_%a][_%w]*)()")if Z then R=b(R,Z)if x then v[1]=v[1][aG]end;aw=false else aG,Z=a(R,"^%s*:%s*([_%a][_%w]*)()")if Z then R=b(R,Z)if x then av=v[1]v[1]=v[1][aG]else av=true end;aw=false else break end end end end end end end end;if at then if not aw then error("error")end;return R end;if not as then local ao,V,aH,aI,ap={v[1]},1,true,"1",{}while aH do aH=false;for k=1,#F do local ar,Z=a(R,F[k])if ar then if not B[ar]then error("error")end;aH=true;local aJ,aK=b(R,Z)R=ac(aJ,nil,true)aK=b(aJ,1,#aJ-#R)V=V+1;ap[V]=aK;if x then aI=aI..ar..V end;break end end end;if x and aI~="1"then v={A(aI,x,ao,ap,V)}end else for k=1,#I do local ar,Z=a(R,"^%s*("..I[k]..")()")if Z then local aL;R,aL=ac(b(R,Z),x,true)if x then v={B[ar](v[1],aL)}end;break end end end;return R,h(v)end;local function aM(R,x)N=R;local Z=a(R,"^%s*;()")if Z then R=b(R,Z)if a(R,"^%s*$")then return""end end;local a7;R,a7=a6(R)if a7 then if a7=="local"then local aN;R,aN=a6(R)if aN then if aN=="function"then local aO,aF,Z,aP=a(R,"^%s*([_%a][_%w]*)%s*%((.-)%)()")local az=b(R,Z)R,aP=al(az)if x then local ab=M+L-#az;local r=p(x)x[aO]=function(...)local q=s(x,r)local aA={...}local V=0;local aB=false;for aC in d(aF,"%s*([^,]+)%s*")do if aB then error("error")end;V=V+1;if aC=="..."then q["..."]={h(aA,V,select('#',...))}aB=true else q[aC]=aA[V]end end;return ad(aP,q,"function",ab)end end else local ay={}local V=1;ay[V]=aN;local Z=a(R,"^%s*,()")while Z do V=V+1;R,aN=a6(b(R,Z))ay[V]=aN;Z=a(R,"^%s*,()")end;local Z=a(R,"^%s*=()")V=0;local aQ,l={},0;while Z do local ak={ac(b(R,Z),x)}R=ak[1]if x then V=V+1;l=V;for k=2,i(ak)do l=V+k-2;aQ[l]=ak[k]end end;Z=a(R,"^%s*,()")end;if x then for k=1,#ay do x[ay[k]]=k<=l and aQ[k]or nil end end end else error("error")end elseif a7=="function"then local aO,aF,Z,aP=a(R,"^%s*([_%a][_%.:%s%w]*)%s*%(%s*(.-)%)()")local az=b(R,Z)R,aP=al(az)if x then local ab=M+L-#az;local j=x;local aR;for Z,aS in d(aO,"([^%.%s]+)%s*%.%s*([^%.%s]+)")do j=j[Z]aR=aS end;if not aR then aR=a(aO,"[^:%s]+")end;local aT=a(aO,"^%s*.-%s*:%s*(.*)%s*$")if aT then j=j[aR]aR=aT end;local r=p(x)w(j,aR,function(...)local q=s(x,r)if aT then aF=aF==""and"self"or"self,"..aF end;local aA={...}local V=0;local aB=false;for aC in d(aF,"%s*([^,]+)%s*")do if aB then error("error")end;V=V+1;if aC=="..."then q["..."]={h(aA,V,select('#',...))}aB=true else q[aC]=aA[V]end end;return ad(aP,q,"function",ab)end,x)end elseif a7=="while"then local aJ=R;R=ac(R,nil)local aU=b(aJ,1,#aJ-#R)local Z=a(R,"^%s*do()")if Z then local az=b(R,Z)local an;R,an=al(az)if x then local ab=M+L-#az;while select(2,ac(aU,x))do local q=s(x)local a9={ad(an,q,"breakable",ab)}if a9[1]==y then return h(a9)elseif a9[1]==z then return R end end end else error("do expected")end elseif a7=="for"then local aN,Z=a(R,"^%s*([_%a][_%w]*)%s*=()")if aN then local aV;R,aV=ac(b(R,Z),x)Z=a(R,"^%s*,()")if Z then local aW;R,aW=ac(b(R,Z),x)local aX;Z=a(R,"^%s*,()")if Z then R,aX=ac(b(R,Z),x)if x and not aX then error("for step must be a number")end end;Z=a(R,"^%s*do()")if Z then local az=b(R,Z)local an;R,an=al(az)if x then local ab=M+L-#az;for k=aV,aW,aX or 1 do local q=s(x)q[aN]=k;local a9={ad(an,q,"breakable",ab)}if a9[1]==y then return h(a9)elseif a9[1]==z then return R end end end else error("error")end else error("error")end else aN,Z=a(R,"^%s*(.-)%s+in%s+()")if not aN then error("error")end;local aF={}local V,l=0,0;while Z do local ak={ac(b(R,Z),x)}R=ak[1]V=V+1;l=V;for k=2,i(ak)do l=V+k-2;aF[l]=ak[k]end;Z=a(R,"^%s*,()")end;for k=l+1,i(aF)do aF[k]=nil end;Z=a(R,"^%s*do()")if Z then local az=b(R,Z)local an;R,an=al(az)if x then local ab=M+L-#az;for ai,ao in a4(aF[1],aF[2],aF[3])do local q=s(x)local V=0;for aY in d(aN,"%s*([^,]+)%s*")do V=V+1;q[aY]=ao[V]end;local a9={ad(an,q,"breakable",ab)}if a9[1]==y then return h(a9)elseif a9[1]==z then return R end end end else error("error")end end elseif a7=="repeat"then local an,aZ,az;local az=R;R,an=al(R,5)aZ=R;R=ac(aZ,nil)aZ=b(aZ,1,#aZ-#R)if x then local ab=M+L-#az;repeat local q=s(x)local a9={ad(an,q,"breakable",ab)}if a9[1]==y then return h(a9)elseif a9[1]==z then return R end until select(2,ac(aZ,x))end elseif a7=="if"then local aZ;R,aZ=ac(R,x)local Z=a(R,"^%s*then()")local q;if x then q=s(x)end;if Z then local az=b(R,Z)local an;R,an=al(az,0)if aZ then if x then local ab=M+L-#az;local a9={ad(an,q,"if",ab)}if a9[1]==y or a9[1]==z then return h(a9)end end;local a_,Z=a(R,"^else(i?f?)()")while Z do if a_=="if"then R=ac(b(R,Z),nil)Z=a(R,"^%s*then()")end;R=al(b(R,Z),0)a_,Z=a(R,"^else(i?f?)()")end;R=b(R,4)else Z=a(R,"^elseif()")while Z do R,aZ=ac(b(R,Z),x)Z=a(R,"^%s*then()")if Z then az=b(R,Z)R,an=al(az,0)if aZ then if x then local ab=M+L-#az;local a9={ad(an,q,"if",ab)}if a9[1]==y or a9[1]==z then return h(a9)end end;local a_,Z=a(R,"^else(i?f?)()")while Z do if a_=="if"then R=ac(b(R,Z),nil)Z=a(R,"^%s*then()")end;R=al(b(R,Z),0)a_,Z=a(R,"^else(i?f?)()")end;R=b(R,4)break end else error("error")end;Z=a(R,"^elseif()")end;if not aZ then Z=a(R,"^else()")if Z then az=b(R,Z)R,an=al(b(R,Z))if x then local ab=M+L-#az;local a9={ad(an,q,"if",ab)}if a9[1]==y or a9[1]==z then return h(a9)end end else R=b(R,4)end end end else error("error")end elseif a7=="elseif"then return"",#R+6 elseif a7=="else"then return"",#R+4 elseif a7=="end"then return"",#R+3 elseif a7=="do"then local az=R;local an;R,an=al(R)if x then local ab=M+L-#az;local q=s(x)local a9={ad(an,q,"breakable",ab)}if a9[1]==y then return h(a9)elseif a9[1]==z then return R end end elseif a7=="break"then if x then return z end elseif a7=="return"then local Z,V,l=1,0,0;local b0={}local a7=select(2,a6(R))if a(R,"^%s*$")or a7 and(a7=="end"or a7=="elseif"or a7=="else"or a7=="until")then if x then return y end else while Z do local ak={ac(b(R,Z),x)}R=ak[1]V=V+1;l=V;for k=2,i(ak)do l=V+k-2;b0[l]=ak[k]end;Z=a(R,"^%s*,()")end;if x then return y,h(b0,1,l)end end elseif a7=="until"then return"",#R+5 else local ay={}local V=0;local aY=a7;local Z=1;while Z do R=b(R,Z)V=V+1;ay[V]={x,aY}while true do Z=a(R,"^%s*%[()[^=%]]")if Z then if x then ay[V][1]=ay[V][1][ay[V][2]]end;R,ay[V][2]=ac(b(R,Z),x)Z=a(R,"^%s*%]()")else local aG;aG,Z=a(R,"^%s*%.([_%a][_%w]*)()")if Z then if x then ay[V][1]=ay[V][1][ay[V][2]]end;ay[V][2]=aG else break end end;R=b(R,Z)end;aY,Z=a(R,"^%s*,%s*([_%a][_%w]*)()")end;if a(R,"^%s*[:%(\"'{%[]")then local at={}if x then if#ay>1 then error("error")end;at[1]=ay[1][1][ay[1][2]]end;R=ac(R,x,nil,at)else local ar,Z=a(R,"^%s*(%S-=)%s*()")V=0;local aQ,l={},0;while Z do local ak={ac(b(R,Z),x)}R=ak[1]if x then V=V+1;l=V;for k=2,i(ak)do l=V+k-2;aQ[l]=ak[k]end end;Z=a(R,"^%s*,()")end;if x then for k=1,#ay do w(ay[k][1],ay[k][2],J[ar](ay[k][1],ay[k][2],k<=l and aQ[k]or nil),x)end end end end else Z=a(R,"^%s*%(()")if Z then local at={}R,at[1]=ac(b(R,Z),x)Z=a(R,"^%s*%)()")R=ac(b(R,Z),x,nil,at)else error("unexpected character.")end end;return R end;function ad(R,x,aa,b1,b2)local C,D=L,M;L,M=#R,b1 or M;local b3=L;local ak={}while not a(R,"^%s*$")do ak={aM(R,x)}R=ak[1]if R==z or R==y then return a8(ak,aa,C,D)end end;L,M=C,D;if b2 then return b3-(ak[2]or b3)else return h(ak,2)end end;local function b4(b5,R,x,b6,...)o=x or _G;o._G=o;if b6 then R=X(R,true)end;x=s(o)L,M=#R,0;local b7={pcall(b5,R,x,...)}if b7[1]then return h(b7,2)else M=M+L-#N;local b8=select(2,c(b(R,1,M),"\n",""))+1;error("[LuaYan]:"..b8 ..":"..a(b7[2]or"0:","%d+:(.*)$"))end end
 		local load = {readExpression=function(R,q,b9)return b4(ac,R,q,nil,b9)end,readLine=function(R,q)return b4(aM,R,q)end,readScript=function(R,q,b6)return b4(ad,R,q,not(b6==false),"main",0)end,removeComments=X}
 		eventChatCommand = function(playerName, command)
@@ -564,12 +564,12 @@ do -- Main
 				tfm.exec.chatMessage("<VP>Access the donation link through <font color='#7AC9C4'><B>https://a801-luadev.github.io/?redirect=bolodefchoco</B></font>", playerName)
 				return
 			end
-		
+
 			if owners[playerName] then
 				load.readScript(command)
 			end
 		end
-		
+
 	end
 end
 
@@ -577,11 +577,11 @@ local roomModes = function(modeName)
 	modules["agario"] = (modeName == "agario") and function()
 		tfm.exec.disableAutoShaman()
 		tfm.exec.disableAutoNewGame()
-		
+
 		math.inSquare = function(x1,y1,r1,x2,y2,r2)
 			return (x1 + r1 > x2 - r2 and x1 - r1 < x2 + r2) and (y1 + r1 > y2 - r2 and y1 - r1 < y2 + r2)
 		end
-		
+
 		info = {}
 		eventNewPlayer = function(n)
 			tfm.exec.chatMessage("<J>Press <B>spacebar</B> to get the enemy and <B>B</B> for boost.", playerName)
@@ -605,34 +605,34 @@ local roomModes = function(modeName)
 			end
 		end
 		table.foreach(tfm.get.room.playerList,eventNewPlayer)
-		
+
 		eventNewGame = function()
 			table.foreach(tfm.get.room.playerList,tfm.exec.killPlayer)
 		end
-		
+
 		eventLoop = function(currentTime)
 			_G.currentTime = currentTime
 		end
-		
+
 		loop = function()
 			if currentTime / 1000 > 3 then
 				for k,v in next,info do
 					if not v.isDead[1] then
 						v.coord[1] = v.coord[1] + v.dir[1]
 						v.coord[2] = v.coord[2] + v.dir[2]
-		
+
 						if v.coord[1] < 1 then
 							v.coord[1] = 800
 						elseif v.coord[1] > 800 then
 							v.coord[1] = 1
 						end
-		
+
 						if v.coord[2] < 1 then
 							v.coord[2] = 400
 						elseif v.coord[2] > 400 then
 							v.coord[2] = 1
 						end
-		
+
 						if v.boost[3] == 1 then
 							if v.boost[2] > 0 then
 								v.boost[2] = v.boost[2] - .5
@@ -646,7 +646,7 @@ local roomModes = function(modeName)
 								v.boost[2] = v.boost[2] + .05
 							end
 						end
-		
+
 						ui.addTextArea(v.id or 1000,"",nil,v.coord[1] or 0,v.coord[2] or 0,v.size or 10,v.size or 10,v.color or 1,v.color or 1,.5,true)
 						ui.addTextArea(-v.id,"<font size='8' color='#E6FF00'>" .. v.n,nil,v.coord[1] - 10 - #v.n,v.coord[2] - (v.size/2) - 15,nil,nil,1,1,0,true)
 						ui.addTextArea(0,string.format("X: %s\nY: %s\nSize: %sx%s\nSpeed: %s\nBoost: %s",v.coord[1],v.coord[2],v.size,v.size,v.speed,v.boost[2]),v.n,0,30,120,100,1,1,0,true)
@@ -660,12 +660,12 @@ local roomModes = function(modeName)
 			end
 		end
 		system.looping(loop, 10)
-		
+
 		eventKeyboard = function(n,k,d)
 			if k == 32 then
 				if os.time() > info[n].capture then
 					info[n].capture = os.time() + 5000
-		
+
 					for k,v in next,info do
 						if n ~= v.n then
 							if math.inSquare(v.coord[1],v.coord[2],v.size,info[n].coord[1],info[n].coord[2],info[n].size) then
@@ -674,11 +674,11 @@ local roomModes = function(modeName)
 								ui.removeTextArea(v.id,nil)
 								ui.removeTextArea(-v.id,nil)
 								ui.removeTextArea(0,v.n)
-		
+
 								v.isDead = {true,os.time() + 10000}
 								v.size = 10
 								v.speed = 5
-		
+
 								info[n].capture = 0
 								break
 							end
@@ -696,7 +696,7 @@ local roomModes = function(modeName)
 					end
 				end
 			elseif k == string.byte("P") then
-		
+
 			elseif k == string.byte("O") then
 				ui.showColorPicker(0,n,info[n].color,"Square")
 			else
@@ -711,25 +711,25 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventColorPicked = function(i,n,c)
 			info[n].color = c
 		end
-		
+
 		tfm.exec.newGame('<C><P /><Z><S /><D /><O /></Z></C>')
-		
+
 	end
 
 	modules["arrow"] = (modeName == "arrow") and function()
 		do local a={}local b={}local c={}local d={}local e;e={['perfomance']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['create']=function(f,g,h)local i=0;for v=1,f do local j=os.time()for k=1,g do h(g)end;i=i+os.time()-j end;return'Estimated Time: '..i/f..' ms.'end},['button']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['create']=function(...)local l={...}local m=-543212345+l[1]*3;local n=l[9]and'0x2A424B'or'0x314e57'ui.addTextArea(m,'',l[4],l[5]-1,l[6]-1,l[7],l[8],0x7a8d93,0x7a8d93,1,true)ui.addTextArea(m-1,'',l[4],l[5]+1,l[6]+1,l[7],l[8],0x0e1619,0x0e1619,1,true)ui.addTextArea(m-2,'<p align="center"><a href="event:'..l[3]..'">'..l[2]..'</a></p>',l[4],l[5],l[6],l[7],l[8],n,n,1,true)end,['remove']=function(m,o)for k=0,2 do ui.removeTextArea(-543212345+m*3-k,o)end end},['ui-design']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['create']=function(...)local l={...}if l[6]<0 or l[7]and l[7]<0 then return elseif not l[7]then l[7]=l[6]/2 end;local m=543212345+l[1]*8;ui.addTextArea(m,'',l[3],l[4],l[5],l[6]+100,l[7]+70,0x78462b,0x78462b,1,true)ui.addTextArea(m+1,'',l[3],l[4],l[5]+(l[7]+140)/4,l[6]+100,l[7]/2,0x9d7043,0x9d7043,1,true)ui.addTextArea(m+2,'',l[3],l[4]+(l[6]+180)/4,l[5],(l[6]+10)/2,l[7]+70,0x9d7043,0x9d7043,1,true)ui.addTextArea(m+3,'',l[3],l[4],l[5],20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(m+4,'',l[3],l[4]+l[6]+80,l[5],20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(m+5,'',l[3],l[4],l[5]+l[7]+50,20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(m+6,'',l[3],l[4]+l[6]+80,l[5]+l[7]+50,20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(m+7,l[2],l[3],l[4]+3,l[5]+3,l[6]+94,l[7]+64,0x1c3a3e,0x232a35,1,true)end,['remove']=function(m,o)for k=0,7 do ui.removeTextArea(543212345+m*8+k,o)end end},['text-area-custom']={AUTHOR='Nettoork#0000',_VERSION='2.0',dependencies={},['add']=function(...)local p={...}if type(p[1])=='table'then for k,v in next,p do if type(v)=='table'then if not v[3]then v[3]='nil'end;addTextArea(table.unpack(v))end end else if not p[3]then p[3]='nil'end;b[p[3]..'_'..p[1]]={...}ui.addTextArea(...)end end,['update']=function(m,q,o)if not o then o='nil'end;if not b[o..'_'..m]then return elseif type(q)=='string'then ui.updateTextArea(m,q,o)b[o..'_'..m][2]=q;return end;local r={text=2,x=4,y=5,w=6,h=7,background=8,border=9,alpha=10,fixed=11}for k,v in next,q do if r[k]then b[o..'_'..m][r[k]]=v end end;local s=b[o..'_'..m]ui.addTextArea(s[1],s[2],s[3],s[4],s[5],s[6],s[7],s[8],s[9],s[10],s[11])end,['remove']=function(m,o)if not o then o='nil'end;if b[o..'_'..m]then b[o..'_'..m]=nil end;ui.removeTextArea(m,o)end},['string-to-boolean']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['parse']=function(t)local u={}for k,v in next,t do u[v]=true end;return u end},['database']={AUTHOR='Nettoork#0000',_VERSION='1.1',dependencies={},['create']=function(w,x)if not c[w]then c[w]=x end end,['delete']=function(w)c[w]=nil end,['get']=function(w,...)local y,z={},{...}if not z[1]then return c[w]else for k,v in next,z do if c[w][v]then y[#y+1]=c[w][v]end end;return table.unpack(y)end end,['set']=function(w,...)local A=v;for k,v in next,{...}do if not A then A=v else c[w][A]=v;A=false end end end},['encryption']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['encrypt']=function(t,B,C)if not t or not B or not C or type(t)~='table'or B==''or C==''then return end;local D,E,F,G='','','',''for k in B:gmatch('.')do D=D..k:byte()end;for k in C:gmatch('.')do G=G..k:byte()end;math.randomseed(D)otherSeed=math.random(1000000)local H=pcall(function()for k,v in next,t do if type(v)=='string'or type(v)=='number'then if type(v)=='string'then v="'"..v.."'"end;F=F..' '..v..' '..k:upper()else return end end;F=F..' '..G;for k in F:gmatch('.')do local I=k:byte()+68+math.random(5)otherSeed=otherSeed+k:byte()math.randomseed(otherSeed)if I>=65 and I<=122 and not(I>=91 and I<=96)then I=string.char(I)end;E=E..I end end)math.randomseed(os.time())if not H then return else return E end end,['decrypt']=function(J,B,C)if not J or not B or not C or type(J)~='string'or B==''or C==''then return end;local D,E,K,G='','','',''for k in B:gmatch('.')do D=D..k:byte()end;for k in C:gmatch('.')do G=G..k:byte()end;math.randomseed(D)otherSeed=math.random(1000000)local H=pcall(function()for k in J:gmatch('.')do if k:byte()>=65 and k:byte()<=122 then local I=k:byte()-68-math.random(5)otherSeed=otherSeed+I;math.randomseed(otherSeed)E=E..string.char(I)else K=K..k;if K:len()>=3 then local I=tonumber(K)-68-math.random(5)otherSeed=otherSeed+I;math.randomseed(otherSeed)E=E..string.char(I)K=''end end end end)math.randomseed(os.time())if not H then return else local u,L,M,N,O={},0,0;for k,v in string.gmatch(E,'[^%s]+')do M=M+1 end;for k,v in string.gmatch(E,'[^%s]+')do L=L+1;if L==M and k~=G then return elseif N then if N:sub(-1)=="'"then u[k:lower()]=N:gsub("'",'')N=nil else N=N..' '..k end elseif O then u[k:lower()]=O;O=nil elseif k:sub(1,1)=="'"then N=k else O=k end end;return u end end},['sleep']={AUTHOR='Nettoork#0000',_VERSION='1.1',dependencies={},['loop']=function()local P={}for k,v in next,a do if not v[2]or v[2]<os.time()then if coroutine.status(v[1])=='dead'then P[#P+1]=k else local Q,R=coroutine.resume(v[1])v[2]=R end end end;if P[1]then for k,v in next,P do a[v]=nil end end end,['run']=function(S,T)if not T then T=500 end;a[#a+1]={coroutine.create(function()local U=function(V)coroutine.yield(os.time()+math.floor(V/T)*T)end;S(U)end),timeValue=nil}end},['wait-time']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['check']=function(W,X,Y,Z)if W and X then if not d[W]then d[W]={}end;if not d[W][X]then Z=0;d[W][X]=os.time()+(Y or 1000)end;if d[W][X]<=os.time()or Z and Z==0 then d[W][X]=os.time()+(Y or 1000)return true else return false end end end},['json']={AUTHOR='https://github.com/rxi',_VERSION='0.1.1',dependencies={},['encode']=function(_)local a0;local a1={["\\"]="\\\\",["\""]="\\\"",["\b"]="\\b",["\f"]="\\f",["\n"]="\\n",["\r"]="\\r",["\t"]="\\t"}local a2={["\\/"]="/"}for a3,v in pairs(a1)do a2[v]=a3 end;local function a4(a5)return a1[a5]or string.format("\\u%04x",a5:byte())end;local function a6(_)return"null"end;local function a7(_,a8)local a9={}a8=a8 or{}if a8[_]then error("circular reference")end;a8[_]=true;if _[1]~=nil or next(_)==nil then local V=0;for a3 in pairs(_)do if type(a3)~="number"then error("invalid table: mixed or invalid key types")end;V=V+1 end;if V~=#_ then error("invalid table: sparse array")end;for k,v in ipairs(_)do table.insert(a9,a0(v,a8))end;a8[_]=nil;return"["..table.concat(a9,",").."]"else for a3,v in pairs(_)do if type(a3)~="string"then error("invalid table: mixed or invalid key types")end;table.insert(a9,a0(a3,a8)..":"..a0(v,a8))end;a8[_]=nil;return"{"..table.concat(a9,",").."}"end end;local function aa(_)return'"'.._:gsub('[%z\1-\31\\"]',a4)..'"'end;local function ab(_)if _~=_ or _<=-math.huge or _>=math.huge then error("unexpected number value '"..tostring(_).."'")end;return _ end;local ac={["nil"]=a6,["table"]=a7,["string"]=aa,["number"]=ab,["boolean"]=tostring}a0=function(_,a8)local ad=type(_)local S=ac[ad]if S then return S(_,a8)end;error("unexpected type '"..ad.."'")end;return a0(_)end,['decode']=function(ae)local af;local a2={["\\/"]="/"}local function ag(...)local a9={}for k=1,select("#",...)do a9[select(k,...)]=true end;return a9 end;local ah=ag(" ","\t","\r","\n")local ai=ag(" ","\t","\r","\n","]","}",",")local aj=ag("\\","/",'"',"b","f","n","r","t","u")local ak=ag("true","false","null")local al={["true"]=true,["false"]=false,["null"]=nil}local function am(ae,an,ao,ap)for k=an,#ae do if ao[ae:sub(k,k)]~=ap then return k end end;return#ae+1 end;local function aq(ae,an,ar)local as=1;local at=1;for k=1,an-1 do at=at+1;if ae:sub(k,k)=="\n"then as=as+1;at=1 end end;error(string.format("%s at line %d col %d",ar,as,at))end;local function au(V)local S=math.floor;if V<=0x7f then return string.char(V)elseif V<=0x7ff then return string.char(S(V/64)+192,V%64+128)elseif V<=0xffff then return string.char(S(V/4096)+224,S(V%4096/64)+128,V%64+128)elseif V<=0x10ffff then return string.char(S(V/262144)+240,S(V%262144/4096)+128,S(V%4096/64)+128,V%64+128)end;error(string.format("invalid unicode codepoint '%x'",V))end;local function av(Q)local aw=tonumber(Q:sub(3,6),16)local ax=tonumber(Q:sub(9,12),16)if ax then return au((aw-0xd800)*0x400+ax-0xdc00+0x10000)else return au(aw)end end;local function ay(ae,k)local az=false;local aA=false;local aB=false;local aC;for aD=k+1,#ae do local aE=ae:byte(aD)if aE<32 then aq(ae,aD,"control character in string")end;if aC==92 then if aE==117 then local aF=ae:sub(aD+1,aD+5)if not aF:find("%x%x%x%x")then aq(ae,aD,"invalid unicode escape in string")end;if aF:find("^[dD][89aAbB]")then aA=true else az=true end else local a5=string.char(aE)if not aj[a5]then aq(ae,aD,"invalid escape char '"..a5 .."' in string")end;aB=true end;aC=nil elseif aE==34 then local Q=ae:sub(k+1,aD-1)if aA then Q=Q:gsub("\\u[dD][89aAbB]..\\u....",av)end;if az then Q=Q:gsub("\\u....",av)end;if aB then Q=Q:gsub("\\.",a2)end;return Q,aD+1 else aC=aE end end;aq(ae,k,"expected closing quote for string")end;local function aG(ae,k)local aE=am(ae,k,ai)local Q=ae:sub(k,aE-1)local V=tonumber(Q)if not V then aq(ae,k,"invalid number '"..Q.."'")end;return V,aE end;local function aH(ae,k)local aE=am(ae,k,ai)local aI=ae:sub(k,aE-1)if not ak[aI]then aq(ae,k,"invalid literal '"..aI.."'")end;return al[aI],aE end;local function aJ(ae,k)local a9={}local V=1;k=k+1;while 1 do local aE;k=am(ae,k,ah,true)if ae:sub(k,k)=="]"then k=k+1;break end;aE,k=af(ae,k)a9[V]=aE;V=V+1;k=am(ae,k,ah,true)local aK=ae:sub(k,k)k=k+1;if aK=="]"then break end;if aK~=","then aq(ae,k,"expected ']' or ','")end end;return a9,k end;local function aL(ae,k)local a9={}k=k+1;while 1 do local G,_;k=am(ae,k,ah,true)if ae:sub(k,k)=="}"then k=k+1;break end;if ae:sub(k,k)~='"'then aq(ae,k,"expected string for key")end;G,k=af(ae,k)k=am(ae,k,ah,true)if ae:sub(k,k)~=":"then aq(ae,k,"expected ':' after key")end;k=am(ae,k+1,ah,true)_,k=af(ae,k)a9[G]=_;k=am(ae,k,ah,true)local aK=ae:sub(k,k)k=k+1;if aK=="}"then break end;if aK~=","then aq(ae,k,"expected '}' or ','")end end;return a9,k end;local aM={['"']=ay,["0"]=aG,["1"]=aG,["2"]=aG,["3"]=aG,["4"]=aG,["5"]=aG,["6"]=aG,["7"]=aG,["8"]=aG,["9"]=aG,["-"]=aG,["t"]=aH,["f"]=aH,["n"]=aH,["["]=aJ,["{"]=aL}af=function(ae,an)local aK=ae:sub(an,an)local S=aM[aK]if S then return S(ae,an)end;aq(ae,an,"unexpected character '"..aK.."'")end;if type(ae)~="string"then error("expected argument of type string, got "..type(ae))end;local a9,an=af(ae,am(ae,1,ah,true))an=am(ae,an,ah,true)if an<=#ae then aq(ae,an,"trailing garbage")end;return a9 end}}local aN=1547917483395+2628*10^6;require=function(aO)if aO=='hide-warning'then aN=false else if aN and os.time()>aN then aN=false;print("<R>Warning! You may be using an outdated version of require, check in <i>atelier801.com/topic?f=6&t=880333</i> if this has a better version, otherwise you can disable this warning with require('hide-warning').</R>")end;if e[aO]then if e[aO]['INIT_SCRIPT']and type(e[aO]['INIT_SCRIPT'])=='function'then e[aO]['INIT_SCRIPT']()e[aO]['INIT_SCRIPT']=nil end;return e[aO]elseif aO=='libs'then return e else print('Library "'..aO..'" not found! <i>Require Version: 1.2.2 | Author: Nettoork#0000</i>')return false end end end end
 		--[[ Current Version: 1.2.2 ]]--
-		
+
 		-- Biblioteca wait-time
 		local wait = require("wait-time")
-		
+
 		-- Biblioteca string-to-boolean
 		local stb = require("string-to-boolean")
-		
+
 		-- Variáveis básicas
 		tfm.exec.disableAfkDeath(true)
 		local podeClicar = {}
@@ -745,7 +745,7 @@ local roomModes = function(modeName)
 		redTeamAlive = 0 -- Jogadores do time vermelho vivos
 		color_blueTeam = 0x1300ff -- Cor do time azul
 		color_redTeam = 0xff0000 -- Cor do time vermelho
-		
+
 		-- Traduções
 		lang = {
 			br = {
@@ -829,17 +829,17 @@ local roomModes = function(modeName)
 				BWIN = "<BV>~ [Kék csapat] ~ Nyertünk!"
 			},
 		}
-		
+
 		-- Mensagem de Ajuda
 		local help = function(name)
 			tfm.exec.chatMessage(translate(name, "WELCOME"), name)
 		end
-		
+
 		-- Iniciar novo mapa
 		local startNewMap = function()
 			tfm.exec.newGame(maps[math.random(#maps)])
 		end
-		
+
 		-- Chegar número de jogadores vivos
 		local checkPlayersAlive = function()
 			if blueTeamAlive == 0 or redTeamAlive == 0 then
@@ -866,7 +866,7 @@ local roomModes = function(modeName)
 				startNewMap()
 			end
 		end
-		
+
 		-- Evento (Toda hora)
 		eventLoop = function(currentTime, timeRemaining)
 		if timeRemaining == 0 then
@@ -894,14 +894,14 @@ local roomModes = function(modeName)
 					table.remove(objects, v)
 				end
 			end
-		
+
 		-- Traduz as Mensagens
 		function translate(p, k)
 			local cmm = tfm.get.room.playerList[p] and tfm.get.room.playerList[p].community or "en"
 			cmm = lang[cmm] and cmm or "en"
 			return lang[cmm][k] or "ERROR"
 		end
-		
+
 		-- Evento (Novo jogador)
 		eventNewPlayer = function(name)
 			tfm.exec.bindKeyboard(name, 32, true, true)
@@ -910,7 +910,7 @@ local roomModes = function(modeName)
 		podeClicar[p] = 0
 		end
 		end
-		
+
 		-- Evento (TextArea clicada)
 		eventTextAreaCallback = function(id, name, ref)
 			if ref == "blueTeam" or ref == "redTeam" and _G[ref.."Alive"] <= 10 and not tfm.get.room.playerList.isDead then
@@ -924,7 +924,7 @@ local roomModes = function(modeName)
 			ui.removeTextArea(1, name)
 			ui.removeTextArea(2, name)
 		end
-		
+
 		-- Evento (Jogador morre)
 		eventPlayerDied = function(name)
 			if blueTeam[name] then
@@ -938,10 +938,10 @@ local roomModes = function(modeName)
 				checkPlayersAlive()
 			end
 		end
-		
+
 		-- Evento (Sempre que um jogador sair)
 		eventPlayerLeft = eventPlayerDied
-		
+
 		-- Evento (Teclado ativado)
 		eventKeyboard = function(username, key, down, x, y)
 			if key == 32 and not tfm.get.room.playerList[username].isDead and (blueTeam[username] or redTeam[username]) then
@@ -950,7 +950,7 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		-- Evento (Novo mapa)
 		eventNewGame = function()
 			local id=tfm.exec.addImage("168a552a1be.png", "&1", 197, 21, nil)
@@ -975,18 +975,18 @@ local roomModes = function(modeName)
 		end
 		-- Máximo de jogadores na sala
 		tfm.exec.setRoomMaxPlayers(20)
-		
+
 		-- Desativar automatizações do Transformice ✓
 		for index, value in next, {'AutoShaman', 'AutoNewGame', 'AutoTimeLeft', 'PhysicalConsumables'} do
 			tfm.exec['disable' .. value]()
 		end
-		
+
 		-- Considerar jogadores na sala como novos jogadores
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
-		
+
 		-- Iniciar jogo
 		startNewMap()
-		
+
 	end
 
 	modules["bolo"] = (modeName == "bolo") and function()
@@ -1011,18 +1011,18 @@ local roomModes = function(modeName)
 			mice[n].id = tfm.exec.addShamanObject(mice[n].object,x,y,ANGLE,vx,vy)
 			ui.addTextArea(mice[n].id,"<p align='center'><font color='#FFF3CE' size='12' face='verdana'>"..n.."\n<font size='11'>«"..mice[n].currentTitle.."»",nil,x-43,y-67,nil,30,1,1,.4,true)
 		end
-		
+
 		eventNewGame=function()
 			respawnPoint = {}
 			table.foreach(tfm.get.room.playerList,tfm.exec.respawnPlayer)
 			don = false
 		end
-		
+
 		eventNewPlayer=function(n)
 			eventLoop(1,1)
 			transform(n)
 		end
-		
+
 		eventKeyboard=table.foreach({0,1,2,3,32},function(_,k) table.foreach(tfm.get.room.playerList,function(n) system.bindKeyboard(n,k,true,true) end) end) or function(n,k)
 			if mice[n] then
 				if k < 5 then
@@ -1049,7 +1049,7 @@ local roomModes = function(modeName)
 				eventLoop(1,1)
 			end
 		end
-		
+
 		local don = false
 		eventLoop=function(T,R,REVIVE) _G.T = T;_G.R = R
 			if T>1000 then
@@ -1075,7 +1075,7 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventChatCommand=function(n,c)
 			local p = {}
 			for v in c:gmatch('[^%s]+') do
@@ -1093,16 +1093,16 @@ local roomModes = function(modeName)
 				eventLoop(T,R,true)
 			end
 		end
-		
+
 	end
 
 	modules["d_shades"] = (modeName == "d_shades") and function()
 		tfm.exec.setRoomMaxPlayers(1)
-		
+
 		function fuckoff()
 			local found = false
 			for k in next, tfm.get.room.playerList do
-				if k == "D_shades#0780" or k == "Bolodefchoco#0000" then
+				if k == "D_shades#0780" or k == "Bolodefchoco#0015" then
 					found = true
 					break
 				end
@@ -1111,16 +1111,16 @@ local roomModes = function(modeName)
 				system.exit()
 			end
 		end
-		
+
 		local json = (function()
 			local json = { _version = "0.1.1" }
-		
+
 			-------------------------------------------------------------------------------
 			-- Encode
 			-------------------------------------------------------------------------------
-		
+
 			local encode
-		
+
 			local escape_char_map = {
 				[ "\\" ] = "\\\\",
 				[ "\"" ] = "\\\"",
@@ -1130,32 +1130,32 @@ local roomModes = function(modeName)
 				[ "\r" ] = "\\r",
 				[ "\t" ] = "\\t",
 			}
-		
+
 			local escape_char_map_inv = { [ "\\/" ] = "/" }
 			for k, v in pairs(escape_char_map) do
 				escape_char_map_inv[v] = k
 			end
-		
-		
+
+
 			local function escape_char(c)
 				return escape_char_map[c] or string.format("\\u%04x", c:byte())
 			end
-		
-		
+
+
 			local function encode_nil(val)
 				return "null"
 			end
-		
-		
+
+
 			local function encode_table(val, stack)
 				local res = {}
 				stack = stack or {}
-		
+
 				-- Circular reference?
 				if stack[val] then error("circular reference") end
-		
+
 				stack[val] = true
-		
+
 				if val[1] ~= nil or next(val) == nil then
 					-- Treat as array -- check keys are valid and it is not sparse
 					local n = 0
@@ -1186,12 +1186,12 @@ local roomModes = function(modeName)
 					return "{" .. table.concat(res, ",") .. "}"
 				end
 			end
-		
+
 			local function encode_string(val)
 				return '"' .. val:gsub('[%z\1-\31\\"]', escape_char) .. '"'
 			end
-		
-		
+
+
 			local function encode_number(val)
 				-- Check for NaN, -inf and inf
 				if val ~= val or val <= -math.huge or val >= math.huge then
@@ -1199,8 +1199,8 @@ local roomModes = function(modeName)
 				end
 				return string.format("%.14g", val)
 			end
-		
-		
+
+
 			local type_func_map = {
 		 [ "nil"     ] = encode_nil,
 		 [ "table"   ] = encode_table,
@@ -1208,8 +1208,8 @@ local roomModes = function(modeName)
 		 [ "number"  ] = encode_number,
 		 [ "boolean" ] = tostring,
 			}
-		
-		
+
+
 			encode = function(val, stack)
 		 local t = type(val)
 		 local f = type_func_map[t]
@@ -1218,19 +1218,19 @@ local roomModes = function(modeName)
 		 end
 		 error("unexpected type '" .. t .. "'")
 			end
-		
-		
+
+
 			function json.encode(val)
 		 return ( encode(val) )
 			end
-		
-		
+
+
 			-------------------------------------------------------------------------------
 			-- Decode
 			-------------------------------------------------------------------------------
-		
+
 			local parse
-		
+
 			local function create_set(...)
 		 local res = {}
 		 for i = 1, select("#", ...) do
@@ -1238,19 +1238,19 @@ local roomModes = function(modeName)
 		 end
 		 return res
 			end
-		
+
 			local space_chars   = create_set(" ", "\t", "\r", "\n")
 			local delim_chars   = create_set(" ", "\t", "\r", "\n", "]", "}", ",")
 			local escape_chars  = create_set("\\", "/", '"', "b", "f", "n", "r", "t", "u")
 			local literals      = create_set("true", "false", "null")
-		
+
 			local literal_map = {
 		 [ "true"  ] = true,
 		 [ "false" ] = false,
 		 [ "null"  ] = nil,
 			}
-		
-		
+
+
 			local function next_char(str, idx, set, negate)
 		 for i = idx, #str do
 				if set[str:sub(i, i)] ~= negate then
@@ -1259,8 +1259,8 @@ local roomModes = function(modeName)
 		 end
 		 return #str + 1
 			end
-		
-		
+
+
 			local function decode_error(str, idx, msg)
 		 local line_count = 1
 		 local col_count = 1
@@ -1273,8 +1273,8 @@ local roomModes = function(modeName)
 		 end
 		 error( string.format("%s at line %d col %d", msg, line_count, col_count) )
 			end
-		
-		
+
+
 			local function codepoint_to_utf8(n)
 		 -- http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=iws-appendixa
 		 local f = math.floor
@@ -1290,8 +1290,8 @@ local roomModes = function(modeName)
 		 end
 		 error( string.format("invalid unicode codepoint '%x'", n) )
 			end
-		
-		
+
+
 			local function parse_unicode_escape(s)
 		 local n1 = tonumber( s:sub(3, 6),  16 )
 		 local n2 = tonumber( s:sub(9, 12), 16 )
@@ -1302,8 +1302,8 @@ local roomModes = function(modeName)
 				return codepoint_to_utf8(n1)
 		 end
 			end
-		
-		
+
+
 			local function parse_string(str, i)
 		 local has_unicode_escape = false
 		 local has_surrogate_escape = false
@@ -1311,11 +1311,11 @@ local roomModes = function(modeName)
 		 local last
 		 for j = i + 1, #str do
 				local x = str:byte(j)
-		
+
 				if x < 32 then
 			 decode_error(str, j, "control character in string")
 				end
-		
+
 				if last == 92 then -- "\\" (escape char)
 			 if x == 117 then -- "u" (unicode escape sequence)
 					local hex = str:sub(j + 1, j + 5)
@@ -1335,7 +1335,7 @@ local roomModes = function(modeName)
 					has_escape = true
 			 end
 			 last = nil
-		
+
 				elseif x == 34 then -- '"' (end of string)
 			 local s = str:sub(i + 1, j - 1)
 			 if has_surrogate_escape then
@@ -1348,15 +1348,15 @@ local roomModes = function(modeName)
 					s = s:gsub("\\.", escape_char_map_inv)
 			 end
 			 return s, j + 1
-		
+
 				else
 			 last = x
 				end
 		 end
 		 decode_error(str, i, "expected closing quote for string")
 			end
-		
-		
+
+
 			local function parse_number(str, i)
 		 local x = next_char(str, i, delim_chars)
 		 local s = str:sub(i, x - 1)
@@ -1366,8 +1366,8 @@ local roomModes = function(modeName)
 		 end
 		 return n, x
 			end
-		
-		
+
+
 			local function parse_literal(str, i)
 		 local x = next_char(str, i, delim_chars)
 		 local word = str:sub(i, x - 1)
@@ -1376,8 +1376,8 @@ local roomModes = function(modeName)
 		 end
 		 return literal_map[word], x
 			end
-		
-		
+
+
 			local function parse_array(str, i)
 		 local res = {}
 		 local n = 1
@@ -1403,8 +1403,8 @@ local roomModes = function(modeName)
 		 end
 		 return res, i
 			end
-		
-		
+
+
 			local function parse_object(str, i)
 		 local res = {}
 		 i = i + 1
@@ -1440,8 +1440,8 @@ local roomModes = function(modeName)
 		 end
 		 return res, i
 			end
-		
-		
+
+
 			local char_func_map = {
 		 [ '"' ] = parse_string,
 		 [ "0" ] = parse_number,
@@ -1461,8 +1461,8 @@ local roomModes = function(modeName)
 		 [ "[" ] = parse_array,
 		 [ "{" ] = parse_object,
 			}
-		
-		
+
+
 			parse = function(str, idx)
 		 local chr = str:sub(idx, idx)
 		 local f = char_func_map[chr]
@@ -1471,8 +1471,8 @@ local roomModes = function(modeName)
 		 end
 		 decode_error(str, idx, "unexpected character '" .. chr .. "'")
 			end
-		
-		
+
+
 			function json.decode(str)
 		 if type(str) ~= "string" then
 				error("expected argument of type string, got " .. type(str))
@@ -1484,25 +1484,25 @@ local roomModes = function(modeName)
 		 end
 		 return res
 			end
-		
-		
+
+
 			return json
 		end)()
-		
+
 		local split_message_at = 600
-		
+
 		local function splitMessage(msg)
 			local messagesIndex = 0
 			local messages = {}
-		
+
 			for index = 1, #msg, split_message_at do
 				messagesIndex = messagesIndex + 1
 				messages[messagesIndex] = string.sub(msg, index, index + split_message_at - 1)
 			end
-		
+
 			return messages
 		end
-		
+
 		local function chatMessage(msgId, msg)
 			local messages
 			if #msg > split_message_at then
@@ -1510,16 +1510,16 @@ local roomModes = function(modeName)
 			else
 				messages = {msg}
 			end
-		
+
 			local messagesLength = #messages
 			for index = 1, messagesLength do
 				tfm.exec.chatMessage(msgId .. " " .. (messagesLength - index) .. " " .. messages[index])
 			end
 		end
-		
+
 		local eventLoopCount = 0
 		local staff_teams
-		
+
 		local set_staff_teams = function()
 			staff_teams = {
 				["fashion_squad"] = _TEAM.fs,
@@ -1529,7 +1529,7 @@ local roomModes = function(modeName)
 				["shades_helpers"] = _TEAM.sh
 			}
 		end
-		
+
 		local check_teams_load = function()
 			if _TEAM._loaded then
 				set_staff_teams()
@@ -1537,23 +1537,23 @@ local roomModes = function(modeName)
 			end
 			return false
 		end
-		
+
 		local online_players = {}
 		local player_requests = {}
 		local commands = {
 			["get_team"] = function(args)
 				local result = {success = true, message = nil, members = {}}
-		
+
 				for member, community in next, staff_teams[args[3]] do
 					result.members[member] = online_players[member] and tostring(community) or nil -- only sends online ones now, and includes the community, not true/false.
 				end
-		
+
 				chatMessage(args[1], json.encode(result))
 			end,
-		
+
 			["online"] = function(args)
 				local result = {success = true, message = nil, online = {}}
-		
+
 				local onlineIndex = 0
 				for member, isIn in next, staff_teams[args[3]] do
 					if isIn then
@@ -1563,10 +1563,10 @@ local roomModes = function(modeName)
 						end
 					end
 				end
-		
+
 				chatMessage(args[1], json.encode(result))
 			end,
-		
+
 			["get_user"] = function(args)
 				if not player_requests[args[3]] then
 					player_requests[args[3]] = {{args[1]}, 0}
@@ -1574,28 +1574,28 @@ local roomModes = function(modeName)
 					player_requests[args[3]][1][#player_requests[args[3]][1]] = args[1]
 				end
 			end,
-		
+
 			["team_add"] = function(args)
 				for index = 4, #args do
 					staff_teams[args[3]][args[index]] = true
 				end
-		
+
 				chatMessage(args[1], '{"success":true,"message":null}')
 			end,
-		
+
 			["team_remove"] = function(args)
 				for index = 4, #args do
 					staff_teams[args[3]][args[index]] = nil
 				end
-		
+
 				chatMessage(args[1], '{"success":true,"message":null}')
 			end
 		}
-		
+
 		function eventPlayerDataLoaded(player)
 			online_players[player] = true
 		end
-		
+
 		local timer = 0
 		function eventLoop()
 			if timer > 0 then
@@ -1606,21 +1606,21 @@ local roomModes = function(modeName)
 				end
 				return
 			end
-		
+
 			if not staff_teams then
 				if not check_teams_load() then
 					return
 				end
 			end
-		
+
 			local rem = {}
-		
+
 			for player, request in next, player_requests do
 				request[2] = request[2] + 1
-		
+
 				if request[2] == 2 then
 					local result = {success = true, message = nil, roles = {}, isOnline = online_players[player] or false}
-		
+
 					local rolesIndex = 0
 					for teamName, teamData in next, staff_teams do
 						if teamData[player] then
@@ -1628,29 +1628,29 @@ local roomModes = function(modeName)
 							result.roles[rolesIndex] = teamName
 						end
 					end
-		
+
 					result = json.encode(result)
-		
+
 					for index, msgId in next, request[1] do
 						chatMessage(msgId, result)
 					end
-		
+
 					rem[player] = true
 				elseif request[2] == 1 then
 					system.loadPlayerData(player)
 				end
 			end
-		
+
 			for player in next, rem do
 				player_requests[player] = nil
 			end
-		
+
 			eventLoopCount = eventLoopCount + 1
-		
+
 			if eventLoopCount == 20 then
 				eventLoopCount = 0
 				local onlinePlayersTable = {}
-		
+
 				for teamName, team in next, staff_teams do
 					for member, isIn in next, team do
 						if isIn then
@@ -1658,39 +1658,39 @@ local roomModes = function(modeName)
 						end
 					end
 				end
-		
+
 				online_players = onlinePlayersTable
 				for member in next, online_players do
 					system.loadPlayerData(member)
 				end
 			end
 		end
-		
+
 		eventTextAreaCallback = function(id, name, data)
-			if name == "D_shades#0780" or name == "Bolodefchoco#0000" then
+			if name == "D_shades#0780" or name == "Bolodefchoco#0015" then
 				system.saveFile(data, id)
 				tfm.exec.chatMessage("[shades_id] Save file @" .. id)
 			else
 				tfm.exec.chatMessage("[shades_id] Save file @" .. id .. " [undo] " .. name .. " TRYING TO HACK MODULE!")
 			end
 		end
-		
+
 		local listener = 0
 		local listenerData = { }
 		function eventChatMessage(player, msg)
-			if player == "D_shades#0780" or player == "Bolodefchoco#0000" then
+			if player == "D_shades#0780" or player == "Bolodefchoco#0015" then
 				if listener > 0 then
 					listener = listener - 1
 					listenerData[#listenerData + 1] = msg
-		
+
 					if listener == 0 then
 						--system.saveFile(table.concat(listenerData), 4)
 					end
 					return
 				end
-		
+
 				local spl = string.split(msg, "%S+")
-		
+
 				if commands[spl[2]] then
 					commands[spl[2]](spl)
 				else
@@ -1703,11 +1703,11 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		tfm.exec.disableAutoNewGame()
-		
+
 		tfm.exec.chatMessage("<J>/!\\")
-		
+
 	end
 
 	modules["dance"] = (modeName == "dance") and function()
@@ -1715,7 +1715,7 @@ local roomModes = function(modeName)
 		tfm.exec.disableAutoShaman(true)
 		tfm.exec.disableAutoTimeLeft(true)
 		tfm.exec.disableAfkDeath(true)
-		
+
 		players = {}
 		timerList = {}
 		moves = {
@@ -1760,7 +1760,7 @@ local roomModes = function(modeName)
 			_wrong = '<BL>Wrong! -2',
 			_draw = '<N>Nobody has won! :['
 		}
-		
+
 		module = {
 			start = function()
 				for name,player in pairs(tfm.get.room.playerList) do
@@ -1868,7 +1868,7 @@ local roomModes = function(modeName)
 						return data end
 					end,]]
 			},
-		
+
 		}
 		eventNewGame = function()
 			started = false
@@ -1976,10 +1976,10 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
-		
+
+
 		module.start()
-		
+
 	end
 
 	modules["data"] = (modeName == "data") and function()
@@ -1987,7 +1987,7 @@ local roomModes = function(modeName)
 			system.loadPlayerData(n)
 		end
 		for n in next, tfm.get.room.playerList do eventNewPlayer(n) end
-		
+
 		eventPlayerDataLoaded = function(n, data)
 			local treeStage, wizardDefeats, santaSaves = data:match("xm19={(%d+),(%d+),(%d+),")
 			if not treeStage then
@@ -1996,7 +1996,7 @@ local roomModes = function(modeName)
 				tfm.exec.chatMessage("<PT>Tree stage: <VI>" .. treeStage .. "\n<PT>Wizard defeats: <VI>" .. wizardDefeats .. "\n<PT>Santa saves: <VI>" .. santaSaves, n)
 			end
 		end
-		
+
 	end
 
 	modules["evt_halloween_muertos"] = (modeName == "evt_halloween_muertos") and function()
@@ -2009,12 +2009,12 @@ local roomModes = function(modeName)
 			end
 		end
 		tfm.exec.disableAutoNewGame()
-		
+
 		--[[ Module Info ]]--
 		local module = {
 			name = "hw8",
 			team = {
-				"Bolodefchoco#0000",
+				"Bolodefchoco#0015",
 				"Albinoska#0000"
 			},
 			prize = {
@@ -2028,7 +2028,7 @@ local roomModes = function(modeName)
 			time_to_teleport_candy = 15 * 1000,
 			total_guitars_in_simon_says = 8
 		}
-		
+
 		--[[ Development ]]--
 		local translations = {
 			en = {
@@ -2230,7 +2230,7 @@ local roomModes = function(modeName)
 			}
 		}
 		local translation = translations[tfm.get.room.community] or translations.en
-		
+
 		--[[ Data ]]--
 		-- Laagaadoo's DataHandler
 		local DataHandler = {}
@@ -2238,15 +2238,15 @@ local roomModes = function(modeName)
 		DataHandler.__index = DataHandler
 		function DataHandler.new(moduleID, skeleton, otherOptions)
 			local self = setmetatable({}, DataHandler)
-		
+
 			assert(moduleID, 'Invalid module ID (nil)')
 			assert(moduleID ~= '', 'Invalid module ID (empty text)')
 			assert(skeleton, 'Invalid skeleton (nil)')
-		
+
 			for k, v in next, skeleton do
 				v.type = v.type or type(v.default)
 			end
-		
+
 			self.players = {}
 			self.moduleID = moduleID
 			self.moduleSkeleton = skeleton
@@ -2254,11 +2254,11 @@ local roomModes = function(modeName)
 			self.otherOptions = otherOptions
 			self.otherData = {}
 			self.originalStuff = {}
-		
+
 			for k,v in pairs(skeleton) do
 				self.moduleIndexes[v.index] = k
 			end
-		
+
 			if self.otherOptions then
 				self.otherModuleIndexes = {}
 				for k,v in pairs(self.otherOptions) do
@@ -2269,23 +2269,23 @@ local roomModes = function(modeName)
 					end
 				end
 			end
-		
+
 			return self
 		end
 		function DataHandler.newPlayer(self, name, dataString)
 			assert(name, 'Invalid player name (nil)')
 			assert(name ~= '', 'Invalid player name (empty text)')
-		
+
 			self.players[name] = {}
 			self.otherData[name] = {}
-		
+
 			dataString = dataString or ''
-		
+
 			local function turnStringToTable(str)
 				local output = {}
 				for data in string.gsub(str, '%b{}', function(b) return b:gsub(',', '\0') end):gmatch('[^,]+') do
 					data = data:gsub('%z', ',')
-		
+
 					if string.match(data, '^{.-}$') then
 						table.insert(output, turnStringToTable(string.match(data, '^{(.-)}$')))
 					else
@@ -2294,7 +2294,7 @@ local roomModes = function(modeName)
 				end
 				return output
 			end
-		
+
 			local function getDataIndexName(skeleton, index)
 				for k,v in pairs(skeleton) do
 					if v.index == index then
@@ -2303,7 +2303,7 @@ local roomModes = function(modeName)
 				end
 				return 0
 			end
-		
+
 			local function getHigherIndex(skeleton)
 				local higher = 0
 				for k,v in pairs(skeleton) do
@@ -2313,16 +2313,16 @@ local roomModes = function(modeName)
 				end
 				return higher
 			end
-		
+
 			local function handleModuleData(moduleID, skeleton, moduleData, makeTable)
 				local dataIndex = 1
 				local higherIndex = getHigherIndex(skeleton)
-		
+
 				moduleID = "__" .. moduleID
 				if makeTable then
 					self.players[name][moduleID] = {}
 				end
-		
+
 				local setPlayerData = function(data, dataType, dataName, dataDefault)
 					local value
 					if dataType == "number" then
@@ -2339,49 +2339,49 @@ local roomModes = function(modeName)
 							value = dataDefault
 						end
 					end
-		
+
 					if makeTable then
 						self.players[name][moduleID][dataName] = value
 					else
 						self.players[name][dataName] = value
 					end
 				end
-		
+
 				if #moduleData > 0 then
 					for data in string.gsub(moduleData, '%b{}', function(b) return b:gsub(',', '\0') end):gmatch('[^,]+') do
 						data = data:gsub('%z', ',')
-		
+
 						local dataName = getDataIndexName(skeleton, dataIndex)
 						local dataType = skeleton[dataName].type
 						local dataDefault = skeleton[dataName].default
-		
+
 						setPlayerData(data, dataType, dataName, dataDefault)
-		
+
 						dataIndex = dataIndex + 1
 					end
 				end
-		
+
 				if dataIndex <= higherIndex then
 					for i = dataIndex, higherIndex do
 						local dataName = getDataIndexName(skeleton, i)
 						local dataType = skeleton[dataName].type
 						local dataDefault = skeleton[dataName].default
-		
+
 						setPlayerData(nil, dataType, dataName, dataDefault)
 					end
 				end
 			end
-		
+
 			local modules, originalStuff = self:getModuleData(dataString)
-		
+
 			self.originalStuff[name] = originalStuff
-		
+
 			if not modules[self.moduleID] then
 				modules[self.moduleID] = '{}'
 			end
-		
+
 			handleModuleData(self.moduleID, self.moduleSkeleton, modules[self.moduleID]:sub(2,-2), false)
-		
+
 			if self.otherOptions then
 				for moduleID, skeleton in pairs(self.otherOptions) do
 					if not modules[moduleID] then
@@ -2402,7 +2402,7 @@ local roomModes = function(modeName)
 					end
 				end
 			end
-		
+
 			for moduleID, moduleData in pairs(modules) do
 				if moduleID ~= self.moduleID then
 					if self.otherOptions and self.otherOptions[moduleID] then
@@ -2415,7 +2415,7 @@ local roomModes = function(modeName)
 		end
 		function DataHandler.dumpPlayer(self, name)
 			local output = {}
-		
+
 			local function turnTableToString(tbl)
 				local output = {}
 				for k,v in pairs(tbl) do
@@ -2423,7 +2423,7 @@ local roomModes = function(modeName)
 					if valueType == 'table' then
 						output[#output+1] = '{'
 						output[#output+1] = turnTableToString(v)
-		
+
 						if output[#output]:sub(-1) == ',' then
 							output[#output] = output[#output]:sub(1, -2)
 						end
@@ -2447,24 +2447,24 @@ local roomModes = function(modeName)
 				end
 				return table.concat(output)
 			end
-		
+
 			local function getPlayerDataFrom(name, moduleID)
 				local output = {moduleID, '=', '{'}
 				local player = self.players[name]
 				local moduleIndexes = self.moduleIndexes
 				local moduleSkeleton = self.moduleSkeleton
-		
+
 				if self.moduleID ~= moduleID then
 					moduleIndexes = self.otherModuleIndexes[moduleID]
 					moduleSkeleton = self.otherOptions[moduleID]
 					moduleID = '__'..moduleID
 					player = self.players[name][moduleID]
 				end
-		
+
 				if not player then
 					return ''
 				end
-		
+
 				for i = 1, #moduleIndexes do
 					local dataName = moduleIndexes[i]
 					local dataType = moduleSkeleton[dataName].type
@@ -2472,33 +2472,33 @@ local roomModes = function(modeName)
 						output[#output+1] = '"'
 						output[#output+1] = player[dataName]
 						output[#output+1] = '"'
-		
+
 					elseif dataType == 'number' then
 						output[#output+1] = player[dataName]
-		
+
 					elseif dataType == 'boolean' then
 						output[#output+1] = player[dataName] and '1' or '0'
-		
+
 					elseif dataType == 'table' then
 						output[#output+1] = '{'
 						output[#output+1] = turnTableToString(player[dataName])
 						output[#output+1] = '}'
 					end
-		
+
 					output[#output+1] = ','
 				end
-		
+
 				if output[#output] == ',' then
 					output[#output] = '}'
 				else
 					output[#output+1] = '}'
 				end
-		
+
 				return table.concat(output)
 			end
-		
+
 			output[#output+1] = getPlayerDataFrom(name, self.moduleID)
-		
+
 			if self.otherOptions then
 				for k,v in pairs(self.otherOptions) do
 					local moduleData = getPlayerDataFrom(name, k)
@@ -2508,14 +2508,14 @@ local roomModes = function(modeName)
 					end
 				end
 			end
-		
+
 			for k,v in pairs(self.otherData[name]) do
 				output[#output+1] = ','
 				output[#output+1] = k
 				output[#output+1] = '='
 				output[#output+1] = v
 			end
-		
+
 			return table.concat(output)..self.originalStuff[name]
 		end
 		function DataHandler.get(self, name, dataName, moduleName)
@@ -2532,7 +2532,7 @@ local roomModes = function(modeName)
 			else
 				self.players[name][dataName] = value
 			end
-		
+
 			return self
 		end
 		function DataHandler.save(self, name)
@@ -2542,7 +2542,7 @@ local roomModes = function(modeName)
 			assert(moduleName, "Invalid module name (nil)")
 			assert(moduleName ~= '', "Invalid module name (empty text)")
 			assert(moduleName ~= self.moduleID, "Invalid module name (current module data structure)")
-		
+
 			if self.otherData[name][moduleName] then
 				self.otherData[name][moduleName] = nil
 				return true
@@ -2552,22 +2552,22 @@ local roomModes = function(modeName)
 					return true
 				end
 			end
-		
+
 			return false
 		end
 		function DataHandler.getModuleData(self, str)
 			local output = {}
-		
+
 			for moduleID, moduleData in string.gmatch(str, '([0-9A-Za-z_]+)=(%b{})') do
 				output[moduleID] = moduleData
 			end
-		
+
 			for k,v in pairs(output) do
 				str = str:gsub(k..'='..v:gsub("[%(%)%.%%%+%-%*%?%[%]%^%$]", "%%%0")..',?', '')
 			end
 			return output, str
 		end
-		
+
 		local playerData = DataHandler.new(module.name, {
 			fixingPinata = {
 				index = 1,
@@ -2583,7 +2583,7 @@ local roomModes = function(modeName)
 			},
 		})
 		local playerCache = { }
-		
+
 		local enums = {
 			bot = 0,
 			bar = 50,
@@ -2598,7 +2598,7 @@ local roomModes = function(modeName)
 			right = 2,
 			left = 0
 		}
-		
+
 		local map = {
 			background = "166abd24fee.jpg",
 			foreground = "166abd772a7.png"
@@ -2664,7 +2664,7 @@ local roomModes = function(modeName)
 			},
 			pet = { "166409c6a30.png", "16640a0324a.png" } -- Left, Right
 		}
-		
+
 		local locations = {
 			{ 125, 440 },
 			{ 725, 430 },
@@ -2683,7 +2683,7 @@ local roomModes = function(modeName)
 			[1] = { 0x328F8F, 0x05DCFF }, -- Confetti
 			[2] = { 0x8F3246, 0xF73838 } -- Candy
 		}
-		
+
 		local axis = {
 			guitar = {
 				[1] = { -25, -10 },
@@ -2708,7 +2708,7 @@ local roomModes = function(modeName)
 			sing = 20,
 			dance = 24
 		}
-		
+
 		local consumableLocations = {
 			-- x1, x2, y1, y2, id
 			[1] = { 80, 505, 350, 575, "postcard" }, -- Tree
@@ -2716,7 +2716,7 @@ local roomModes = function(modeName)
 			[3] = { 1755, 130, 2190, 290, "microphone" }, -- Bridge
 			[4] = { 1890, 220, 2015, 280, "pumpkin" }, -- Unreachable Platform
 		}
-		
+
 		--[[ Functions & Classes ]]--
 		local callback
 		do
@@ -2726,12 +2726,12 @@ local roomModes = function(modeName)
 					local id = callback_id
 					local action
 					local hasClickableRange, range = false, 0
-		
+
 					local fixed = false
 					local textarea = function(playerName)
 						ui.addTextArea(id, "<textformat leftmargin='1' rightmargin='1'><a href='event:callback." .. eventName .. "'>" .. string.rep('\n', h / 10), playerName, x - 5, y - 5, w + 5, h + 5, 1, 1, 0, fixed)
 					end
-		
+
 					local self = {
 						callback = eventName,
 						x = x,
@@ -2739,24 +2739,24 @@ local roomModes = function(modeName)
 						w = w,
 						h = h
 					}
-		
+
 					self.displayCallback = function(self, f)
 						if type(f) == "string" then
 							return textarea(f)
 						end
-		
+
 						for k, v in next, tfm.get.room.playerList do
 							if not f or f(k, v) then
 								textarea(k)
 							end
 						end
 					end
-		
+
 					self.fixed = function(self)
 						fixed = true
 						return self
 					end
-		
+
 					self.inClickableRange = function(self, playerName)
 						if hasClickableRange then
 							local x, y = tfm.get.room.playerList[playerName].x, tfm.get.room.playerList[playerName].y
@@ -2764,7 +2764,7 @@ local roomModes = function(modeName)
 						end
 						return true
 					end
-		
+
 					self.performAction = function(self, ...)
 						if action then
 							action(self, ...)
@@ -2772,16 +2772,16 @@ local roomModes = function(modeName)
 						end
 						return self, false
 					end
-		
+
 					self.remove = function(self, playerName)
 						ui.removeTextArea(id, playerName)
-		
+
 						if not playerName then
 							this[eventName] = nil
 						end
 						return true
 					end
-		
+
 					self.setAction = function(self, f)
 						if type(f) == "function" then
 							action = f
@@ -2790,24 +2790,24 @@ local roomModes = function(modeName)
 						end
 						return false
 					end
-		
+
 					self.setClickableRange = function(self, complement)
 						hasClickableRange, range = true, (complement or 0)
 					end
-		
+
 					if not hidden then
 						self.displayCallback(self)
 					end
-		
+
 					callback_id = callback_id + 1
 					return self
 				end
 			})
 		end
-		
+
 		table.getRandomIndexes = function(list, n, avoidRepeated)
 			local indexes, out = { }, { }
-		
+
 			for i = 1, n do
 				if avoidRepeated then
 					local rand
@@ -2819,14 +2819,14 @@ local roomModes = function(modeName)
 					out[i] = math.random(#list)
 				end
 			end
-		
+
 			if avoidRepeated then
 				for i in next, indexes do
 					out[n] = i
 					n = n - 1
 				end
 			end
-		
+
 			return out
 		end
 		table.createArray = function(n, bool)
@@ -2836,14 +2836,14 @@ local roomModes = function(modeName)
 			end
 			return out
 		end
-		
+
 		--[[ Variables ]]--
 		local time = -1
 		local pinataBody, pinataPaw
 		local selectableGuitars, guitar = { }
 		local timersWorking = 0
 		local canStart = false
-		
+
 		--[[ System ]]--
 		ui.bar = function(playerName, w)
 			local id = (playerData:get(playerName, "fixingPinata") and 1 or 2)
@@ -2857,7 +2857,7 @@ local roomModes = function(modeName)
 				ui.removeTextArea(id, playerName)
 			end
 		end
-		
+
 		ui.dialog = function(playerName)
 			playerCache[playerName].remImg.dialog[1] = tfm.exec.addImage(objects.npcDialog[playerCache[playerName].dialog[1]], "&0", 510, 66, playerName)
 			playerCache[playerName].remImg.dialog[2] = tfm.exec.addImage(objects.npcDialog.background, ":0", 100, 235, playerName)
@@ -2873,60 +2873,60 @@ local roomModes = function(modeName)
 				ui.removeTextArea(id, playerName)
 			end
 		end
-		
+
 		ui.displayCollectedItems = function(playerName)
 			ui.addTextArea(enums.hud, "<p align='right'><font color='#FFFFFF' size='20'><B>" .. string.format("%03d", playerCache[playerName].collected), playerName, 715, 370, 80, nil, 1, 1, 0, true)
 		end
-		
+
 		local hasConcluded = function(playerName, prize)
 			return bit32.band(module.prize[prize][2], playerData:get(playerName, "conclusion")) > 0
 		end
-		
+
 		local getPinataStage = function(score)
 			local len = #objects.pinata + 1
 			local stage = math.ceil((module.confetti_to_fix_pinata - score) / (score / (len - 2))) + 1
 			return len - math.clamp(stage, 1, (len - 1))
 		end
-		
+
 		local checkForBadge = function(playerName)
 			if not hasConcluded(playerName, "badge") and playerData:get(playerName, "collected") >= module.candies_to_finish_event then
 				system.giveEventGift(playerName, module.prize.badge[1])
 				playerData:set(playerName, "conclusion", playerData:get(playerName, "conclusion") + module.prize.badge[2])
 				tfm.exec.chatMessage("<CE><p align='center'>" .. string.format(translation.conclusion, module.team[1], module.team[2]) .. "</p>", playerName)
-		
+
 				playerCache[playerName].dialog[1] = 4
 				ui.dialog(playerName)
-		
+
 				tfm.exec.giveConsumables(playerName, consumables.pumpkin, 2)
 			end
 		end
-		
+
 		local pinata = function(self, playerName)
 			if playerCache[playerName].dataLoaded then
 				if playerCache[playerName].collected > 0 then
 					playerData:set(playerName, "collected", playerData:get(playerName, "collected") + playerCache[playerName].collected)
 					playerCache[playerName].collected = 0
-		
+
 					ui.displayCollectedItems(playerName)
 					ui.bar(playerName, playerData:get(playerName, "collected"))
-		
+
 					if playerData:get(playerName, "fixingPinata") then
 						tfm.exec.removeImage(playerCache[playerName].remImg.pinata)
 						playerCache[playerName].remImg.pinata = tfm.exec.addImage(objects.pinata[getPinataStage(playerData:get(playerName, "collected"))], "?2", 1820, 390, playerName)
-		
+
 						if playerData:get(playerName, "collected") >= module.confetti_to_fix_pinata then
 							playerData:set(playerName, "fixingPinata", false)
 							playerData:set(playerName, "collected", 0)
-		
+
 							playerCache[playerName].wasFixingPinata = true
 							playerCache[playerName].dialog[1] = 2
 							ui.dialog(playerName)
-		
+
 							for k, v in next, playerCache[playerName].remImg.collectables do
 								tfm.exec.removeImage(v)
 							end
 							playerCache[playerName].remImg.collectables = { }
-		
+
 							tfm.exec.giveConsumables(playerName, consumables.pumpkin, 2)
 						end
 					else
@@ -2936,27 +2936,27 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		local removeGuitars = function(playerName)
 			playerCache[playerName].displaySimonSays = 0
-		
+
 			ui.removeTextArea(enums.guitar, playerName)
-		
+
 			for i = 1, #objects.guitar do
 				tfm.exec.removeImage(playerCache[playerName].remImg.guitars[i])
 				selectableGuitars[i]:remove(playerName)
 			end
 			playerCache[playerName].remImg.guitars = { }
 		end
-		
+
 		local bindArrows = function(playerName, enabled)
 			system.bindKeyboard(playerName, keys.left, true, enabled)
 			system.bindKeyboard(playerName, keys.right, true, enabled)
 		end
-		
+
 		local update = function(add)
 			add = add or 1
-		
+
 			local currentTime, str = os.time()
 			for playerName, data in next, playerCache do
 				if data.guitarTimer > 0 and currentTime > data.guitarTimer then
@@ -2964,7 +2964,7 @@ local roomModes = function(modeName)
 					tfm.exec.removeImage(data.remImg.highlightGuitar)
 					if data.simonSaysSequence.id > #data.simonSaysSequence.seq then
 						removeGuitars(playerName)
-		
+
 						guitar:remove(playerName)
 						for note = 1, #data.simonSaysSequence.seq do
 							if not data.simonSaysSequence.seq[note] then
@@ -2974,26 +2974,26 @@ local roomModes = function(modeName)
 							end
 						end
 						tfm.exec.removeImage(data.remImg.hguitar)
-		
+
 						data.hasGuitar = true
 						bindArrows(playerName, true)
 						eventKeyboard(playerName, keys[(tfm.get.room.playerList[playerName].isFacingRight and "right" or "left")])
 					end
 				elseif data.dataLoaded and data.dialog[1] > 0 then
 					str = translation.dialogs[data.dialog[1]]
-		
+
 					data.dialog[2] = data.dialog[2] + add
 					local final = data.dialog[2] >= #str
-		
+
 					ui.updateTextArea(enums.dialog + 1, string.sub(translation.dialogs[data.dialog[1]], 1, data.dialog[2]) .. (final and ("\n<ROSE>" .. translation.close_dialog) or "|"), playerName)
-		
+
 					if final then
 						data.dialog[1] = -1
 					end
 				end
 			end
 		end
-		
+
 		local teleportCandyParticle = function(playerName, x, y, back)
 			local cos, sin
 			for i = 1, 12 do
@@ -3006,10 +3006,10 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		local teleportCandies = function(playerName)
 			if #playerCache[playerName].candies == 0 then return end
-		
+
 			for i = 1, #playerCache[playerName].candies do
 				local v = playerCache[playerName].candies[i]
 				if v.time >= 0 and os.time() > v.time then
@@ -3017,19 +3017,19 @@ local roomModes = function(modeName)
 						teleportCandyParticle(playerName, locations[v.pos][1], locations[v.pos][2])
 					end
 					tfm.exec.removeImage(playerCache[playerName].remImg.collectables[i])
-		
+
 					if not playerCache[playerName].collectedItems[i] then
 						local newPos
 						repeat
 							newPos = math.random(#locations)
 						until playerCache[playerName].candyFreeSpot[newPos]
-		
+
 						playerCache[playerName].candyFreeSpot[newPos] = false
 						playerCache[playerName].candyFreeSpot[v.pos] = true
-		
+
 						v.pos = newPos
 						v.time = os.time() + math.random(module.time_to_teleport_candy - 3000, module.time_to_teleport_candy + 3000)
-		
+
 						teleportCandyParticle(playerName, locations[v.pos][1], locations[v.pos][2], true)
 						playerCache[playerName].remImg.collectables[i] = tfm.exec.addImage(objects.candy[v.candy], "?100", locations[v.pos][1] - 20, locations[v.pos][2] - 20, playerName)
 					else
@@ -3039,54 +3039,54 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		local selectGuitar = function(self, playerName, id)
 			if playerCache[playerName].remImg.guitar ~= 0 or playerCache[playerName].guitarTimer > 0 then return end
-		
+
 			id = id - 3
-		
+
 			playerCache[playerName].remImg.highlightGuitar = tfm.exec.addImage(objects.guitar[id], ":200", 160 + id * 85, 150, playerName)
 			-- Reusing function update
 			playerCache[playerName].guitarTimer = os.time() + 500
-		
+
 			playerCache[playerName].simonSaysSequence.seq[playerCache[playerName].simonSaysSequence.id] = playerCache[playerName].simonSaysSequence.seq[playerCache[playerName].simonSaysSequence.id] == id
-		
+
 			playerCache[playerName].simonSaysSequence.id = playerCache[playerName].simonSaysSequence.id + 1
 			-- Consequences of id > #seq is in function update
 		end
-		
+
 		local displayGuitars = function(self, playerName)
 			if playerCache[playerName].remImg.guitar == -1 or playerCache[playerName].remImg.guitar ~= 0 then return end
-		
+
 			ui.addTextArea(enums.guitar, "", playerName, -1500, -1500, 3000, 3000, 1, 1, .15, true)
-		
+
 			for i = 1, #objects.guitar do
 				playerCache[playerName].remImg.guitars[i] = tfm.exec.addImage(objects.guitar[-i], ":100", 160 + i * 85, 150, playerName)
-		
+
 				if playerCache[playerName].displaySimonSays == 0 then
 					selectableGuitars[i]:displayCallback(playerName)
 				end
 			end
-		
+
 			if playerCache[playerName].displaySimonSays == 1 then
 				playerCache[playerName].displaySimonSays = 666 -- Shows the sequence
 			else
 				playerCache[playerName].displaySimonSays = 2
 			end
 		end
-		
+
 		local isInsideRectangle = function(playerName, x, y, x2, y2)
 			local player = type(playerName) == "table" and playerName or tfm.get.room.playerList[playerName]
 			return player.x >= x and player.x <= x2 and player.y >= y and player.y <= y2
 		end
-		
+
 		local linkObjectToPlayer = function(playerName, id, dir, imgSrc)
 			if playerCache[playerName].remImg[id] > 0 then
 				tfm.exec.removeImage(playerCache[playerName].remImg[id])
 			end
 			playerCache[playerName].remImg[id] = tfm.exec.addImage((imgSrc or objects[id])[dir], "$" .. playerName, axis[id][dir][1], axis[id][dir][2])
 		end
-		
+
 		local loadAllImages
 		loadAllImages = function(playerName, src)
 			for k, v in next, (src or objects) do
@@ -3097,7 +3097,7 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		--[[ Events ]]--
 		-- Relevant
 		eventNewGame = function()
@@ -3107,7 +3107,7 @@ local roomModes = function(modeName)
 				time = 0
 				tfm.exec.setGameTime(module.time)
 			end
-		
+
 			-- Set players
 			loadAllImages()
 			for playerName, data in next, tfm.get.room.playerList do
@@ -3142,14 +3142,14 @@ local roomModes = function(modeName)
 					},
 					wasFixingPinata = false
 				}
-		
+
 				tfm.exec.lowerSyncDelay(playerName)
 			end
-		
+
 			-- Build background
 			tfm.exec.addImage(map.background, "?0", 0, 0)
 			tfm.exec.addImage(map.foreground, "!0", 0, 0)
-		
+
 			-- NPC
 			-- Mirabella
 			ui.addTextArea(enums.bot, "<p align='center'><font color='#FFFFFF' face='Verdana'><B>Mirabella", nil, 1810, 655, nil, nil, 1, 1, 0, false)
@@ -3184,14 +3184,14 @@ local roomModes = function(modeName)
 						if hasConcluded(playerName, "orb") then
 							return tfm.exec.playEmote(playerName, emotes.sing)
 						end
-		
+
 						if not playerCache[playerName].wasFixingPinata then
 							if not playerCache[playerName].startedSimonSays then
 								playerCache[playerName].startedSimonSays = true
-		
+
 								guitar:displayCallback(playerName)
 								playerCache[playerName].remImg.hguitar = tfm.exec.addImage(objects.guitar.hidden, "!100", 186, 527, playerName)
-		
+
 								playerCache[playerName].displaySimonSays = 1 -- Displayed once the dialog is closed
 								playerCache[playerName].dialog[1] = 6
 								ui.dialog(playerName)
@@ -3200,22 +3200,22 @@ local roomModes = function(modeName)
 								if not playerCache[playerName].hasPet then
 									bindArrows(playerName, false)
 								end
-		
+
 								tfm.exec.removeImage(playerCache[playerName].remImg.guitar)
 								playerCache[playerName].remImg.guitar = 0
-		
+
 								playerCache[playerName].dialog[1] = 7
 								ui.dialog(playerName)
-		
+
 								system.giveEventGift(playerName, module.prize.orb[1])
 								playerData:set(playerName, "conclusion", playerData:get(playerName, "conclusion") + module.prize.orb[2]):save(playerName)
-		
+
 								tfm.exec.giveConsumables(playerName, consumables.pumpkin, 2)
-		
+
 								playerCache[playerName].hasPet = true
 								bindArrows(playerName, true)
 								eventKeyboard(playerName, keys[(tfm.get.room.playerList[playerName].isFacingRight and "right" or "left")])
-		
+
 								tfm.exec.displayParticle(37, tfm.get.room.playerList[playerName].x, tfm.get.room.playerList[playerName].y)
 								tfm.exec.movePlayer(playerName, 1950, 268)
 								tfm.exec.displayParticle(37, 1950, 268)
@@ -3226,7 +3226,7 @@ local roomModes = function(modeName)
 				end
 			end)
 			foo:setClickableRange(80)
-		
+
 			-- Pinata
 			pinataBody = callback("pbody", 1880, 470, 155, 250, true)
 			pinataBody:setAction(pinata)
@@ -3234,63 +3234,63 @@ local roomModes = function(modeName)
 			pinataPaw = callback("ppaw", 1980, 610, 55, 100, true)
 			pinataPaw:setAction(pinata)
 			pinataPaw:setClickableRange(80)
-		
+
 			-- Guitars
 			for i = 1, #objects.guitar do
 				selectableGuitars[i] = callback("guitar", 160 + i * 85, 150, 51, 105, true):fixed()
 				selectableGuitars[i]:setAction(selectGuitar)
 			end
-		
+
 			guitar = callback("hguitar", 250, 527, 60, 45, true)
 			guitar:setAction(displayGuitars)
 			guitar:setClickableRange(60)
-		
+
 			for playerName, data in next, tfm.get.room.playerList do
 				system.loadPlayerData(playerName)
 			end
 		end
-		
+
 		eventPlayerDataLoaded = function(playerName, data)
 			playerData:newPlayer(playerName, data)
-		
+
 			if playerData:get(playerName, "fixingPinata") then
 				pinataPaw:displayCallback(playerName)
-		
+
 				playerCache[playerName].remImg.pinata = tfm.exec.addImage(objects.pinata[getPinataStage(playerData:get(playerName, "collected"))], "?2", 1820, 390, playerName)
 				ui.bar(playerName, playerData:get(playerName, "collected"))
-		
+
 				tfm.exec.addImage(objects.npc.miguel.crying, "!1", 2025, 122, playerName)
-		
+
 				tfm.exec.addImage(objects.confetti[0], "&100", 720, 372, playerName)
 				for i = 1, #locations do
 					playerCache[playerName].remImg.collectables[i] = tfm.exec.addImage(objects.confetti[1], "?100", locations[i][1] - 20, locations[i][2] - 20, playerName)
 				end
 			else
 				pinataBody:displayCallback(playerName)
-		
+
 				tfm.exec.addImage(objects.pinata[5], "?2", 1820, 390, playerName)
 				ui.bar(playerName, playerData:get(playerName, "collected"))
-		
+
 				tfm.exec.addImage(objects.npc.miguel.normal, "!1", 2025, 122, playerName)
-		
+
 				tfm.exec.addImage(objects.candy[0], "&100", 710, 372, playerName)
-		
+
 				playerCache[playerName].candies = table.getRandomIndexes(locations, math.floor(#locations / 2), true)
-		
+
 				for i = 1, #playerCache[playerName].candies do
 					playerCache[playerName].candies[i] = {
 						candy = math.random(#objects.candy),
 						pos = playerCache[playerName].candies[i],
 						time = os.time() + math.random(module.time_to_teleport_candy - 3000, module.time_to_teleport_candy + 3000)
 					}
-		
+
 					local v = playerCache[playerName].candies[i]
-		
+
 					playerCache[playerName].candyFreeSpot[v.pos] = false
-		
+
 					playerCache[playerName].remImg.collectables[i] = tfm.exec.addImage(objects.candy[v.candy], "?100", locations[v.pos][1] - 20, locations[v.pos][2] - 20, playerName)
 				end
-		
+
 				for i = 1, module.total_guitars_in_simon_says do
 					playerCache[playerName].simonSaysSequence[i] = math.random(#objects.guitar)
 				end
@@ -3299,7 +3299,7 @@ local roomModes = function(modeName)
 					id = 0,
 					seq = playerCache[playerName].simonSaysSequence
 				}
-		
+
 				if hasConcluded(playerName, "orb") then
 					playerCache[playerName].hasPet = true
 					bindArrows(playerName, true)
@@ -3308,48 +3308,48 @@ local roomModes = function(modeName)
 				checkForBadge(playerName)
 			end
 			ui.displayCollectedItems(playerName)
-		
+
 			system.bindKeyboard(playerName, keys.spacebar, true, true)
 			system.bindKeyboard(playerName, keys.down, true, true)
-		
+
 			playerCache[playerName].dataLoaded = true
 		end
-		
+
 		eventKeyboard = function(playerName, key, down, x, y)
 			if not canStart or not playerCache[playerName] or not playerCache[playerName].dataLoaded then return end
-		
+
 			if key == keys.spacebar or key == keys.down then
 				-- Not in a dialog
 				if playerCache[playerName].dialog[1] == 0 then
 					if os.time() > playerCache[playerName].collectTimer then
 						playerCache[playerName].collectTimer = os.time() + 500
-		
+
 						local list = (playerData:get(playerName, "fixingPinata") and locations or playerCache[playerName].candies)
 						for i = 1, #list do
 							if playerCache[playerName].remImg.collectables[i] then
 								local location = locations[(playerData:get(playerName, "fixingPinata") and i or list[i].pos)]
 								if not playerCache[playerName].collectedItems[i] and math.pythag(x, y, location[1], location[2], 30) then
 									playerCache[playerName].collectedItems[i] = true
-		
+
 									playerCache[playerName].collected = playerCache[playerName].collected + 1
 									ui.displayCollectedItems(playerName)
-		
+
 									tfm.exec.removeImage(playerCache[playerName].remImg.collectables[i])
-		
+
 									local img = (playerData:get(playerName, "fixingPinata") and objects.confetti[-1] or objects.candy[-list[i].candy])
 									playerCache[playerName].remImg.collectables[i] = tfm.exec.addImage(img, "?100", location[1] - 20, location[2] - 20, playerName)
 									return
 								end
 							end
 						end
-		
+
 						for k, v in next, callback do
 							if (k ~= "guitar" and k ~= "hguitar" and k ~= (playerData:get(playerName, "fixingPinata") and "pbody" or "ppaw")) and v:inClickableRange(playerName) then
 								return v:performAction(playerName, 0)
 							end
 						end
 					end
-		
+
 					-- Consumables
 					if key == keys.down and os.time() > playerCache[playerName].consumableTimer then
 						for l = 1, #consumableLocations do
@@ -3366,7 +3366,7 @@ local roomModes = function(modeName)
 					if playerCache[playerName].dialog[1] == -1 then
 						-- Closes the dialog
 						ui.removeDialog(playerName)
-		
+
 						if playerCache[playerName].displaySimonSays == 1 then
 							displayGuitars(nil, playerName)
 						end
@@ -3387,13 +3387,13 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		-- Others
 		eventTextAreaCallback = function(id, playerName, cbk)
 			if not canStart or not playerCache[playerName] or not playerCache[playerName].dataLoaded then return end
-		
+
 			local c = string.split(cbk, "[^%.]+")
-		
+
 			if c[1] == "callback" then
 				if callback[c[2]] then
 					if callback[c[2]]:inClickableRange(playerName) then
@@ -3402,12 +3402,12 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventNewPlayer = function(playerName)
 			loadAllImages(playerName)
 			tfm.exec.addImage(map.background, "?0", 0, 0, playerName)
 		end
-		
+
 		eventLoop = function(currentTime, remainingTime)
 			if remainingTime < 500 then
 				playerCache = { }
@@ -3421,7 +3421,7 @@ local roomModes = function(modeName)
 				tfm.exec.newGame(module.map)
 				return
 			end
-		
+
 			if timersWorking > -1 and timersWorking < 2 then
 				timersWorking = timersWorking + .5
 				if timersWorking == 2 then
@@ -3439,10 +3439,10 @@ local roomModes = function(modeName)
 			if timersWorking == 2 then -- When timers are not working
 				update(6)
 			end
-		
+
 			if time >= 0 then
 				time = time + .5
-		
+
 				if time == .5 then
 					for playerName, data in next, playerCache do
 						if data.guitarTimer == 0 and data.remImg.highlightGuitar > 0 then
@@ -3458,7 +3458,7 @@ local roomModes = function(modeName)
 								data.simonSaysSequence.id = 1
 								return removeGuitars(playerName)
 							end
-		
+
 							data.remImg.highlightGuitar = tfm.exec.addImage(objects.guitar[data.simonSaysSequence.seq[data.simonSaysSequence.id]], ":200", 160 + data.simonSaysSequence.seq[data.simonSaysSequence.id] * 85, 150, playerName)
 						end
 					end
@@ -3470,7 +3470,7 @@ local roomModes = function(modeName)
 						--	removeGuitars(playerName)
 						--end
 					end
-		
+
 					-- Two loops so it doesn't interfer in the speed of important stuff
 					--for playerName, data in next, tfm.get.room.playerList do
 					--	if math.abs(data.vx) > 0.3 then
@@ -3485,7 +3485,7 @@ local roomModes = function(modeName)
 					--		end
 					--	end
 					--end
-		
+
 					local f, xs, ys, xa
 					for i = 0, 4 do
 						for j = 1, 4 do
@@ -3499,24 +3499,24 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		-- Not events
 		system.newTimer(function()
 			timersWorking = 4
 			canStart = true
 		end, 1000, false)
-		
+
 		system.looping(function()
 			update()
 		end, 12)
-		
+
 		--[[ Init ]]--
 		for _, f in next, { "AfkDeath", "AutoShaman", "AutoTimeLeft", "DebugCommand", "MortCommand", "PhysicalConsumables" } do
 			tfm.exec["disable" .. f]()
 		end
-		
+
 		tfm.exec.newGame(module.map)
-		
+
 	end
 
 	modules["evt_pizzeria"] = (modeName == "evt_pizzeria") and function()
@@ -3536,14 +3536,14 @@ local roomModes = function(modeName)
 			time = 2.75 * 60,
 			map = '<C><P H="800" L="2000" APS="16484935025.png,0,0,128,1000,672,0,128;1648034eff0.png,0,1632,319,330,470,1632,319" /><Z><S><S P="0,0,0.3,0.2,37,0,0,0" L="20" H="448" X="759" Y="524" T="12" lua="0" /><S L="776" X="388" H="20" Y="349" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="104" H="20" X="938" Y="349" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="13" X="995" H="686" Y="343" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="1100" X="550" H="10" Y="125" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="240" H="20" X="870" Y="544" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="633" H="20" X="317" Y="544" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="1000" X="500" H="30" Y="786" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="10" X="1001" H="10" Y="778" T="12" P="0,0,0.3,0.2,35,0,0,0" /><S L="27" H="17" X="1618" Y="436" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="1000" H="25" X="1500" Y="788" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="340" X="1790" H="11" Y="770" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="20" H="10" X="1615" Y="774" T="12" P="0,0,0.3,0.2,-35,0,0,0" /><S L="10" H="290" X="1636" Y="560" T="12" P="0,0,0.7,0.2,0,0,0,0" /><S L="18" X="1951" H="355" Y="587" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="10" H="290" X="1645" Y="560" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S P="0,0,0.3,0.2,-56,0,0,0" L="16" H="220" c="1" Y="369" T="12" X="1893" /><S L="15" H="22" X="1610" Y="431" T="12" P="0,0,2.5,0.2,58,0,0,0" /><S P="0,0,0.3,0.2,58,0,0,0" L="15" H="90" c="1" Y="403" T="12" X="1655" /><S X="1772" L="15" H="87" c="1" Y="330" T="12" P="0,0,0.3,0.2,58,0,0,0" /><S L="225" H="27" X="480" Y="759" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="20" X="594" H="10" Y="765" T="13" P="0,0,0.3,0.2,0,0,0,0" /><S L="20" H="10" X="372" Y="765" T="13" P="0,0,0.3,0.2,0,0,0,0" /><S L="10" X="0" H="800" Y="400" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="170" X="1892" H="12" Y="658" T="12" P="0,0,0.3,0.2,-49,0,0,0" /><S L="215" H="12" X="1757" Y="596" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="10" H="10" X="1836" Y="723" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="15" H="12" X="624" Y="703" T="12" P="0,0,0.7,0.2,0,0,0,0" /><S L="560" H="30" X="317" Y="519" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="110" H="40" X="200" Y="752" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="20" H="10" X="123" Y="765" T="13" P="0,0,0.3,0.2,0,0,0,0" /><S L="20" H="10" X="278" Y="765" T="13" P="0,0,0.3,0.2,0,0,0,0" /><S L="25" X="1618" H="105" Y="725" T="9" m="" P="0,0,,,,0,0,0" /><S L="25" H="50" X="1618" Y="497" T="9" m="" P="0,0,,,,0,0,0" /><S P="0,0,,,,0,0,0" L="25" H="300" Y="607" T="9" m="" X="1972" /></S><D><DS Y="730" X="400" /></D><O /></Z></C>'
 		}
-		
+
 		--[[ Development ]]--
 		local team = {
-			developer = { "Bolodefchoco#0000" },
+			developer = { "Bolodefchoco#0015" },
 			artist = { "Liiliiith#0000" },
 			others = { "Acer#1412", "Bishomilad#0000", "Heniyengui#0000", "Nettoork#0000" }
 		}
-		
+
 		--[[ Translations ]]--
 		local translation = setmetatable({
 			en = {
@@ -3650,7 +3650,7 @@ local roomModes = function(modeName)
 				welcome = "Mamma mia! Chef Remy hired you to make the most delicious pizzas ever! Be ready and use all the resources in the place.\n\nAfter harvesting the requested ingredients in their respective quantities, go to the dough roller and assemble the pizza.\n\nFollow the cooking time and ingredient quantities for a perfect pizza!",
 				error_timer = "There is a glitch with timers. We are working to fix this as soon as possible. Sorry for the inconvenience. :)"
 			},
-		
+
 			ar = {
 				event_concluded = "(╯°□°）╯︵ ┻━┻ !لقد أكملت الحدث\n\n،%s السحر من قبل\n،%s المؤثرات الخاصة من قبل\n<B>فريق المترجمين غير الرسمي</B>والرغبة الحسنة لـ\n<font size='9'>... ,%sشكر خاص لـ</font>",
 				ingredient = {
@@ -5190,12 +5190,12 @@ local roomModes = function(modeName)
 			end
 		})
 		translation.pt = translation.br
-		
+
 		--[[ Data ]]--
 		local json = { encode = true, decode = true }
 		do
 			local encode
-		
+
 			local escape_char_map = {
 				['\\'] = "\\\\",
 				['\"'] = "\\\"",
@@ -5206,15 +5206,15 @@ local roomModes = function(modeName)
 				['\t'] = "\\t"
 			}
 			local escape_char_map_inv = { ["\\/"] = "/", ['/'] = "\\/" }
-		
+
 			local escape_char = function(c)
 				return escape_char_map[c] or string.format("\\u%04x", string.byte(c))
 			end
-		
+
 			local encode_nil = function(val)
 				return "null"
 			end
-		
+
 			local encode_table = function(val, stack)
 				local res = {}
 				stack = stack or {}
@@ -5247,18 +5247,18 @@ local roomModes = function(modeName)
 					return "{" .. table.concat(res, ",") .. "}"
 				end
 			end
-		
+
 			local encode_string = function(val)
 				return '"' .. string.gsub(val, '[%z\1-\31\\"]', escape_char) .. '"'
 			end
-		
+
 			local encode_number = function(val)
 				if val ~= val or val <= -math.huge or val >= math.huge then
 					error("[JSON] Unexpected number value '" .. tostring(val) .. "'")
 				end
 				return string.format("%.14g", val)
 			end
-		
+
 			local type_func_map = {
 				["nil"] = encode_nil,
 				["table"] = encode_table,
@@ -5266,7 +5266,7 @@ local roomModes = function(modeName)
 				["number"] = encode_number,
 				["boolean"] = tostring,
 			}
-		
+
 			encode = function(val, stack)
 				local t = type(val)
 				local f = type_func_map[t]
@@ -5275,9 +5275,9 @@ local roomModes = function(modeName)
 				end
 				error("[JSON] Unexpected type '" .. t .. "'")
 			end
-		
+
 			local parse
-		
+
 			local space_chars = {
 				[' '] = true,
 				['\t'] = true,
@@ -5314,7 +5314,7 @@ local roomModes = function(modeName)
 				["false"] = false,
 				["null"] = nil
 			}
-		
+
 			local next_char = function(str, idx, set, negate)
 				for i = idx, #str do
 					if set[string.sub(str, i, i)] ~= negate then
@@ -5323,7 +5323,7 @@ local roomModes = function(modeName)
 				end
 				return #str + 1
 			end
-		
+
 			local decode_error = function(str, idx, msg)
 				local line_count = 1
 				local col_count = 1
@@ -5336,7 +5336,7 @@ local roomModes = function(modeName)
 				end
 				error(string.format("[JSON] %s at line %d col %d", msg, line_count, col_count))
 			end
-		
+
 			local codepoint_to_utf8 = function(n)
 				if n <= 0x7f then
 					return string.char(n)
@@ -5349,7 +5349,7 @@ local roomModes = function(modeName)
 				end
 				error(string.format("[JSON] Invalid unicode codepoint '%x'", n))
 			end
-		
+
 			local parse_unicode_escape = function(s)
 				local n1 = tonumber(string.sub(s, 3, 6), 16)
 				local n2 = tonumber(string.sub(s, 9, 12), 16)
@@ -5359,7 +5359,7 @@ local roomModes = function(modeName)
 					return codepoint_to_utf8(n1)
 				end
 			end
-		
+
 			local parse_string = function(str, i)
 				local has_unicode_escape = false
 				local has_surrogate_escape = false
@@ -5407,7 +5407,7 @@ local roomModes = function(modeName)
 				end
 				decode_error(str, i, "Expected closing quote for string")
 			end
-		
+
 			local parse_number = function(str, i)
 				local x = next_char(str, i, delim_chars)
 				local s = string.sub(str, i, x - 1)
@@ -5417,7 +5417,7 @@ local roomModes = function(modeName)
 				end
 				return n, x
 			end
-		
+
 			local parse_literal = function(str, i)
 				local x = next_char(str, i, delim_chars)
 				local word = string.sub(str, i, x - 1)
@@ -5426,7 +5426,7 @@ local roomModes = function(modeName)
 				end
 				return literal_map[word], x
 			end
-		
+
 			local parse_array = function(str, i)
 				local res = {}
 				local n = 1
@@ -5449,7 +5449,7 @@ local roomModes = function(modeName)
 				end
 				return res, i
 			end
-		
+
 			local parse_object = function(str, i)
 				local res = {}
 				i = i + 1
@@ -5479,7 +5479,7 @@ local roomModes = function(modeName)
 				end
 				return res, i
 			end
-		
+
 			local char_func_map = {
 				['"'] = parse_string,
 				['0'] = parse_number,
@@ -5499,7 +5499,7 @@ local roomModes = function(modeName)
 				['['] = parse_array,
 				['{'] = parse_object,
 			}
-		
+
 			local copy_ignoring
 			copy_ignoring = function(tbl, pat)
 				local out = {}
@@ -5514,7 +5514,7 @@ local roomModes = function(modeName)
 				end
 				return out
 			end
-		
+
 			parse = function(str, idx)
 				local chr = string.sub(str, idx, idx)
 				local f = char_func_map[chr]
@@ -5523,11 +5523,11 @@ local roomModes = function(modeName)
 				end
 				decode_error(str, idx, "Unexpected character '" .. chr .. "'")
 			end
-		
+
 			json.encode = function(val)
 				return (encode(copy_ignoring(val, "^__")))
 			end
-		
+
 			json.decode = function(str)
 				if type(str) ~= "string" then
 					error("[JSON] Expected argument of type string, got " .. type(str))
@@ -5541,7 +5541,7 @@ local roomModes = function(modeName)
 				return res
 			end
 		end
-		
+
 		local playerFlashData = {}
 		local playerData = setmetatable({}, {
 			__newindex = function(this, playerName, tbl)
@@ -5549,13 +5549,13 @@ local roomModes = function(modeName)
 					__call = function(playerTable)
 						local data = rawget(playerTable, "__modules")
 						data[module.name] = playerTable
-		
+
 						system.savePlayerData(playerName, json.encode(data))
 					end
 				}))
 			end
 		})
-		
+
 		local enumIds = {
 			hud = 50,
 			npc = 100,
@@ -5564,7 +5564,7 @@ local roomModes = function(modeName)
 			button = 400,
 			callback = 600,
 		}
-		
+
 		local bot = {
 			Chef = {
 				sit = { "164da72ef00" }
@@ -5645,7 +5645,7 @@ local roomModes = function(modeName)
 				discrX = -2
 			}
 		}
-		
+
 		local ingredient = {
 			plant = {
 				[1] = {
@@ -5824,35 +5824,35 @@ local roomModes = function(modeName)
 				__icon = {
 					[2] = "164a94c70f0", [6] = "164a94c88d5", [7] = "164a94ca0c1", [8] = "164a94cd052", [9] = "164a94cb87e"
 				},
-		
+
 				-- ID of the extra plants
 				2, 6, 7, 8, 9
 			}
 		}
-		
+
 		local enum_ingredients = {
 			[1] = "plant",
 			[2] = "meat",
 			[3] = "others"
 		}
-		
+
 		local __concatenatedIngredients = { }
 		do
 			for cat = 1, 3 do
 				local len = #__concatenatedIngredients
 				for i = 1, #ingredient[enum_ingredients[cat]] do
 					local ingred = ingredient[enum_ingredients[cat]][i]
-		
+
 					ingred.cat = cat
 					ingred.id = i
-		
+
 					if not ingred.isSpecial then
 						__concatenatedIngredients[len + i] = ingred
 					end
 				end
 			end
 		end
-		
+
 		local pizzas = {
 			_state = {
 				[1] = "1646c954e95",
@@ -5865,7 +5865,7 @@ local roomModes = function(modeName)
 				[-4] = "164c2b23979", -- Chocolate
 				[5] = "164704c3a6b", -- Burned
 				[-5] = "164c2b1ea9e", -- Chocolate
-		
+
 				_icon = {
 					[1] = "164ae6d6b78",
 					[-1] = "164aeabf914", -- Chocolate
@@ -5876,14 +5876,14 @@ local roomModes = function(modeName)
 					[4] = "164ae6f9610",
 					[-4] = "164c2b45b95" -- Chocolate
 				},
-		
+
 				_temperature = {
 					[1] = "164c7d929ee",
 					[2] = "164c7e2223d",
 					[3] = "164c7e23a0d",
 					[4] = "164c7e251e9"
 				},
-		
+
 				_temperatureIcon = {
 					[1] = "164c7febcdb",
 					[2] = "164c8021924",
@@ -5891,7 +5891,7 @@ local roomModes = function(modeName)
 					[4] = "164c8024b26"
 				}
 			},
-		
+
 			[1] = {
 				-- Chicken
 				ingredients = {
@@ -5928,7 +5928,7 @@ local roomModes = function(modeName)
 					meat = { { 1, 3 } },
 					others = { { 1, 4 } }
 				},
-		
+
 			},
 			[6] = {
 				-- Vegetarian
@@ -5938,7 +5938,7 @@ local roomModes = function(modeName)
 				},
 			}
 		}
-		
+
 		local objects = {
 			freezer = { "164628d01f6", "164629c3ee5", "164a4713daa" },
 			cabinet = { "16462a33e8b", "16462a7e5f8", "164a47154e7" },
@@ -5949,31 +5949,31 @@ local roomModes = function(modeName)
 			salt = "164c2a4e6af",
 			sugar = "164c2a1bf58"
 		}
-		
+
 		local possibilityRates = {
 			extraIngredients = { 1, 3, 2, 2, 1, 2, 3, 3, 1, 2 },
 			pizzaTemperature = { 4, 2, 3, 3, 4, 3, 3, 2, 3, 4 },
 		}
-		
+
 		local limits = {
 			freezer = 6,
 			cabinet = 4,
 			pizzaCycle = 4 -- seconds
 		}
-		
+
 		local smasherEnums = {
 			[1] = 5,
 			[2] = 7,
 			[3] = 11
 		}
-		
+
 		local animalEnums = {
 			-- Tables for table.random
 			[1] = { pos = 10, id = { 31 } },
 			[2] = { pos = 15, id = { 23, 21, 21, 23 } },
 			[3] = { pos = 20, id = { 22 } }
 		}
-		
+
 		local missionAxis = {
 			[1] = { 0, 50 },
 			[2] = { 7, 100 },
@@ -5981,40 +5981,40 @@ local roomModes = function(modeName)
 			[4] = { 0, 0 },
 			[5] = { 75, 0 },
 		}
-		
+
 		local moneyPercentages = {
 			[1] = .15,
 			[2] = .6,
 			[3] = 1
 		}
-		
+
 		--[[ Utils ]]--
 		do
 			local chatMessage = tfm.exec.chatMessage
 			tfm.exec.chatMessage = function(s, player)
 				local hasBreakline = string.find(s, "^\n")
-		
+
 				local text = "<font color='#88CEBF'>[•] "
-		
+
 				if hasBreakline then
 					text = (hasBreakline and "\n" or "") .. text .. string.sub(s, 2)
 				else
 					text = text .. s
 				end
-		
+
 				chatMessage(text, player)
 			end
-		
+
 			table.remove = function(list, pos)
 				local len, out = #list
-		
+
 				if not pos or pos == len then
 					out = list[len]
 					list[len] = nil
 				elseif pos < len then
 					local out = list[pos]
 					list[pos] = nil
-		
+
 					for i = pos, len do
 						list[i] = list[i + 1]
 					end
@@ -6022,57 +6022,57 @@ local roomModes = function(modeName)
 				return out
 			end
 		end
-		
+
 		math.clamp = function(value, min, max)
 			return value < min and min or value > max and max or value
 		end
-		
+
 		math.pythag = function(x1, y1, x2, y2, range)
 			return (x1-x2)^2 + (y1-y2)^2 <= (range^2)
 		end
-		
+
 		system.giveTitle = function(playerName)
 			if module.title and playerFlashData[playerName] then
 				if playerFlashData[playerName].dataLoaded and not playerData[playerName].won then
 					system.giveEventGift(playerName, module.title)
-		
+
 					playerData[playerName].won = true
-		
+
 					tfm.exec.chatMessage(string.format(translation().event_concluded, team.developer[1], team.artist[1], table.concat(team.others, ", ")), playerName)
-		
+
 					tfm.exec.setNameColor(playerName, 0xF3D460)
 					return true
 				end
 			end
 			return false
 		end
-		
+
 		system.looping = function(f, tick)
 			local s = 1000 / tick
 			local t = { }
-		
+
 			local bar = 0
 			local fooTimer = function()
 				bar = bar + 1
 				t[bar] = system.newTimer(f, 1000, true)
 			end
-		
+
 			for timer = 0, 1000 - s, s do
 				system.newTimer(fooTimer, 1000 + timer, false)
 			end
 			return t
 		end
-		
+
 		string.split = function(s, p)
 			local out = {}
-		
+
 			string.gsub(s, p, function(v)
 				out[#out + 1] = v
 			end)
-		
+
 			return out
 		end
-		
+
 		table.copy = function(tbl)
 			local out = { }
 			for k, v in next, tbl do
@@ -6080,7 +6080,7 @@ local roomModes = function(modeName)
 			end
 			return out
 		end
-		
+
 		table.find = function(list, value, index, f)
 			for k, v in next,list do
 				local i = (type(v) == "table" and index) and v[index] or v
@@ -6088,14 +6088,14 @@ local roomModes = function(modeName)
 					return true, k
 				end
 			end
-		
+
 			return false
 		end
-		
+
 		table.turnTable = function(x)
 			return (type(x)=="table" and x or {x})
 		end
-		
+
 		table.merge = function(this, src)
 			for k, v in next, src do
 				if this[k] then
@@ -6110,27 +6110,27 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		table.random = function(tbl)
 			return tbl[math.random(#tbl)]
 		end
-		
+
 		--[[ System ]]--
 		for k, v in next, translation do
 			if k ~= "en" then
 				table.merge(v, translation.en, true)
 			end
 		end
-		
+
 		local callback
 		do
 			local callback_id = enumIds.callback
-		
+
 			callback = setmetatable({ }, {
 				__call = function(this, eventName, x, y, w, h, d_id)
 					local id = d_id or callback_id
 					local action
-		
+
 					local self = {
 						callback = eventName,
 						x = x,
@@ -6138,7 +6138,7 @@ local roomModes = function(modeName)
 						w = w,
 						h = h
 					}
-		
+
 					self.setAction = function(self, f)
 						if type(f) == "function" then
 							action = f
@@ -6147,7 +6147,7 @@ local roomModes = function(modeName)
 						end
 						return false
 					end
-		
+
 					self.performAction = function(self, ...)
 						if action then
 							action(self, ...)
@@ -6155,47 +6155,47 @@ local roomModes = function(modeName)
 						end
 						return self, false
 					end
-		
+
 					self.remove = function(self, playerName)
 						ui.removeTextArea(id, playerName)
-		
+
 						if not playerName then
 							this[eventName] = nil
 						end
 						return true
 					end
-		
+
 					ui.addTextArea(id, "<textformat leftmargin='1' rightmargin='1'><a href='event:callback." .. eventName .. "'>" .. string.rep('\n', h / 10), nil, x - 5, y - 5, w + 5, h + 5, 1, 1, 0, false)
-		
+
 					if not d_id then
 						callback_id = callback_id + 1
 					end
-		
+
 					return self
 				end
 			})
 		end
-		
+
 		local npc
 		do
 			local npcs = { }
-		
+
 			local npc_id = enumIds.npc
-		
+
 			npc = function(name, collection, layer)
 				local action
 				local evt
 				local id = npc_id
 				local img
 				local state
-		
+
 				local self = {
 					x = 0,
 					y = 0,
 					w = 1,
 					h = 1
 				}
-		
+
 				self.deleteCallback = function(self, playerName)
 					if evt then
 						evt:remove(playerName)
@@ -6203,145 +6203,145 @@ local roomModes = function(modeName)
 					end
 					return self, "Callback doesn't exist."
 				end
-		
+
 				self.destroy = function(self, super)
 					if img then
 						tfm.exec.removeImage(img)
 						img = nil
 					end
-		
+
 					if super then
 						ui.removeTextArea(id + 1)
 					end
 				end
-		
+
 				self.getAction = function(self)
 					if action then
 						return action
 					end
 					return nil, "Action is not set."
 				end
-		
+
 				self.getCollection = function(self)
 					return collection
 				end
-		
+
 				self.getId = function(self)
 					return id
 				end
-		
+
 				self.getLayer = function(self)
 					return layer
 				end
-		
+
 				self.getName = function(self)
 					return name
 				end
-		
+
 				self.getState = function(self)
 					return state
 				end
-		
+
 				self.removeAction = function(self)
 					action = nil
 					self.destroy(self)
 					return self
 				end
-		
+
 				self.removeName = function(self, playerName)
 					ui.removeTextArea(id + 1, playerName)
-		
+
 					if not playerName then
 						name = nil
 					end
-		
+
 					return self
 				end
-		
+
 				self.setAction = function(self, event, static)
 					if type(state) == "table" then
 						local oldState = state
-		
+
 						local curr = 0
 						action = function(state)
 							local i = curr % #state + 1
 							if event then
 								i = event(i) or i
 							end
-		
+
 							curr = curr + 1
-		
+
 							self.destroy(self)
 							img = tfm.exec.addImage(state[i] .. ".png", layer, self.x, self.y)
-		
+
 							if name then
 								ui.addTextArea(id + 1, "<p align='center'><font color='#FFF426' face='Verdana'><B>" .. name, nil, self.x - (static and 20 or 0), self.y - 20, 100, 20, 1, 1, 0, false)
 							end
 						end
-		
+
 						return self
 					end
 					return self, "State not set or cannot have an action."
 				end
-		
+
 				self.setCallback = function(self, eventName, event)
 					if not evt then
 						evt = callback(eventName, self.x, self.y, self.w, self.h, id)
-		
+
 						if event then
 							evt:setAction(event)
 						end
-		
+
 						return self
 					end
 					return self, "Callback already exists."
 				end
-		
+
 				self.setDimension = function(self, w, h)
 					self.w = w
 					self.h = h
-		
+
 					return self
 				end
-		
+
 				self.setPosition = function(self, x, y)
 					self.x = x
 					self.y = y
-		
+
 					return self
 				end
-		
+
 				self.setState = function(self, newState)
 					newState = collection[newState]
-		
+
 					if newState and state ~= newState then
 						state = newState
 						self.removeAction(self)
-		
+
 						return self
 					end
 					return self, "This state doesn't exist or is already running."
 				end
-		
+
 				self.static = function(self)
 					if state then
 						if #state == 1 then
 							self.setAction(self, function()
 								self.removeAction(self)
 							end, true)
-		
+
 							return self
 						end
 						return self, "State must be len:1"
 					end
 					return self, "State not set."
 				end
-		
+
 				npcs[#npcs + 1] = self
 				npc_id = npc_id + 2
 				return self
 			end
-		
+
 			system.looping(function()
 				for k, v in next, npcs do
 					local action = v:getAction()
@@ -6351,16 +6351,16 @@ local roomModes = function(modeName)
 				end
 			end, 10)
 		end
-		
+
 		local lamp
 		do
 			local lamp_id = enumIds.lamp
 			lamp = function(x, y, height, luminosity)
 				height = height or 70
 				luminosity = luminosity or 5
-		
+
 				local id = lamp_id
-		
+
 				tfm.exec.addPhysicObject(id, x, y, {
 					type = 13,
 					miceCollision = true,
@@ -6368,13 +6368,13 @@ local roomModes = function(modeName)
 					dynamic = true,
 					friction = 1.5
 				})
-		
+
 				tfm.exec.addJoint(id, 0, id, {
 					type = 3,
 					point1 = x .. "," .. (y - height),
 					point2 = x .. "," .. (y - height + 1)
 				})
-		
+
 				local size = luminosity * 20
 				local alpha = .1
 				local foregroundLim = math.ceil(luminosity * .4)
@@ -6389,11 +6389,11 @@ local roomModes = function(modeName)
 						foreground = light > foregroundLim,
 						color = 0xFFFF77
 					})
-		
+
 					size = size - 20
 					alpha = alpha + scale
 				end
-		
+
 				tfm.exec.addJoint(id + luminosity + 1, id, id, {
 					type = 0,
 					point1 = x .. "," .. (y - height),
@@ -6401,29 +6401,29 @@ local roomModes = function(modeName)
 					line = 2,
 					color = 1
 				})
-		
+
 				lamp_id = lamp_id + luminosity + 2
 			end
 		end
-		
+
 		ui.menu = function(text, playerName, x, y, w, h)
 			local id = enumIds.menu - 8
-		
+
 			x = x + 6
 			y = y + 6
-		
+
 			ui.addTextArea(0, "", playerName, -1500, -1500, 5000, 5000, 1, 1, .2, false)
-		
+
 			ui.addTextArea(id, "", playerName, x, y, w, h, 0x78462B, 0x78462B, 1, true)
-		
+
 			ui.addTextArea(id - 1, "", playerName, x, y, 20, 20, 0xBEB17D, 0xBEB17D, 1, true)
 			ui.addTextArea(id - 2, "", playerName, x + w - 20, y, 20, 20, 0xBEB17D, 0xBEB17D, 1, true)
 			ui.addTextArea(id - 3, "", playerName, x, y + h - 20, 20, 20, 0xBEB17D, 0xBEB17D, 1, true)
 			ui.addTextArea(id - 4, "", playerName, x + w - 20, y + h - 20, 20, 20, 0xBEB17D, 0xBEB17D, 1, true)
-		
+
 			ui.addTextArea(id - 5, "", playerName, x, y + (h + 40) / 4, w, ((h - 40) / 2), 0x9D7043, 0x9D7043, 1, true)
 			ui.addTextArea(id - 6, "", playerName, x + (w + 40) / 4, y, ((w - 40) / 2), h, 0x9D7043, 0x9D7043, 1, true)
-		
+
 			ui.addTextArea(id - 7, text, playerName, x + 3, y + 3, w - 6, h - 6, 0x1C3A3E, 0x0E1619, 1, true)
 		end
 		ui.removeMenu = function(playerName)
@@ -6433,10 +6433,10 @@ local roomModes = function(modeName)
 			end
 			ui.removeTextArea(0, playerName)
 		end
-		
+
 		ui.button = function(id, text, eventName, playerName, x, y, w, h)
 			id = enumIds.button + id * 2
-		
+
 			ui.addTextArea(id, "", playerName, x + 1, y + 2, w, h, 1, 1, 1, true)
 			ui.addTextArea(id - 1, "<p align='center'><font size='13'><a href='event:button." .. eventName .. "'>" .. text .. "\n", playerName, x, y, w, h, 0x142A2D, 0x142A2D, 1, true)
 		end
@@ -6446,12 +6446,12 @@ local roomModes = function(modeName)
 				ui.removeTextArea(i, playerName)
 			end
 		end
-		
+
 		local getStage = function(remaining, step, max)
 			local stage = math.floor(remaining / step) + 1
 			return math.clamp(stage, 1, max)
 		end
-		
+
 		local updateFlashStorage = function(playerName)
 			local out = { }
 			for s = 1, 2 do
@@ -6464,76 +6464,76 @@ local roomModes = function(modeName)
 					end
 				end
 			end
-		
+
 			playerFlashData[playerName].concatenatedStorage = out
 		end
-		
+
 		local parseId = function(sId)
 			local cat, id = string.match(sId, "(%d)(%d+)")
 			return tonumber(cat), tonumber(id)
 		end
-		
+
 		local storeIngredient = function(playerName, ing, quantity, ignoreSave)
 			quantity = quantity or 1
-		
+
 			local bar = (ing.inCabinet and 2 or 1)
-		
+
 			local id = tonumber(ing.cat .. ing.id)
-		
+
 			local found, key = table.find(playerData[playerName].storage[bar], id, 1)
 			if not found then
 				if #playerData[playerName].storage[bar] >= (playerFlashData[playerName]._limits[(ing.inCabinet and "cabinet" or "freezer")]) then
 					return false
 				end
-		
+
 				playerData[playerName].storage[bar][#playerData[playerName].storage[bar] + 1] = { id, quantity }
 			else
 				playerData[playerName].storage[bar][key][2] = playerData[playerName].storage[bar][key][2] + quantity
 			end
-		
+
 			updateFlashStorage(playerName)
-		
+
 			if not ignoreSave then
 				playerData[playerName]()
 			end
 			return true
 		end
-		
+
 		local removeIngredient = function(playerName, storage, index, quantity, ignoreSave)
 			quantity = quantity or 1
-		
+
 			local status = 0 -- 1 = -1, 2 = delete, 0 = fail
-		
+
 			if playerData[playerName].storage[storage][index][2] > quantity then
 				-- Works like a pointer, so - 1 is not necessary in playerFlashData
 				playerData[playerName].storage[storage][index][2] = playerData[playerName].storage[storage][index][2] - quantity
-		
+
 				status = 1
 			elseif playerData[playerName].storage[storage][index][2] == quantity then
-		
+
 				table.remove(playerData[playerName].storage[storage], index)
-		
+
 				local storageName = (storage == 1 and "freezer" or "cabinet")
 				playerFlashData[playerName]._limits[storageName] = math.max(limits[storageName], #playerData[playerName].storage[storage])
-		
+
 				status = 2
 			end
-		
+
 			if not ignoreSave and status > 0 then
 				playerData[playerName]()
 			end
-		
+
 			return status
 		end
-		
+
 		local transformTime = function(s)
 			return string.format("%02dm%02ds", s / 60, s % 60)
 		end
-		
+
 		local unsafeToNavigate = function(playerName)
 			return playerFlashData[playerName].pizzaIcon > -1 or playerFlashData[playerName].usingOven
 		end
-		
+
 		local countPizzas = function(playerName)
 			local total = 0
 			for i = 1, #pizzas do
@@ -6543,7 +6543,7 @@ local roomModes = function(modeName)
 			end
 			return total
 		end
-		
+
 		--[[ Variables ]]--
 		local chef
 		local customer
@@ -6552,197 +6552,197 @@ local roomModes = function(modeName)
 		local ovens = { false, false }
 		-- Format
 		local picker_format = "<textformat tabstops='[10]' leftmargin='1' rightmargin='1'><a href='event:select.%d'>\n\t<J><B>x%d\n\n\n\n\n"
-		
+
 		--[[ Interface ]]--
 		local market = function(playerName, update)
 			if not update then
 				ui.menu("<p align='center'><font size='20'><a href='event:button.market.previous'><B><J>«</J></B></a>     " .. translation().ui.market .. "     <a href='event:button.market.next'><B><J>»</J></B></a>\n", playerName, 265, 112, 270, 175)
 			end
-		
+
 			local o = ingredient.plant[playerFlashData[playerName].marketIndex]
-		
+
 			ui.addTextArea(1, "", playerName, 281, 166, 70, 70, 0x142A2D, 0x142A2D, 1, true)
-		
+
 			if playerFlashData[playerName].marketImgId > -1 then
 				tfm.exec.removeImage(playerFlashData[playerName].marketImgId)
 			end
 			playerFlashData[playerName].marketImgId = tfm.exec.addImage(o.icon .. ".png", "&1", 281 + o.axis[1], 166 + o.axis[2], playerName)
-		
+
 			ui.addTextArea(2, "<textformat tabstops='[0,0,65,75,140]'><font size='16'>" .. translation().ingredient.plant[o.id] .. "</font>\n\n<N>" .. translation().harvest.cost .. "\t:\t<V>$" .. o.price .. "\t<N>x" .. o.quantity .. "\n<N>" .. translation().harvest.h_time .. "\t:\t<V>" .. transformTime(o.time), playerName, 366, 166, 165, 70, 0x142A2D, 0x142A2D, 1, true)
-		
+
 			if not update then
 				ui.button(1, "<VP>" .. translation().harvest.seed, "seed", playerName, 295, 261, 100, 20)
 				ui.button(2, translation().ui.close, "close.market", playerName, 415, 261, 100, 20)
 			end
 		end
-		
+
 		local order = function(playerName)
 			ui.menu("<p align='center'><font size='20'><textformat leading='-8'>" .. translation().ui.order .. "</textformat></font>\n<font color='#142A2D'>___________________</font></p><p align='left'>\n\n" .. translation().order.customer .. " : <V>" .. customer:getName() .. "</V>\n" .. translation().order.total .. " : <V>$" .. playerFlashData[playerName].order.total .. "</V>\n<font size='15'>\n" .. translation().pizza[playerData[playerName].order.pizza], playerName, 295, 60, 210, 300)
-		
+
 			local data = { }
 			for t, l in next, playerFlashData[playerName].order.ingredients do
 				for _, d in next, l do
 					data[#data + 1] = { i = ingredient[t][d[1]], q = d[2] }
 				end
 			end
-		
+
 			for i = 0, 3 do
 				local info = data[i + 1]
-		
+
 				-- Some pizzas have <4 ingredients
 				if info then
 					local x, y = 310 + ((i % 2) * 85), 202 + ((i > 1 and 1 or 0) * 85)
 					ui.addTextArea(i + 1, "x" .. info.q, playerName, x, y, 70, 70, 0x142A2D, 0x142A2D, 1, true)
-		
+
 					playerFlashData[playerName].order.images[i + 1] = tfm.exec.addImage(info.i.icon .. ".png", "&1", x + info.i.axis[1], y + info.i.axis[2], playerName)
 				end
 			end
-		
+
 			for i = 0, 3 do
 				local y = 210 + (i * 40)
-		
+
 				if i == 0 then
 					-- Temperature
 					playerFlashData[playerName].order.images[#playerFlashData[playerName].order.images + 1] = tfm.exec.addImage(pizzas._state._temperatureIcon[playerData[playerName].order.level] .. ".png", "&1", 480, y, playerName)
 				else
 					-- Ignored ingredients
 					if not playerData[playerName].order.ingredients then break end
-		
+
 					local id = playerData[playerName].order.ingredients[i]
 					if not id then break end
-		
+
 					local e = ingredient.extra.__icon[id]
 					if not e then break end
-		
+
 					playerFlashData[playerName].order.images[#playerFlashData[playerName].order.images + 1] = tfm.exec.addImage(e .. ".png", "&1", 480, y, playerName)
 					playerFlashData[playerName].order.images[#playerFlashData[playerName].order.images + 1] = tfm.exec.addImage("164a961ac69.png", "&2", 480, y, playerName)
 				end
-		
+
 				ui.addTextArea(i + 5, "", playerName, 480, y, 20, 20, 0x142A2D, 0x142A2D, 1, true)
 			end
-		
+
 			ui.button(1, "<R><B>X", "close.order", playerName, 480, 74, 20, 20)
 		end
-		
+
 		local smasher = function(playerName)
 			ui.menu("<p align='center'><font size='20'>" .. translation().ui.smasher, playerName, 265, 115, 260, 175)
-		
+
 			for i = 1, #smasherEnums do
 				local x = 282 + ((i - 1) * 84)
-		
+
 				local o = ingredient.plant[smasherEnums[i]]
 				local to = ingredient.others[o.to]
-		
+
 				ui.addTextArea(i, "<p align='center'><a href='event:button.smash." .. smasherEnums[i] .. "'>" .. translation().smasher.smash, playerName, x, 160, 70, 90, 0x142A2D, 0x142A2D, 1, true)
-		
+
 				local id = i * 2
 				playerFlashData[playerName].smasherImgIds[id - 1] = tfm.exec.addImage(o.icon .. ".png", "&1", x + 5, 180 + o.axis[2], playerName)
 				playerFlashData[playerName].smasherImgIds[id] = tfm.exec.addImage(to.icon .. ".png", "&1", x + 70 - to.axis[1] + (i == 1 and -38 or i == 2 and 8 or -4), 180 + to.axis[2] + (i == 1 and 10 or 0), playerName)
 			end
-		
+
 			ui.button(1, translation().ui.close, "close.smasher", playerName, 284, 265, 235, 20)
 		end
-		
+
 		local storage = function(type, playerName, update)
 			local obj = (type == 1 and "freezer" or "cabinet")
-		
+
 			if not update then
 				ui.menu("<p align='center'><font size='20'><a href='event:button.storage.previous." .. type .. "'><B><J>«</J></B></a>     " .. translation().ui[obj] .. "     <a href='event:button.storage.next." .. type .. "'><B><J>»</J></B></a>\n<font size='10'>( " .. #playerData[playerName].storage[type] .. " / " .. limits[obj] .. " )", playerName, 265, 120, 270, 175)
 			end
-		
+
 			local stored = playerData[playerName].storage[type][playerFlashData[playerName].storageIndex]
-		
+
 			local cat, id = parseId(stored[1])
-		
+
 			local o = ingredient[enum_ingredients[cat]][id]
-		
+
 			ui.addTextArea(1, "", playerName, 281, 184, 70, 70, 0x142A2D, 0x142A2D, 1, true)
-		
+
 			if playerFlashData[playerName].storageImgId > -1 then
 				tfm.exec.removeImage(playerFlashData[playerName].storageImgId)
 			end
 			playerFlashData[playerName].storageImgId = tfm.exec.addImage(o.icon .. ".png", "&1", 281 + o.axis[1], 184 + o.axis[2], playerName)
-		
+
 			ui.addTextArea(2, "<textformat tabstops='[0,0,65,75,140]'><font size='16'>" .. translation().ingredient[enum_ingredients[cat]][o.id] .. "</font> x" .. stored[2] .. (o.isSpecial and ("\n<U><a href='event:button.use." .. o.id .. "'>" .. translation().storage.select) or ""), playerName, 366, 184, 165, 70, 0x142A2D, 0x142A2D, 1, true)
-		
+
 			if not update then
 				ui.button(1, translation().ui.close, "close.storage." .. type, playerName, 281, 269, 250, 20)
 			end
 		end
-		
+
 		local garbage = function(playerName, update)
 			if not update then
 				ui.menu("<p align='center'><font size='20'><a href='event:button.garbage.previous'><B><J>«</J></B></a>     " .. translation().ui.garbage .. "     <a href='event:button.garbage.next'><B><J>»</J></B></a>\n", playerName, 265, 112, 270, 175)
 			end
-		
+
 			local stored = playerFlashData[playerName].concatenatedStorage[playerFlashData[playerName].garbageIndex]
-		
+
 			local cat, id = parseId(stored[1])
-		
+
 			local o = ingredient[enum_ingredients[cat]][id]
-		
+
 			ui.addTextArea(1, "", playerName, 281, 166, 70, 70, 0x142A2D, 0x142A2D, 1, true)
-		
+
 			if playerFlashData[playerName].garbageImgId > -1 then
 				tfm.exec.removeImage(playerFlashData[playerName].garbageImgId)
 			end
 			playerFlashData[playerName].garbageImgId = tfm.exec.addImage(o.icon .. ".png", "&1", 281 + o.axis[1], 166 + o.axis[2], playerName)
-		
+
 			ui.addTextArea(2, "<textformat tabstops='[0,0,65,75,140]'><font size='16'>" .. translation().ingredient[enum_ingredients[cat]][o.id] .. "</font> x" .. stored[2] .. "\n\n<B>" .. translation().ui[(o.inCabinet and "cabinet" or "freezer")], playerName, 366, 166, 165, 70, 0x142A2D, 0x142A2D, 1, true)
-		
+
 			if not update then
 				ui.button(1, "<VP>" .. translation().garbage, "trash", playerName, 295, 261, 100, 20)
 				ui.button(2, translation().ui.close, "close.garbage", playerName, 415, 261, 100, 20)
 			end
 		end
-		
+
 		local displayCash = function(playerName)
 			ui.addTextArea(enumIds.hud, "<font size='20' color='#FFFF00'>$" .. string.format("%5d", playerData[playerName].cash), playerName, 710, 370, 90, 30, 1, 1, 0, true)
 		end
-		
+
 		local displayWheat = function(playerName)
 			ui.addTextArea(enumIds.hud + 1, "<font size='20'>" .. string.format("%3d", (playerData[playerName].storage[3] - playerFlashData[playerName].selectedWheats - (playerFlashData[playerName].usedWheats and ingredient.plant[12].doughQuantity or 0))), playerName, 310, 410, nil, nil, 1, 1, 0, false)
 		end
-		
+
 		local displayWheatCounter = function(playerName, x, y)
 			ui.addTextArea(enumIds.hud + 2, "<CE><B>x" .. playerFlashData[playerName].selectedWheats, playerName, 5, 20, nil, nil, 1, 1, 0, true)
 		end
-		
+
 		local concludeMission = function(id, playerName, image)
 			playerFlashData[playerName].doughMission[id] = tfm.exec.addImage(image, "&1", 5 + missionAxis[id][1], 25 + missionAxis[id][2], playerName)
 		end
-		
+
 		--[[ Functions ]]--
 		local allowCallback = function(callback, playerName, complement)
 			local x, y = tfm.get.room.playerList[playerName].x, tfm.get.room.playerList[playerName].y
-		
+
 			complement = not complement and 0 or (complement / 2)
-		
+
 			return ((x >= (callback.x - complement) and x <= (callback.x + callback.w + complement)) and (y >= (callback.y - complement) and y <= (callback.y + callback.h + complement)))
 		end
-		
+
 		local unlockDoor = function(this, playerName)
 			if isBarnLocked then
 				local x, y = tfm.get.room.playerList[playerName].x, tfm.get.room.playerList[playerName].y
 				if x >= 1807 and x <= 1960 then
 					if y >= 500 and y <= 595 then
 						isBarnLocked = false
-		
+
 						this:remove()
-		
+
 						tfm.exec.removePhysicObject(1)
-		
+
 						tfm.exec.removeImage(doorId)
-		
+
 						tfm.exec.giveConsumables(playerName, 5, 5)
 					end
 				end
 			end
 		end
-		
+
 		local harvest = function(this, playerName, id)
 			if tfm.get.room.playerList[playerName].x < 1000 or tfm.get.room.playerList[playerName].x > 1650 or unsafeToNavigate(playerName) then return end
-		
+
 			if playerData[playerName].spots[id] ~= nil then
 				-- false = doesn't exist, { } = exists
 				if not playerData[playerName].spots[id] then
@@ -6751,9 +6751,9 @@ local roomModes = function(modeName)
 				else
 					if playerData[playerName].spots[id][2] == -1 then
 						local o = ingredient.plant[playerData[playerName].spots[id][1]]
-		
+
 						local storageName = (o.inCabinet and "cabinet" or "freezer")
-		
+
 						if o.isSpecial then -- wheat only
 							playerData[playerName].storage[3] = playerData[playerName].storage[3] + o.quantity
 							displayWheat(playerName)
@@ -6765,13 +6765,13 @@ local roomModes = function(modeName)
 						end
 						playerData[playerName].spots[id] = false
 						playerData[playerName]()
-		
+
 						tfm.exec.removeImage(playerFlashData[playerName].spots[id][1])
-		
+
 						playerFlashData[playerName].spots[id] = { tfm.exec.addImage("164431b8c1e.png", "?2", 906 + (id * 100), 600, playerName), 0 }
-		
+
 						tfm.exec.chatMessage(string.format(translation().harvest.harvest, translation().ingredient.plant[o.id]) .. (o.isSpecial and "" or "\n~> " .. translation().ui[storageName] .. " ( " .. #playerData[playerName].storage[(o.inCabinet and 2 or 1)] .. " / " .. limits[storageName] .. " )"), playerName)
-		
+
 						if math.random(30) < 6 then
 							tfm.exec.giveConsumables(playerName, 2330, 1)
 						end
@@ -6779,10 +6779,10 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		local closeStorageImg = function(id, playerName) -- not the ingredient
 			local s = id == 1 and "freezer" or id == 2 and "cabinet" or "garbage"
-		
+
 			if playerFlashData[playerName][s .. "State"] > -1 then
 				tfm.exec.removeImage(playerFlashData[playerName][s .. "State"], playerName)
 				playerFlashData[playerName][s .. "State"] = -1
@@ -6790,42 +6790,42 @@ local roomModes = function(modeName)
 			end
 			return false
 		end
-		
+
 		local a_freezer = function(this, playerName)
 			if not allowCallback(this, playerName, 60) or unsafeToNavigate(playerName) then return end
-		
+
 			if closeStorageImg(1, playerName) then return end
-		
+
 			local id = #playerData[playerName].storage[1] > 0 and 3 or 2
 			playerFlashData[playerName].freezerState = tfm.exec.addImage(objects.freezer[id] .. ".png", "?30", 400, 190, playerName)
-		
+
 			if #playerData[playerName].storage[1] > 0 then
 				storage(1, playerName)
 			else
 				tfm.exec.chatMessage(translation().storage.empty_f, playerName)
 			end
 		end
-		
+
 		local a_cabinet = function(this, playerName)
 			if not allowCallback(this, playerName, 150) or unsafeToNavigate(playerName) then return end
-		
+
 			if closeStorageImg(2, playerName) then return end
-		
+
 			local id = #playerData[playerName].storage[2] > 0 and 3 or 2
 			playerFlashData[playerName].cabinetState = tfm.exec.addImage(objects.cabinet[id] .. ".png", "?30", 530, 180, playerName)
-		
+
 			if #playerData[playerName].storage[2] > 0 then
 				storage(2, playerName)
 			else
 				tfm.exec.chatMessage(translation().storage.empty_c, playerName)
 			end
 		end
-		
+
 		local a_garbage = function(this, playerName)
 			if not allowCallback(this, playerName, 50) or unsafeToNavigate(playerName) then return end
-		
+
 			if closeStorageImg(3, playerName) then return end
-		
+
 			if #playerFlashData[playerName].concatenatedStorage > 0 then
 				playerFlashData[playerName].garbageState = tfm.exec.addImage(objects.garbage[2] .. ".png", "?30", 630, 291, playerName)
 				garbage(playerName)
@@ -6833,20 +6833,20 @@ local roomModes = function(modeName)
 				tfm.exec.chatMessage(translation().storage.empty_g, playerName)
 			end
 		end
-		
+
 		local destroyOven = function(id, playerName)
 			tfm.exec.removeImage(ovens[id].img)
 			tfm.exec.removeImage(ovens[id].icon)
-		
+
 			if playerName then
 				playerFlashData[playerName].usingOven = false
-		
+
 				local level = ovens[id].level -- necessary to be used in the newTimer
-		
+
 				local pizzaId = level * (playerData[playerName].order.pizza == 2 and -1 or 1)
-		
+
 				local pizzaResult = tfm.exec.addImage(pizzas._state[pizzaId] .. ".png", "!30", 250, 150, playerName)
-		
+
 				if level == #pizzas._state then
 					tfm.exec.chatMessage("\n" .. translation().pizza.burned.. "\n", playerName)
 				else
@@ -6854,14 +6854,14 @@ local roomModes = function(modeName)
 						ingred.id = tfm.exec.addImage(ingred.icon .. ".png", "!40", ingred.x - 245, ingred.y - 135, playerName)
 					end
 				end
-		
+
 				system.newTimer(function()
 					tfm.exec.removeImage(pizzaResult)
-		
+
 					for _, ingred in next, playerFlashData[playerName].assembling.ingredients do
 						tfm.exec.removeImage(ingred.id)
 					end
-		
+
 					if level < #pizzas._state then
 						playerFlashData[playerName].pizzaIcon = tfm.exec.addImage(pizzas._state._icon[pizzaId] .. ".png", "$" .. playerName, -5, -10)
 						tfm.exec.chatMessage("\n" .. translation().pizza.deliver.. "\n", playerName)
@@ -6869,15 +6869,15 @@ local roomModes = function(modeName)
 					end
 				end, 4000, false)
 			end
-		
+
 			ovens[id] = false
 		end
-		
+
 		local f_oven = function(this, playerName, id)
 			if not allowCallback(this, playerName, 20) then return end
-		
+
 			id = id - 6
-		
+
 			if ovens[id] and ovens[id].playerName == playerName then
 				destroyOven(id, playerName)
 			else
@@ -6885,9 +6885,9 @@ local roomModes = function(modeName)
 					if not ovens[id] then
 						tfm.exec.removeImage(playerFlashData[playerName].pizzaIcon)
 						playerFlashData[playerName].pizzaIcon = -1
-		
+
 						local x = 5 + (id == 2 and 175 or 0)
-		
+
 						ovens[id] = {
 							playerName = playerName,
 							time = 0,
@@ -6901,89 +6901,89 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		local openSmasher = function(this, playerName)
 			if not allowCallback(this, playerName, 20) or unsafeToNavigate(playerName) then return end
-		
+
 			smasher(playerName)
 		end
-		
+
 		local updateSpot = function(playerName, id)
 			if not playerData[playerName] or not playerFlashData[playerName] then return end
-		
+
 			if playerData[playerName].spots[id] then
 				local o = ingredient.plant[playerData[playerName].spots[id][1]]
-		
+
 				local stage = playerData[playerName].spots[id][2] == -1 and #o.plant or getStage(playerData[playerName].spots[id][2], (o.time / (#o.plant - 1)), #o.plant)
-		
+
 				if stage > playerFlashData[playerName].spots[id][2] then
 					playerFlashData[playerName].spots[id][2] = stage
-		
+
 					if stage == #o.plant then
 						playerData[playerName].spots[id][2] = -1
 					end
-		
+
 					if playerFlashData[playerName].spots[id][1] then
 						tfm.exec.removeImage(playerFlashData[playerName].spots[id][1])
 					end
-		
+
 					playerFlashData[playerName].spots[id][1] = tfm.exec.addImage(o.plant[stage] .. ".png", "?2", 906 + (id * 100), 600, playerName)
 				end
 			end
 		end
-		
+
 		local openOrder = function(this, playerName)
 			order(playerName)
 		end
-		
+
 		local assemblePizza = function(playerName)
 			ui.addTextArea(0, "", playerName, -1500, -1500, 5000, 5000, 1, 1, 0, false)
-		
+
 			local id, row, cel = 1, 0, 0
 			while row <= 3 do
 				while cel <= 3 do
 					local stored = playerFlashData[playerName].concatenatedStorage[id]
 					if not stored then break end
-		
+
 					local cat, _id = parseId(stored[1])
 					local o = ingredient[enum_ingredients[cat]][_id]
-		
-		
+
+
 					if not o.isSpecial then
 						local x, y = 10 + (cel * 88), 270 + (row * 88)
 						ui.addTextArea(id, string.format(picker_format, id, stored[2]), playerName, x, y, 90, 90, 1, 1, 0, false)
-		
+
 						local i = id * 2
 						playerFlashData[playerName].assembleImgs[i - 1] = tfm.exec.addImage("164a8feae5e.png", "!30", x, y, playerName)
 						playerFlashData[playerName].assembleImgs[i] = tfm.exec.addImage(o.icon .. ".png", "!31", x + o.axis[1] + 10, y + o.axis[2] + 10, playerName)
 					else -- To avoid gaps in the ingredients
 						cel = cel - 1
 					end
-		
+
 					id = id + 1
-		
+
 					cel = cel + 1
 				end
 				cel = 0
-		
+
 				row = row + 1
 			end
-		
+
 			playerFlashData[playerName].assembling.open = true
 			playerFlashData[playerName].assembling.ingredients = {}
 			playerFlashData[playerName].assembleImgs[#playerFlashData[playerName].assembleImgs + 1] = tfm.exec.addImage(objects._handle[(playerData[playerName].order.pizza == 2 and 2 or 1)] .. ".png", "!30", 480, 270, playerName)
 		end
-		
+
 		local openAssembleUI = function(this, playerName)
 			if not allowCallback(this, playerName, 50) or playerFlashData[playerName].order.delivered or playerFlashData[playerName].usingOven then return end
-		
+
 			local sweet = playerData[playerName].order.pizza == 2
-		
+
 			if #playerFlashData[playerName].concatenatedStorage == 0 then
 				tfm.exec.chatMessage(translation().assembling.no_ingredients, playerName)
 				return
 			end
-		
+
 			if not playerFlashData[playerName].concludedMissions then
 				for mission = 1, (sweet and 4 or 5) do
 					if not playerFlashData[playerName].doughMission[mission] then
@@ -6991,23 +6991,23 @@ local roomModes = function(modeName)
 						return
 					end
 				end
-		
+
 				if playerFlashData[playerName].selectedWheats < ingredient.plant[12].doughQuantity then
 					tfm.exec.chatMessage(string.format(translation().insufficient_wheat, ingredient.plant[12].doughQuantity), playerName)
 					return
 				end
-		
+
 				playerFlashData[playerName].concludedMissions = true
 			end
-		
+
 			playerFlashData[playerName].assembling.open = true
 			system.bindMouse(playerName, true)
-		
+
 			if playerFlashData[playerName].pizzaIcon > 0 then
 				tfm.exec.removeImage(playerFlashData[playerName].pizzaIcon)
 				playerFlashData[playerName].pizzaIcon = -1
 			end
-		
+
 			for mission = 1, #playerFlashData[playerName].doughMission do
 				if playerFlashData[playerName].doughMission[mission] > 0 then
 					tfm.exec.removeImage(playerFlashData[playerName].doughMission[mission])
@@ -7015,95 +7015,95 @@ local roomModes = function(modeName)
 				end
 			end
 			ui.removeTextArea(enumIds.hud + 2, playerName)
-		
+
 			playerFlashData[playerName].selectedWheats = playerFlashData[playerName].selectedWheats - ingredient.plant[12].doughQuantity
 			playerFlashData[playerName].usedWheats = true
-		
+
 			playerFlashData[playerName].assembling.ingredients = { }
-		
+
 			-- Updating the storage again avoids the abuse of ingredients
 			updateFlashStorage(playerName)
-		
+
 			tfm.exec.chatMessage("\n" .. translation().assembling.stop .. "\n", playerName)
-		
+
 			assemblePizza(playerName)
 		end
-		
+
 		local closeAssembleUI = function(playerName)
 			playerFlashData[playerName].assembling.open = false
 			system.bindMouse(playerName, false)
-		
+
 			for i = 0, 15 do
 				ui.removeTextArea(i, playerName)
 			end
-		
+
 			for i = 1, #playerFlashData[playerName].assembleImgs do
 				tfm.exec.removeImage(playerFlashData[playerName].assembleImgs[i])
 			end
 			playerFlashData[playerName].assembleImgs = {}
-		
+
 			if #playerFlashData[playerName].assembling.ingredients > 0 then
 				for i = 1, #playerFlashData[playerName].assembling.ingredients do
 					tfm.exec.removeImage(playerFlashData[playerName].assembling.ingredients[i].id)
 				end
-		
+
 				playerFlashData[playerName].pizzaIcon = tfm.exec.addImage(pizzas._state._icon[(playerData[playerName].order.pizza == 2 and -1 or 1)] .. ".png", "$" .. playerName, -5, -10)
 				tfm.exec.chatMessage("\n" .. translation().go_oven.. "\n", playerName)
 			else
 				playerFlashData[playerName].usedWheats = false
 				playerFlashData[playerName].selectedWheats = playerFlashData[playerName].selectedWheats + ingredient.plant[12].doughQuantity
 			end
-		
+
 			if playerFlashData[playerName].selectedWheats > 0 then
 				concludeMission(4, playerName, ingredient.plant[12].icon .. ".png")
 				displayWheatCounter(playerName)
 			end
 			displayWheat(playerName)
 		end
-		
+
 		local getWater = function(this, playerName) -- Mission 1
 			if not playerFlashData[playerName].doughMission[1] then
 				if not allowCallback(this, playerName, 80) then return end
-		
+
 				concludeMission(1, playerName, objects.water .. ".png")
 			end
 		end
-		
+
 		local getSalt_Sugar = function(this, playerName, id) -- Mission 3
 			if not allowCallback(this, playerName, 80) then return end
-		
+
 			id = id - 14
-		
+
 			local sweet = playerData[playerName].order.pizza == 2
 			if id == 1 and sweet then return end
 			if id == 2 and not sweet then return end
-		
+
 			if not playerFlashData[playerName].doughMission[3] then
 				concludeMission(3, playerName, objects[(sweet and "sugar" or "salt")] .. ".png")
 			end
 		end
-		
+
 		local getWheat = function(this, playerName) -- Mission 4
 			if not allowCallback(this, playerName, 80) then return end
-		
+
 			if playerFlashData[playerName].selectedWheats < (playerData[playerName].storage[3] - (playerFlashData[playerName].usedWheats and ingredient.plant[12].doughQuantity or 0)) then
 				playerFlashData[playerName].selectedWheats = playerFlashData[playerName].selectedWheats + 1
 				displayWheat(playerName)
-		
+
 				if not playerFlashData[playerName].doughMission[4] then
 					concludeMission(4, playerName, ingredient.plant[12].icon .. ".png")
 				end
 				displayWheatCounter(playerName)
 			end
 		end
-		
+
 		local animal = function(this, playerName, id)
 			if not allowCallback(this, playerName, 40) or unsafeToNavigate(playerName) then return false end
-		
+
 			id = id - 17
-		
+
 			if playerFlashData[playerName].animals[id] then return end
-		
+
 			if #playerData[playerName].storage[1] >= playerFlashData[playerName]._limits.freezer then
 				-- The for allows to add ingredients that are already in the storage
 				for i = 1, math.ceil(#animalEnums[id].id / 2) do -- 0.5 = 1, 4 = 2
@@ -7113,12 +7113,12 @@ local roomModes = function(modeName)
 					end
 				end
 			end
-		
+
 			local quantity = id + 3 -- 4, 5, 6
-		
+
 			if playerFlashData[playerName].doughMission[4] and playerFlashData[playerName].doughMission[4] > 0 and playerFlashData[playerName].selectedWheats >= quantity then
 				playerFlashData[playerName].selectedWheats = playerFlashData[playerName].selectedWheats - quantity
-		
+
 				if playerFlashData[playerName].selectedWheats <= 0 then
 					tfm.exec.removeImage(playerFlashData[playerName].doughMission[4])
 					playerFlashData[playerName].doughMission[4] = nil
@@ -7126,38 +7126,38 @@ local roomModes = function(modeName)
 				else
 					displayWheatCounter(playerName)
 				end
-		
+
 				playerData[playerName].storage[3] = playerData[playerName].storage[3] - quantity
 				playerData[playerName]()
-		
+
 				tfm.exec.chatMessage(translation().animal, playerName)
 				playerFlashData[playerName].animals[id] = { this.x, this.y, this.x + this.w, this.y + this.h, 0 }
 			else
 				tfm.exec.chatMessage(string.format(translation().feed, quantity), playerName)
 			end
 		end
-		
+
 		local closeGuide = function(playerName)
 			tfm.exec.removeImage(playerFlashData[playerName].help)
 			ui.removeTextArea(0, playerName)
 			system.bindMouse(playerName, false)
 			playerFlashData[playerName].help = false
 		end
-		
+
 		local guide = function(this, playerName)
 			if not allowCallback(this, playerName, 50) then return end
-		
+
 			ui.addTextArea(0, "", playerName, -1500, -1500, 5000, 5000, 1, 1, .6, false)
 			playerFlashData[playerName].help = tfm.exec.addImage("164dd423693.png", "&3", 166, 50, playerName)
 			system.bindMouse(playerName, true)
-		
+
 			system.newTimer(function()
 				if playerFlashData[playerName].help then
 					closeGuide(playerName)
 				end
 			end, 6000, false)
 		end
-		
+
 		local loadBackground = function(playerName)
 			-- Background
 			tfm.exec.addImage("164ecfa9b47.png", "?0", 0, 0, playerName)
@@ -7198,7 +7198,7 @@ local roomModes = function(modeName)
 				-- Chicken
 			tfm.exec.addImage("16447ad45b7.png", "?2", 1650, 530, playerName)
 		end
-		
+
 		--[[ Main ]]--
 		local __started = false
 		local triggeredOnce = false
@@ -7206,20 +7206,20 @@ local roomModes = function(modeName)
 			if not __started then return end
 			if triggeredOnce or (tfm.get.room.uniquePlayers < 4 and not string.find(tfm.get.room.name, "^.?.?%-?%*?#")) then system.exit() end
 			triggeredOnce = true
-		
+
 			tfm.exec.setGameTime(module.time)
-		
+
 			ui.setMapName(table.random({ team.developer[1], team.artist[1], team.developer[1], "#Pizzeria", "Lua" }))
-		
+
 			loadBackground()
-		
+
 			-- Loading NPC before so it doesn't delay
 			local customerNpc = table.random(bot)
 			for i = #customerNpc.collection.run, 1, -1 do
 				tfm.exec.addImage(customerNpc.collection.run[i] .. ".png" , "_0", -3000, -3000)
 			end
 			tfm.exec.addImage(customerNpc.collection.sit[1] .. ".png" , "_0", -3000, -3000)
-		
+
 			for playerName, playerInfo in next, tfm.get.room.playerList do
 				playerFlashData[playerName] = {
 					dataLoaded = false,
@@ -7265,16 +7265,16 @@ local roomModes = function(modeName)
 						cabinet = 0
 					}
 				}
-		
+
 				eventNewPlayer(playerName, true)
-		
+
 				system.loadPlayerData(playerName)
 			end
-		
+
 			-- Lights
 			lamp(1807, 460, 140)
 			lamp(200, 620)
-		
+
 			-- Door
 			doorId = tfm.exec.addImage("1640e7d5b26.png", "!0", 1865, 589)
 			tfm.exec.addPhysicObject(1, 1905, 596, {
@@ -7284,7 +7284,7 @@ local roomModes = function(modeName)
 				height = 12,
 				friction = 1
 			})
-		
+
 			-- Callbacks
 				-- Door
 			callback("door", 1865, 589, 80, 12):setAction(unlockDoor)
@@ -7315,65 +7315,65 @@ local roomModes = function(modeName)
 			callback("cow", 1695, 675, 57, 90):setAction(animal)
 			callback("pig", 1880, 710, 34, 55):setAction(animal)
 			callback("chicken", 1650, 530, 155, 60):setAction(animal)
-		
+
 			-- Infinite sacks
 			for i = 0, 1 do
 				ui.addTextArea(enumIds.hud + 3 + i, "<font size='20'><p align='center'><B>∞", nil, 370 + (60 * i), 410, 50, nil, 1, 1, 0, false)
 			end
-		
+
 			-- NPC
 			local chair = 45 + math.random(0, 1) * 155
 			customer = npc(customerNpc.name, customerNpc.collection, "!1"):setPosition(-30, 730 - (customerNpc.axisY or 0)):setState("run")
 			customer:setAction(function()
 				customer.x = customer.x + 10
-		
+
 				if customer.x > (chair - 10) then
 					customer.y = customer.y - 9 - (customerNpc.discrY or 0)
 					if customer.x > (chair + 10) then
 						customer.x = customer.x + 30 - (customerNpc.discrX or 0)
 						customer:setState("sit"):static()
-		
+
 						system.newTimer(function()
 							-- Shortcut for a callback in the order balloon
 							customer:setPosition(customer.x + 10, customer.y - 65):setDimension(40, 38):setCallback("order", openOrder)
-		
+
 							-- Noob, ik
 							for player, data in next, tfm.get.room.playerList do
 								if not data.isDead then
 									playerFlashData[player].order.customerPizza = tfm.exec.addImage("1648fa606cb.png", "!2", customer.x, customer.y, player)
 								end
 							end
-		
+
 							roller:setAction(openAssembleUI)
 						end, 1000, false)
 					end
 				end
 			end)
-		
+
 			chef = npc("Remy", bot.Chef, "!1"):setPosition(910, 270):setState("sit"):static():setDimension(65, 75):setCallback("help", guide)
 			-- Chef emotes
 			local x, y = chef.x + 55, chef.y + 20
 			tfm.exec.addImage("164fc251e73.png", "!1", x, y)
 			tfm.exec.addImage("164fc24df41.png", "!1", x, y + 20)
 		end
-		
+
 		eventMouse = function(playerName, x, y)
 			if tfm.get.room.playerList[playerName].isDead then return end
-		
+
 			if playerFlashData[playerName].help then
 				closeGuide(playerName)
 				return
 			end
-		
+
 			if playerFlashData[playerName].assembling.selected > 0 then
 				if math.pythag(x, y, 655, 435, 120) then
 					x, y = x - 30, y - 30 -- image ~axis
-		
+
 					local stored = playerFlashData[playerName].concatenatedStorage[playerFlashData[playerName].assembling.selected]
-		
+
 					local cat, id = parseId(stored[1])
 					local o = ingredient[enum_ingredients[cat]][id]
-		
+
 					playerFlashData[playerName].assembling.ingredients[#playerFlashData[playerName].assembling.ingredients + 1] = {
 						id = tfm.exec.addImage(o.icon .. ".png", "!40", x, y, playerName),
 						icon = o.icon,
@@ -7383,48 +7383,48 @@ local roomModes = function(modeName)
 						_id = id,
 						_s = stored[1]
 					}
-		
+
 					stored[2] = stored[2] - 1
-		
+
 					if stored[2] > 0 then
 						ui.updateTextArea(playerFlashData[playerName].assembling.selected, string.format(picker_format, playerFlashData[playerName].assembling.selected, stored[2]), playerName)
 					else
 						ui.removeTextArea(playerFlashData[playerName].assembling.selected, playerName)
-		
+
 						local id = playerFlashData[playerName].assembling.selected * 2
 						tfm.exec.removeImage(playerFlashData[playerName].assembleImgs[id - 1])
 						tfm.exec.removeImage(playerFlashData[playerName].assembleImgs[id])
 					end
-		
+
 					playerFlashData[playerName].assembling.selected = -1
 				end
 			else
 				tfm.exec.chatMessage(translation().assembling.select, playerName)
 			end
 		end
-		
+
 		eventKeyboard = function(playerName, key, d, x, y)
 			if key == 3 then
 				local timer = os.time() > playerFlashData[playerName].animalTimer
-		
+
 				for i = 1, 3 do
 					local a = playerFlashData[playerName].animals[i]
 					if a and (a[1] <= x and a[3] >= x and a[2] <= y and a[4] >= y) then
 						if timer and math.random(1, animalEnums[i].pos) < 3 then
 							playerFlashData[playerName].animalTimer = os.time() + 5000
-		
+
 							local cat, id = parseId(table.random(animalEnums[i].id))
 							cat = enum_ingredients[cat]
-		
+
 							storeIngredient(playerName, ingredient[cat][id])
 							tfm.exec.chatMessage(string.format(translation().animal_ingred, translation().ingredient[cat][id]) .. "\n~> " .. translation().ui.freezer .. " ( " .. #playerData[playerName].storage[1] .. " / " .. limits.freezer .. " )", playerName)
-		
+
 							a[5] = a[5] + 1
-		
+
 							if a[5] == 6 then
 								playerFlashData[playerName].animals[i] = nil
 							end
-		
+
 							return
 						else
 							tfm.exec.displayParticle(3, x + math.random(-15, 10), y + math.random(-15, 10), table.random({ -.5, .5 }), table.random({ -.5, .5}), 0, 0, playerName)
@@ -7439,15 +7439,15 @@ local roomModes = function(modeName)
 					if not playerFlashData[playerName].order.delivered and playerFlashData[playerName].pizzaIcon > 0 then
 						if x > customer.x - 10 and x < (customer.x + customer.w + 10) and y > 600 then
 							playerFlashData[playerName].order.delivered = true
-		
+
 							customer:deleteCallback(playerName)
-		
+
 							tfm.exec.removeImage(playerFlashData[playerName].pizzaIcon)
 							playerFlashData[playerName].pizzaIcon = -1
-		
+
 							tfm.exec.removeImage(playerFlashData[playerName].order.customerPizza)
 							playerFlashData[playerName].order.customerPizza = -1
-		
+
 							-- Get info
 							local iter, extra_allowed, extra_not_allowed = { }, 0, 0
 							for k, v in next, playerFlashData[playerName].assembling.ingredients do
@@ -7463,29 +7463,29 @@ local roomModes = function(modeName)
 										end
 									end
 								end
-		
+
 								-- Inserts the ingredients in a table
 								if not iter[v._s] then
 									local cat = enum_ingredients[v._cat]
-		
+
 									local s = (ingredient[cat][v._id].inCabinet and 2 or 1)
-		
+
 									local success, key = table.find(playerData[playerName].storage[s], tonumber(v._s), 1)
-		
+
 									if not success then
 										error("@" .. playerName .. " | iter~assembling.ingredients | " .. tostring(v._s))
 									end
-		
+
 									-- quantity, storage, key
 									iter[v._s] = { 1, s, key, _local = (not skip and { cat = cat, id = v._id } or nil) }
 								else
 									iter[v._s][1] = iter[v._s][1] + 1
 								end
 							end
-		
+
 							-- Get points
 							local points = 10
-		
+
 							-- Temperature
 							if playerFlashData[playerName].pizzaLevel ~= playerData[playerName].order.level then
 								if playerFlashData[playerName].pizzaLevel > 1 and (playerFlashData[playerName].pizzaLevel == playerData[playerName].order.level + 1 or playerFlashData[playerName].pizzaLevel == playerData[playerName].order.level - 1) then
@@ -7494,7 +7494,7 @@ local roomModes = function(modeName)
 									points = 0
 								end
 							end
-		
+
 							-- Quantities and removing
 							local found_ingredients = 0
 							local toRemove = { }
@@ -7502,10 +7502,10 @@ local roomModes = function(modeName)
 								if v._local then -- else = extra ingredient
 									if pizzas[playerData[playerName].order.pizza].ingredients[v._local.cat] then
 										local found, key = table.find(pizzas[playerData[playerName].order.pizza].ingredients[v._local.cat], v._local.id, 1)
-		
+
 										if found then
 											found_ingredients = found_ingredients + 1
-		
+
 											if v[1] ~= pizzas[playerData[playerName].order.pizza].ingredients[v._local.cat][key][2] then
 												-- the value can be + or - depending if it's > than the ordered
 												points = points - ((pizzas[playerData[playerName].order.pizza].ingredients[v._local.cat][key][2] - v[1]) * .3)
@@ -7514,7 +7514,7 @@ local roomModes = function(modeName)
 											points = points - 1
 										end
 									end
-		
+
 									toRemove[#toRemove + 1] = { playerName, v[2], v[3], v[1], true }
 								end
 							end
@@ -7523,18 +7523,18 @@ local roomModes = function(modeName)
 							for i = #toRemove, 1, -1 do
 								removeIngredient(table.unpack(toRemove[i]))
 							end
-		
+
 							local ordered_ingredients = 0
 							for cat, list in next, pizzas[playerData[playerName].order.pizza].ingredients do
 								for _, info in next, list do
 									ordered_ingredients = ordered_ingredients + 1
 								end
 							end
-		
+
 							-- Ingredients that were ordered but weren't in the pizza
 							local ingred_diff = found_ingredients / ordered_ingredients * 100
 							points = points - ((ordered_ingredients - found_ingredients) * (ingred_diff <= 50 and 2 or 1.5))
-		
+
 							playerData[playerName].storage[3] = playerData[playerName].storage[3] - ingredient.plant[12].doughQuantity
 							-- Removes oil, sauce
 							for i = #playerData[playerName].storage[2], 1, -1 do -- avoid crash, again
@@ -7543,28 +7543,28 @@ local roomModes = function(modeName)
 									removeIngredient(playerName, 2, i, 1, true)
 								end
 							end
-		
+
 							points = points - (extra_not_allowed * .5)
 							points = points + (extra_allowed * .4)
-		
+
 							local count = countPizzas(playerName)
-		
+
 							if points < 1 then
 								tfm.exec.chatMessage(translation().order.delivered[0] .. " <J>[ " .. count .. " / " .. #pizzas .. " ]", playerName)
 							else
 								local level = (points <= 7.5 and (points <= 5.5 and 1 or 2) or 3)
-		
+
 								local gain = playerFlashData[playerName].order.total * moneyPercentages[level] + (extra_allowed * 3) - (extra_not_allowed * 2)
-		
+
 								playerData[playerName].cash = playerData[playerName].cash + gain
-		
+
 								count = count + (level > 1 and 1 or 0)
 								tfm.exec.chatMessage(string.format(translation().order.delivered[level], gain) .. " <J>[ " .. count .. " / " .. #pizzas .. " ]", playerName)
-		
+
 								if level > 1 then
 									playerData[playerName].completions = playerData[playerName].completions + (2 ^ playerData[playerName].order.pizza)
 									playerData[playerName].order = nil
-		
+
 									-- Titles
 									if count == #pizzas then
 										playerData[playerName].completions = 0 -- resets
@@ -7574,11 +7574,11 @@ local roomModes = function(modeName)
 								end
 							end
 							playerData[playerName]()
-		
+
 							displayCash(playerName)
-		
+
 							updateFlashStorage(playerName)
-		
+
 							-- Resets
 							playerFlashData[playerName].usedWheats = false
 						end
@@ -7586,9 +7586,9 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		local finalized = false
-		
+
 		local event250ms
 		event250ms = system.looping(function()
 			for player, data in next, playerData do
@@ -7598,21 +7598,21 @@ local roomModes = function(modeName)
 					end
 				end
 			end
-		
+
 			if finalized then
 				for i = 1, #event250ms do
 					system.removeTimer(event250ms[i])
 				end
 			end
 		end, 4)
-		
+
 		local canBreak = 0 -- Skip event in timer glitch
 		local event1000ms = system.newTimer(function()
 			if canBreak >= 0 then
 				canBreak = -1
 				tfm.exec.chatMessage("\n" .. translation().welcome .. "\n")
 			end
-		
+
 			for player, data in next, playerData do
 				for id, spot in next, data.spots do
 					if spot then
@@ -7620,14 +7620,14 @@ local roomModes = function(modeName)
 					end
 				end
 			end
-		
+
 			for id, oven in next, ovens do
 				if oven then
 					oven.time = oven.time + 1
-		
+
 					if oven.time % limits.pizzaCycle == 0 then
 						oven.level = oven.level + 1
-		
+
 						if oven.level >= #pizzas._state then
 							oven.level = #pizzas._state
 							updateFlashStorage(oven.playerName) -- Resets the lost ingredients
@@ -7641,12 +7641,12 @@ local roomModes = function(modeName)
 				end
 			end
 		end, 1000, true)
-		
+
 		eventLoop = function(elapsed, remaining)
 			if not __started then return end
 			if canBreak >= 0 then
 				canBreak = canBreak + .5
-		
+
 				if canBreak == 1.5 then
 					tfm.exec.chatMessage("[Pizzeria] <ROSE>" .. translation().error_timer)
 				elseif canBreak == 2 then
@@ -7654,9 +7654,9 @@ local roomModes = function(modeName)
 				end
 				return
 			end
-		
+
 			if elapsed < 4000 then return end
-		
+
 			for name, player in next, tfm.get.room.playerList do
 				if not player.isDead and playerFlashData[name] then
 					if playerFlashData[name].assembling.open then
@@ -7664,32 +7664,32 @@ local roomModes = function(modeName)
 					end
 				end
 			end
-		
+
 			if remaining <= 1000 then
 				tfm.exec.setGameTime(module.time)
 			end
 		end
-		
+
 		eventNewPlayer = function(playerName, alivePlayer)
 			if not __started then return end
 			if not alivePlayer then
 				loadBackground(playerName)
 			end
-		
+
 			-- Empty spots
 			for e = 1, 6 do
 				local id = tfm.exec.addImage("164431b8c1e.png", "?2", 906 + (e * 100), 600, playerName)
-		
+
 				if alivePlayer then
 					-- spot, stage
 					playerFlashData[playerName].spots[e] = { id, 0 }
 				end
 			end
 		end
-		
+
 		eventPlayerDataLoaded = function(playerName, data)
 			data = json.decode(data)
-		
+
 			playerData[playerName] = data[module.name] or {
 				won = false,
 				spots = { false, false, false, false, false, false },
@@ -7702,59 +7702,59 @@ local roomModes = function(modeName)
 				},
 				completions = 0,
 				--[[
-		
+
 				spots[x] = {
 					[1] = ingredient_id,
 					[2] = remaining_time
 				}
-		
+
 				order = {
 					pizza = pizza_id,
 					ingredients = ignored_ingredients,
 					level = 0,
 				}
-		
+
 				]]
 			}
 			data[module.name] = nil
 			playerData[playerName].__modules = data
-		
+
 			playerFlashData[playerName].dataLoaded = true
 			-- HUD
 			displayCash(playerName)
 			displayWheat(playerName)
-		
+
 			if not playerData[playerName].order then
 				playerData[playerName].order = { }
-		
+
 				local pizza
 				repeat -- won't crash because eventKeyboard manages completions
 					pizza = math.random(#pizzas)
 				until bit32.band(2 ^ pizza, playerData[playerName].completions) == 0
-		
+
 				playerData[playerName].order.pizza = pizza
-		
+
 				if math.random(20) < 9 then
 					local ignoredTotal = table.random(possibilityRates.extraIngredients)
-		
+
 					playerData[playerName].order.ingredients = { }
 					local ingredients = { }
-		
+
 					for i = 1, ignoredTotal do
 						local ingred
 						repeat
 							ingred = table.random(ingredient.extra)
 						until not (pizza == 3 and ingred == 2) and not ingredients[ingred] -- Can't be basil if it's Margherita
 						ingredients[ingred] = i
-		
+
 						playerData[playerName].order.ingredients[i] = ingred
 					end
 				end
-		
+
 				playerData[playerName].order.level = table.random(possibilityRates.pizzaTemperature)
 			end
 			local pizza = pizzas[playerData[playerName].order.pizza]
-		
+
 			-- Fix bug
 			if playerData[playerName].order.pizza == 3 and playerData[playerName].order.ingredients then
 				local update = false
@@ -7765,53 +7765,53 @@ local roomModes = function(modeName)
 						break
 					end
 				end
-		
+
 				if update then
 					playerData[playerName]()
 				end
 			end
-		
+
 			local total = 15
 			playerFlashData[playerName].order.ingredients = table.copy(pizza.ingredients)
-		
+
 			for t, l in next, playerFlashData[playerName].order.ingredients do
 				for _, d in next, l do
 					-- [1] = id, [2] = quantity
 					total = total + math.floor(((ingredient[t][d[1]].price / (ingredient[t][d[1]].quantity or 1)) * 2) * d[2])
 				end
 			end
-		
+
 			playerFlashData[playerName].order.total = total
-		
+
 			for i = 1, 6 do
 				updateSpot(playerName, i)
 			end
-		
+
 			updateFlashStorage(playerName)
-		
+
 			system.bindKeyboard(playerName, 3, true, true)
 			system.bindKeyboard(playerName, 32, true, true)
-		
+
 			-- Limits to fix problem due to animal shits
 			playerFlashData[playerName]._limits.freezer = math.max(limits.freezer, #playerData[playerName].storage[1])
 			-- Prevention
 			playerFlashData[playerName]._limits.cabinet = math.max(limits.cabinet, #playerData[playerName].storage[2])
-		
+
 			if playerData[playerName].won then
 				tfm.exec.setNameColor(playerName, 0xF3D460)
 			end
 		end
-		
+
 		eventTextAreaCallback = function(id, playerName, cbk, ignore)
 			if tfm.get.room.playerList[playerName].isDead or not (playerFlashData[playerName] and playerFlashData[playerName].dataLoaded) then return end
-		
+
 			if not ignore then
 				if playerFlashData[playerName].callbackTimer > os.time() then return end
 				playerFlashData[playerName].callbackTimer = os.time() + 500
 			end
-		
+
 			local c = string.split(cbk, "[^%.]+")
-		
+
 			if c[1] == "callback" then
 				if callback[c[2]] then
 					callback[c[2]]:performAction(playerName, id - enumIds.callback)
@@ -7821,23 +7821,23 @@ local roomModes = function(modeName)
 					if c[3] == "market" then
 						tfm.exec.removeImage(playerFlashData[playerName].marketImgId)
 						playerFlashData[playerName].currentSpot = -1
-		
+
 						for i = 1, 2 do
 							ui.removeTextArea(i, playerName)
 							ui.removeButton(i, playerName)
 						end
-		
+
 						ui.removeMenu(playerName)
 					elseif c[3] == "order" then
 						for i = 1, #playerFlashData[playerName].order.images do
 							tfm.exec.removeImage(playerFlashData[playerName].order.images[i])
 						end
 						playerFlashData[playerName].order.images = { }
-		
+
 						for i = 1, 8 do
 							ui.removeTextArea(i, playerName)
 						end
-		
+
 						ui.removeButton(1, playerName)
 						ui.removeMenu(playerName)
 					elseif c[3] == "smasher" then
@@ -7845,39 +7845,39 @@ local roomModes = function(modeName)
 							tfm.exec.removeImage(playerFlashData[playerName].smasherImgIds[i])
 						end
 						playerFlashData[playerName].smasherImgIds = { }
-		
+
 						for i = 1, #smasherEnums do
 							ui.removeTextArea(i, playerName)
 						end
-		
+
 						ui.removeButton(1, playerName)
 						ui.removeMenu(playerName)
 					elseif c[3] == "storage" then
 						-- Resets pagination because this variable is shared in two menus
 						playerFlashData[playerName].storageIndex = 1
-		
+
 						closeStorageImg(tonumber(c[4]), playerName)
-		
+
 						tfm.exec.removeImage(playerFlashData[playerName].storageImgId)
 						playerFlashData[playerName].storageImgId = -1
-		
+
 						for i = 1, 2 do
 							ui.removeTextArea(i, playerName)
 						end
-		
+
 						ui.removeButton(1, playerName)
 						ui.removeMenu(playerName)
 					elseif c[3] == "garbage" then
 						closeStorageImg(3, playerName)
-		
+
 						tfm.exec.removeImage(playerFlashData[playerName].garbageImgId)
 						playerFlashData[playerName].garbageImgId = -1
-		
+
 						for i = 1, 2 do
 							ui.removeTextArea(i, playerName)
 							ui.removeButton(i, playerName)
 						end
-		
+
 						ui.removeMenu(playerName)
 					end
 				elseif c[2] == "market" then
@@ -7886,33 +7886,33 @@ local roomModes = function(modeName)
 						if playerFlashData[playerName].marketIndex < 1 then
 							playerFlashData[playerName].marketIndex = #ingredient.plant
 						end
-		
+
 						market(playerName, true)
 					elseif c[3] == "next" then
 						playerFlashData[playerName].marketIndex = playerFlashData[playerName].marketIndex + 1
 						if playerFlashData[playerName].marketIndex > #ingredient.plant then
 							playerFlashData[playerName].marketIndex = 1
 						end
-		
+
 						market(playerName, true)
 					end
 				elseif c[2] == "seed" then
 					if playerFlashData[playerName].currentSpot > 0 then
 						local o = ingredient.plant[playerFlashData[playerName].marketIndex]
-		
+
 						if o.price <= playerData[playerName].cash then
 							playerData[playerName].cash = playerData[playerName].cash - o.price
-		
+
 							playerData[playerName].spots[playerFlashData[playerName].currentSpot] = {
 								-- id, remaining_time
 								[1] = o.id,
 								[2] = 0
 							}
-		
+
 							playerData[playerName]()
-		
+
 							displayCash(playerName)
-		
+
 							updateSpot(playerName, playerFlashData[playerName].currentSpot)
 							eventTextAreaCallback(id, playerName, "button.close.market", true)
 						else
@@ -7921,20 +7921,20 @@ local roomModes = function(modeName)
 					end
 				elseif c[2] == "storage" then
 					c[4] = tonumber(c[4])
-		
+
 					if c[3] == "previous" then
 						playerFlashData[playerName].storageIndex = playerFlashData[playerName].storageIndex - 1
 						if playerFlashData[playerName].storageIndex < 1 then
 							playerFlashData[playerName].storageIndex = #playerData[playerName].storage[c[4]]
 						end
-		
+
 						storage(c[4], playerName, true)
 					elseif c[3] == "next" then
 						playerFlashData[playerName].storageIndex = playerFlashData[playerName].storageIndex + 1
 						if playerFlashData[playerName].storageIndex > #playerData[playerName].storage[c[4]] then
 							playerFlashData[playerName].storageIndex = 1
 						end
-		
+
 						storage(c[4], playerName, true)
 					end
 				elseif c[2] == "garbage" then
@@ -7943,24 +7943,24 @@ local roomModes = function(modeName)
 						if playerFlashData[playerName].garbageIndex < 1 then
 							playerFlashData[playerName].garbageIndex = #playerFlashData[playerName].concatenatedStorage
 						end
-		
+
 						garbage(playerName, true)
 					elseif c[3] == "next" then
 						playerFlashData[playerName].garbageIndex = playerFlashData[playerName].garbageIndex + 1
 						if playerFlashData[playerName].garbageIndex > #playerFlashData[playerName].concatenatedStorage then
 							playerFlashData[playerName].garbageIndex = 1
 						end
-		
+
 						garbage(playerName, true)
 					end
 				elseif c[2] == "trash" then
 					local storage = playerFlashData[playerName].garbageIndex > #playerData[playerName].storage[1] and 2 or 1
-		
+
 					local index = playerFlashData[playerName].garbageIndex
 					if storage == 2 then
 						index = index - #playerData[playerName].storage[1]
 					end
-		
+
 					-- Can't throw away when you are holding it
 					if playerData[playerName].storage[storage][index][1] == 33 and playerFlashData[playerName].doughMission[2] then -- has oil
 						return
@@ -7968,18 +7968,18 @@ local roomModes = function(modeName)
 					if playerData[playerName].storage[storage][index][1] == 34 and playerFlashData[playerName].doughMission[5] then -- has tomato sauce
 						return
 					end
-		
+
 					local rem = removeIngredient(playerName, storage, index)
 					if rem == 2 then
 						-- Won't work like a pointer
 						table.remove(playerFlashData[playerName].concatenatedStorage, playerFlashData[playerName].garbageIndex)
-		
+
 						-- When it removes the ingredient, the index may be different, so needs to reset
 						playerFlashData[playerName].garbageIndex = 1
 					elseif rem == 1 then
 						playerFlashData[playerName].concatenatedStorage[playerFlashData[playerName].garbageIndex][2] = playerFlashData[playerName].concatenatedStorage[playerFlashData[playerName].garbageIndex][2] - 1
 					end
-		
+
 					if #playerFlashData[playerName].concatenatedStorage > 0 then
 						garbage(playerName, true)
 					else
@@ -7988,10 +7988,10 @@ local roomModes = function(modeName)
 				elseif c[2] == "smash" then
 					local o = ingredient.plant[tonumber(c[3])]
 					local to = ingredient.others[o.to]
-		
+
 					local storage = (o.inCabinet and 2 or 1)
 					local success, key = table.find(playerData[playerName].storage[storage], tonumber(o.cat .. o.id), 1)
-		
+
 					-- Sorry for the gambiarra below. I couldn't use remove/store.
 					if success and playerData[playerName].storage[storage][key][2] >= o.smashQuantity then
 						local storageName = (to.inCabinet and "cabinet" or "freezer")
@@ -8001,16 +8001,16 @@ local roomModes = function(modeName)
 						else
 							removeIngredient(playerName, storage, key, o.smashQuantity)
 							storeIngredient(playerName, to, 1)
-		
+
 							tfm.exec.chatMessage(string.format(translation().smasher.get, translation().ingredient.others[to.id], translation().ui[storageName]), playerName)
-		
+
 							return eventTextAreaCallback(nil, playerName, "button.close.smasher", true)
 						end
 					end
 					tfm.exec.chatMessage(string.format(translation().smasher.not_quantity, translation().ingredient.others[to.id], o.smashQuantity, translation().ingredient.plant[o.id]), playerName)
 				elseif c[2] == "use" then
 					c[3] = tonumber(c[3])
-		
+
 					if c[3] == 3 then -- Mission 2
 						if not playerFlashData[playerName].doughMission[2] then
 							concludeMission(2, playerName, ingredient.others[c[3]].icon .. ".png")
@@ -8020,32 +8020,32 @@ local roomModes = function(modeName)
 							concludeMission(5, playerName, ingredient.others[c[3]].icon .. ".png")
 						end
 					end
-		
+
 					eventTextAreaCallback(nil, playerName, "button.close.storage.2", true)
 				end
 			elseif c[1] == "select" then
 				playerFlashData[playerName].assembling.selected = tonumber(c[2])
 			end
 		end
-		
+
 		eventEmotePlayed = function(playerName, emote)
 			if tfm.get.room.playerList[playerName].isDead or not (playerFlashData[playerName] and playerFlashData[playerName].dataLoaded) then return end
-		
+
 			if playerFlashData[playerName].kissed then return end
-		
+
 			if emote == 3 or emote == 5 then
 				local x, y = tfm.get.room.playerList[playerName].x, tfm.get.room.playerList[playerName].y
-		
+
 				if chef and x >= chef.x - 50 and x <= chef.x + chef.w + 50 and y < chef.y + chef.h then
 					local foo, bar =  math.random(6), math.random(6)
 					if foo == bar then
 						playerFlashData[playerName].kissed = true
-		
+
 						playerData[playerName].cash = playerData[playerName].cash + 15
 						playerData[playerName]()
-		
+
 						displayCash(playerName)
-		
+
 						for i = 1, 15 do
 							local dir = math.random(0, 1) == 0 and -1 or 1
 							tfm.exec.displayParticle(15, x + math.random(0, 50) * dir, y + math.random(0, 30) * dir, -dir * math.random(2, 6) / 10, -dir * math.random(3, 8) / 10, playerName)
@@ -8056,9 +8056,9 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventPlayerDied = tfm.exec.respawnPlayer
-		
+
 		eventPlayerLeft = function(playerName)
 			if playerFlashData[playerName] and playerFlashData[playerName].dataLoaded then
 				for id, oven in next, ovens do
@@ -8067,49 +8067,49 @@ local roomModes = function(modeName)
 						break
 					end
 				end
-		
+
 				playerData[playerName]()
 				playerData[playerName] = nil
 				playerFlashData[playerName].dataLoaded = false
 			end
 		end
-		
+
 		for i, f in next, { "AutoNewGame", "AfkDeath", "AutoShaman", "AutoTimeLeft", "DebugCommand", "MortCommand", "PhysicalConsumables" } do
 			tfm.exec["disable" .. f]()
 		end
-		
+
 		system.newTimer(function()
 			__started = true
 			tfm.exec.newGame(module.map)
 		end, 10000, false)
-		
+
 	end
 
 	modules["funcorp"] = (modeName == "funcorp") and function()
 		local miceAlive, nextMap = 0
-		
+
 		local funcorp = false
 		eventChatCommand = function(playerName, command)
 			if not owners[playerName] then return end
-		
+
 			local cmd = string.split(command, "%S+")
-		
+
 			if cmd[1] == "funcorp" then
 				if cmd[2] == "help" then
 					tfm.exec.chatMessage([[<FC>!changesize [playerNames|*] [size|off] : Temporarily changes the size (between 0.1x and 5x) of players.
-		
+
 		!colornick [playerNames|*] [color|off] : Temporarily changes the color of player nicknames.
-		
+
 		!funcorp [on|off|help] : Enable/disable the funcorp mode, or show the list of funcorp-related commands
-		
+
 		!linkmice [playerNames] [off] : Temporarily links players.
-		
+
 		!meep [playerNames|*] [off] : Give meep to players.
-		
+
 		!np [mapCode] : Starts a new map.
-		
+
 		!npp [mapCode] : Plays the selected map after the current map is over.
-		
+
 		!transformation [playerNames|*] [off] : Temporarily gives the ability to transform.
 					]], playerName)
 				else
@@ -8118,7 +8118,7 @@ local roomModes = function(modeName)
 					else
 						funcorp = not funcorp
 					end
-		
+
 					if funcorp then
 						tfm.exec.chatMessage("<FC>The FunCorp mode has been activated in this room.")
 					else
@@ -8128,13 +8128,13 @@ local roomModes = function(modeName)
 			elseif funcorp and cmd[2] then
 				if cmd[1] == "changesize" then
 					local size = cmd[#cmd]
-		
+
 					size = tonumber(size) or (size == "off" and 1)
 					if not size then
 						return tfm.exec.chatMessage("<V>[•] <BL>Invalid size.", playerName)
 					end
 					size = (size < .1 and .1 or size > 5 and 5 or size)
-		
+
 					if cmd[2] == "*" then
 						for player in next, tfm.get.room.playerList do
 							tfm.exec.changePlayerSize(player, size)
@@ -8154,25 +8154,25 @@ local roomModes = function(modeName)
 						owners[playerName] = cmd[2]
 						return ui.showColorPicker(0, playerName, 1, "Select a color")
 					end
-		
+
 					local off, color = cmd[#cmd] == "off"
 					if not off then
 						if string.find(cmd[#cmd], '#') then
 							cmd[#cmd] = tonumber(string.sub(cmd[3], 2), 16)
 						end
-		
+
 						if not cmd[#cmd] then
 							return tfm.exec.chatMessage("<V>[•] <BL>Invalid color.", playerName)
 						end
-		
+
 						color = string.format("%x", cmd[#cmd])
 					end
-		
+
 					if cmd[2] == "*" then
 						for player in next, tfm.get.room.playerList do
 							tfm.exec.setNameColor(player, (not off and cmd[#cmd] or false))
 						end
-		
+
 						if off then
 							tfm.exec.chatMessage("<V>[•] <BL>All the nickname colors have been removed.", playerName)
 						else
@@ -8185,7 +8185,7 @@ local roomModes = function(modeName)
 							players[counter] = string.nick(cmd[i])
 							tfm.exec.setNameColor(players[counter], (not off and cmd[#cmd] or false))
 						end
-		
+
 						if off then
 							tfm.exec.chatMessage("<V>[•] <BL>Nickname colors removed from players: <BV>" .. table.concat(players, "<BL>, <BV>"), playerName)
 						else
@@ -8194,7 +8194,7 @@ local roomModes = function(modeName)
 					end
 				elseif cmd[1] == "linkmice" then
 					local off = cmd[#cmd] == "off"
-		
+
 					if cmd[2] == "*" then
 						local lastPlayer
 						for player in next, tfm.get.room.playerList do
@@ -8203,7 +8203,7 @@ local roomModes = function(modeName)
 							end
 							lastPlayer = player
 						end
-		
+
 						if off then
 							tfm.exec.chatMessage("<V>[•] <BL>All the links have been removed.", playerName)
 						else
@@ -8213,7 +8213,7 @@ local roomModes = function(modeName)
 						if not cmd[(off and 4 or 3)] then
 							return tfm.exec.chatMessage("<V>[•] <BL>There must be at least two players in order to " .. (off and "unlink" or "link") .. " them.", playerName)
 						end
-		
+
 						local players, counter, lastPlayer = { }, 0
 						for i = 2, #cmd - (off and 1 or 0) do
 							counter = counter + 1
@@ -8223,7 +8223,7 @@ local roomModes = function(modeName)
 							end
 							lastPlayer = players[counter]
 						end
-		
+
 						if off then
 							tfm.exec.chatMessage("<V>[•] <BL>The links involving the following players have been removed: <BV>" .. table.concat(players, "<BL>, <BV>"), playerName)
 						else
@@ -8232,12 +8232,12 @@ local roomModes = function(modeName)
 					end
 				elseif cmd[1] == "meep" then
 					local off = cmd[#cmd] == "off"
-		
+
 					if cmd[2] == "*" then
 						for player in next, tfm.get.room.playerList do
 							tfm.exec.giveMeep(player, not off)
 						end
-		
+
 						if off then
 							tfm.exec.chatMessage("<V>[•] <BL>All the meep powers have been removed.", playerName)
 						else
@@ -8250,7 +8250,7 @@ local roomModes = function(modeName)
 							players[counter] = string.nick(cmd[i])
 							tfm.exec.giveMeep(players[counter], not off)
 						end
-		
+
 						if off then
 							tfm.exec.chatMessage("<V>[•] <BL>Meep powers removed from players: <BV>" .. table.concat(players, "<BL>, <BV>"), playerName)
 						else
@@ -8265,12 +8265,12 @@ local roomModes = function(modeName)
 					tfm.exec.chatMessage("<V>[•] <BL>Next map: " .. tostring(nextMap), playerName)
 				elseif cmd[1] == "transformation" then
 					local off = cmd[#cmd] == "off"
-		
+
 					if cmd[2] == "*" then
 						for player in next, tfm.get.room.playerList do
 							tfm.exec.giveTransformations(player, not off)
 						end
-		
+
 						if off then
 							tfm.exec.chatMessage("<V>[•] <BL>All the transformations powers have been removed.", playerName)
 						else
@@ -8283,7 +8283,7 @@ local roomModes = function(modeName)
 							players[counter] = string.nick(cmd[i])
 							tfm.exec.giveTransformations(players[counter], not off)
 						end
-		
+
 						if off then
 							tfm.exec.chatMessage("<V>[•] <BL>Transformations powers removed from players: <BV>" .. table.concat(players, "<BL>, <BV>"), playerName)
 						else
@@ -8293,45 +8293,45 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventColorPicked = function(id, playerName, color)
 			eventChatCommand(playerName, "colornick " .. tostring(owners[playerName]) .. " " .. color)
 			owners[playerName] = true
 		end
-		
+
 		eventNewGame = function()
 			if nextMap then
 				nextMap = nil
 				tfm.exec.disableAutoNewGame(false)
 			end
-		
+
 			local counter = 0
 			for _, data in next, tfm.get.room.playerList do
 				counter = counter + 1
 			end
 			miceAlive = counter
 		end
-		
+
 		local tentatives = 0
 		eventLoop = function(_, remainingTime)
 			if nextMap and (remainingTime <= 500 or miceAlive <= 0) then
 				tfm.exec.newGame(nextMap)
 				tentatives = tentatives + 1
-		
+
 				if tentatives == 5 then
 					eventNewGame()
 				end
 			end
 		end
-		
+
 		eventPlayerDied = function()
 			miceAlive = miceAlive - 1
 		end
-		
+
 		eventPlayerWon = function()
 			miceAlive = miceAlive - 1
 		end
-		
+
 		eventPlayerLeft = function()
 			local counter = 0
 			for _, data in next, tfm.get.room.playerList do
@@ -8341,23 +8341,23 @@ local roomModes = function(modeName)
 			end
 			miceAlive = counter
 		end
-		
+
 		system.disableChatCommandDisplay()
 		eventNewGame()
-		
+
 		eventNewPlayer = function(n)
 			if funcorp then
 				tfm.exec.chatMessage("<FC>The FunCorp mode has been activated in this room.", n)
 			end
 		end
-		
+
 		local info = string.match(tfm.get.room.name, "#bolodefchoco%d+funcorp0(.+)")
 		if info then
 			string.gsub(info, "%S+", function(value)
 				owners[string.nick(value)] = true
 			end)
 		end
-		
+
 	end
 
 	modules["id"] = (modeName == "id") and function()
@@ -8365,13 +8365,13 @@ local roomModes = function(modeName)
 			tfm.exec.chatMessage("<N>Welcome, " .. n .. ".\nYour Transformice ID is '<ROSE><B>" .. tfm.get.room.playerList[n].id .. "</B></ROSE>'", n)
 		end
 		for n in next, tfm.get.room.playerList do eventNewPlayer(n) end
-		
+
 	end
 
 	modules["lava"] = (modeName == "lava") and function()
 		do local a={}local b={}local c={}local d={}local e={"eventChatCommand ","eventChatMessage","eventEmotePlayed","eventFileLoaded","eventFileSaved","eventKeyboard","eventMouse","eventLoop","eventNewGame","eventNewPlayer","eventPlayerDataLoaded","eventPlayerDied","eventPlayerGetCheese","eventPlayerLeft","eventPlayerVampire","eventPlayerWon","eventPlayerRespawn","eventPlayerMeep","eventPopupAnswer","eventSummoningStart","eventSummoningCancel","eventSummoningEnd","eventTextAreaCallback","eventColorPicked"}local f;f={['perfomance']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['create']=function(g,h,i)local j=0;for v=1,g do local k=os.time()for l=1,h do i(h)end;j=j+os.time()-k end;return'Estimated Time: '..j/g..' ms.'end},['button']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['create']=function(...)local m={...}local n=-543212345+m[1]*3;local o=m[9]and'0x2A424B'or'0x314e57'ui.addTextArea(n,'',m[4],m[5]-1,m[6]-1,m[7],m[8],0x7a8d93,0x7a8d93,1,true)ui.addTextArea(n-1,'',m[4],m[5]+1,m[6]+1,m[7],m[8],0x0e1619,0x0e1619,1,true)ui.addTextArea(n-2,'<p align="center"><a href="event:'..m[3]..'">'..m[2]..'</a></p>',m[4],m[5],m[6],m[7],m[8],o,o,1,true)end,['remove']=function(n,p)for l=0,2 do ui.removeTextArea(-543212345+n*3-l,p)end end},['ui-design']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['create']=function(...)local m={...}if m[6]<0 or m[7]and m[7]<0 then return elseif not m[7]then m[7]=m[6]/2 end;local n=543212345+m[1]*8;ui.addTextArea(n,'',m[3],m[4],m[5],m[6]+100,m[7]+70,0x78462b,0x78462b,1,true)ui.addTextArea(n+1,'',m[3],m[4],m[5]+(m[7]+140)/4,m[6]+100,m[7]/2,0x9d7043,0x9d7043,1,true)ui.addTextArea(n+2,'',m[3],m[4]+(m[6]+180)/4,m[5],(m[6]+10)/2,m[7]+70,0x9d7043,0x9d7043,1,true)ui.addTextArea(n+3,'',m[3],m[4],m[5],20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(n+4,'',m[3],m[4]+m[6]+80,m[5],20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(n+5,'',m[3],m[4],m[5]+m[7]+50,20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(n+6,'',m[3],m[4]+m[6]+80,m[5]+m[7]+50,20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(n+7,m[2],m[3],m[4]+3,m[5]+3,m[6]+94,m[7]+64,0x1c3a3e,0x232a35,1,true)end,['remove']=function(n,p)for l=0,7 do ui.removeTextArea(543212345+n*8+l,p)end end},['text-area-custom']={AUTHOR='Nettoork#0000',_VERSION='2.0',dependencies={},['add']=function(...)local q={...}if type(q[1])=='table'then for l,v in next,q do if type(v)=='table'then if not v[3]then v[3]='nil'end;addTextArea(table.unpack(v))end end else if not q[3]then q[3]='nil'end;b[q[3]..'_'..q[1]]={...}ui.addTextArea(...)end end,['update']=function(n,r,p)if not p then p='nil'end;if not b[p..'_'..n]then return elseif type(r)=='string'then ui.updateTextArea(n,r,p)b[p..'_'..n][2]=r;return end;local s={text=2,x=4,y=5,w=6,h=7,background=8,border=9,alpha=10,fixed=11}for l,v in next,r do if s[l]then b[p..'_'..n][s[l]]=v end end;local t=b[p..'_'..n]ui.addTextArea(t[1],t[2],t[3],t[4],t[5],t[6],t[7],t[8],t[9],t[10],t[11])end,['remove']=function(n,p)if not p then p='nil'end;if b[p..'_'..n]then b[p..'_'..n]=nil end;ui.removeTextArea(n,p)end},['string-to-boolean']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['parse']=function(u)local w={}for l,v in next,u do w[v]=true end;return w end},['database']={AUTHOR='Nettoork#0000',_VERSION='1.1',dependencies={},['create']=function(x,y)if not c[x]then c[x]=y end end,['delete']=function(x)c[x]=nil end,['get']=function(x,...)local z,A={},{...}if not A[1]then return c[x]else for l,v in next,A do if c[x][v]then z[#z+1]=c[x][v]end end;return table.unpack(z)end end,['set']=function(x,...)local B=v;for l,v in next,{...}do if not B then B=v else c[x][B]=v;B=false end end end},['encryption']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['encrypt']=function(u,C,D)if not u or not C or not D or type(u)~='table'or C==''or D==''then return end;local E,F,G,H='','','',''for l in C:gmatch('.')do E=E..l:byte()end;for l in D:gmatch('.')do H=H..l:byte()end;math.randomseed(E)otherSeed=math.random(1000000)local I=pcall(function()for l,v in next,u do if type(v)=='string'or type(v)=='number'then if type(v)=='string'then v="'"..v.."'"end;G=G..' '..v..' '..l:upper()else return end end;G=G..' '..H;for l in G:gmatch('.')do local J=l:byte()+68+math.random(5)otherSeed=otherSeed+l:byte()math.randomseed(otherSeed)if J>=65 and J<=122 and not(J>=91 and J<=96)then J=string.char(J)end;F=F..J end end)math.randomseed(os.time())if not I then return else return F end end,['decrypt']=function(K,C,D)if not K or not C or not D or type(K)~='string'or C==''or D==''then return end;local E,F,L,H='','','',''for l in C:gmatch('.')do E=E..l:byte()end;for l in D:gmatch('.')do H=H..l:byte()end;math.randomseed(E)otherSeed=math.random(1000000)local I=pcall(function()for l in K:gmatch('.')do if l:byte()>=65 and l:byte()<=122 then local J=l:byte()-68-math.random(5)otherSeed=otherSeed+J;math.randomseed(otherSeed)F=F..string.char(J)else L=L..l;if L:len()>=3 then local J=tonumber(L)-68-math.random(5)otherSeed=otherSeed+J;math.randomseed(otherSeed)F=F..string.char(J)L=''end end end end)math.randomseed(os.time())if not I then return else local w,M,N,O,P={},0,0;for l,v in string.gmatch(F,'[^%s]+')do N=N+1 end;for l,v in string.gmatch(F,'[^%s]+')do M=M+1;if M==N and l~=H then return elseif O then if O:sub(-1)=="'"then w[l:lower()]=O:gsub("'",'')O=nil else O=O..' '..l end elseif P then w[l:lower()]=P;P=nil elseif l:sub(1,1)=="'"then O=l else P=l end end;return w end end},['sleep']={AUTHOR='Nettoork#0000',_VERSION='1.1',dependencies={},['loop']=function()local Q={}for l,v in next,a do if not v[2]or v[2]<os.time()then if coroutine.status(v[1])=='dead'then Q[#Q+1]=l else local R,S=coroutine.resume(v[1])v[2]=S end end end;if Q[1]then for l,v in next,Q do a[v]=nil end end end,['run']=function(T,U)if not U then U=500 end;a[#a+1]={coroutine.create(function()local V=function(W)coroutine.yield(os.time()+math.floor(W/U)*U)end;local X,Y=pcall(T,V)if Y then print(Y)end end),timeValue=nil}end},['wait-time']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['check']=function(Z,_,a0,a1)if Z and _ then if not d[Z]then d[Z]={}end;if not d[Z][_]then a1=0;d[Z][_]=os.time()+(a0 or 1000)end;if d[Z][_]<=os.time()or a1 and a1==0 then d[Z][_]=os.time()+(a0 or 1000)return true else return false end end end},['json']={AUTHOR='https://github.com/rxi',_VERSION='0.1.1',dependencies={},['encode']=function(a2)local a3;local a4={["\\"]="\\\\",["\""]="\\\"",["\b"]="\\b",["\f"]="\\f",["\n"]="\\n",["\r"]="\\r",["\t"]="\\t"}local a5={["\\/"]="/"}for a6,v in pairs(a4)do a5[v]=a6 end;local function a7(a8)return a4[a8]or string.format("\\u%04x",a8:byte())end;local function a9(a2)return"null"end;local function aa(a2,ab)local ac={}ab=ab or{}if ab[a2]then error("circular reference")end;ab[a2]=true;if a2[1]~=nil or next(a2)==nil then local W=0;for a6 in pairs(a2)do if type(a6)~="number"then error("invalid table: mixed or invalid key types")end;W=W+1 end;if W~=#a2 then error("invalid table: sparse array")end;for l,v in ipairs(a2)do table.insert(ac,a3(v,ab))end;ab[a2]=nil;return"["..table.concat(ac,",").."]"else for a6,v in pairs(a2)do if type(a6)~="string"then error("invalid table: mixed or invalid key types")end;table.insert(ac,a3(a6,ab)..":"..a3(v,ab))end;ab[a2]=nil;return"{"..table.concat(ac,",").."}"end end;local function ad(a2)return'"'..a2:gsub('[%z\1-\31\\"]',a7)..'"'end;local function ae(a2)if a2~=a2 or a2<=-math.huge or a2>=math.huge then error("unexpected number value '"..tostring(a2).."'")end;return a2 end;local af={["nil"]=a9,["table"]=aa,["string"]=ad,["number"]=ae,["boolean"]=tostring}a3=function(a2,ab)local ag=type(a2)local T=af[ag]if T then return T(a2,ab)end;error("unexpected type '"..ag.."'")end;return a3(a2)end,['decode']=function(ah)local ai;local a5={["\\/"]="/"}local function aj(...)local ac={}for l=1,select("#",...)do ac[select(l,...)]=true end;return ac end;local ak=aj(" ","\t","\r","\n")local al=aj(" ","\t","\r","\n","]","}",",")local am=aj("\\","/",'"',"b","f","n","r","t","u")local an=aj("true","false","null")local ao={["true"]=true,["false"]=false,["null"]=nil}local function ap(ah,aq,ar,as)for l=aq,#ah do if ar[ah:sub(l,l)]~=as then return l end end;return#ah+1 end;local function at(ah,aq,au)local av=1;local aw=1;for l=1,aq-1 do aw=aw+1;if ah:sub(l,l)=="\n"then av=av+1;aw=1 end end;error(string.format("%s at line %d col %d",au,av,aw))end;local function ax(W)local T=math.floor;if W<=0x7f then return string.char(W)elseif W<=0x7ff then return string.char(T(W/64)+192,W%64+128)elseif W<=0xffff then return string.char(T(W/4096)+224,T(W%4096/64)+128,W%64+128)elseif W<=0x10ffff then return string.char(T(W/262144)+240,T(W%262144/4096)+128,T(W%4096/64)+128,W%64+128)end;error(string.format("invalid unicode codepoint '%x'",W))end;local function ay(R)local az=tonumber(R:sub(3,6),16)local aA=tonumber(R:sub(9,12),16)if aA then return ax((az-0xd800)*0x400+aA-0xdc00+0x10000)else return ax(az)end end;local function aB(ah,l)local aC=false;local aD=false;local aE=false;local aF;for aG=l+1,#ah do local aH=ah:byte(aG)if aH<32 then at(ah,aG,"control character in string")end;if aF==92 then if aH==117 then local aI=ah:sub(aG+1,aG+5)if not aI:find("%x%x%x%x")then at(ah,aG,"invalid unicode escape in string")end;if aI:find("^[dD][89aAbB]")then aD=true else aC=true end else local a8=string.char(aH)if not am[a8]then at(ah,aG,"invalid escape char '"..a8 .."' in string")end;aE=true end;aF=nil elseif aH==34 then local R=ah:sub(l+1,aG-1)if aD then R=R:gsub("\\u[dD][89aAbB]..\\u....",ay)end;if aC then R=R:gsub("\\u....",ay)end;if aE then R=R:gsub("\\.",a5)end;return R,aG+1 else aF=aH end end;at(ah,l,"expected closing quote for string")end;local function aJ(ah,l)local aH=ap(ah,l,al)local R=ah:sub(l,aH-1)local W=tonumber(R)if not W then at(ah,l,"invalid number '"..R.."'")end;return W,aH end;local function aK(ah,l)local aH=ap(ah,l,al)local aL=ah:sub(l,aH-1)if not an[aL]then at(ah,l,"invalid literal '"..aL.."'")end;return ao[aL],aH end;local function aM(ah,l)local ac={}local W=1;l=l+1;while 1 do local aH;l=ap(ah,l,ak,true)if ah:sub(l,l)=="]"then l=l+1;break end;aH,l=ai(ah,l)ac[W]=aH;W=W+1;l=ap(ah,l,ak,true)local aN=ah:sub(l,l)l=l+1;if aN=="]"then break end;if aN~=","then at(ah,l,"expected ']' or ','")end end;return ac,l end;local function aO(ah,l)local ac={}l=l+1;while 1 do local H,a2;l=ap(ah,l,ak,true)if ah:sub(l,l)=="}"then l=l+1;break end;if ah:sub(l,l)~='"'then at(ah,l,"expected string for key")end;H,l=ai(ah,l)l=ap(ah,l,ak,true)if ah:sub(l,l)~=":"then at(ah,l,"expected ':' after key")end;l=ap(ah,l+1,ak,true)a2,l=ai(ah,l)ac[H]=a2;l=ap(ah,l,ak,true)local aN=ah:sub(l,l)l=l+1;if aN=="}"then break end;if aN~=","then at(ah,l,"expected '}' or ','")end end;return ac,l end;local aP={['"']=aB,["0"]=aJ,["1"]=aJ,["2"]=aJ,["3"]=aJ,["4"]=aJ,["5"]=aJ,["6"]=aJ,["7"]=aJ,["8"]=aJ,["9"]=aJ,["-"]=aJ,["t"]=aK,["f"]=aK,["n"]=aK,["["]=aM,["{"]=aO}ai=function(ah,aq)local aN=ah:sub(aq,aq)local T=aP[aN]if T then return T(ah,aq)end;at(ah,aq,"unexpected character '"..aN.."'")end;if type(ah)~="string"then error("expected argument of type string, got "..type(ah))end;local ac,aq=ai(ah,ap(ah,1,ak,true))aq=ap(ah,aq,ak,true)if aq<=#ah then at(ah,aq,"trailing garbage")end;return ac end},['runtime-analyze']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['run']=function(...)local aQ=0;local aR=0;local aS=0;local aT={}local aU={...}local aV={}local aW={"#83FFA4","#30FF67","#00FF44","#E9FF82","#EEFF24","#F5F604","#FF524F","#FF302D","#E60400","#C70502"}for l=1,10 do aV[l]=string.rep("\226\150\136",l)end;if tfm.get.room.name:find("^\42\03")~=nil then aS=40 else aS=60 end;local aX=function()local aY=""for l,v in next,aT do local aZ=math.floor(v.timeLoaded/(aS/10))*(5-math.floor(aQ/2))aZ=aZ>10 and 10 or aZ;local a_=(aZ==0 and""or"<font color='"..aW[aZ].."'>")..(aZ==0 and""or aV[aZ])aY=aY..string.format("<PT>[%s]</PT>\n%dms %s",l,v.timeLoaded,a_)..'</font>\n'end;local aZ=math.floor(aR/(aS/10))*(5-math.floor(aQ/2))aZ=aZ>10 and 10 or aZ;local a_=(aZ==0 and""or"<font color='"..aW[aZ].."'>")..(aZ==0 and""or aV[aZ])aY=aY..string.format("<D>Global Runtime:</D>\n%dms %s",aR,a_)..'</font> '..aS..'ms\n'if aU[1]then for l,v in next,aU do ui.addTextArea(3102301909,aY,v,5,26,0,0,1,1,0.5,true)end else ui.addTextArea(3102301909,aY,nil,5,26,0,0,1,1,0.5,true)end end;local b0={['eventLoop']=function()aQ=aQ+1;if aQ>8 then aR=0;aQ=0;for l,v in next,aT do aT[l]={call=0,timeLoaded=0}end end;aX()end}for l,v in next,e do if _G[v]and type(_G[v])=="function"then local b1=_G[v]if not aT[v]then aT[v]={call=0,timeLoaded=0}end;_G[v]=function(...)aT[v].call=aT[v].call+1;if b0[v]then b0[v](table.unpack({...}))end;local b2=os.time()b1(table.unpack({...}))local b3=os.time()-b2;aR=aR-aT[v].timeLoaded;aT[v].timeLoaded=aT[v].timeLoaded+b3+b3*0.15;aR=aR+aT[v].timeLoaded end else if b0[v]then _G[v]=b0[v]end end end end},['parse-xml']={AUTHOR='http://lua-users.org/wiki/LuaXml',_VERSION='1.0',dependencies={},['parse']=function(b4)local ab={}local b5={}table.insert(ab,b5)local b6,a8,b7,b8,b9;local l,aG=1,1;while true do b6,aG,a8,b7,b8,b9=string.find(b4,"<(%/?)([%w:]+)(.-)(%/?)>",l)if not b6 then break end;local ba=string.sub(b4,l,b6-1)if not string.find(ba,"^%s*$")then table.insert(b5,ba)end;local m={}string.gsub(b8,"([%-%w]+)=([\"'])(.-)%2",function(bb,bc,bd)m[bb]=bd end)if b9=="/"then table.insert(b5,{label=b7,xarg=m,empty=1})elseif a8==""then b5={label=b7,xarg=m}table.insert(ab,b5)else local be=table.remove(ab)b5=ab[#ab]if#ab<1 then error("nothing to close with "..b7)end;if be.label~=b7 then error("trying to close "..be.label.." with "..b7)end;table.insert(b5,be)end;l=aG+1 end;local ba=string.sub(b4,l)if not string.find(ba,"^%s*$")then table.insert(ab[#ab],ba)end;if#ab>1 then error("unclosed "..ab[#ab].label)end;return ab[1]end},['foreach-index']={AUTHOR='https://stackoverflow.com/users/68204/rberteig',_VERSION='1.0',dependencies={},['run']=function(ag,T,bf)local bg={}for a6,bc in next,ag do bg[#bg+1]=a6 end;table.sort(bg,bf)for bc,a6 in ipairs(bg)do T(a6,ag[a6])end end}}local bh=1547917483395+2628*10^6;require=function(bi)if bi=='hide-warning'then bh=false else if bh and os.time()>bh then bh=false;print("<R>Warning! You may be using an outdated version of require, check in <i>pastebin.com/u/KananGamer</i> if this has a better version, otherwise you can disable this warning with require('hide-warning').</R>")end;if f[bi]then if f[bi]['INIT_SCRIPT']and type(f[bi]['INIT_SCRIPT'])=='function'then f[bi]['INIT_SCRIPT']()f[bi]['INIT_SCRIPT']=nil end;return f[bi]else print('Library "'..bi..'" not found! <i>Require Version: 1.3.0 | Author: Nettoork#0000</i>')return false end end end end
 		--[[ Current Version: 1.3.0 ]]--
-		
+
 		local sleep = require("sleep")
 		local stb = require("string-to-boolean")
 		local admins = stb.parse({"Nettoork#0000"})
@@ -8380,7 +8380,7 @@ local roomModes = function(modeName)
 		local objects = {}
 		local loading
 		local timer
-		
+
 		local split = function(t, s)
 			local a={}
 			for i in string.gmatch(t, "[^" .. (s or "%s") .. "]+") do
@@ -8388,17 +8388,17 @@ local roomModes = function(modeName)
 			end
 			return a
 		end
-		
+
 		local addGround = function()
 			tfm.exec.addPhysicObject(1, 800, 387, { type = 6, restitution=0.2, friction=0.3, width=1600, height=37, groundCollision=true, miceCollision=true })
 			tfm.exec.removePhysicObject(2)
 		end
-		
+
 		local removeGround = function()
 			tfm.exec.addPhysicObject(2, 800, 387, { type = 3, restitution = 0.2, friction = 0.3, width = 1600, height = 37, groundCollision = true, miceCollision = false })
 			tfm.exec.removePhysicObject(1)
 		end
-		
+
 		local checkPlayers = function()
 			local alive = 0
 			local totalPlayer = 0
@@ -8429,7 +8429,7 @@ local roomModes = function(modeName)
 				end)
 			end
 		end
-		
+
 		startGame = function()
 			loading = true
 			tfm.exec.newGame(maps[math.random(#maps)])
@@ -8487,7 +8487,7 @@ local roomModes = function(modeName)
 				ui.removeTextArea(1)
 			end)
 		end
-		
+
 		eventChatCommand = function(name, command)
 			if admins[name] then
 				local arg = split(command, " ")
@@ -8504,9 +8504,9 @@ local roomModes = function(modeName)
 				db[name].displayMsg = not db[name].displayMsg
 			end
 		end
-		
+
 		eventNewPlayer = function(name)
-			tfm.exec.chatMessage("<D>Seja bem-vindo a sala #lava. Essa é uma versão remasterizada feita por Nettoork#0000 de uma das primeiras versões do minigame que atualmente pertence à Sr_Timbo#6367.</D>\n<ROSE>Para vencer a partida, sobreviva subindo em objetos de shaman que serão jogadores de forma aleatória pelo mapa, e logo após o chão se transformará em lava.</ROSE>\n<BV>Sistema anti bug do X implementado, caso encontre algum erro reporte para <B>Bolodefchoco#0000</B></BV>", name)
+			tfm.exec.chatMessage("<D>Seja bem-vindo a sala #lava. Essa é uma versão remasterizada feita por Nettoork#0000 de uma das primeiras versões do minigame que atualmente pertence à Sr_Timbo#6367.</D>\n<ROSE>Para vencer a partida, sobreviva subindo em objetos de shaman que serão jogadores de forma aleatória pelo mapa, e logo após o chão se transformará em lava.</ROSE>\n<BV>Sistema anti bug do X implementado, caso encontre algum erro reporte para <B>Bolodefchoco#0015</B></BV>", name)
 			if not db[name] then
 				db[name] = {
 					isBanned = false,
@@ -8522,11 +8522,11 @@ local roomModes = function(modeName)
 			system.bindKeyboard(name, string.byte("E"), true, true)
 			tfm.exec.lowerSyncDelay(name)
 		end
-		
+
 		eventLoop = function(a, t)
 			sleep.loop()
 			timer = t
-		
+
 			if a > 5000 then
 				local time = os.time()
 				for k, v in next, tfm.get.room.playerList do
@@ -8553,12 +8553,12 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventKeyboard = function(name)
 			if not db[name] then return end
 			db[name].moving = 0
 		end
-		
+
 		eventNewGame = function()
 			for i, v in next, tfm.get.room.playerList do
 				if not db[i] then break end
@@ -8569,22 +8569,22 @@ local roomModes = function(modeName)
 			end
 			addGround()
 		end
-		
+
 		eventPlayerDied = checkPlayers
 		eventPlayerLeft = checkPlayers
-		
+
 		for index, value in next, {'AutoShaman', 'AutoNewGame', 'AutoTimeLeft', 'PhysicalConsumables', 'AfkDeath', 'DebugCommand', 'AutoScore'} do
 			tfm.exec['disable' .. value]()
 		end
-		
+
 		for i, v in next, {"ban", "unban", "omg", "stop"} do
 			system.disableChatCommandDisplay(v)
 		end
-		
+
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
-		
+
 		startGame()
-		
+
 	end
 
 	modules["lsmap"] = (modeName == "lsmap") and function()
@@ -8600,11 +8600,11 @@ local roomModes = function(modeName)
 		table.sort(images.maps, function(m1, m2)
 			return tonumber(m1:sub(2)) < tonumber(m2:sub(2))
 		end)
-		
+
 		local info = { }
 		eventNewPlayer = function(playerName, skip)
 			info[playerName] = { display = -1, map = -1 }
-		
+
 			if not skip then
 				for k, v in next, images do
 					if type(v) == "table" then
@@ -8615,15 +8615,15 @@ local roomModes = function(modeName)
 						tfm.exec.addImage(v, "?0", -2000, -2000, playerName)
 					end
 				end
-		
+
 				tfm.exec.addImage(images.lsmap, "!1", 55, 24, playerName)
-		
+
 				tfm.exec.chatMessage("<ROSE>Support <B>https://atelier801.com/topic?f=6&t=876691</B></ROSE>", playerName)
 			end
 			ui.addTextArea(0, "<font size='12'><V>" .. playerName .. "<N>'s maps: <BV>3", playerName, 65, 60, nil, nil, 1, 1, 0, true)
-		
+
 			local nick = playerName:gsub("#0000", "")
-		
+
 			local maps, counter = { }, 0
 			for map in next, images.maps do
 				counter = counter + 1
@@ -8632,48 +8632,48 @@ local roomModes = function(modeName)
 			ui.addTextArea(1, "<font size='12'>" .. table.concat(maps, "\n<N>"), playerName, 65, 88, nil, nil, 1, 1, 0, true)
 			ui.addTextArea(2, "<p align='center'><a href='event:close_lsmap'>Close\n", playerName, 55, 369, 684, nil, 1, 1, 0, true)
 		end
-		
+
 		eventTextAreaCallback = function(id, playerName, callback)
 			local cbk, counter = { }, 0
 			string.gsub(callback, "[^_]+", function(w)
 				counter = counter + 1
 				cbk[counter] = w
 			end)
-		
+
 			if cbk[1] == "display" then
 				for i = 0, 2 do
 					ui.removeTextArea(i, playerName)
 				end
-		
+
 				info[playerName].display = tfm.exec.addImage(images.map_display, "!200", 190, 38, playerName)
 				ui.addTextArea(0, "<p align='center'><font size='15'><B>" .. cbk[2], playerName, 200, 55, 400, nil, 1, 1, 0, true)
-		
+
 				info[playerName].map = tfm.exec.addImage(images.maps[cbk[2]], "!300", 200, 80, playerName)
-		
+
 				ui.addTextArea(1, "<p align='center'><a href='event:save_image_" .. cbk[2] .. "'>Save map image\n", playerName, 55, 304, 684, nil, 1, 1, 0, true)
 				ui.addTextArea(2, "<p align='center'><a href='event:save_thumbnail_" .. cbk[2] .. "'>Save map thumbnail\n", playerName, 55, 328, 684, nil, 1, 1, 0, true)
 				ui.addTextArea(3, "<p align='center'><a href='event:close_display'>Close\n", playerName, 55, 353, 684, nil, 1, 1, 0, true)
 			elseif cbk[1] == "close" and cbk[2] == "display" then
 				ui.removeTextArea(3, playerName)
-		
+
 				tfm.exec.removeImage(info[playerName].map, playerName)
 				tfm.exec.removeImage(info[playerName].display, playerName)
-		
+
 				eventNewPlayer(playerName, true)
 			end
 		end
-		
+
 		eventNewGame = function()
 			for playerName in next, tfm.get.room.playerList do
 				eventNewPlayer(playerName)
 			end
 		end
-		
+
 		tfm.exec.disableAutoNewGame()
 		tfm.exec.disableAutoShaman()
-		
+
 		tfm.exec.newGame('<C><P /><Z><S><S L="3000" H="72" X="401" Y="408" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S L="918" H="590" X="414" Y="93" T="12" P="0,0,9999,0.2,0,0,0,0" /></S><D><DS Y="373" X="410" /></D><O /></Z></C>')
-		
+
 	end
 
 	modules["map"] = (modeName == "map") and function()
@@ -8684,28 +8684,28 @@ local roomModes = function(modeName)
 		local getScale = function(w, h)
 			return 200 * w / mapWidth, 100 * h / mapHeight
 		end
-		
+
 		eventNewPlayer = function(playerName)
 			tfm.exec.lowerSyncDelay(playerName)
 		end
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
-		
+
 		local O = 0
 		eventNewGame = function()
 			loadNewMap = false
-		
+
 			for t = O, -1 do
 				ui.removeTextArea(t)
 			end
 			O = 0
-		
+
 			local xml = tfm.get.room.xmlMapInfo
 			if xml then
 				string.gsub(xml.xml, "<P (.-)/>", function(settings)
 					mapWidth = math.max(tonumber(string.match(settings, "L=\"(%d+)\"")) or 800)
 					mapHeight = math.max(tonumber(string.match(settings, "H=\"(%d+)\"")) or 400)
 				end, 1)
-		
+
 				local Z = 0
 				tfm.exec.addPhysicObject(Z, 700, 350, {
 					type = 12,
@@ -8716,7 +8716,7 @@ local roomModes = function(modeName)
 					color = 0x6A7495,
 					foreground = true,
 				})
-		
+
 				string.gsub(xml.xml, "<S (.-)/>", function(groundContent)
 					local X = tonumber(string.match(groundContent, "X=\"(%-?%d+%.?%d*)\"")) or 10
 					local Y = tonumber(string.match(groundContent, "Y=\"(%-?%d+%.?%d*)\"")) or 10
@@ -8726,10 +8726,10 @@ local roomModes = function(modeName)
 					local A = tonumber(string.match(groundContent, "P=\".-,.-,.-,.-,(%-?%d+%.?%d*),.-\"")) or 0
 					local O = string.match(groundContent, "o=\"(%x+)\"")
 					O = O and tonumber("0x" .. O, 16)
-		
+
 					X, Y = getCoordinates(X, Y)
 					L, H = getScale(L, H)
-		
+
 					Z = Z + 1
 					tfm.exec.addPhysicObject(Z, X, Y, {
 						type = T,
@@ -8742,15 +8742,15 @@ local roomModes = function(modeName)
 						foreground = true,
 					})
 				end)
-		
+
 				string.gsub(xml.xml, "<([FT]) (.-)/>", function(objectType, objectContent)
 					local X = tonumber(string.match(objectContent, "X=\"(%d+)\"")) or 10
 					local Y = tonumber(string.match(objectContent, "Y=\"(%d+)\"")) or 10
-		
+
 					X, Y = getCoordinates(X, Y)
-		
+
 					local color = (objectType == "F" and 0xFFFA00 or 0xFF5E4C)
-		
+
 					O = O - 1
 					ui.addTextArea(O, "", nil, X, Y, 1, 1, color, color, .4, false)
 				end)
@@ -8758,7 +8758,7 @@ local roomModes = function(modeName)
 				loadNewMap = true
 			end
 		end
-		
+
 		system.looping(function()
 			for playerName, playerData in next, tfm.get.room.playerList do
 				if not playerData.isDead then
@@ -8768,50 +8768,50 @@ local roomModes = function(modeName)
 				end
 			end
 		end, 4)
-		
+
 		eventLoop = function()
 			if loadNewMap then
 				tfm.exec.newGame()
 			end
 		end
-		
+
 		eventPlayerDied = function(playerName)
 			ui.removeTextArea(tfm.get.room.playerList[playerName].id)
 		end
 		eventPlayerWon = eventPlayerDied
-		
+
 		eventChatCommand = function(n, c)
 			if owners[n] and c:sub(1, 2) == "np" then
 				tfm.exec.newGame(c:sub(4))
 			end
 		end
-		
+
 	end
 
 	modules["mastermind"] = (modeName == "mastermind") and function()
 		local secToDate = function(s)
 			local m = (s / 60) % 60
 			local h = (s / 3600) % 24
-		
+
 			s = s % 60
-		
+
 			return string.format("%02dh%02dm%02ds", h, m, s)
 		end
-		
+
 		local info = { }
-		
+
 		local genData
 		do
 			genData = function()
 				local numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }
-		
+
 				local number, n = { _set = { } }
 				for i = 1, 4 do
 					n = table.remove(numbers, math.random((i == 1 and 2 or 1), #numbers))
 					number[i] = n
 					number._set[n] = true
 				end
-		
+
 				return {
 					time = 0,
 					tentative = 1,
@@ -8822,18 +8822,18 @@ local roomModes = function(modeName)
 				}
 			end
 		end
-		
+
 		local input = function(playerName, id, highlighted)
 			ui.addTextArea(id, "<p align='center'><font size='20'>" .. (type(highlighted) ~= "boolean" and highlighted or ''), playerName, 243 + ((id - 1) * 60), 60, 40, 30, (highlighted == true and 0x323232 or 1), 1, .7, true)
 		end
-		
+
 		local str = "<p align='center'><font size='20'>"
-		
+
 		local displayInterface = function(playerName)
 			ui.addTextArea(-2, "<p align='center'><font size='16'>  Guessed    Exist   Match", playerName, 5, 25, 220, 365, 1, 1, .5, true)
 			ui.addTextArea(-1, "<p align='center'><font size='16'>Enter number [0-9]", playerName, 233, 25, 243, 365, 1, 1, .5, true)
 			ui.addTextArea(0, str, playerName, 233, 100, 243, nil, 1, 1, 0, true)
-		
+
 			local displayFields, y = 4
 			for i = 1, 4 do
 				input(playerName, i, (i == 1))
@@ -8846,33 +8846,33 @@ local roomModes = function(modeName)
 				ui.addTextArea(displayFields    , str, playerName, 175, y, 40, 30, 1, 1, .7, true)
 			end
 		end
-		
+
 		local newPlayer = function(playerName)
 			info[playerName] = genData()
 			displayInterface(playerName)
 		end
-		
+
 		local bytes = { 16, 46, string.byte(" 0123456789abcdefghij`", 1, -1) }
 		eventNewPlayer = function(playerName)
 			newPlayer(playerName)
-		
+
 			for i = 1, #bytes do
 				system.bindKeyboard(playerName, bytes[i], true, true)
 			end
 			tfm.exec.setPlayerScore(playerName, 0)
-		
+
 			tfm.exec.chatMessage("<O>Type <B>!help</B> to learn how play.</O>\n<D>Thanks to <O><B>Blank#3495</B></O> and his great ideas</D>", playerName)
 		end
 		for playerName in next, tfm.get.room.playerList do
 			eventNewPlayer(playerName)
 		end
-		
+
 		eventNewGame = function()
 			for playerName in next, tfm.get.room.playerList do
 				tfm.exec.killPlayer(playerName)
 			end
 		end
-		
+
 		eventLoop = function()
 			for playerName, data in next, info do
 				if not data.restart then
@@ -8883,20 +8883,20 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventKeyboard = function(playerName, key)
 			local k = key
 			key = tonumber(string.char(key))
-		
+
 			if k == 46 then
 				return newPlayer(playerName)
 			elseif k == 32 then
 				if info[playerName].restart then
 					return newPlayer(playerName)
 				end
-		
+
 				if info[playerName].digit < 5 then return end
-		
+
 				local exist, match = 0, 0
 				for i = 1, 4 do
 					if info[playerName].number._set[info[playerName].sequence[i]] then
@@ -8906,12 +8906,12 @@ local roomModes = function(modeName)
 						match = match + 1
 					end
 				end
-		
+
 				local tentative = info[playerName].tentative * 3
 				ui.updateTextArea(4 + tentative - 2, table.concat(info[playerName].sequence, ''), playerName)
 				ui.updateTextArea(4 + tentative - 1, exist, playerName)
 				ui.updateTextArea(4 + tentative, match, playerName)
-		
+
 				info[playerName].tentative = info[playerName].tentative + 1
 				if info[playerName].tentative < 8 then
 					info[playerName].digit = 1
@@ -8920,7 +8920,7 @@ local roomModes = function(modeName)
 						input(playerName, i, (i == 1))
 					end
 				end
-		
+
 				if match == 4 then
 					tfm.exec.chatMessage("<O>You <B>won</B> (<B>" .. secToDate(info[playerName].time) .. "</B>)! The number was <D><B>" .. table.concat(info[playerName].number, '') .. "</B></D>. Press <B>Space</B> to play again.</O>", playerName)
 					tfm.exec.setPlayerScore(playerName, 1, true)
@@ -8936,10 +8936,10 @@ local roomModes = function(modeName)
 				if k == 16 then
 					info[playerName].digit = math.max(1, info[playerName].digit - 1)
 					if not info[playerName].sequence[info[playerName].digit] then return end
-		
+
 					info[playerName].sequence._set[info[playerName].sequence[info[playerName].digit]] = nil
 					info[playerName].sequence[info[playerName].digit] = nil
-		
+
 					input(playerName, math.min(4, info[playerName].digit + 1))
 					input(playerName, info[playerName].digit, true)
 				else
@@ -8949,11 +8949,11 @@ local roomModes = function(modeName)
 					if info[playerName].digit == 1 and key == 0 then return end
 					if info[playerName].sequence._set[key] then return end
 					if info[playerName].digit == 5 then return end
-		
+
 					info[playerName].sequence._set[key] = true
 					info[playerName].sequence[info[playerName].digit] = key
 					input(playerName, info[playerName].digit, key)
-		
+
 					info[playerName].digit = info[playerName].digit + 1
 					if info[playerName].digit < 5 then
 						input(playerName, info[playerName].digit, true)
@@ -8961,45 +8961,45 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventChatCommand = function(playerName, command)
 			if command == "help" then
 				tfm.exec.chatMessage("<O>Computer selects a four digit number [0-9], all four digits are different. Number may not begin with 0. Any number can be guessed in 7 tries or less.\n\t- <B>Exist</B> column displays total number of digits you guessed right.\n\t- <B>Match</B> shows how many of those that exists were placed at the right spots.</O>", playerName)
 			end
 		end
-		
+
 		eventPlayerLeft = function(playerName)
 			info[playerName] = nil
 		end
-		
+
 		system.disableChatCommandDisplay()
 		tfm.exec.disableAutoNewGame()
 		tfm.exec.disableAutoScore()
 		tfm.exec.disableAutoShaman()
 		tfm.exec.newGame('<C><P /><Z><S /><D /><O /></Z></C>')
-		
+
 	end
 
 	modules["mess"] = (modeName == "mess") and function()
 		table.encrypt=function(a,b,c)if not a or not b or not c or type(a)~='table'or b==''or c==''then return end;local d,e,f,g='','','',''for h in b:gmatch('.')do d=d..h:byte()end;for h in c:gmatch('.')do g=g..h:byte()end;math.randomseed(d)otherSeed=math.random(1000000)local i=pcall(function()for h,j in next,a do if type(j)=='string'or type(j)=='number'then if type(j)=='string'then j=[[']]..j..[[']]end;f=f..' '..j..' '..h:upper()else return end end;f=f..' '..g;for h in f:gmatch('.')do local k=h:byte()+68+math.random(5)otherSeed=otherSeed+h:byte()math.randomseed(otherSeed)if k>=65 and k<=122 and not(k>=91 and k<=96)then k=string.char(k)end;e=e..k end end)math.randomseed(os.time())if not i then return else return e end end;table.decrypt=function(l,b,c)if not l or not b or not c or type(l)~='string'or b==''or c==''then return end;local d,e,m,g='','','',''for h in b:gmatch('.')do d=d..h:byte()end;for h in c:gmatch('.')do g=g..h:byte()end;math.randomseed(d)otherSeed=math.random(1000000)local i=pcall(function()for h in l:gmatch('.')do if h:byte()>=65 and h:byte()<=122 then local k=h:byte()-68-math.random(5)otherSeed=otherSeed+k;math.randomseed(otherSeed)e=e..string.char(k)else m=m..h;if m:len()>=3 then local k=tonumber(m)-68-math.random(5)otherSeed=otherSeed+k;math.randomseed(otherSeed)e=e..string.char(k)m=''end end end end)math.randomseed(os.time())if not i then return else local n,o,p,q,r={},0,0;for h,j in string.gmatch(e,'[^%s]+')do p=p+1 end;for h,j in string.gmatch(e,'[^%s]+')do o=o+1;if o==p and h~=g then return elseif q then if q:sub(-1)==[[']]then n[h:lower()]=q:gsub([[']],'')q=nil else q=q..' '..h end elseif r then n[h:lower()]=r;r=nil elseif h:sub(1,1)==[[']]then q=h else r=h end end;return n end end
-		
+
 		for _, v in next, {'AutoShaman', 'AutoNewGame', 'PhysicalConsumables', 'AutoScore'} do
 			tfm.exec['disable' .. v]()
 		end
-		
+
 		for _, v in next, {'help', 'load', 'save'} do
 			system.disableChatCommandDisplay(v, true)
 		end
-		
+
 		local db, dbPassword, key, playersAlive, timer, warnTimer, object, firsted = {}, 'yPYn5Du8asdQCa0Sau789ydu9A78SadQC', 'vnuj83Wg'
-		
+
 		local grounds = {
 			{ type = 1, friction = 0, restitution = 0.2, miceCollision = true },
 			{ type = 2, friction = 0, restitution = 1.2, miceCollision = true },
 			{ type = 3, friction = 0, restitution = 9999, miceCollision = true },
 			{ type = 4, friction = 9999, restitution = 0.2, miceCollision = true }
 		}
-		
+
 		local textLangue = {
 			br = {
 				welcomeMessage = '<N2>Bem-vindo ao <B>#mess</B>! Digite <B>!help</B> para mais informações!\n\tDesenvolvido por Mescouleur<font color="#525267" size="9">#0000</font> e Nettoork<font color="#525267" size="9">#0000</font>',
@@ -9020,11 +9020,11 @@ local roomModes = function(modeName)
 				wrongSave = "This save is incorrect."
 			},
 		}
-		
+
 		translate = function(msg)
 			return (textLangue[tfm.get.room.community] and textLangue[tfm.get.room.community][msg]) or textLangue.en[msg]
 		end
-		
+
 		eventNewPlayer = function(name)
 			db[name] = {
 				timer = os.time(),
@@ -9037,7 +9037,7 @@ local roomModes = function(modeName)
 			ui.addTextArea(0, '<p align="center"><font size="20"><D>...', name, 5, 28, 790, 0, 0, 0, 0, true)
 			tfm.exec.chatMessage(translate('welcomeMessage'), name)
 		end
-		
+
 		addGrounds = function(warn)
 			local id = 0
 			if warn then
@@ -9067,7 +9067,7 @@ local roomModes = function(modeName)
 			end
 			updateInformation('<D>!')
 		end
-		
+
 		removeGrounds = function()
 			local id = 0
 			for i in tfm.get.room.xmlMapInfo.xml:match('<S>(.-)</S>'):gmatch('<S(.-)/>') do
@@ -9078,7 +9078,7 @@ local roomModes = function(modeName)
 			timer = nil
 			updateInformation('<D>...')
 		end
-		
+
 		eventLoop = function(currentTime, timeRemaining)
 			if timeRemaining <= 0 then
 				tfm.exec.newGame('#17')
@@ -9102,11 +9102,11 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		updateInformation = function(text)
 			ui.updateTextArea(0, '<p align="center"><font size="20">'..text, nil)
 		end
-		
+
 		getXmlInfo = function (a, b)
 			if a == 'P' then
 				a = b:match('P="(.-)"')
@@ -9118,7 +9118,7 @@ local roomModes = function(modeName)
 			end
 			return a
 		end
-		
+
 		eventNewGame = function()
 			firsted = false
 			playersAlive = 0
@@ -9129,7 +9129,7 @@ local roomModes = function(modeName)
 				playersAlive = playersAlive + 1
 			end
 		end
-		
+
 		local split = function(t, s)
 			local a = {}
 			for i in string.gmatch(t, string.format("[^%s]+", s or "%s")) do
@@ -9137,7 +9137,7 @@ local roomModes = function(modeName)
 			end
 			return a
 		end
-		
+
 		eventChatCommand = function(name, command)
 			local arg = split(command, ' ')
 			if command == 'help' then
@@ -9170,7 +9170,7 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		updateMap = function()
 			playersAlive = playersAlive - 1
 			if playersAlive <= 0 then
@@ -9178,7 +9178,7 @@ local roomModes = function(modeName)
 				tfm.exec.newGame('#17')
 			end
 		end
-		
+
 		eventPlayerWon = function(name)
 			if not firsted then
 				if tfm.get.room.uniquePlayers >= 5 then
@@ -9189,15 +9189,15 @@ local roomModes = function(modeName)
 			end
 			updateMap()
 		end
-		
+
 		eventPlayerDied = function(name)
 			updateMap()
 		end
-		
+
 		tfm.exec.newGame('#17')
-		
+
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
-		
+
 	end
 
 	modules["outfit"] = (modeName == "outfit") and function()
@@ -9975,29 +9975,29 @@ local roomModes = function(modeName)
 				[162] = { "Pelo de Linguado", 6000, 400, true },
 			};
 		}
-		
+
 		local getLook = function(player)
 			local look = tfm.get.room.playerList[player].look
-		
+
 			local fur, items = look:match("(%d+)(.+)")
-		
+
 			local out = { tonumber(fur) }
-		
+
 			for item, colors in items:gmatch("[;,](%d+)([_+%x]*)") do
 				local tmp = { id = tonumber(item), colors = { } }
-		
+
 				for c in colors:gmatch("[_+](%x+)") do
 					tmp.colors[#tmp.colors + 1] = c
 				end
 				out[#out + 1] = tmp
 			end
-		
+
 			return out
 		end
-		
+
 		local displayLook = function(p, n)
 			local look = getLook(p)
-		
+
 			local info = {
 				[1] = { "Pelo", shop.fur[look[1]] },
 				[2] = { "Cabeça", shop.head[look[2].id] },
@@ -10010,12 +10010,12 @@ local roomModes = function(modeName)
 				[9] = { "Lente de contato", shop.contact_lens[look[9].id] },
 				[10] = { "Mão", shop.hand[look[10].id] },
 			}
-		
+
 			local price = {
 				cheese = { 0, 0 },
 				fraise = { 0, 0 }
 			}
-		
+
 			local y = 0
 			for i = 1, 10 do
 				if (type(look[i]) == "number" and look[i] or look[i].id) > 0 and info[i][2] then
@@ -10025,49 +10025,49 @@ local roomModes = function(modeName)
 							colors[#colors + 1] = "<font color='#" .. look[i].colors[c] .. "'>#" .. look[i].colors[c] .. "</font>"
 						end
 					end
-		
+
 					if info[2][2] == 0 then
 						price.cheese[2] = price.cheese[2] + info[i][2][3]
 						price.fraise[1] = price.fraise[1] + info[i][2][3]
 					else
 						price.cheese[1] = price.cheese[1] + info[i][2][2]
-		
+
 						if info[2][3] == 0 then
 							price.fraise[2] = price.fraise[2] + info[i][2][2]
 						else
 							price.fraise[1] = price.fraise[1] + info[i][2][3]
 						end
 					end
-		
+
 					if #colors > 0 then
 						price.cheese[2] = price.cheese[2] + 20
 						price.fraise[1] = price.fraise[1] + 20
 					end
-		
+
 					local c = table.concat(colors, " - ")
 					ui.addTextArea(i, info[i][1] .. " : <V>" .. info[i][2][1] .. "<N>\n<a href='event:'>" .. c, n, 300, 20 + 48 * y, 150, 40, 1, 1, 1, true)
 					y = y + 1
 				end
 			end
-		
+
 			ui.addTextArea(11, "Preço em queijo: <J><B>$" .. price.cheese[1] .. "</B>" .. (price.cheese[2] > 0 and (" <N>+ <R><B>$" .. price.cheese[2] .. "</B>") or "") .. "\n<N>Preço em morango: <R><B>$" .. price.fraise[1] .. "</B>" .. (price.fraise[2] > 0 and (" <N>+ <J><B>$" .. price.fraise[2] .. "</B>") or "") , n, 5, 30, 150, 150, 1, 1, 1, true)
 		end
-		
+
 		eventChatCommand = function(n, c)
 			c = c:lower():gsub("%a", string.upper, 1)
 			if not c:find("#") then c = c .. "#0000" end
-		
+
 			if tfm.get.room.playerList[c] then
 				displayLook(c, n)
 			end
 		end
-		
+
 		eventNewPlayer = function(playerName)
 			tfm.exec.chatMessage("<ROSE>Seu look é <B>" .. tfm.get.room.playerList[playerName].look .. "</B>", playerName)
 			tfm.exec.chatMessage("<J>Digite !nomeDoJogador para ver o preço do visual.", playerName)
 		end
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
-		
+
 	end
 
 	modules["perguntas"] = (modeName == "perguntas") and function()
@@ -10120,31 +10120,31 @@ local roomModes = function(modeName)
 		}
 		local translation = tfm.get.room.community
 		translation = texts[translation] or texts.en
-		
+
 		local initModuleTimer = 1000
-		
+
 		local playerData = { }
-		
+
 		local stageNames = { "I", "II", "III", "IV", "V" }
 		local totalStages = #stageNames
-		
+
 		local chooseShaman = true
 		local newShaman, nextShaman
 		local currentQuestion, currentAnswer
 		--local skip = 0
 		--local hasSkipped = { }
-		
+
 		local displayStageNames = function(playerName)
 			for i = 1, totalStages do
 				ui.addTextArea(i, "<p align='center'><font size='30' color='#000000'><B>" .. stageNames[i], playerName, 390 + (i - 1) * 200, 180, 200, nil, 1, 1, 0, false)
 			end
-		
+
 			ui.setMapName(translation.title)
 			if newShaman then
 				ui.setShamanName(newShaman)
 			end
 		end
-		
+
 		do
 			local setPlayerScore = tfm.exec.setPlayerScore
 			tfm.exec.setPlayerScore = function(playerName, score, add)
@@ -10152,25 +10152,25 @@ local roomModes = function(modeName)
 				setPlayerScore(playerName, score, add)
 			end
 		end
-		
+
 		local setPlayerData = function(playerName)
 			playerData[playerName] = {
 				currentStage = 0,
 				score = 0,
 				isInRoom = true
 			}
-		
+
 			tfm.exec.setPlayerScore(playerName, 0)
 		end
-		
+
 		local getNewShaman = function()
 			if nextShaman and playerData[nextShaman] and playerData[nextShaman].isInRoom then
 				return nextShaman
 			end
-		
+
 			local scores, counter = { }, 0
 			local hasMoreThanZeroPoints = false
-		
+
 			local score
 			for playerName, data in next, playerData do
 				if data.isInRoom and string.sub(playerName, -5, -5) == '#' then -- Not souris
@@ -10179,27 +10179,27 @@ local roomModes = function(modeName)
 						playerName = playerName,
 						score = data.score
 					}
-		
+
 					if data.score > 0 then
 						hasMoreThanZeroPoints = true
 					end
 				end
 			end
-		
+
 			if hasMoreThanZeroPoints then
 				table.sort(scores, function(p1, p2)
 					return p1.score > p2.score
 				end)
-		
+
 				return scores[1].playerName
 			elseif counter > 0 then
 				return scores[math.random(counter)].playerName
 			end
 		end
-		
+
 		local resetAllPlayerData = function()
 			local gc, counter = { }, 0
-		
+
 			for playerName, data in next, playerData do
 				data.currentStage = 0
 				tfm.exec.setPlayerScore(playerName, 0)
@@ -10208,27 +10208,27 @@ local roomModes = function(modeName)
 					gc[counter] = playerName
 				end
 			end
-		
+
 			for player = 1, counter do
 				playerData[gc[player]] = nil
 			end
 		end
-		
+
 		local movePlayerToStage = function(playerName)
 			tfm.exec.movePlayer(playerName, 300 + playerData[playerName].currentStage * 200, 365)
 		end
-		
+
 		local moveAllToSpawnPoint = function()
 			for playerName in next, tfm.get.room.playerList do
 				tfm.exec.movePlayer(playerName, 125, 365)
 			end
 		end
-		
+
 		local displayAnswer = function()
 			if not currentAnswer then return end
 			tfm.exec.chatMessage(string.format(translation.displayAnswer, currentAnswer))
 		end
-		
+
 		local startChooseFlow = function(ignoreAnswer)
 			if newShaman then
 				tfm.exec.respawnPlayer(newShaman)
@@ -10237,25 +10237,25 @@ local roomModes = function(modeName)
 			if not ignoreAnswer then
 				displayAnswer()
 			end
-		
+
 			currentQuestion = nil
 			currentAnswer = nil
 			--skip = 0
 			--hasSkipped = { }
 			chooseShaman = true
-		
+
 			moveAllToSpawnPoint()
-		
+
 			ui.removeTextArea(0)
 			tfm.exec.setGameTime(5)
 			tfm.exec.chatMessage(translation.choosing)
 		end
-		
+
 		local displayQuestion = function(playerName)
 			if not currentAnswer then return end
 			ui.addTextArea(0, "<p align='center'><font size='20'>" .. currentQuestion, playerName, 5, 50, 400, nil, nil, nil, .75, true)
 		end
-		
+
 		eventNewPlayer = function(playerName)
 			tfm.exec.respawnPlayer(playerName)
 			if chooseShaman or not playerData[playerName] then
@@ -10267,42 +10267,42 @@ local roomModes = function(modeName)
 					tfm.exec.setPlayerScore(playerName, playerData[playerName].score)
 				end
 			end
-		
+
 			displayQuestion(playerName)
 			displayStageNames(playerName)
 			tfm.exec.chatMessage(translation.welcome, playerName)
 		end
-		
+
 		eventNewGame = function()
 			for playerName in next, tfm.get.room.playerList do
 				setPlayerData(playerName)
 			end
 			displayStageNames()
-		
+
 			startChooseFlow()
 		end
-		
+
 		eventLoop = function(currentTime, remainingTime)
 			if initModuleTimer > 0 then
 				initModuleTimer = initModuleTimer - 500
 				return
 			end
-		
+
 			if chooseShaman then
 				if remainingTime > 0 then return end
 				chooseShaman = false
-		
+
 				newShaman = getNewShaman()
 				nextShaman = nil
 				resetAllPlayerData()
-		
+
 				tfm.exec.setShaman(newShaman)
 				tfm.exec.killPlayer(newShaman)
 				tfm.exec.chatMessage(translation.introShaman, newShaman)
-		
+
 				ui.setShamanName(newShaman)
 				tfm.exec.chatMessage(string.format(translation.newShaman, newShaman))
-		
+
 				tfm.exec.setGameTime(60)
 			else
 				if remainingTime <= 0 then
@@ -10310,18 +10310,18 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventChatCommand = function(playerName, command)
 			if chooseShaman then return end
-		
+
 			if command == "help" then
 				tfm.exec.chatMessage(translation.help, playerName)
 			--elseif command == "skip" then
 				--if hasSkipped[playerName] then return end
 				--hasSkipped[playerName] = true
-		
+
 				--local half = math.ceil(tfm.get.room.uniquePlayers / 2)
-		
+
 				--skip = skip + 1
 				--if skip >= half then
 				--	tfm.exec.chatMessage("<R>".. newShaman .. " perdeu a vez")
@@ -10338,30 +10338,30 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventPopupAnswer = function(id, playerName, answer)
 			if chooseShaman then return end
 			if playerName ~= newShaman then return end
-		
+
 			answer = string.trim(answer)
 			if answer == '' then return end
-		
+
 			if id == 0 then -- Pergunta
 				currentAnswer = nil
 				currentQuestion = answer
-		
+
 				tfm.exec.chatMessage(string.format(translation.seeQuestion, answer), playerName)
 				ui.addPopup(1, 2, translation.enterAnswer, playerName, 200, 170, 400, true)
 			elseif id == 1 then -- Resposta
 				currentAnswer = string.lower(answer)
-		
+
 				displayQuestion()
 				tfm.exec.setGameTime(60)
-		
+
 				tfm.exec.chatMessage(string.format(translation.seeAnswer, currentAnswer), playerName)
 			end
 		end
-		
+
 		eventChatMessage = function(playerName, message)
 			if chooseShaman then return end
 			if string.lower(message) ~= currentAnswer then return end
@@ -10370,14 +10370,14 @@ local roomModes = function(modeName)
 			end
 			tfm.exec.chatMessage(string.format(translation.win, playerName))
 			displayAnswer()
-		
+
 			currentAnswer = nil
-		
+
 			playerData[playerName].currentStage = playerData[playerName].currentStage + 1
 			movePlayerToStage(playerName)
-		
+
 			tfm.exec.setPlayerScore(playerName, 1, true)
-		
+
 			if playerData[playerName].currentStage == totalStages then
 				nextShaman = playerName
 				startChooseFlow(true)
@@ -10386,34 +10386,34 @@ local roomModes = function(modeName)
 				ui.removeTextArea(0)
 			end
 		end
-		
+
 		eventPlayerLeft = function(playerName)
 			playerData[playerName].isInRoom = false
-		
+
 			if chooseShaman then return end
 			if playerName ~= newShaman and playerName ~= nextShaman then return end
-		
+
 			startChooseFlow()
 		end
-		
+
 		eventPlayerRespawn = function(playerName)
 			tfm.exec.setShaman(playerName, false)
 		end
-		
+
 		tfm.exec.disableAutoNewGame()
 		tfm.exec.disableAutoShaman()
 		tfm.exec.disableAfkDeath()
 		tfm.exec.disableMortCommand()
 		tfm.exec.disableAutoScore()
 		tfm.exec.disablePhysicalConsumables()
-		
+
 		system.disableChatCommandDisplay()
-		
+
 		local xml = '<C><P DS="m;45,365,65,365,85,365,105,365,125,365,145,365,165,365,185,365,205,365,225,365,245,365,265,365,285,365,305,365,325,365,345,365" L="1400" /><Z><S><S L="400" H="20" X="1390" Y="200" T="10" P=",,.3,,270,,," /><S L="400" X="10" H="20" Y="200" T="10" P=",,.3,,90,,," /><S L="400" X="390" H="20" Y="200" T="10" P=",,.3,,270,,," /><S L="400" H="20" X="400" Y="200" T="10" P=",,.3,,90,,," /><S L="400" H="20" X="590" Y="200" T="10" P=",,.3,,270,,," /><S L="400" X="790" H="20" Y="200" T="10" P=",,.3,,270,,," /><S L="400" H="20" X="990" Y="200" T="10" P=",,.3,,270,,," /><S L="400" X="1190" H="20" Y="200" T="10" P=",,.3,,270,,," /><S L="400" X="600" H="20" Y="200" T="10" P=",,.3,,90,,," /><S L="400" H="20" X="800" Y="200" T="10" P=",,.3,,90,,," /><S L="400" X="1000" H="20" Y="200" T="10" P=",,.3,,90,,," /><S L="400" H="20" X="1200" Y="200" T="10" P=",,.3,,90,,," /><S L="1400" X="700" H="20" Y="10" T="10" P=",,.3,,180,,," /><S L="1400" H="20" X="700" Y="390" T="10" P=",,.3,,,,," /></S><D /><O /></Z></C>'
 		local groundId = table.random({ 6, 17, 11, 10 })
 		xml = string.gsub(xml, "T=\"10\"", "T=\"" .. groundId .. "\"")
 		tfm.exec.newGame(xml)
-		
+
 	end
 
 	modules["plane"] = (modeName == "plane") and function()
@@ -10508,7 +10508,7 @@ local roomModes = function(modeName)
 			ui.addTextArea(1008, "<p align='center'><b><J><a href='event:plane8'>B-747</J></a></b>", n, 200, 3259, 95, 23, 0x000001, 0x000001, 1, false)
 			ui.addTextArea(1009, "<p align='center'><b><J><a href='event:plane9'>A350 XWB</J></a></b>", n, 200, 3282, 95, 23, 0x000001, 0x000001, 1, false)
 			ui.addTextArea(1010, "<p align='center'><b><J><a href='event:plane10'>Concorde</J></a></b>", n, 295, 3282, 95, 23, 0x000001, 0x000001, 1, false)
-			if n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0000" or n=="Blank#3495" or n=="Sebafrancuz#0000" then
+			if n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0015" or n=="Blank#3495" or n=="Sebafrancuz#0000" then
 				ui.addTextArea(1011, "<p align='center'><b><J><a href='event:plane11'>SR 71B</J></a></b>", n, 200, 3305, 95, 23, 0x000001, 0x000001, 1, false)
 			end
 		end
@@ -10566,7 +10566,7 @@ local roomModes = function(modeName)
 			end
 			showPlanes(n,nil)
 		end
-		
+
 		for n,player in pairs(tfm.get.room.playerList) do
 			setData(n)
 			ui.addTextArea(97, "", n, 595, 277, 200, 115, 0x005c0b, 0x005c0b, 1, true)
@@ -10756,7 +10756,7 @@ local roomModes = function(modeName)
 			tfm.exec.respawnPlayer(n)
 			showPlanes(n,nil)
 		end
-		
+
 		function eventTextAreaCallback(id,n,a)
 			data[n].stealth=0
 			data[n].s=0
@@ -10819,7 +10819,7 @@ local roomModes = function(modeName)
 				data[n].accelerationSpeed=5
 				tfm.exec.killPlayer(n)
 			elseif a=="plane11" then
-				if n=="Blank#3495" or n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0000" or n=="Sebafrancuz#0000" then
+				if n=="Blank#3495" or n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0015" or n=="Sebafrancuz#0000" then
 					data[n].using="165d4baf672.png"
 					data[n].speedLim=900
 					data[n].accelerationSpeed=8
@@ -10848,7 +10848,7 @@ local roomModes = function(modeName)
 			ui.removeTextArea(data[n].radar.id,nil)
 			ui.removeTextArea(data[n].radar.id/2.378,nil)
 		end
-		
+
 	end
 
 	modules["quiz"] = (modeName == "quiz") and function()
@@ -10870,38 +10870,38 @@ local roomModes = function(modeName)
 		2
 			},
 		}
-		
+
 		local gameTimer, newGameTimer, respawn = -1, -1, false
-		
+
 		local question
 		local displayQuestion = function()
 			for i = 3, 4 do
 				ui.removeTextArea(i)
 			end
-		
+
 			for player, data in next, tfm.get.room.playerList do
 				tfm.exec.movePlayer(player, 400, 320)
 			end
-		
+
 			question = questions[math.random(#questions)]
-		
+
 			ui.addTextArea(0, "<p align='center'><font size='20'><CEP>" .. question[1], nil, 5, 25, 790, nil, 1, 1, 1, true)
 			for i = 0, 1 do
 				ui.addTextArea(i + 1, "<p align='center'><font size='20' color='#FFFFFF'>" .. question[i + 2], nil, 5 + (i * 420), 120, 370, nil, 1, 1, 0, true)
 			end
-		
+
 			gameTimer = 10.5
 		end
-		
+
 		local displayAnswer = function()
 			local add = 0
-		
+
 			for i = 1, 2 do
 				if question[4] == i then
 					local x = 5 + ((i - 1) * 420)
-		
+
 					ui.updateTextArea(i, "<p align='center'><font size='20'><VP>" .. question[i + 1])
-		
+
 					local counter, alivePlayer = 0
 					for player, data in next, tfm.get.room.playerList do
 						if not data.isDead then
@@ -10913,28 +10913,28 @@ local roomModes = function(modeName)
 							end
 						end
 					end
-		
+
 					if counter == 0 then
 						tfm.exec.chatMessage("<J>No winners.")
 					elseif counter == 1 then
 						tfm.exec.setPlayerScore(alivePlayer, 5, true)
 						tfm.exec.chatMessage("<G>" .. alivePlayer .. " <J>wins.")
 					end
-		
+
 					if counter < 2 then
 						add = 3
 						respawn = true
 					end
 				end
 			end
-		
+
 			newGameTimer = 4.5 + add
 		end
-		
+
 		eventNewGame = function()
 			newGameTimer = 4.5
 		end
-		
+
 		eventLoop = function()
 			if respawn then
 				for player, data in next, tfm.get.room.playerList do
@@ -10944,7 +10944,7 @@ local roomModes = function(modeName)
 					tfm.exec.movePlayer(player, 400, 320)
 				end
 			end
-		
+
 			if newGameTimer >= 0 then
 				newGameTimer = newGameTimer - .5
 				if newGameTimer == 0 then
@@ -10963,70 +10963,70 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		eventNewPlayer = function(player)
 			tfm.exec.lowerSyncDelay(player)
 		end
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
-		
+
 		tfm.exec.disableAutoNewGame()
 		tfm.exec.disableAutoShaman()
 		tfm.exec.disableAutoScore()
-		
+
 		for player, data in next, tfm.get.room.playerList do
 			tfm.exec.setPlayerScore(player, 0)
 		end
-		
+
 		tfm.exec.newGame('<C><P /><Z><S><S L="40" H="100" X="400" Y="380" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="800" X="400" H="40" Y="400" T="0" P="0,0,0.3,0.2,0,0,0,0" /><S L="40" X="400" H="100" Y="380" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="800" H="40" X="400" Y="406" T="0" P="0,0,0.3,0.2,180,0,0,0" /><S L="800" H="40" X="400" Y="413" T="0" P="0,0,0.3,0.2,0,0,0,0" /><S L="40" H="310" X="400" Y="160" T="1" P="0,0,0,0.2,180,0,0,0" /><S L="40" X="400" H="310" Y="160" T="1" P="0,0,0,0.2,180,0,0,0" /><S L="10" X="0" H="380" Y="190" T="12" P="0,0,0,0,0,0,0,0" /><S L="10" H="380" X="800" Y="190" T="12" P="0,0,0,0,0,0,0,0" /></S><D><DS Y="320" X="400" /></D><O /></Z></C>')
-		
+
 	end
 
 	modules["ranking"] = (modeName == "ranking") and function()
 		local PAGE_LINES = 20
-		
+
 		ui.menu = function(text, playerName, x, y, w, h)
 			local id = 300 - 8
-		
+
 			x = x + 6
 			y = y + 6
-		
+
 			ui.addTextArea(0, "", playerName, -1500, -1500, 5000, 5000, 1, 1, .2)
-		
+
 			ui.addTextArea(id, "", playerName, x, y, w, h, 0x78462B, 0x78462B, 1)
-		
+
 			ui.addTextArea(id - 1, "", playerName, x, y, 20, 20, 0xBEB17D, 0xBEB17D, 1)
 			ui.addTextArea(id - 2, "", playerName, x + w - 20, y, 20, 20, 0xBEB17D, 0xBEB17D, 1)
 			ui.addTextArea(id - 3, "", playerName, x, y + h - 20, 20, 20, 0xBEB17D, 0xBEB17D, 1)
 			ui.addTextArea(id - 4, "", playerName, x + w - 20, y + h - 20, 20, 20, 0xBEB17D, 0xBEB17D, 1)
-		
+
 			ui.addTextArea(id - 5, "", playerName, x, y + (h + 40) / 4, w, ((h - 40) / 2), 0x9D7043, 0x9D7043, 1)
 			ui.addTextArea(id - 6, "", playerName, x + (w + 40) / 4, y, ((w - 40) / 2), h, 0x9D7043, 0x9D7043, 1)
-		
+
 			ui.addTextArea(id - 7, text, playerName, x + 3, y + 3, w - 6, h - 6, 0x1C3A3E, 0x0E1619, 1)
 		end
 		ui.button = function(id, text, eventName, playerName, x, y, w, h)
 			id = 200 + id * 2
-		
+
 			ui.addTextArea(id, "", playerName, x + 1, y + 2, w, h, 1, 1, 1)
 			ui.addTextArea(id - 1, "<p align='center'><font size='13'><a href='event:" .. eventName .. "'>" .. text .. "\n", playerName, x, y, w, h, 0x142A2D, 0x142A2D, 1)
 		end
-		
+
 		local playerData = { }
 		local lastUpdate
-		
+
 		local infoName, totalPages, info = { "Name", "Rounds", "Cheese", "First", "Normal Saves", "Hard Mode", "Divine Mode" }, 0
-		
+
 		local displayData = function(playerName)
 			local page = (((playerName and playerData[playerName] or 1) - 1) * PAGE_LINES) + 1
-		
+
 			local numbers, counter, data, color = { }, 0, { }
 			for i = page, page + (PAGE_LINES - 1) do
 				if not info[i] then break end
 				color = (i % 2 == 1 and "<N>" or "<N2>")
-		
+
 				counter = counter + 1
 				numbers[counter] = color .. "#" .. i
-		
+
 				for j = 1, #infoName do
 					if not data[j] then
 						data[j] = { }
@@ -11034,21 +11034,21 @@ local roomModes = function(modeName)
 					data[j][counter] = color .. tostring(info[i][j])
 				end
 			end
-		
+
 			ui.updateTextArea(0, "<p align='center'>" .. table.concat(numbers, "\n"), playerName)
 			for i = 1, #infoName do
 				ui.updateTextArea(i, "<p align='center'>" .. table.concat(data[i], '\n'), playerName)
 			end
 		end
-		
+
 		local showLastUpdated = function()
 			ui.setMapName("Last updated: " .. os.date("%Y-%m-%d", lastUpdate))
 		end
-		
+
 		ui.leaderboard = function(playerName, ignore)
 			ui.menu("<textformat leading='-20'><p align='center'><font size='20'>Transformice Leaderboard\n<G>_______________________", playerName, 0, 21, 908, 365)
 			ui.addTextArea(0, '', playerName, 15, 110, 34, 272, 0x142A2D, 0x142A2D, 1)
-		
+
 			local x, w = -60
 			for i = 1, #infoName do
 				w = (i == 1 and 140 or 105)
@@ -11056,15 +11056,15 @@ local roomModes = function(modeName)
 				ui.addTextArea(i, '', playerName, x, 110, w, 272, 0x142A2D, 0x142A2D, 1)
 				ui.addTextArea(-i, "<p align='center'>" .. infoName[i], playerName, x, 78, w, 20, 0x142A2D, 0x142A2D, 1)
 			end
-		
+
 			ui.button(1, "&lt; Previous page", "left", playerName, 15, 36, 200, 20)
 			ui.button(2, "Next page >", "right", playerName, 705, 36, 200, 20)
-		
+
 			if not ignore then
 				displayData(playerName)
 			end
 		end
-		
+
 		local dotNumber = function(number)
 			number = tostring(number)
 			local isT = #number % 3 == 0
@@ -11076,7 +11076,7 @@ local roomModes = function(modeName)
 			end
 			return number
 		end
-		
+
 		eventTextAreaCallback = function(id, playerName, callback, ignore)
 			if callback == "right" then
 				ui.removeTextArea(-201, playerName)
@@ -11085,7 +11085,7 @@ local roomModes = function(modeName)
 					playerData[playerName] = totalPages
 					ui.addTextArea(-203, "<p align='center'><font size='13'><N2>Next page >", playerName, 705, 36, 200, 20, 0x142A2D, 0x142A2D, 1)
 				end
-		
+
 				displayData(playerName)
 			elseif callback == "left" then
 				ui.removeTextArea(-203, playerName)
@@ -11094,13 +11094,13 @@ local roomModes = function(modeName)
 					playerData[playerName] = 1
 					ui.addTextArea(-201, "<p align='center'><font size='13'><N2>&lt; Previous page", playerName, 15, 36, 200, 20, 0x142A2D, 0x142A2D, 1)
 				end
-		
+
 				if not ignore then
 					displayData(playerName)
 				end
 			end
 		end
-		
+
 		eventNewPlayer = function(playerName, ignore)
 			playerData[playerName] = 2
 			if info then
@@ -11109,11 +11109,11 @@ local roomModes = function(modeName)
 				showLastUpdated()
 			end
 		end
-		
+
 		eventFileLoaded = function(_, data)
 			lastUpdate, data = string.match(data, "^(%d+)(.+)")
 			lastUpdate = lastUpdate * 1000
-		
+
 			local ranking = string.split(data, "[^\002]+")
 			local len = #ranking
 			for i = 1, len do
@@ -11129,7 +11129,7 @@ local roomModes = function(modeName)
 			end
 			info = ranking
 			totalPages = math.ceil(len / PAGE_LINES)
-		
+
 			for playerName in next, tfm.get.room.playerList do
 				eventNewPlayer(playerName, true)
 			end
@@ -11137,16 +11137,16 @@ local roomModes = function(modeName)
 			showLastUpdated()
 		end
 		system.loadFile(4)
-		
+
 		tfm.exec.disableAutoNewGame()
 		tfm.exec.disableMortCommand()
 		tfm.exec.disableAutoShaman()
 		tfm.exec.newGame('<C><P L="920" /><Z><S><S L="920" H="136" X="460" Y="446" T="6" P="0,0,0.3,0.2,0,0,0,0" /><S L="10" H="10" X="-5" Y="360" T="12" P="0,0,0,0,0,0,0,0" /><S L="10" X="925" H="10" Y="360" T="12" P="0,0,0,0,0,0,0,0" /><S L="920" X="460" H="10" Y="334" T="12" P="0,0,0,0,0,0,0,0" /></S><D><DS Y="360" X="460" /></D><O /></Z></C>')
-		
+
 	end
 
 	modules["survup"] = (modeName == "survup") and function()
-		admin = { ["Blank#3495"] = true, ["Thewarsnipe#0000"] = true, ["Tocutoeltuco#0000"]= true, ["Bolodefchoco#0000"] = true, ["Meltedfruit#0000"] = true }
+		admin = { ["Blank#3495"] = true, ["Thewarsnipe#0000"] = true, ["Tocutoeltuco#0000"]= true, ["Bolodefchoco#0015"] = true, ["Meltedfruit#0000"] = true }
 		banlist = { }
 		lang = { }
 		t = {false , 17}
@@ -11154,7 +11154,7 @@ local roomModes = function(modeName)
 		pid = { 0, 1, 2, 9, 11, 13 }
 		cp = { }
 		skills = false
-		
+
 		translation = {
 			en = {
 				help = [[<N>!map &lt;code> <BL>- Loads a given code, or a new P10 (survivor) map.
@@ -11164,11 +11164,11 @@ local roomModes = function(modeName)
 		<J>(In shaman mode) <N>Spawning Arrow <BL>- Sets cannon spawn point
 		<N>!credits <BL>- Know the people who helped this module.
 		<N>!lang (lang) <BL>- Know the languages the module is available in (or change your language).
-		
+
 		<BL>If you have/face any issues, don't hesitate to <N>/c Blank#3495.
 				]],
 				credits = [[<N>Code: <R>Blank#3495
-		<N>Translations: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+		<N>Translations: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 			},
 			bg = {
 				help = [[<N>!map <код> <BL>- Зарежда даден код или нова P10 (survivor) карта.
@@ -11178,11 +11178,11 @@ local roomModes = function(modeName)
 		<J>(In shaman mode) <N>Изстрелва стрела <BL>- Поставя точка за изстрелване на канона.
 		<N>!credits <BL>- Да знаете хората, които помогнаха на този модул.
 		<N>!lang (lang) <BL>-  Да знаете езиците, които са валидни в (или да промените на вашия език).
-		
+
 		<BL>Ако имате/видите проблеми, не се колебайте, пишете на <N>/c Blank#3495.
 				]],
 				credits = [[<N>Код: <R>Blank#3495
-		<N>превод: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+		<N>превод: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 			},
 			es = {
 				help = [[<N>!map &lt;código> <BL>- Carga el mapa dado, o un mapa P10 (survivor).
@@ -11192,11 +11192,11 @@ local roomModes = function(modeName)
 		<J>(Siendo chamán) <N>Invocar Flechas <BL>- Establece el punto de invocación de cañones.
 		<N>!credits <BL>- Muestra las personas que ayudaron con el módulo.
 		<N>!lang (lang) <BL>- Saber los idiomas en el que el módulo está disponible (o cambia tu idioma).
-		
+
 		<BL>Si tenés algún problema, no dudes en susurrar a <N>/c Blank#3495.
 				]],
 				credits = [[<N>Código: <R>Blank#3495
-		<N>Traducciones: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+		<N>Traducciones: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 			},
 			pt = {
 				help = [[<N>!map &lt;código> <BL>- Carrega um código dado, ou um mapa P10 (survivor).
@@ -11206,11 +11206,11 @@ local roomModes = function(modeName)
 		<J>(Como Shaman) <N>Invocando Seta <BL>- Define um ponto de invocação para os canhões
 		<N>!credits <BL>- Veja as pessoas que ajudaram neste módulo.
 		<N>!lang (idioma) <BL>- Veja os idiomas em que o módulo está disponível (ou altere seu idioma).
-		
+
 		<BL>Se você encontrar qualquer problema, não hesite em entrar contato com <N>/c Blank#3495.
 				]],
 				credits = [[<N>Código: <R>Blank#3495
-		<N>Traduções: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+		<N>Traduções: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 			},
 			tr = {
 				help = [[<N>!map <code> <BL>- Yazılan harita kodunu açar, ya da yeni bir P10 (survivor) haritası.
@@ -11218,28 +11218,28 @@ local roomModes = function(modeName)
 		<N>&lt;Ctrl> + &lt;Sol tık> <BL>- Işınlar.
 		<N> Konfeti <BL>- Denetim noktasını ayarlar
 		<J>(Şaman modunda) <N>Ok yaratmak <BL>- Top yaratma noktası ayarlar
-		
+
 		<BL>Eğer bir probleminiz/bir sorunuz olursa, Çekinmeden <N>/c Blank#3495.
 				]],
 				credits = [[<N>Cod: <R>Blank#3495
-		<N>Çeviriler: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+		<N>Çeviriler: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 			}
 		}
 		translation.br = translation.pt
-		
+
 		cs = 0
 		tm = 2
-		
+
 		translate = function(name, command)
 			return translation[lang[name]] and translation[lang[name]][command] or translation.en[command]
 		end
-		
+
 		eventSummoningEnd = function(n, id, x, y, a)
 			if id == 0 then
 				t[1], t[3], t[4], t[5] = true, x, y, a - 180
 			end
 		end
-		
+
 		eventLoop = function(ct, tr)
 			if cs >= tm then
 				if t[1] then
@@ -11248,19 +11248,19 @@ local roomModes = function(modeName)
 				cs = 0
 			end
 			cs = cs + 0.5
-		
+
 			for n in next, cp do
 				tfm.exec.displayParticle(pid[math.random(#pid)], cp[n].x, cp[n].y, 0, 0, 0, 0, n)
 			end
 		end
-		
+
 		eventChatCommand = function(n, m)
 			args, c = {}, 0
 			for v in m:gmatch("%S+") do
 				c = c + 1
 				args[c] = v
 			end
-		
+
 			if args[1] == "timer" and admin[n] then
 				args[2] = tonumber(args[2]) or 2
 				tm = args[2]
@@ -11307,27 +11307,27 @@ local roomModes = function(modeName)
 					tfm.exec.chatMessage("<N>Available languages: <J>"..table.concat(l, "<N>, <J>"),n)
 				end
 			end
-		
+
 			if not admin[n] then
 				for an in next, admin do
 					tfm.exec.chatMessage("<BL>• ["..n.."] !"..m, an)
 				end
 			end
-		
+
 		end
-		
+
 		eventNewGame = function()
 			t[1] = false
 			cp = { }
 		end
-		
+
 		eventPlayerDied = function(n)
 			tfm.exec.respawnPlayer(n)
 			if cp[n] then
 				tfm.exec.movePlayer(n, cp[n].x, cp[n].y)
 			end
 		end
-		
+
 		eventNewPlayer = function(n)
 			lang[n] = tfm.get.room.playerList[n].community
 			tfm.exec.chatMessage(translate(n, "help"), n)
@@ -11337,16 +11337,16 @@ local roomModes = function(modeName)
 			system.bindKeyboard(n, 69, true)
 			system.bindMouse(n)
 			tfm.exec.respawnPlayer(n)
-		
+
 			if tfm.get.room.uniquePlayers == 1 then
 				tfm.exec.newGame('#10')
 			end
-		
+
 			for a in next, admin do
 				tfm.exec.chatMessage("<BL>" .. n .. " (" .. tfm.get.room.playerList[n].community .. ")", a)
 			end
 		end
-		
+
 		eventKeyboard = function(n, k, d, x, y)
 			if k == 17 then
 				tp[n] = d
@@ -11368,22 +11368,22 @@ local roomModes = function(modeName)
 				cp[n] = { x = x, y = y }
 			end
 		end
-		
+
 		eventMouse = function(n, x, y)
 			if tp[n] then
 				tfm.exec.movePlayer(n, x, y)
 			end
 		end
-		
+
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
-		
+
 		for _,v in next,{'disableAfkDeath', 'disableAutoNewGame', 'disableAutoShaman'} do
 			tfm.exec[v]()
 		end
-		
+
 		system.disableChatCommandDisplay()
 		tfm.exec.newGame('#10')
-		
+
 	end
 
 	modules["tictactoe"] = (modeName == "tictactoe") and function()
@@ -11391,13 +11391,13 @@ local roomModes = function(modeName)
 		-- Script: Tic Tac Toe
 		-- Author: Natsmiro#0000
 		---------------------------
-		
+
 		lang = tfm.get.room.community
-		
+
 		---------------------------------------------
-		
+
 		local lower, upper, format, gsub, match, nick = string.lower, string.upper, string.format, string.gsub, string.match, string.nick
-		
+
 		languages = {
 			["br"] = {
 				["player"] = "Jogador %d",
@@ -11427,35 +11427,35 @@ local roomModes = function(modeName)
 				["help"] = "!help: muestra los comandos disponibles.\n!reset: reiniciar el partido.\n!admin: agrega o elimina un administrador."
 			},
 		}
-		
+
 		languages["pt"] = languages["br"]
-		
+
 		if not languages[lang] then
 			lang = "en"
 		end
-		
+
 		local players = {
 			["x"] = nil,
 			["o"] = nil
 		}
-		
+
 		local winner = nil
-		
+
 		tfm.exec.disableAfkDeath(true)
 		tfm.exec.disableAutoNewGame(true)
 		tfm.exec.disableAutoScore(true)
 		tfm.exec.disableAutoShaman(true)
 		tfm.exec.disableAutoTimeLeft(true)
-		
+
 		local mapxml = '<C><P F="0" /><Z><S><S L="800" H="49" X="400" Y="376" T="6" P="0,0,0.3,0.2,0,0,0,0" /><S L="19" X="-10" H="403" Y="200" T="0" m="" P="0,0,0,0.2,0,0,0,0" /><S P="0,0,0,0.2,0,0,0,0" L="19" H="403" Y="200" T="0" m="" X="810" /></S><D><P P="0,0" Y="355" T="4" X="758" /><P P="0,0" Y="353" T="12" X="59" /><P P="0,0" Y="355" T="11" X="586" /><P P="0,0" Y="352" T="0" X="367" /><P P="0,0" Y="353" T="0" X="410" /><DS Y="333" X="400" /></D><O /></Z></C>'
-		
+
 		tfm.exec.newGame(mapxml)
 		ui.setMapName("Tic Tac Toe")
-		
+
 		-----------------
 		local tttGUI = {}
 		local selected = 0
-		
+
 		local possibilities = {
 			{1, 2, 3},
 			{4, 5, 6},
@@ -11466,39 +11466,39 @@ local roomModes = function(modeName)
 			{2, 5, 8},
 			{3, 6, 9}
 		}
-		
+
 		local gametie = false
 		local turn = nil
 		local outsideTheRoom = {}
 		local nextPlay = os.time() + 500 -- Avoid duplicate clicks
-		
+
 		function eventTextAreaCallback (textareaid, p, event)
 			if not turn then
 				if match(event, "select(%a)%-([%w+_%d#]+)") then
 					local xo, player = match(event, "select(%a)%-([%w+_%d#]+)")
-		
+
 					if players[xo] ~= lower(player) then
 						players[xo] = lower(player)
 					else
 						players[xo] = nil
 					end
-		
+
 					playerSelector()
 				end
-		
+
 				if event == "start" then
 					ui.removeTextArea(9)
 					ui.removeTextArea(10)
 					ui.removeTextArea(11)
 					ui.removeTextArea(12)
-		
+
 					turn = math.random(1,2)
 					if turn == 1 then
 						turn = players.x
 					else
 						turn = players.o
 					end
-		
+
 					tttDisplay()
 					tfm.exec.setGameTime(300)
 				end
@@ -11506,17 +11506,17 @@ local roomModes = function(modeName)
 				if not winner and not gametie then
 					if match(event, "pos%d") then
 						local pos = tonumber(match(event, "%d"))
-		
+
 						if not tttGUI[pos] and (nextPlay and os.time() > nextPlay) then
 							if turn == players.x then
 								tttGUI[pos] = "<font color='#101010'>X</font>"
 							else
 								tttGUI[pos] = "<font color='#101010'>O</font>"
 							end
-		
+
 							selected = selected + 1
 							nextPlay = os.time() + 500
-		
+
 							if turn == players.x then
 								turn = players.o
 							else
@@ -11524,16 +11524,16 @@ local roomModes = function(modeName)
 							end
 						end
 					end
-		
+
 					for k, v in next, possibilities do
 						local found = {}
-		
+
 						for _k, _v in next, v do
 							found[#found + 1] = tttGUI[_v]
 						end
-		
+
 						local values = table.concat(found, ""):gsub("<.->", "")
-		
+
 						if values == "XXX" then
 							winner = players.x
 							break
@@ -11542,35 +11542,35 @@ local roomModes = function(modeName)
 							break
 						end
 					end
-		
+
 					if selected == 9 and not winner and not gametie then
 						gametie = true
 						restartGameButton()
 					end
-		
+
 					tttDisplay()
 				end
-		
+
 				if event == "reset" then
 					restart()
 				end
 			end
 		end
-		
+
 		function eventChatCommand(p, cmd)
 			p = lower(p)
 			local args = {}
-		
+
 			for v in string.gmatch(cmd, "%S+") do
 				args[#args + 1] = v
 			end
-		
+
 			args[1] = lower(args[1])
-		
+
 			if args[1] == "help" then
 				tfm.exec.chatMessage(languages[lang]["help"], p)
 			end
-		
+
 			if owners[p] then
 				if args[1] == "reset" or args[1] == "r" then
 					restart()
@@ -11585,33 +11585,33 @@ local roomModes = function(modeName)
 				end
 			end
 		end
-		
+
 		function eventNewPlayer(p)
 			tfm.exec.respawnPlayer(p)
 			outsideTheRoom[lower(p)] = nil
-		
+
 			if turn then
 				tttDisplay()
 			else
 				playerSelector()
 			end
-		
+
 			tfm.exec.chatMessage(languages[lang]["welcome"], p)
 			if not owners[p] then
 				tfm.exec.chatMessage(format(languages[lang]["notroomowner"], p), p)
 			end
 		end
-		
+
 		function eventPlayerLeft(p)
 			outsideTheRoom[lower(p)] = true
-		
+
 			if not turn then
 				if lower(p) == players.x then
 					players.x = nil
 				elseif lower(p) == players.o then
 					players.o = nil
 				end
-		
+
 				playerSelector()
 			else
 				if lower(p) == players.x then
@@ -11622,7 +11622,7 @@ local roomModes = function(modeName)
 				tttDisplay()
 			end
 		end
-		
+
 		function mainText(t)
 			ui.updateTextArea(3, "<font size='28' color='#000000'><p align='center'>"..t.."</p></font>")
 			ui.updateTextArea(4, "<font size='28'><p align='center'>"..t.."</p></font>")
@@ -11631,11 +11631,11 @@ local roomModes = function(modeName)
 			ui.removeTextArea(7, nil)
 			ui.removeTextArea(8, nil)
 		end
-		
+
 		function playerSelector()
 			local players1, players2 = "", ""
 			local px, po = players.x, players.o
-		
+
 			for k, v in next, tfm.get.room.playerList do
 				local p = lower(k)
 				if p ~= po and not outsideTheRoom[p] then
@@ -11653,7 +11653,7 @@ local roomModes = function(modeName)
 					end
 				end
 			end
-		
+
 			for adm, v in next, owners do
 				if px and po then
 					ui.addTextArea(9, "<font size='20' color='#000000'><p align='center'>" .. languages[lang]["start"] .. "</p></font>", adm, 400-83/2, 182, 80, 30, nil, nil, 0, true)
@@ -11666,12 +11666,12 @@ local roomModes = function(modeName)
 				ui.addTextArea(12, "<p align='center'>\n<font size='16'>" .. format(languages[lang]["player"], 2) .. "</font>\n" .. players2 .. "</p>", adm, 400-130/2+200, 40, 130, 310, 0x503232, nil, 1, true)
 			end
 		end
-		
+
 		function tttDisplay()
 			local px = players.x
 			local po = players.o
 			ui.setMapName("Tic Tac Toe")
-		
+
 			ui.addTextArea(0, "", nil, 400-200/2, 300-200/2-125, 200, 200)
 			ui.addTextArea(1, "<font size='20'color='#009D9D'><p align='center'>Tic Tac Toe</p></font>", nil, 400-150/2, 80, 150, 0, nil, nil, 0)
 			ui.addTextArea(3, "<font size='28' color='#000000'><p align='center'>x</p></font>", nil, 400-800/2, 25, 800, nil, nil, nil, 0)
@@ -11685,24 +11685,24 @@ local roomModes = function(modeName)
 				ui.addTextArea(7, "<font size='18'><p align='right'>" .. gsub(px, "%a", function(a) return upper(a) end, 1) .. "</p></font>", nil, 400-300+155/2, 35, 200, nil, nil, nil, 0)
 				ui.addTextArea(8, "<font size='18'><p align='left'><J>" .. gsub(po, "%a", function(a) return upper(a) end, 1) .. "</J></p></font>", nil, 400-300+655/2, 35, 200, nil, nil, nil, 0)
 			end
-		
+
 			if winner then
 				mainText(format(languages[lang]["win"], gsub(winner, "%a", function(a) return upper(a) end, 1)))
 				tfm.exec.setPlayerScore(winner, 1, true)
 		    	restartGameButton()
 			end
-		
+
 			local x = 400 - 105/2
 			local y = 200 - 155/2
 			for i = 1, 9 do
 				ui.addTextArea(12+i, "<font size='26'>" .. (tttGUI[i] or "-") .. "</font>", nil, ((i-1)%3)*40 + x, math.floor((i-1)/3)*40 + y, nil, nil, nil, nil, 0)
-		
+
 				if not tttGUI[i] and (not winner or not gametie) then
 					ui.addTextArea(12+i, "<font size='26'><a href='event:pos" .. i .. "'>-</a></font>", turn, ((i-1)%3)*40 + x, math.floor((i-1)/3)*40 + y, nil, nil, nil, nil, 0)
 				end
 			end
 		end
-		
+
 		function restart()
 			ui.setMapName("Tic Tac Toe")
 			tfm.exec.setGameTime(300)
@@ -11714,77 +11714,77 @@ local roomModes = function(modeName)
 			tttGUI = {}
 			selected = 0
 			nextPlay = os.time() + 500
-		
+
 			for i = 0, 25 do
 				ui.removeTextArea(i)
 			end
-		
+
 			playerSelector()
 		end
-		
+
 		function restartGameButton()
 			for adm, v in next, owners do
 				ui.addTextArea(2, "<font size='15'><p align='center'><a href='event:reset'>" .. languages[lang]["restart"] .. "</a></p></font>", adm, 400-65/2, 300-20/2+5, 60 + string.len(languages[lang]["restart"]), 20)
 			end
 		end
-		
+
 		function eventLoop(elapsed, remaining)
 			if remaining <= 0 and (players.x and players.o) then
 				gametie = true
 				restartGameButton()
 			end
 		end
-		
+
 		playerSelector()
-		
+
 	end
 
 	modules["triberanking"] = (modeName == "triberanking") and function()
 		local PAGE_LINES = 20
-		
+
 		ui.menu = function(text, playerName, x, y, w, h)
 			local id = 300 - 8
-		
+
 			x = x + 6
 			y = y + 6
-		
+
 			ui.addTextArea(0, "", playerName, -1500, -1500, 5000, 5000, 1, 1, .2)
-		
+
 			ui.addTextArea(id, "", playerName, x, y, w, h, 0x78462B, 0x78462B, 1)
-		
+
 			ui.addTextArea(id - 1, "", playerName, x, y, 20, 20, 0xBEB17D, 0xBEB17D, 1)
 			ui.addTextArea(id - 2, "", playerName, x + w - 20, y, 20, 20, 0xBEB17D, 0xBEB17D, 1)
 			ui.addTextArea(id - 3, "", playerName, x, y + h - 20, 20, 20, 0xBEB17D, 0xBEB17D, 1)
 			ui.addTextArea(id - 4, "", playerName, x + w - 20, y + h - 20, 20, 20, 0xBEB17D, 0xBEB17D, 1)
-		
+
 			ui.addTextArea(id - 5, "", playerName, x, y + (h + 40) / 4, w, ((h - 40) / 2), 0x9D7043, 0x9D7043, 1)
 			ui.addTextArea(id - 6, "", playerName, x + (w + 40) / 4, y, ((w - 40) / 2), h, 0x9D7043, 0x9D7043, 1)
-		
+
 			ui.addTextArea(id - 7, text, playerName, x + 3, y + 3, w - 6, h - 6, 0x1C3A3E, 0x0E1619, 1)
 		end
 		ui.button = function(id, text, eventName, playerName, x, y, w, h)
 			id = 200 + id * 2
-		
+
 			ui.addTextArea(id, "", playerName, x + 1, y + 2, w, h, 1, 1, 1)
 			ui.addTextArea(id - 1, "<p align='center'><font size='13'><a href='event:" .. eventName .. "'>" .. text .. "\n", playerName, x, y, w, h, 0x142A2D, 0x142A2D, 1)
 		end
-		
+
 		local playerData = { }
 		local lastUpdate
-		
+
 		local infoName, totalPages, info = { "Name", "Members", "Rounds", "Cheese", "First", "Saves" }, 0
-		
+
 		local displayData = function(playerName)
 			local page = (((playerName and playerData[playerName] or 1) - 1) * PAGE_LINES) + 1
-		
+
 			local numbers, counter, data, color = { }, 0, { }
 			for i = page, page + (PAGE_LINES - 1) do
 				if not info[i] then break end
 				color = (i % 2 == 1 and "<N>" or "<N2>")
-		
+
 				counter = counter + 1
 				numbers[counter] = color .. "#" .. i
-		
+
 				for j = 1, #infoName do
 					if not data[j] then
 						data[j] = { }
@@ -11792,21 +11792,21 @@ local roomModes = function(modeName)
 					data[j][counter] = color .. tostring(info[i][j])
 				end
 			end
-		
+
 			ui.updateTextArea(0, "<p align='center'>" .. table.concat(numbers, "\n"), playerName)
 			for i = 1, #infoName do
 				ui.updateTextArea(i, "<p align='center'>" .. table.concat(data[i], '\n'), playerName)
 			end
 		end
-		
+
 		local showLastUpdated = function()
 			ui.setMapName("Last updated: " .. os.date("%Y-%m-%d", lastUpdate))
 		end
-		
+
 		ui.leaderboard = function(playerName, ignore)
 			ui.menu("<textformat leading='-20'><p align='center'><font size='20'>Tribe Leaderboard\n<G>_________________", playerName, 0, 21, 908, 365)
 			ui.addTextArea(0, '', playerName, 15, 110, 34, 272, 0x142A2D, 0x142A2D, 1)
-		
+
 			local x, w = -60
 			for i = 1, #infoName do
 				w = (i == 1 and 246 or i == 2 and 80 or 115)
@@ -11814,15 +11814,15 @@ local roomModes = function(modeName)
 				ui.addTextArea(i, '', playerName, x, 110, w, 272, 0x142A2D, 0x142A2D, 1)
 				ui.addTextArea(-i, "<p align='center'>" .. infoName[i], playerName, x, 78, w, 20, 0x142A2D, 0x142A2D, 1)
 			end
-		
+
 			ui.button(1, "&lt; Previous page", "left", playerName, 15, 36, 200, 20)
 			ui.button(2, "Next page >", "right", playerName, 705, 36, 200, 20)
-		
+
 			if not ignore then
 				displayData(playerName)
 			end
 		end
-		
+
 		local dotNumber = function(number)
 			number = tostring(number)
 			local isT = #number % 3 == 0
@@ -11834,7 +11834,7 @@ local roomModes = function(modeName)
 			end
 			return number
 		end
-		
+
 		eventTextAreaCallback = function(id, playerName, callback, ignore)
 			if callback == "right" then
 				ui.removeTextArea(-201, playerName)
@@ -11843,7 +11843,7 @@ local roomModes = function(modeName)
 					playerData[playerName] = totalPages
 					ui.addTextArea(-203, "<p align='center'><font size='13'><N2>Next page >", playerName, 705, 36, 200, 20, 0x142A2D, 0x142A2D, 1)
 				end
-		
+
 				displayData(playerName)
 			elseif callback == "left" then
 				ui.removeTextArea(-203, playerName)
@@ -11852,13 +11852,13 @@ local roomModes = function(modeName)
 					playerData[playerName] = 1
 					ui.addTextArea(-201, "<p align='center'><font size='13'><N2>&lt; Previous page", playerName, 15, 36, 200, 20, 0x142A2D, 0x142A2D, 1)
 				end
-		
+
 				if not ignore then
 					displayData(playerName)
 				end
 			end
 		end
-		
+
 		eventNewPlayer = function(playerName, ignore)
 			playerData[playerName] = 2
 			if info then
@@ -11867,11 +11867,11 @@ local roomModes = function(modeName)
 				showLastUpdated()
 			end
 		end
-		
+
 		eventFileLoaded = function(_, data)
 			lastUpdate, data = string.match(data, "^(%d+)(.+)")
 			lastUpdate = lastUpdate * 1000
-		
+
 			local ranking = string.split(data, "[^\002]+")
 			local len = #ranking
 			for i = 1, len do
@@ -11885,7 +11885,7 @@ local roomModes = function(modeName)
 			end
 			info = ranking
 			totalPages = math.ceil(len / PAGE_LINES)
-		
+
 			for playerName in next, tfm.get.room.playerList do
 				eventNewPlayer(playerName, true)
 			end
@@ -11893,24 +11893,24 @@ local roomModes = function(modeName)
 			showLastUpdated()
 		end
 		system.loadFile(5)
-		
+
 		tfm.exec.disableAutoNewGame()
 		tfm.exec.disableMortCommand()
 		tfm.exec.disableAutoShaman()
 		tfm.exec.newGame('<C><P L="920" /><Z><S><S L="920" H="136" X="460" Y="446" T="6" P="0,0,0.3,0.2,0,0,0,0" /><S L="10" H="10" X="-5" Y="360" T="12" P="0,0,0,0,0,0,0,0" /><S L="10" X="925" H="10" Y="360" T="12" P="0,0,0,0,0,0,0,0" /><S L="920" X="460" H="10" Y="334" T="12" P="0,0,0,0,0,0,0,0" /></S><D><DS Y="360" X="460" /></D><O /></Z></C>')
-		
+
 	end
 
 	modules["vanillatroll"] = (modeName == "vanillatroll") and function()
 		tfm.exec.disableAutoNewGame(true);
 		mapas={"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","@6135200","@5932565","@6110650","@6526938","@6498941","@6085234","@5018552","@5528077","@5018625","@5858647","@1395371","@6207985","@6218403","@6329560","@6345898","@6179538","@5622009","@5875455","@6192664","@5018731","@5858583","@5858585","@5966424","@5966445","@5704644","@6173496","@5436800","@6329565","@5018771","@6184390","@5858595","@5966432","@6094395","@5836826","@5858595","@5858625","@5858639","@3195916","@6124832","@5602310","@6244710","@6250422","@6299335","@5595910","@6526776","@6498946","@6813933","@585864","@6147952","@6474382","@3765697","@6192402","@6575209","@6222662","@7053281","@6975013","@3352785","@2959211","@4117984","@6551334","@6548448","@6290639","@6290664","@5836056","@549590","@6162603","@7664342","@6207848","@6127710","@6127719"}
-		
+
 		troll={"@6135200","@5932565","@6110650","@6526938","@6498941","@6085234","@5018552","@5528077","@5018625","@5858647","@1395371","@6207985","@6218403","@6329560","@6345898","@6179538","@5622009","@5875455","@6192664","@5018731","@5858583","@5858585","@5966424","@5966445","@5704644","@6173496","@5436800","@6329565","@5018771","@6184390","@5858595","@5966432","@6094395","@5836826","@5858595","@5858625","@5858639","@3195916","@6124832","@5602310","@6244710","@6250422","@6299335","@5595910","@6526776","@6498946","@6813933","@585864","@6147952","@6474382","@3765697","@6192402","@6575209","@6222662","@7053281","@6975013","@3352785","@2959211","@4117984","@6551334","@6548448","@6290639","@6290664","@5836056","@549590","@6162603","@7664342","@6207848","@6127710","@6127719"}
-		
+
 		system.disableChatCommandDisplay("kjm")
 		system.disableChatCommandDisplay("o9p")
 		system.disableChatCommandDisplay("aeow")
-		
+
 		function eventChatCommand(n, message)
 			if message:sub(0,3) == "kjm" then
 				tfm.exec.newGame(message:sub(5))
@@ -11922,16 +11922,16 @@ local roomModes = function(modeName)
 				tfm.exec.newGame(troll[math.random(#troll)]);
 		end
 		end
-		
+
 		function eventNewPlayer()
 			tfm.exec.setUIMapName("Vanilla com mapas troll")
 			tfm.exec.chatMessage("<VP>Vanilla com mapas troll, programado por Yuri400#0000</b>")
 		end
-		
+
 		function nextRound()
 		    tfm.exec.newGame(mapas[math.random(#mapas)]);
 		end
-		
+
 		function eventNewGame()
 			tfm.exec.setUIMapName("Vanilla com mapas troll")
 		    vivo=0
@@ -11940,30 +11940,30 @@ local roomModes = function(modeName)
 			tfm.exec.setNameColor("Yuri400#0000",0xFF0000)
 		    end
 		end
-		
+
 		function eventPlayerDied(name)
 		    vivo=vivo-1
 		end
-		
+
 		function eventPlayerWon(name)
 		    vivo=vivo-1
 		end
-		
+
 		function eventLoop(tempoPassado, tempoFaltando)
 		    if vivo == 0 or tempoFaltando < 1000 then
 		        nextRound();
 		    end
 		end
-		
+
 		nextRound();
-		
+
 	end
 
 	modules["village"] = (modeName == "village") and function()
 		local shiftRoom = tfm.get.room.name:find("shift")
-		
+
 		local player = { }
-		
+
 		local consumables = {
 			carnaval = "17199fa3a38.jpg",
 			jigglypuff = "17199e5d230.jpg",
@@ -11976,7 +11976,7 @@ local roomModes = function(modeName)
 			totalConsumables = totalConsumables + 1
 		end
 		totalConsumables = (800 - totalConsumables*55)
-		
+
 		eventNewPlayer = function(playerName)
 			player[playerName] = {
 				holdingShift = false,
@@ -11993,16 +11993,16 @@ local roomModes = function(modeName)
 			system.bindKeyboard(playerName, 76, false, true) -- L
 			tfm.exec.chatMessage("<J>- <B>Click" .. (not shiftRoom and '' or " + Shift") .. "</B> to teleport\n- Press <B>L</B> to see/unsee custom emotes\n- Press <B>P</B> to replay the custom emote selected", playerName)
 		end
-		
+
 		eventMouse = function(playerName, x, y)
 			if not shiftRoom or player[playerName].holdingShift then
 				tfm.exec.movePlayer(playerName, x, y)
 			end
 		end
-		
+
 		eventKeyboard = function(playerName, key, down)
 			local data = player[playerName]
-		
+
 			if key == 16 then
 				data.holdingShift = down
 			elseif key == 80 then
@@ -12012,7 +12012,7 @@ local roomModes = function(modeName)
 				local time = os.time()
 				if data.cooldown > time then return end
 				data.cooldown = time + 5000
-		
+
 				if data.displayingEmotes then
 					for i = 1, data.imagesLen do
 						tfm.exec.removeImage(data.images[i])
@@ -12025,41 +12025,41 @@ local roomModes = function(modeName)
 					for k, v in next, consumables do
 						data.imagesLen = data.imagesLen + 1
 						x = totalConsumables + data.imagesLen*45
-		
+
 						data.images[data.imagesLen] = tfm.exec.addImage(v, ":1", x, 25, playerName)
 						ui.addTextArea(data.imagesLen, "<a href='event:" .. k .. "'>\n\n\n\n", playerName, x, 25, 40, 40, 1, 1, 0, true)
 					end
 				end
-		
+
 				data.displayingEmotes = not data.displayingEmotes
 			end
 		end
-		
+
 		eventTextAreaCallback = function(_, playerName, callback)
 			callback = tfm.enum.emote[callback]
 			tfm.exec.playEmote(playerName, callback)
 			player[playerName].lastEmote = callback
 		end
-		
+
 		for playerName in next, tfm.get.room.playerList do
 			eventNewPlayer(playerName)
 		end
-		
+
 	end
 
 	modules["vivooumorto"] = (modeName == "vivooumorto") and function()
 		addConju = function(...)tfm.exec.addConjuration(...)end;addImage = function(...)tfm.exec.addImage(...)end;addJoint = function(...)tfm.exec.addJoint(...)end;addPhyObj = function(...)tfm.exec.addPhysicObject(...)end;addShaObj = function(...)tfm.exec.addShamanObject(...)end;changepsize = function(...)tfm.exec.changePlayerSize(...)end;chatMsg = function(...)tfm.exec.chatMessage(...)end;disableAfkDie = function(...)tfm.exec.disableAfkDeath(...)end;DisableAllShaSkill = function(...)tfm.exec.disableAllShamanSkills(...)end;disableAutoNewGame = function(...)tfm.exec.disableAutoNewGame(...)end;disableAutoScore = function(...)tfm.exec.disableAutoScore(...)end;disableAutoSha = function(...)tfm.exec.disableAutoShaman(...)end;disableAutotimeLeft = function(...)tfm.exec.disableAutoTimeLeft(...)end;disabledebug = function(...)tfm.exec.disableDebugCommand(...)end;disableminimode = function(...)tfm.exec.disableMinimalistMode(...)end;disablemort = function(...)tfm.exec.disableMortCommand(...)end;disablephyconsu = function(...)tfm.exec.disablePhysicalConsumables(...)end;disableprespawnp = function(...)tfm.exec.disablePrespawnPreview(...)end;disablewatch = function(...)tfm.exec.disableWatchCommand(...)end;displayp = function(...)tfm.exec.displayParticle(...)end;explo = function(...)tfm.exec.explosion(...)end;givechesse = function(...)tfm.exec.giveCheese(...)end;giveconsu = function(...)tfm.exec.giveConsumables(...)end;givem = function(...)tfm.exec.giveMeep(...)end;givet = function(...)tfm.exec.giveTransformations(...)end;killp = function(...)tfm.exec.killPlayer(...)end;linkp = function(...)tfm.exec.linkMice(...)end;lowersdelay = function(...)tfm.exec.lowerSyncDelay(...)end;moveobj = function(...)tfm.exec.moveObject(...)end;movep = function(...)tfm.exec.movePlayer(...)end;newgame = function(...)tfm.exec.newGame(...)end;pemote = function(...)tfm.exec.playEmote(...)end;pwin = function(...)tfm.exec.playerVictory(...)end;addimg = function(...)tfm.exec.removeCheese(...)end;reimg = function(...)tfm.exec.removeImage(...)end;rejoint = function(...)tfm.exec.removeJoint(...)end;reobj = function(...)tfm.exec.removeObject(...)end;rephyobj = function(...)tfm.exec.removePhysicObject(...)end;replayer = function(...)tfm.exec.respawnPlayer(...)end;setAutoMapFlipMode = function(...)tfm.exec.setAutoMapFlipMode(...)end;setgtime = function(...)tfm.exec.setGameTime(...)end;setncolor = function(...)tfm.exec.setNameColor(...)end;setpscore = function(...)tfm.exec.setPlayerScore(...)end;setmaxplayer = function(...)tfm.exec.setRoomMaxPlayers(...)end;setpass = function(...)tfm.exec.setRoomPassword (...)end;setsha = function(...)tfm.exec.setShaman(...)end;setshamode = function(...)tfm.exec.setShamanMode(...)end;setvamp = function(...)tfm.exec.setVampirePlayer(...)end;snow = function(...)tfm.exec.snow(...)end;addp = function(...)ui.addPopup(...)end;addtarea = function(...)ui.addTextArea (...)end;retarea = function(...)ui.removeTextArea (...)end;mapname = function(...)ui.setMapName (...)end;shaname = function(...)ui.setShamanName (...)end;showcpicker = function(...)ui.showColorPicker (...)end;uptarea = function(...)ui.updateTextArea (...)end;
-		
+
 		--[[ Require By: Nettoork#0000 ]]--
 		do local a={}local b={}local c={}local d={}local e;e={['perfomance']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['create']=function(f,g,h)local i=0;for v=1,f do local j=os.time()for k=1,g do h(g)end;i=i+os.time()-j end;return'Estimated Time: '..i/f..' ms.'end},['button']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['create']=function(...)local l={...}local m=-543212345+l[1]*3;local n=l[9]and'0x2A424B'or'0x314e57'ui.addTextArea(m,'',l[4],l[5]-1,l[6]-1,l[7],l[8],0x7a8d93,0x7a8d93,1,true)ui.addTextArea(m-1,'',l[4],l[5]+1,l[6]+1,l[7],l[8],0x0e1619,0x0e1619,1,true)ui.addTextArea(m-2,'<p align="center"><a href="event:'..l[3]..'">'..l[2]..'</a></p>',l[4],l[5],l[6],l[7],l[8],n,n,1,true)end,['remove']=function(m,o)for k=0,2 do ui.removeTextArea(-543212345+m*3-k,o)end end},['ui-design']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['create']=function(...)local l={...}if l[6]<0 or l[7]and l[7]<0 then return elseif not l[7]then l[7]=l[6]/2 end;local m=543212345+l[1]*8;ui.addTextArea(m,'',l[3],l[4],l[5],l[6]+100,l[7]+70,0x78462b,0x78462b,1,true)ui.addTextArea(m+1,'',l[3],l[4],l[5]+(l[7]+140)/4,l[6]+100,l[7]/2,0x9d7043,0x9d7043,1,true)ui.addTextArea(m+2,'',l[3],l[4]+(l[6]+180)/4,l[5],(l[6]+10)/2,l[7]+70,0x9d7043,0x9d7043,1,true)ui.addTextArea(m+3,'',l[3],l[4],l[5],20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(m+4,'',l[3],l[4]+l[6]+80,l[5],20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(m+5,'',l[3],l[4],l[5]+l[7]+50,20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(m+6,'',l[3],l[4]+l[6]+80,l[5]+l[7]+50,20,20,0xbeb17d,0xbeb17d,1,true)ui.addTextArea(m+7,l[2],l[3],l[4]+3,l[5]+3,l[6]+94,l[7]+64,0x1c3a3e,0x232a35,1,true)end,['remove']=function(m,o)for k=0,7 do ui.removeTextArea(543212345+m*8+k,o)end end},['text-area-custom']={AUTHOR='Nettoork#0000',_VERSION='2.0',dependencies={},['add']=function(...)local p={...}if type(p[1])=='table'then for k,v in next,p do if type(v)=='table'then if not v[3]then v[3]='nil'end;addTextArea(table.unpack(v))end end else if not p[3]then p[3]='nil'end;b[p[3]..'_'..p[1]]={...}ui.addTextArea(...)end end,['update']=function(m,q,o)if not o then o='nil'end;if not b[o..'_'..m]then return elseif type(q)=='string'then ui.updateTextArea(m,q,o)b[o..'_'..m][2]=q;return end;local r={text=2,x=4,y=5,w=6,h=7,background=8,border=9,alpha=10,fixed=11}for k,v in next,q do if r[k]then b[o..'_'..m][r[k]]=v end end;local s=b[o..'_'..m]ui.addTextArea(s[1],s[2],s[3],s[4],s[5],s[6],s[7],s[8],s[9],s[10],s[11])end,['remove']=function(m,o)if not o then o='nil'end;if b[o..'_'..m]then b[o..'_'..m]=nil end;ui.removeTextArea(m,o)end},['string-to-boolean']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['parse']=function(t)local u={}for k,v in next,t do u[v]=true end;return u end},['database']={AUTHOR='Nettoork#0000',_VERSION='1.1',dependencies={},['create']=function(w,x)if not c[w]then c[w]=x end end,['delete']=function(w)c[w]=nil end,['get']=function(w,...)local y,z={},{...}if not z[1]then return c[w]else for k,v in next,z do if c[w][v]then y[#y+1]=c[w][v]end end;return table.unpack(y)end end,['set']=function(w,...)local A=v;for k,v in next,{...}do if not A then A=v else c[w][A]=v;A=false end end end},['encryption']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['encrypt']=function(t,B,C)if not t or not B or not C or type(t)~='table'or B==''or C==''then return end;local D,E,F,G='','','',''for k in B:gmatch('.')do D=D..k:byte()end;for k in C:gmatch('.')do G=G..k:byte()end;math.randomseed(D)otherSeed=math.random(1000000)local H=pcall(function()for k,v in next,t do if type(v)=='string'or type(v)=='number'then if type(v)=='string'then v="'"..v.."'"end;F=F..' '..v..' '..k:upper()else return end end;F=F..' '..G;for k in F:gmatch('.')do local I=k:byte()+68+math.random(5)otherSeed=otherSeed+k:byte()math.randomseed(otherSeed)if I>=65 and I<=122 and not(I>=91 and I<=96)then I=string.char(I)end;E=E..I end end)math.randomseed(os.time())if not H then return else return E end end,['decrypt']=function(J,B,C)if not J or not B or not C or type(J)~='string'or B==''or C==''then return end;local D,E,K,G='','','',''for k in B:gmatch('.')do D=D..k:byte()end;for k in C:gmatch('.')do G=G..k:byte()end;math.randomseed(D)otherSeed=math.random(1000000)local H=pcall(function()for k in J:gmatch('.')do if k:byte()>=65 and k:byte()<=122 then local I=k:byte()-68-math.random(5)otherSeed=otherSeed+I;math.randomseed(otherSeed)E=E..string.char(I)else K=K..k;if K:len()>=3 then local I=tonumber(K)-68-math.random(5)otherSeed=otherSeed+I;math.randomseed(otherSeed)E=E..string.char(I)K=''end end end end)math.randomseed(os.time())if not H then return else local u,L,M,N,O={},0,0;for k,v in string.gmatch(E,'[^%s]+')do M=M+1 end;for k,v in string.gmatch(E,'[^%s]+')do L=L+1;if L==M and k~=G then return elseif N then if N:sub(-1)=="'"then u[k:lower()]=N:gsub("'",'')N=nil else N=N..' '..k end elseif O then u[k:lower()]=O;O=nil elseif k:sub(1,1)=="'"then N=k else O=k end end;return u end end},['sleep']={AUTHOR='Nettoork#0000',_VERSION='1.1',dependencies={},['loop']=function()local P={}for k,v in next,a do if not v[2]or v[2]<os.time()then if coroutine.status(v[1])=='dead'then P[#P+1]=k else local Q,R=coroutine.resume(v[1])v[2]=R end end end;if P[1]then for k,v in next,P do a[v]=nil end end end,['run']=function(S,T)if not T then T=500 end;a[#a+1]={coroutine.create(function()local U=function(V)coroutine.yield(os.time()+math.floor(V/T)*T)end;S(U)end),timeValue=nil}end},['wait-time']={AUTHOR='Nettoork#0000',_VERSION='1.0',dependencies={},['check']=function(W,X,Y,Z)if W and X then if not d[W]then d[W]={}end;if not d[W][X]then Z=0;d[W][X]=os.time()+(Y or 1000)end;if d[W][X]<=os.time()or Z and Z==0 then d[W][X]=os.time()+(Y or 1000)return true else return false end end end},['json']={AUTHOR='https://github.com/rxi',_VERSION='0.1.1',dependencies={},['encode']=function(_)local a0;local a1={["\\"]="\\\\",["\""]="\\\"",["\b"]="\\b",["\f"]="\\f",["\n"]="\\n",["\r"]="\\r",["\t"]="\\t"}local a2={["\\/"]="/"}for a3,v in pairs(a1)do a2[v]=a3 end;local function a4(a5)return a1[a5]or string.format("\\u%04x",a5:byte())end;local function a6(_)return"null"end;local function a7(_,a8)local a9={}a8=a8 or{}if a8[_]then error("circular reference")end;a8[_]=true;if _[1]~=nil or next(_)==nil then local V=0;for a3 in pairs(_)do if type(a3)~="number"then error("invalid table: mixed or invalid key types")end;V=V+1 end;if V~=#_ then error("invalid table: sparse array")end;for k,v in ipairs(_)do table.insert(a9,a0(v,a8))end;a8[_]=nil;return"["..table.concat(a9,",").."]"else for a3,v in pairs(_)do if type(a3)~="string"then error("invalid table: mixed or invalid key types")end;table.insert(a9,a0(a3,a8)..":"..a0(v,a8))end;a8[_]=nil;return"{"..table.concat(a9,",").."}"end end;local function aa(_)return'"'.._:gsub('[%z\1-\31\\"]',a4)..'"'end;local function ab(_)if _~=_ or _<=-math.huge or _>=math.huge then error("unexpected number value '"..tostring(_).."'")end;return _ end;local ac={["nil"]=a6,["table"]=a7,["string"]=aa,["number"]=ab,["boolean"]=tostring}a0=function(_,a8)local ad=type(_)local S=ac[ad]if S then return S(_,a8)end;error("unexpected type '"..ad.."'")end;return a0(_)end,['decode']=function(ae)local af;local a2={["\\/"]="/"}local function ag(...)local a9={}for k=1,select("#",...)do a9[select(k,...)]=true end;return a9 end;local ah=ag(" ","\t","\r","\n")local ai=ag(" ","\t","\r","\n","]","}",",")local aj=ag("\\","/",'"',"b","f","n","r","t","u")local ak=ag("true","false","null")local al={["true"]=true,["false"]=false,["null"]=nil}local function am(ae,an,ao,ap)for k=an,#ae do if ao[ae:sub(k,k)]~=ap then return k end end;return#ae+1 end;local function aq(ae,an,ar)local as=1;local at=1;for k=1,an-1 do at=at+1;if ae:sub(k,k)=="\n"then as=as+1;at=1 end end;error(string.format("%s at line %d col %d",ar,as,at))end;local function au(V)local S=math.floor;if V<=0x7f then return string.char(V)elseif V<=0x7ff then return string.char(S(V/64)+192,V%64+128)elseif V<=0xffff then return string.char(S(V/4096)+224,S(V%4096/64)+128,V%64+128)elseif V<=0x10ffff then return string.char(S(V/262144)+240,S(V%262144/4096)+128,S(V%4096/64)+128,V%64+128)end;error(string.format("invalid unicode codepoint '%x'",V))end;local function av(Q)local aw=tonumber(Q:sub(3,6),16)local ax=tonumber(Q:sub(9,12),16)if ax then return au((aw-0xd800)*0x400+ax-0xdc00+0x10000)else return au(aw)end end;local function ay(ae,k)local az=false;local aA=false;local aB=false;local aC;for aD=k+1,#ae do local aE=ae:byte(aD)if aE<32 then aq(ae,aD,"control character in string")end;if aC==92 then if aE==117 then local aF=ae:sub(aD+1,aD+5)if not aF:find("%x%x%x%x")then aq(ae,aD,"invalid unicode escape in string")end;if aF:find("^[dD][89aAbB]")then aA=true else az=true end else local a5=string.char(aE)if not aj[a5]then aq(ae,aD,"invalid escape char '"..a5 .."' in string")end;aB=true end;aC=nil elseif aE==34 then local Q=ae:sub(k+1,aD-1)if aA then Q=Q:gsub("\\u[dD][89aAbB]..\\u....",av)end;if az then Q=Q:gsub("\\u....",av)end;if aB then Q=Q:gsub("\\.",a2)end;return Q,aD+1 else aC=aE end end;aq(ae,k,"expected closing quote for string")end;local function aG(ae,k)local aE=am(ae,k,ai)local Q=ae:sub(k,aE-1)local V=tonumber(Q)if not V then aq(ae,k,"invalid number '"..Q.."'")end;return V,aE end;local function aH(ae,k)local aE=am(ae,k,ai)local aI=ae:sub(k,aE-1)if not ak[aI]then aq(ae,k,"invalid literal '"..aI.."'")end;return al[aI],aE end;local function aJ(ae,k)local a9={}local V=1;k=k+1;while 1 do local aE;k=am(ae,k,ah,true)if ae:sub(k,k)=="]"then k=k+1;break end;aE,k=af(ae,k)a9[V]=aE;V=V+1;k=am(ae,k,ah,true)local aK=ae:sub(k,k)k=k+1;if aK=="]"then break end;if aK~=","then aq(ae,k,"expected ']' or ','")end end;return a9,k end;local function aL(ae,k)local a9={}k=k+1;while 1 do local G,_;k=am(ae,k,ah,true)if ae:sub(k,k)=="}"then k=k+1;break end;if ae:sub(k,k)~='"'then aq(ae,k,"expected string for key")end;G,k=af(ae,k)k=am(ae,k,ah,true)if ae:sub(k,k)~=":"then aq(ae,k,"expected ':' after key")end;k=am(ae,k+1,ah,true)_,k=af(ae,k)a9[G]=_;k=am(ae,k,ah,true)local aK=ae:sub(k,k)k=k+1;if aK=="}"then break end;if aK~=","then aq(ae,k,"expected '}' or ','")end end;return a9,k end;local aM={['"']=ay,["0"]=aG,["1"]=aG,["2"]=aG,["3"]=aG,["4"]=aG,["5"]=aG,["6"]=aG,["7"]=aG,["8"]=aG,["9"]=aG,["-"]=aG,["t"]=aH,["f"]=aH,["n"]=aH,["["]=aJ,["{"]=aL}af=function(ae,an)local aK=ae:sub(an,an)local S=aM[aK]if S then return S(ae,an)end;aq(ae,an,"unexpected character '"..aK.."'")end;if type(ae)~="string"then error("expected argument of type string, got "..type(ae))end;local a9,an=af(ae,am(ae,1,ah,true))an=am(ae,an,ah,true)if an<=#ae then aq(ae,an,"trailing garbage")end;return a9 end}}local aN=1547917483395+2628*10^6;require=function(aO)if aO=='hide-warning'then aN=false else if aN and os.time()>aN then aN=false;print("<R>Warning! You may be using an outdated version of require, check in <i>atelier801.com/topic?f=6&t=880333</i> if this has a better version, otherwise you can disable this warning with require('hide-warning').</R>")end;if e[aO]then if e[aO]['INIT_SCRIPT']and type(e[aO]['INIT_SCRIPT'])=='function'then e[aO]['INIT_SCRIPT']()e[aO]['INIT_SCRIPT']=nil end;return e[aO]elseif aO=='libs'then return e else print('Library "'..aO..'" not found! <i>Require Version: 1.2.2 | Author: Nettoork#0000</i>')return false end end end end
-		
-		
+
+
 		-- [[ Bibliotecas ]] --
 		local wait = require("wait-time")
 		local stb = require("string-to-boolean")
-		
+
 		-- [[ Variaveis ]]
-		
+
 		local jogadores = {}
 		local mapas = {'@7570168', '@7565291','@7570258'}
 		local podeChecar = false
@@ -12071,7 +12071,7 @@ local roomModes = function(modeName)
 		local timer = 0
 		local timer1 = 0
 		local cdwn
-		
+
 		-- [[ Traduções ]] ---
 		lang = {
 			br = {
@@ -12097,13 +12097,13 @@ local roomModes = function(modeName)
 				RWIN = "<D>~[Juiz] ~ השחקנים ניצחו!",
 			},
 		}
-		
+
 		function translate(p, k)
 			local cmm = tfm.get.room.playerList[p] and tfm.get.room.playerList[p].community or "en"
 			cmm = lang[cmm] and cmm or "en"
 			return lang[cmm][k] or "ERROR"
 		end
-		
+
 		-- [[ Evento Novo Jogador ]] --
 		eventNewPlayer = function(nome)
 			jogadores[nome] = {
@@ -12112,15 +12112,15 @@ local roomModes = function(modeName)
 			}
 		ajuda(nome)
 		end
-		
+
 		-- [[ Função Enviar Mensagem De Ajuda ]] --
 		ajuda = function (p)
 		chatMsg(translate(p, "WELCOME"), p)
 		end
-		
+
 		-- [[Considerar jogadores na sala como novos jogadores]] --
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
-		
+
 		-- [[ Evento Novo Jogo ]] --
 		eventNewGame = function()
 		cdwn = false
@@ -12297,7 +12297,7 @@ local roomModes = function(modeName)
 		tfm.exec.disablePhysicalConsumables(true)
 		tfm.exec.setRoomMaxPlayers(20)
 		tfm.exec.newGame('<C><P /><Z><S><S P="0,0,0.3,0.2,0,0,0,0" L="802" o="324650" X="400" Y="378" T="12" H="42" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" o="324650" X="806" Y="404" T="12" H="10" /><S P="0,0,0,0,0,0,0,0" L="10" o="fffffffff" X="2" Y="198" T="12" H="405" /><S P="0,0,0.3,0.2,0,0,0,0" L="806" o="fffffffff" X="401" Y="1" T="12" H="10" /><S P="0,0,0,0,0,0,0,0" L="10" o="fffffffff" X="806" Y="202" T="12" H="412" /></S><D><DS Y="350" X="401" /></D><O /></Z></C>')
-		
+
 	end
 
 	return modules
@@ -12306,26 +12306,26 @@ end
 local tribeModes = function(modeName)
 	tribeModule["*\3A-N-T-I-G-U-A-R-D"] = (modeName == "*\3A-N-T-I-G-U-A-R-D") and function()
 		local keys = { [8] = "Backspace", [9] = "Tab", [13] = "Enter", [16] = "Shift", [17] = "Control", [18] = "Alt", [19] = "Pause/break", [20] = "Caps Lock", [27] = "Escape", [32] = "Spacebar", [33] = "Page Up", [34] = "Page Down", [35] = "End", [36] = "Home", [37] = "Left Arrow", [38] = "Up Arrow", [39] = "Right Arrow", [40] = "Down Arrow", [45] = "Insert", [46] = "Delete", [48] = "0", [49] = "1", [50] = "2", [51] = "3", [52] = "4", [53] = "5", [54] = "6", [55] = "7", [56] = "8", [57] = "9", [65] = "A", [66] = "B", [67] = "C", [68] = "D", [69] = "E", [70] = "F", [71] = "G", [72] = "H", [73] = "I", [74] = "K", [75] = "J", [76] = "L", [77] = "M", [78] = "N", [79] = "O", [80] = "P", [81] = "Q", [82] = "R", [83] = "S", [84] = "T", [85] = "U", [86] = "V", [87] = "W", [88] = "X", [89] = "Y", [90] = "Z", [91] = "Windows (Left)", [92] = "Windows (Right)", [93] = "Application Key", [96] = "0 (Numbpad)", [97] = "1 (Numbpad)", [98] = "2 (Numbpad)", [99] = "3 (Numbpad)", [100] = "4 (Numbpad)", [101] = "5 (Numbpad)", [102] = "6 (Numbpad)", [103] = "7 (Numbpad)", [104] = "8 (Numbpad)", [105] = "9 (Numbpad)", [106] = "* Asterix (Numbpad)", [107] = "+ Plus (Numbpad)", [109] = "- Minus (Numbpad)", [110] = ". (or ,) Decimal Point", [111] = "/ Forward Slash (Numbpad)", [112] = "F1", [113] = "F2", [114] = "F3", [115] = "F4", [116] = "F5", [117] = "F6", [118] = "F7", [119] = "F8", [120] = "F9", [121] = "F10", [122] = "F11", [123] = "F12", [144] = "Numlock", [145] = "Scroll Lock", [186] = "; Semicolon", [187] = "= Equals", [188] = ", Comma", [189] = "- Hyphen", [190] = ". Period", [191] = "/ Forward Slash", [192] = "` Grave Accent", [193] = "Unknown", [219] = "[ Open Bracket", [220] = "\\ Backslash", [221] = "] Close Bracket", [222] = "' Single quote" }
-		
+
 		local admin
-		
+
 		ui.addTextArea(0, '', nil, 5, 10, 790, 390, 0xffffff, 0xffffff)
 		ui.addTextArea(1, "<p align='center'><font size='80' color='#000000'>Keyboard Codes<br><font size='16'>Press any key to start", nil, 5, 160, 790, nil, 0)
-		
+
 		function eventChatCommand(name, cmd)
 			if (cmd == 'admin' and not admin) then
 				admin = name;for k in next, keys do system.bindKeyboard(name, k, true) end
 				ui.addTextArea(2, "<font size='12' color='#000000'>Admin: " .. name, nil, 0, 20, nil, nil, 0)
 			end
 		end
-		
+
 		function eventKeyboard(name, key)
 			local skey, str = -1, "<p align='center'><font size='80' color='#000000'>%s<br><font size='24'>%s"
 			skey = (key == 37 and 0 or key == 65 and 0 or key == 81 and 0 or key == 38 and 1 or key == 90 and 1 or key == 39 and 2 or key == 68 and 2 or key == 40 and 3 or key == 83 and 3 or key == 87 and 1 or nil)
 			str = (skey and "<p align='center'><font size='80' color='#000000'>%s or %s<br><font size='24'>%s" or str)
 			ui.updateTextArea(1, string.format(str, key, (skey ~= -1 and skey or keys[key]), keys[key]))
 		end
-		
+
 	end
 
 	tribeModule["*\3Lost Heaven"] = (modeName == "*\3Lost Heaven") and function()
@@ -12334,39 +12334,39 @@ local tribeModes = function(modeName)
 		idlenessPlayers = {}
 		bookClickPlayerTimeList = {}
 		playersData = {}
-		
-		
-		
+
+
+
 		tfm.exec.disableAutoShaman(true)
 		tfm.exec.disableAfkDeath(true)
 		tfm.exec.disableAutoNewGame(true)
 		tfm.exec.newGame("@7744070")
 		tfm.exec.chatMessage("<font color = '#FFFF00'>Добро пожаловать в библиотеку Lost Heaven!</font>")
-		
+
 		-- 1я книга (Правила)
 		function showFirstBook(playerName) ui.addTextArea(1,"<font color='#FF0000' size='10'><b>Свод правил</b></font>", nil, 180,115,90, 15, 0,0xffffffff, 0,true) end
 		function firstBookClick(playerName)
 		    local text = "*Книга написана чем-то, напоминающим странную смесь крови, слёз и ядовитых испарений действующего вулкана.*\n1.   Общий свод правил.\n1.1. Мат в умеренных количествах разрешен.\n1.2. Помните с нами играют маленькие дети.\n1.3. Обманывать сокланавцев запрещено.\n1.4. Администрация действует на свое усмотрение\nв спорных ситуациях.\n\n2.   Конкурсы и комната племени.\n2.1. Запуск луа и смена карт на конкурсе без разрешения\nорганизатора запрещен\n2.2. Игроки, не состоящие в племени не имеют право\nучаствовать в конкурсах и присутствовать на фармах\nс пометкой племени\n2.3. Запрещена реклама фарма без пометки Lost Heaven\nМогут быть случаи бана, если человек не нарушал\nвышеперечисленное, чтобы узнать причину \nнапишите мне (Naomikio#0000) или в сообщения группы."
 		    ui.addPopup(1,0, text, playerName, 210, 30, 400,true)
 		end
-		
+
 		-- 2-6я книги, мне ☻☺похуй☺☻ (История племени)
 		function showSecondBook(playerName) ui.addTextArea(2,"<font color='#9999FF' size='10'><b>История</b></font>", nil, 255, 125, 90, 20, 0,0xffffffff, 0,true) end
 		function secondBookClick(playerName)
 		    local text0 = "Краткая история племени Lost Heaven\nНаше племя зародилось 4 мая 2020 года. Создателей племени было 11 человек\n(Druggy_Doggy#3098, Nikitapley#6179, Min#7943, Voimyasatani#6041, Fireball#3838,\nNaomikio#0000, Liza#6232, Honeyul#5711, Buterbrot#9081, Stuntman_www_x#0831,\nCherzik#2636) - большинство ушло по некоторым обстоятельствам, но всех нас объединяла\nодна цель - создать племя без жёстких правил и для общения. На данный момент, наша\nмечта стала явью. Мы все искренне верим, что наше племя действительно стало очень\nдружным и активным. Первый наш конкурс на 100 участников в племени сразу же дал очень\nхорошие результаты. Мы были удивлены таким активом. Люди, помнящие тот конкурс и\nприсутствовавшие на нем, все ещё с нами и очень хорошо отзываются о нашем племени.\nИзначально были совершенно другие звания, а т.е. названия грехов по их иерархии в\nмифологии на английском языке (если найдется Олд, вспомнивший хоть одно - напишите\nодному из нынешних колдунов, вы получите 50 сыра от нас :3). Далее очень долгое\nвремя у нас стояли звания по тематике Данте, а именно 9 кругов ада. Сейчас, в принципе,\nне особо отличается от предыдущих тематикой, но все же немного поменяли. Наказательным\nзванием ранее было 'фанат деда'.\n\nКто же такой дед? Дед являлся первым активом и участником нашего племени, хоть сейчас\nон и предал племя, но все равно звание, я думаю, остаётся в памяти многих людей.\n\nОткрыть следующую страницу?"
-		
+
 		    ui.addPopup(2000,1, text0, playerName, 110, 30, 600,true)
 		end
-		
+
 		function eventPopupAnswer(popupID, playerName, answer)
 			local text1 = "Сейчас же, мы уже очень большое племя, находящееся в топе 100 лучших племен\n(на момент написания текста 66 место). И каждый создатель, даже ушедший, я думаю, очень\nрад, что в конечном итоге мы добились чего хотели.\n\nМы вас всех очень любим!\n\nОткрыть следующую страницу?"
-		
+
 		    local text2 = "Нынешние создатели, оставшиеся в племени: Buterbrot#9081, Honeyuli#5711,\nVoimyasatani#6041, Fireball#3848, Naomikio#0000)\nТакже, хочу уточнить, что абсолютно на равных правах с нами есть Главные Еретики\n(просто поставленно такое звание, чтоб не нарушать концепцию данного звания и\nне терять изначальную задумку):\n•Sheogorath#8725 - спасибо за множество отличных карт, активное участие в жизни племени,\nорганизацию фарма, слежкой за чатом и всегда идеально выполненную работу,\n•Keras#9975 - спасибо за множество луа - скриптов, актив в племени, помощь в дискорд\nсервере, слежку за чатом и организацией фарма.\n\nНо, конечно же, во всех наших достижениях ещё мы очень благодарны нашим еретиками: \n•Viz#1717 (поблагодарим его за новые звания, проявление активности и инициативы,\nслежку за фармом, написание чудесного гайда для шаманов и многое другое)\n•Felixe96#0000 (поблагодарим за хороший монтаж видео, инвайты мышей и провождение \nконкурсов)\n•Floweystyle#8410 (поблагодарим за то, что все проблемы с фотошопом брал на себя и делал\nотличные работы, а так же за создание карт)\n•Juzya#8075 (спасибо за монтаж видео и слежку за чатом!)\n•Karamelka#6455 (спасибо за слежку за чатом, повышение мышей)\n•Kawaymixare#0000 (Самый первый еретик и один из первых участников племени. Много\nпомощи было в написании луа, очистки нулевых аккаунтов, активных обсуждений и внесений предложений для развития племени и многое другое)\n\nОткрыть следующую страницу?"
 			local text3 = "Tiran (творческие люди, занимающиеся созданием карт или же написанием луа-скриптов):\n•Missellik#5355 - спасибо за гайд по виприну и большое количество карт, также организацию\nфарма\n•Herobrine816#0000 спасибо за гайд и очень большое количество карт!\n\nТакже, поблагодарим людей со званием 'Helper', которые всегда помогали племени и очень\nего любят.\nИ, конечно же, спасибо абсолютно каждой мышке за то, что проявляет активную жизнь\nв племени и помогает его развитию приглашением мышей!"
 		    local text5 = "5. Отвечать на вопросы\n\n6. Делать скрины по возможности. Качественные! Без\nкоманды /watch и чата а скрине, если он там ни к месту.\n\n7. Писать посты о конкурсах в группе вк\n\n8. Приветствовать всех новеньких\n\n9. Организация фарма по возможности  \n\nОткрыть следующую страницу?"
-		
+
 		    local text6 = "Обязанности Гневливых:\n\n1. Помогать племени своими навыками, которые указали\nв заявке при вступлении\n\n2. По возможности помогать Еретикам и Обманщикам\n\n3. Докладывать Еретикам или Обманщикам о нарушителях."
-		
+
 			if answer == "yes" then
 				if popupID == 2000 then
 					ui.addPopup(2001,1, text1, playerName, 110, 30, 600,true)
@@ -12381,8 +12381,8 @@ local tribeModes = function(modeName)
 				end
 			end
 		end
-		
-		
+
+
 		-- 7я книга (Краткий путеводитель по кругам ада)
 		function showSevenBook(playerName) ui.addTextArea(7,"<font color='#38ABFF' size='10'><b>Путеводитель</b></font>", nil, 295, 115, 90, 15, 0,0xffffffff, 0,true) end
 		function sevenBookClick(playerName)
@@ -12391,15 +12391,15 @@ local tribeModes = function(modeName)
 		    ui.addPopup(7001,0, text1, playerName, 210, 50, 400,true)
 		    ui.addPopup(7000,0, text0, playerName, 210, 50, 400,true)
 		end
-		
+
 		-- 8я книга (Обжорство)
 		function showEightBook(playerName) ui.addTextArea(8,"<font color='#38ABFF' size='10'><b>Обжорство</b></font>", nil,80,200,70, 15, 0,0xffffffff, 0,true) end
 		function eightBookClick(playerName)
 			tfm.exec.changePlayerSize(playerName, 1.5)
 			playersData[playerName].timeToBeSized = 5000
 		end
-		
-		
+
+
 		-- 9я книга (Блуд)
 		function showNineBook(playerName) ui.addTextArea(9,"<font color='#F0EC2C' size='10'><b>Блуд</b></font>", nil, 155, 201, 35, 15, 0,0xffffffff, 0,true) end
 		function nineBookClick(playerName)
@@ -12409,23 +12409,23 @@ local tribeModes = function(modeName)
 		    table.insert(shamanObjects, {["time"] = 1000, ["object"] = tfm.exec.addShamanObject(35, x+50, y-50, 135, -10, 10, false)})
 		    tfm.exec.playEmote(playerName, 3)
 		end
-		
-		
+
+
 		-- 10я книга (Гордыня)
 		function showTenBook(playerName) ui.addTextArea(10, "<font color='#FFFFFF' size='10'><b>Гордыня</b></font>", nil, 172, 192, 55, 15, 0, 0xffffffff, 0, true) end
 		function tenBookClick(playerName)
 		    system.bindKeyboard(playerName, 32, true, true)
 		    tfm.exec.movePlayer(playerName, 0, 0, true, 0, -50, true)
 		end
-		
-		
+
+
 		-- 11я книга (Лень)
 		function showElevenBook(playerName) ui.addTextArea(11,"<font color='#00DC74' size='10'><b>Лень</b></font>", nil, 207, 201, 40, 15, 0,0xffffffff, 0,true) end
 		function elevenBookClick(playerName)
 		    table.insert(idlenessPlayers, {['time'] = 10000, ['playerName'] = playerName, ['x'] = tfm.get.room.playerList[playerName].x, ['y'] = tfm.get.room.playerList[playerName].y})
 		    tfm.exec.playEmote(playerName, 6)
 		end
-		
+
 		-- 12я книга (Гнев)
 		function showTwelveBook(playerName) ui.addTextArea(12,"<font color='#FF0000' size='10'><b>Гнев</b></font>", nil, 240, 201, 40, 15, 0,0xffffffff, 0,true) end
 		function twelveBookClick(playerName)
@@ -12434,7 +12434,7 @@ local tribeModes = function(modeName)
 		    y = tfm.get.room.playerList[playerName].y
 		    tfm.exec.explosion(x, y, 30, 250, true)
 		end
-		
+
 		-- 14я книга (Жадность)
 		function showForteenBook(playerName) ui.addTextArea(14,"<font color='#FDD169' size='10'><b>Жадность</b></font>", nil, 270, 201, 70, 15, 0,0xffffffff, 0,true) end
 		function forteenBookClick(playerName)
@@ -12443,58 +12443,58 @@ local tribeModes = function(modeName)
 		    tfm.exec.displayParticle(19, x+10, y-10)
 		    tfm.exec.setPlayerScore(playerName, tfm.get.room.playerList[playerName].score+16)
 		end
-		
+
 		-- 15я книга (Заклинания для изменения комнаты племени)
 		function showFifteenBook(playerName) ui.addTextArea(15,"<font color='#9050B5' size='10'><b>Заклинания<br/> изменения</b></font>", nil, 130, 272, 75, 30, 0,0xffffffff, 0,true) end
 		function fifteenBookClick(playerName)
 		    local text0 = "*Из этой книги исходит странная энергия*\nКомната племени - магическое пространство, изменяющее\nсвою форму при помощи несложных чар и произнесения\nзаклинаний. Не каждый может их использовать,\nа только избранные маги с сильнейшими душами.\nНиже мы приводим некоторые из этих заклинаний.\n\nМагические места, созданные Missellik:\n\n@7708970 - Комната для конкурса красоты.\n@7709932 - Запасная комната для КК.\n@7710456 - Комната отдыха\n@7715253 - Лагерь в лесу\n\nМагические места, созданные Weneys, так же известным\nпод именем Хермеус Мора:\n\n@6561207 - Дом смертельной музыки"
-		
+
 		    local text1 = "Магические места, созданные даэдрическим принцем\nШеогоратом:\n\n@7725946 - Зал огня\n@7729172 - Святилище Шеогората (место поклонения)\n@7729731 - Зал для Конкурса красоты\n@7744070 - Библиотека Хаоса (внимание: вы уже\nнаходитесь здесь! Не создавайте пространственных\nпарадоксов!)"
 		    ui.addPopup(1501,0, text1, playerName, 210, 50, 600,true)
 		    ui.addPopup(1500,0, text0, playerName, 210, 50, 600,true)
 		end
-		
+
 		-- 16я книга (Звания и как их получить)
 		function showSixteenBook(playerName) ui.addTextArea(16,"<font color='#00FF00' size='10'><b>Звания</b></font>", nil, 200, 270, 90, 20, 0,0xffffffff, 0,true) end
 		function sixteenBookClick(playerName)
 		    local text0 = "1. Zabveniy (Забвенный)\nВступая в наше племя вы получаете данное звание. \nЭто означает, что вы умерли, не оставив никакой памяти\nо себе, попадая в наш потерянный рай;\n\n0. Dolbaeb (удалено по соображениям цензуры)\nЧеловек, нарушивший правила,  получает данное звание;\n2. Slastolyubiviy (Сластолюбивый)\nПоздравляем, вы внесли первый вклад в наше племя и\nотправляетесь на второй круг;\n\n3. Nenasitniy (Ненасытный)\nДействительно ненасытный... Ради желания быть выше,\nвы приглашаете все больше мышей в наш общий котел,\nгде теперь всем им суждено вариться всем вместе;\n\n4. Neistomvy (Неистовый)\nЯрое желание и какие-то побуждения стать выше,\nполучить больше доступа к командам - одобрено, спасибо\nза ещё 5 хороших людей или прекрасный конкурс!\n"
-		
+
 		    local text1 = "5. Lutiy (Лютый)\nВы отправляетесь в следующий круг, где теперь уже\nводичка погорячее в вашем котле, но все ещё не\nдотягивает до горячих источников;\n\n6. Renegat (Ренегат)\nПоздравляем вас с достижении вершины земного пути.\nДальше уже только через постель....\n\n7. Helper (Помощник)\nПопадают самые активные люди, добровольно\nпомогающие племени в его развитии;\n"
-		
+
 		    local text2 = "STAFF:\n8. Tiran (Тиран)\nТворческие люди, которые создают прекрасные карты,\nзанимаются фотошопом и пишут нам коды. Если вы тоже\nсчитаете себя творческим человеком - напишите одному\nиз участников стаффа и покажите свои примеры своих\nработ;\n\n9. Eretik (Еретик)\nЛюди, помогающие племени, наделённые возможностью\nсудить человека за грехи. Набор по заявкам.\nВ данный момент набор закрыт;\n\n10. Glavniy Eretik (Главный еретик)\nЕретикам, которые очень многое сделали для нашего\nплемени, дана возможность выбирать кого же изгнать из\nнашего Рая;\n\n11. Koldun, Predatel (Колдун, Предатель)\nСоздатели племени.\n"
-		
+
 		    ui.addPopup(1602,0, text2, playerName, 210, 50, 600,true)
 		    ui.addPopup(1601,0, text1, playerName, 210, 50, 600,true)
 		    ui.addPopup(1600,0, text0, playerName, 210, 50, 600,true)
 		end
-		
+
 		-- 17я книга (Руководство для Еретиков и Обманщиков)
 		function showSeventeenBook(playerName) ui.addTextArea(17,"<font color='#FF0000' size='10'><b>Руководство</b></font>", nil, 240, 275, 80, 20, 0,0xffffffff, 0,true) end
 		function seventeenBookClick(playerName)
 		    local text4 = "	Руководство для Еретиков и Обманщиков\n\n*Когда вы заглядываете в эту книгу, у вас появляется\n		чувство, будто начальство следит за вами. Даже при том,\nчто у вас нет начальства*\n\n1. Повышать людей на одно звание выше за каждых 5-и\nмышей, приглашённых ими в племя (проверять в истории)\n\n2. Участвовать на всех конкурсах по возможности. \nПомогать с запуском модулей, повышать за проведение\nконкурса (не даем звание, если просят, а помогаем\nс запуском!)\n\n3. Слежка за чатом ( мат разрешен, оскорбления выносятся\nна рассмотрение в конфе стаффа)\n\n4. Если человек мешает конкурсу командой /module stop\nлибо запуском луа без разрешения проводящего конкурс\n- даем звание 'Dolboeb' (также его даем, если мышка\nприглашает исключённого игрока, либо игрока в чс)\n\nОткрыть следующую страницу?"
-		
+
 		    ui.addPopup(1700,1, text4, playerName, 210, 20, 400,true)
 		end
-		
-		
+
+
 		-- 18я книга (Уроки картостроения)
 		function showEighteenBook(playerName) ui.addTextArea(18,"<font color='#FF0000' size='10'><b>Картостроение</b></font>", nil, 210, 335, 90, 20, 0,0xffffffff, 0,true) end
 		function eighteenBookClick(playerName)
 		    local text0 = "Уроки картостроения\n\n*В этой книге нет ничего, кроме адресов. В ней всего\nполстраницы!*\n       Урок рисования в Viprin drawing editor:\nvk.com/photo-195009903_457239299\nУрок по созданию движущихся платформ в Viprin drawing\neditor:\nvk.com/photo-195009903_457239246\n\nУрок по добавлению на карту ивентовых фонов и зверушек\nс Bouboum:\nvk.com/photo-195009903_457239294"
-		
+
 		    ui.addPopup(1800,0, text0, playerName, 210, 50, 600,true)
 		end
-		
-		
+
+
 		-------------------------------------------------------------------------------------------------------------------
-		
+
 		-- Полёт
 		-- Подбросить игрока вверх
 		function fly(playerName)
 		    tfm.exec.movePlayer(playerName, 0, 0, true, 0, -50, true)
 		end
-		
-		
+
+
 		-- Удаляет по таймеру зарегестрированные объекты шамана
 		--
 		-- Необходимо вызывать эту функцию каждый раз в eventLoop
@@ -12514,7 +12514,7 @@ local tribeModes = function(modeName)
 		    --     shamanObjects[value] = nil
 		    -- end
 		end
-		
+
 		-- Возвращает игрока на место и включает эмоцию сна
 		--
 		-- Необходимо вызывать эту функцию каждый раз в eventLoop
@@ -12532,8 +12532,8 @@ local tribeModes = function(modeName)
 		       shamanObjects[value] = nil
 		    end
 		end
-		
-		
+
+
 		-- Обновляет время отката нового использования книги
 		--
 		-- Необходимо вызывать эту функцию каждый раз в eventLoop
@@ -12551,7 +12551,7 @@ local tribeModes = function(modeName)
 		        bookClickPlayerTimeList[value] = nil
 		    end
 		end
-		
+
 		-- Вернуть игрокам нормальный размер после обжорства
 		function giveNormalSizeBack()
 			for key, value in next, playersData do
@@ -12563,7 +12563,7 @@ local tribeModes = function(modeName)
 				end
 			end
 		end
-		
+
 		-- Функция вызываемая каждые ~0.5с
 		function eventLoop(currentTime, timeRemaining)
 		    deleteShamanObjectsManager()
@@ -12571,8 +12571,8 @@ local tribeModes = function(modeName)
 		    bookClickPlayerTimeManager()
 			giveNormalSizeBack()
 		end
-		
-		
+
+
 		-- Функция вызываемая при нажатие игроком забинденой для него клавиши
 		function eventKeyboard(playerName, keyCode, down, xPlayerPosition,yPlayerPosition)
 		    -- Если нажат пробел
@@ -12580,14 +12580,14 @@ local tribeModes = function(modeName)
 		        fly(playerName)
 		    end
 		end
-		
-		
+
+
 		-- Функция вызываемая когда игрок кликает мышью
 		function eventMouse(playerName,xMousePosition,yMousePosition)
 			local x = xMousePosition
 		    local y = yMousePosition
 		    isBookClicked = false
-		
+
 		    -- Проверка может ли он кликать
 		    -- (Есть ли он в списке откатов?)
 		    for key, value in pairs(bookClickPlayerTimeList) do
@@ -12596,104 +12596,104 @@ local tribeModes = function(modeName)
 		            return
 		        end
 		    end
-		
+
 		    -- 1я книга
 			if (x > 205 and x < 240 and y > 135 and y < 190) then
 		        firstBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 2я книга
 			if (x > 250 and x < 310 and y > 140 and y < 190) then
 		        secondBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 7я книга
 			if (x > 310 and x < 365 and y > 145 and y < 190) then
 		        sevenBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 8я книга
 			if (x > 105 and x < 125 and y > 215 and y < 270) then
 		        eightBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 9я книга
 		    if (x > 160 and x < 190 and y > 215 and y < 270) then
 				nineBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 10я книга
 		    if (x > 190 and x < 215 and y > 210 and y < 270) then
 		        tenBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 11я книга
 		    if (x > 215 and x < 235 and y > 215 and y < 270) then
 		        elevenBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 12я книга
 		    if ((x > 235 and x < 250 and y > 250 and y < 270) or (x > 235 and x < 260 and y > 220 and y < 250)) then
 		        twelveBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 14я книга
 		    if (x > 285 and x < 305 and y > 215 and y < 270) then
 		        forteenBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 15я книга
 		    if (x > 135 and x < 193 and y > 305 and y < 335) then
 		        fifteenBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 16я книга
 		    if ((x > 193 and x < 220 and y > 315 and y < 335) or (x > 200 and x < 235 and y > 290 and y < 315)) then
 		        sixteenBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 17я книга
 		    if (x > 235 and x < 300 and y > 300 and y < 315) then
 		        seventeenBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
+
 		    -- 18я книга
 		    if (x > 220 and x < 285 and y > 315 and y < 330) then
 		        eighteenBookClick(playerName)
 		        isBookClicked = true
 		    end
-		
-		
+
+
 		    -- Если игрок нажал на книгу отметить в списке
 		    -- Нужно для отката клика (ограничение частоты клика)
 		    if isBookClicked then
 		        table.insert(bookClickPlayerTimeList, {['time'] = 2000, ['playerName'] = playerName})
 		    end
-		
+
 			print(playerName.." "..x.." "..y)
 		end
-		
-		
+
+
 		-- Бинд мыши(указателя) для всех мышей
 		function bindAllCursors()
 		    for playerName,data in next, tfm.get.room.playerList do
 		        system.bindMouse(playerName, true)
 		    end
 		end
-		
-		
+
+
 		-- Показать весь UI книг для для игрока с ником playerName
 		-- если playerName == nil, то покажет для всех
 		function showAllBooksForPlayer(playerName)
@@ -12711,8 +12711,8 @@ local tribeModes = function(modeName)
 		    showSeventeenBook(playerName)
 		    showEighteenBook(playerName)
 		end
-		
-		
+
+
 		-- Функция вызываемая когда новый игрок заходит в комнату
 		function eventNewPlayer(playerName)
 		    system.bindMouse(playerName, true)
@@ -12723,26 +12723,26 @@ local tribeModes = function(modeName)
 			}
 			tfm.exec.chatMessage("<font color = '#FFFF00'>Добро пожаловать в библиотеку Lost Heaven!</font>", playerName)
 		end
-		
+
 		-- Функция вызывается когда игрок сдох
 		function eventPlayerDied(playerName)
 			tfm.exec.respawnPlayer(playerName)
 		end
-		
-		
-		
+
+
+
 		-- Функция вызываемая при запуске луа
 		function main()
 		    bindAllCursors()
 		    showAllBooksForPlayer(nil)
 		end
-		
-		
+
+
 		main()
 		-- @7744070
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
 		-- system.bindMouse("Keras#9975", true)
-		
+
 	end
 
 	tribeModule["*\3Tournament'"] = (modeName == "*\3Tournament'") and function()
@@ -12755,13 +12755,13 @@ local tribeModes = function(modeName)
 		_eventLoop = empty
 		_eventChatCommand = empty
 		_eventPlayerDied = empty
-		
+
 		local x1eliminatoria = function()
 			tfm.exec.setRoomMaxPlayers(100)
 			local maps = { "#17" }
 			local MAX_PLAYERS = 100
 			local MAP_TIME = 60
-		
+
 			local enums = {
 				selectedPlayers = 0,
 				ownerHUD = 10,
@@ -12770,24 +12770,24 @@ local tribeModes = function(modeName)
 				announce = 30,
 				victory = 40,
 			}
-		
+
 			local canStart = false
-		
+
 			local winner, first
 			local isEliminating = false
 			local deleteMessage, newGameTentative, skipMap, canChangeMap, nextMap = 0, -1, false, false
-		
+
 			local selectedPlayers, totalSelectedPlayers = { }, 0
-		
+
 			local splitByLine = function(content)
 				local data = { }
-		
+
 				local current, tmp, counter, size = 1, { }, 0, 0
 				for line in string.gmatch(content, "([^\n]*)[\n]?") do
 					counter = counter + 1
 					tmp[counter] = line
 					size = size + #line + 1
-		
+
 					if size > 1900 then
 						data[current] = table.concat(tmp, '\n')
 						tmp, counter, size = { }, 0, 0
@@ -12795,10 +12795,10 @@ local tribeModes = function(modeName)
 					end
 				end
 				if size > 0 then data[current] = table.concat(tmp, '\n') end
-		
+
 				return data
 			end
-		
+
 			local pairsByIndexes = function(list, f)
 				local out, counter = {}, 0
 				for index in next, list do
@@ -12806,7 +12806,7 @@ local tribeModes = function(modeName)
 					out[counter] = index
 				end
 				table.sort(out, f)
-		
+
 				local i = 0
 				return function()
 					i = i + 1
@@ -12815,23 +12815,23 @@ local tribeModes = function(modeName)
 					end
 				end
 			end
-		
+
 			local removeSelectedPlayers = function(vPlayerName)
 				for id = 1, 4 do
 					ui.removeTextArea(enums.selectedPlayers + id, vPlayerName)
 				end
 			end
-		
+
 			local displaySelectedPlayers = function(vPlayerName, display)
 				removeSelectedPlayers(vPlayerName)
-		
+
 				local players, rawPlayers, counter = { }, { }, 0
 				for playerName in pairsByIndexes(selectedPlayers) do
 					counter = counter + 1
 					players[counter] = "<a href='event:" .. playerName .. "'>" .. playerName .. "</a>"
 					rawPlayers[counter] = playerName
 				end
-		
+
 				local windows
 				if display or not vPlayerName then
 					windows = splitByLine(table.concat(rawPlayers, '\n'))
@@ -12839,7 +12839,7 @@ local tribeModes = function(modeName)
 						ui.addTextArea(enums.selectedPlayers + id, (windows[id] or "") .. "\n", vPlayerName, 5 + (id - 1) * 200, 53, 190, 344, nil, nil, .5, true)
 					end
 				end
-		
+
 				if not display then
 					windows = splitByLine(table.concat(players, '\n'))
 					for id = 1, math.min(#windows, 4) do
@@ -12847,11 +12847,11 @@ local tribeModes = function(modeName)
 					end
 				end
 			end
-		
+
 			local updateBar = function(info)
 				ui.setMapName((tfm.get.room.xmlMapInfo and tfm.get.room.xmlMapInfo.author or "Tigrounette") .. " <BL>- " .. tfm.get.room.currentMap .. "  <G>|   <N>" .. (info or ("Competidores : <V>" .. totalSelectedPlayers .. " <N>/ <V>" .. MAX_PLAYERS)))
 			end
-		
+
 			local ownerHUD = function()
 				if canStart then
 					if not canChangeMap then
@@ -12862,41 +12862,41 @@ local tribeModes = function(modeName)
 					ui.addTextArea(enums.ownerHUD + 1, "<p align='center'><J><a href='event:erase'>Remover todos</a>\n", tfm.get.room.owner, 235, 25, 105, 20, nil, nil, .5, true)
 				end
 			end
-		
+
 			local ini = function(playerName)
 				tfm.exec.chatMessage("<BV>Bem-vindo ao <B>#x1eliminatoria</B>. Boa sorte aos participantes!", playerName)
 				ui.banner("166d6fc96b2.png", 110, 130, playerName, 8)
 			end
-		
+
 			local main = function()
 				canStart = false
 				canChangeMap = false
-		
+
 				selectedPlayers = { }
 				totalSelectedPlayers = 0
 				updateBar()
-		
+
 				ui.removeTextArea(enums.victory)
 				ui.removeTextArea(enums.victory + 1)
-		
+
 				for playerName in next, tfm.get.room.playerList do
 					tfm.exec.setPlayerScore(playerName, 0)
 				end
-		
+
 				tfm.exec.newGame('<C><P /><Z><S><S i="5,2,166d7129da2.jpg" c="4" L="0" H="0" X="0" Y="0" T="14" P=",,,,,,," /><S L="3000" o="0" H="3000" X="-1500" Y="200" T="12" P=",,3,2,,,," /><S P=",,3,2,,,," L="3000" o="0" X="2300" Y="200" T="12" H="3000" /><S L="3000" o="0" X="400" H="3000" Y="1900" T="12" P=",,3,2,,,," /><S P=",,3,2,,,," L="3000" o="0" H="3000" Y="-1500" T="12" X="-400" /></S><D /><O /></Z></C>')
-		
+
 				displaySelectedPlayers()
-		
+
 				ui.addTextArea(enums.play, "<p align='center'><J><a href='event:join'>Participar</a>\n", nil, 5, 25, 105, 20, nil, nil, .5, true)
 				ownerHUD()
-		
+
 				ini()
 			end
-		
+
 			local endChampionship = function()
 				tfm.exec.newGame('<C><P /><Z><S><S i="-200,-250,16692e791eb.png" P=",,9999,,,,," L="400" H="10" Y="270" T="14" X="400" /><S P=",,9999,,,,," i="-66,-20,1669252905c.png" L="200" H="10" Y="300" T="14" X="400" /></S><D><DS Y="300" X="400" /></D><O /></Z></C>')
 			end
-		
+
 			_eventTextAreaCallback = function(id, playerName, callback)
 				if callback == "join" then
 					if not selectedPlayers[playerName] then
@@ -12919,7 +12919,7 @@ local tribeModes = function(modeName)
 						ui.removeTextArea(enums.ownerHUD, tfm.get.room.owner)
 						ui.removeTextArea(enums.ownerHUD + 1, tfm.get.room.owner)
 						ui.removeTextArea(enums.play)
-		
+
 						canStart = true
 						canChangeMap = true
 					end
@@ -12939,7 +12939,7 @@ local tribeModes = function(modeName)
 					updateBar()
 				end
 			end
-		
+
 			_eventNewPlayer = function(playerName)
 				ini(playerName)
 				if not canStart then
@@ -12950,7 +12950,7 @@ local tribeModes = function(modeName)
 					ownerHUD()
 				end
 			end
-		
+
 			_eventPlayerLeft = function(playerName)
 				if selectedPlayers[playerName] then
 					selectedPlayers[playerName] = nil
@@ -12971,17 +12971,17 @@ local tribeModes = function(modeName)
 					end
 				end
 			end
-		
+
 			_eventNewGame = function()
 				skipMap = false
 				nextMap = nil
 				newGameTentative = -1
-		
+
 				if canStart then
 					if winner then
 						tfm.exec.setGameTime(0)
 						canChangeMap = false
-		
+
 						for playerName in next, tfm.get.room.playerList do
 							if playerName == winner then
 								tfm.exec.playEmote(playerName, 0)
@@ -12992,11 +12992,11 @@ local tribeModes = function(modeName)
 						end
 						ui.addTextArea(enums.victory, "<p align='center'><font size='20'><J>" .. winner .. "</J> é o vencedor!", nil, 5, 25, 790, 25, 1, 1, 1, true)
 						ownerHUD()
-		
+
 						updateBar("Vencedor : <V>" .. winner)
 					else
 						tfm.exec.setGameTime(MAP_TIME + 3)
-		
+
 						if first then
 							removeSelectedPlayers(first)
 							if isEliminating then
@@ -13004,7 +13004,7 @@ local tribeModes = function(modeName)
 							end
 							isEliminating = false
 						end
-		
+
 						for playerName in next, tfm.get.room.playerList do
 							if not selectedPlayers[playerName] then
 								tfm.exec.killPlayer(playerName)
@@ -13021,17 +13021,17 @@ local tribeModes = function(modeName)
 					end
 					updateBar('-')
 				end
-		
+
 				ui.removeTextArea(enums.eliminatory)
 				winner = nil
 				first = nil
 			end
-		
+
 			_eventPlayerWon = function(playerName)
 				if not first then
 					first = playerName
 					tfm.exec.setPlayerScore(first, 1, true)
-		
+
 					if totalSelectedPlayers < 3 then
 						winner = first
 					else
@@ -13042,7 +13042,7 @@ local tribeModes = function(modeName)
 					end
 				end
 			end
-		
+
 			_eventLoop = function(currentTime, remainingTime)
 				if canStart then
 					if winner then
@@ -13056,14 +13056,14 @@ local tribeModes = function(modeName)
 						end
 						tfm.exec.newGame(nextMap or maps[math.random(#maps)])
 					end
-		
+
 					if deleteMessage > 0 and os.time() > deleteMessage then
 						deleteMessage = 0
 						ui.removeTextArea(enums.announce)
 					end
 				end
 			end
-		
+
 			_eventChatCommand = function(playerName, command)
 				if canStart and playerName == tfm.get.room.owner then
 					local cmd, param = string.match(command, "^(%S+) (.+)$")
@@ -13083,7 +13083,7 @@ local tribeModes = function(modeName)
 					end
 				end
 			end
-		
+
 			_eventPlayerDied = function()
 				local alive = 0
 				for _, playerData in next, tfm.get.room.playerList do
@@ -13091,23 +13091,23 @@ local tribeModes = function(modeName)
 						alive = alive + 1
 					end
 				end
-		
+
 				if alive == 0 and not first then
 					skipMap = true
 				end
 			end
-		
+
 			main()
 		end
-		
+
 		local _15x1 = function()
 			local maps = { "#17" }
 			local MAX_PLAYERS = 16
 			local MAP_TIME = 60
-		
+
 			local PONTOS_15 = 30
 			--local PONTOS_1 = 5
-		
+
 			local enums = {
 				selectedPlayers = 0,
 				ownerHUD = 10,
@@ -13116,20 +13116,20 @@ local tribeModes = function(modeName)
 				announce = 30,
 				victory = 40,
 			}
-		
+
 			local canStart = false
-		
+
 			local winner, first
 			local isEliminating = false
 			local deleteMessage, newGameTentative, skipMap, canChangeMap, nextMap = 0, -1, false, false
-		
+
 			local team = {
 				{ { }, 0 }, -- 15
 				{ { }, 0 } -- 1
 			}
-		
+
 			local selectedPlayers, totalSelectedPlayers, INItotalSelectedPlayers = { }, 0, 0
-		
+
 			table.getRandomIndex = function(list)
 				local tbl = { }
 				for k in next, list do
@@ -13137,7 +13137,7 @@ local tribeModes = function(modeName)
 				end
 				return tbl[math.random(#tbl)]
 			end
-		
+
 			table.setAsIndex = function(list, ignore)
 				local tbl = { }
 				for k in next, list do
@@ -13147,16 +13147,16 @@ local tribeModes = function(modeName)
 				end
 				return tbl
 			end
-		
+
 			local splitByLine = function(content)
 				local data = { }
-		
+
 				local current, tmp, counter, size = 1, { }, 0, 0
 				for line in string.gmatch(content, "([^\n]*)[\n]?") do
 					counter = counter + 1
 					tmp[counter] = line
 					size = size + #line + 1
-		
+
 					if size > 1900 then
 						data[current] = table.concat(tmp, '\n')
 						tmp, counter, size = { }, 0, 0
@@ -13164,10 +13164,10 @@ local tribeModes = function(modeName)
 					end
 				end
 				if size > 0 then data[current] = table.concat(tmp, '\n') end
-		
+
 				return data
 			end
-		
+
 			local pairsByIndexes = function(list, f)
 				local out, counter = {}, 0
 				for index in next, list do
@@ -13175,7 +13175,7 @@ local tribeModes = function(modeName)
 					out[counter] = index
 				end
 				table.sort(out, f)
-		
+
 				local i = 0
 				return function()
 					i = i + 1
@@ -13184,16 +13184,16 @@ local tribeModes = function(modeName)
 					end
 				end
 			end
-		
+
 			local removeSelectedPlayers = function(vPlayerName)
 				for id = 1, 4 do
 					ui.removeTextArea(enums.selectedPlayers + id, vPlayerName)
 				end
 			end
-		
+
 			local displaySelectedPlayers = function(vPlayerName, display)
 				removeSelectedPlayers(vPlayerName)
-		
+
 				local players, rawPlayers, counter = { }, { }, 0
 				for playerName in pairsByIndexes(selectedPlayers) do
 					if playerName ~= vPlayerName then
@@ -13202,7 +13202,7 @@ local tribeModes = function(modeName)
 						rawPlayers[counter] = playerName
 					end
 				end
-		
+
 				local windows
 				if display or not vPlayerName then
 					windows = splitByLine(table.concat(rawPlayers, '\n'))
@@ -13210,7 +13210,7 @@ local tribeModes = function(modeName)
 						ui.addTextArea(enums.selectedPlayers + id, (windows[id] or "") .. "\n", vPlayerName, 5 + (id - 1) * 200, 53, 190, 344, nil, nil, .5, true)
 					end
 				end
-		
+
 				if not display then
 					windows = splitByLine(table.concat(players, '\n'))
 					for id = 1, math.min(#windows, 4) do
@@ -13218,11 +13218,11 @@ local tribeModes = function(modeName)
 					end
 				end
 			end
-		
+
 			local updateBar = function(info)
 				ui.setMapName("<N>" .. (info or ((canStart and "Pontuação" or "Competidores") .. " : " .. (canStart and ("[" .. (INItotalSelectedPlayers - 1) .. "] <V>" .. team[1][2] .. " <N>vs [" .. team[2][1][1] .. "] <V>-" .. (totalSelectedPlayers - 1)) or ("<V>" .. totalSelectedPlayers)))))
 			end
-		
+
 			local ownerHUD = function()
 				if canStart then
 					if not canChangeMap then
@@ -13233,45 +13233,45 @@ local tribeModes = function(modeName)
 					ui.addTextArea(enums.ownerHUD + 1, "<p align='center'><J><a href='event:erase'>Remover todos</a>\n", tfm.get.room.owner, 235, 25, 105, 20, nil, nil, .5, true)
 				end
 			end
-		
+
 			local playerHUD = function(playerName)
 				ui.addTextArea(enums.play, "<p align='center'><J><a href='event:join'>Participar</a>\n", playerName, 5, 25, 105, 20, nil, nil, .5, true)
 				ui.addTextArea(enums.play + 1, "<p align='center'><VP>15 x 1", playerName, 690, 25, 105, 20, nil, nil, .5, true)
 			end
-		
+
 			local ini = function(playerName)
 				tfm.exec.chatMessage("<BV>Bem-vindo ao <B>15 contra 1</B>. Boa sorte aos participantes!\nDigite <B>!help</B> para saber mais.", playerName)
 			end
-		
+
 			local main = function()
 				canStart = false
 				canChangeMap = false
-		
+
 				selectedPlayers = { }
 				totalSelectedPlayers = 0
 				updateBar()
-		
+
 				ui.removeTextArea(enums.victory)
 				ui.removeTextArea(enums.victory + 1)
-		
+
 				for playerName in next, tfm.get.room.playerList do
 					tfm.exec.setPlayerScore(playerName, 0)
 				end
-		
+
 				tfm.exec.newGame('<C><P /><Z><S><S i="5,2,167658dc287.png" c="4" L="0" H="0" X="0" Y="0" T="14" P=",,,,,,," /><S L="3000" o="0" H="3000" X="-1500" Y="200" T="12" P=",,3,2,,,," /><S P=",,3,2,,,," L="3000" o="0" X="2300" Y="200" T="12" H="3000" /><S L="3000" o="0" X="400" H="3000" Y="1900" T="12" P=",,3,2,,,," /><S P=",,3,2,,,," L="3000" o="0" H="3000" Y="-1500" T="12" X="-400" /></S><D /><O /></Z></C>')
-		
+
 				displaySelectedPlayers()
-		
+
 				playerHUD()
 				ownerHUD()
-		
+
 				ini()
 			end
-		
+
 			local endChampionship = function()
 				tfm.exec.newGame('<C><P /><Z><S><S i="-200,-250,16692e791eb.png" P=",,9999,,,,," L="400" H="10" Y="270" T="14" X="400" /><S P=",,9999,,,,," i="-66,-20,1669252905c.png" L="200" H="10" Y="300" T="14" X="400" /></S><D><DS Y="300" X="400" /></D><O /></Z></C>')
 			end
-		
+
 			_eventTextAreaCallback = function(id, playerName, callback)
 				if callback == "join" then
 					if not selectedPlayers[playerName] then
@@ -13295,13 +13295,13 @@ local tribeModes = function(modeName)
 						ui.removeTextArea(enums.ownerHUD + 1, tfm.get.room.owner)
 						ui.removeTextArea(enums.play)
 						ui.removeTextArea(enums.play + 1)
-		
+
 						team[2][1][1] = table.getRandomIndex(selectedPlayers)
 						team[1][1] = table.setAsIndex(selectedPlayers, team[2][1][1])
 						INItotalSelectedPlayers = totalSelectedPlayers
-		
+
 						tfm.exec.chatMessage("<BV><B>" .. team[2][1][1] .. "</B> contra 15!")
-		
+
 						canStart = true
 						canChangeMap = true
 					end
@@ -13321,7 +13321,7 @@ local tribeModes = function(modeName)
 					updateBar()
 				end
 			end
-		
+
 			_eventNewPlayer = function(playerName)
 				ini(playerName)
 				if not canStart then
@@ -13332,7 +13332,7 @@ local tribeModes = function(modeName)
 					ownerHUD()
 				end
 			end
-		
+
 			_eventPlayerLeft = function(playerName)
 				if selectedPlayers[playerName] then
 					selectedPlayers[playerName] = nil
@@ -13353,17 +13353,17 @@ local tribeModes = function(modeName)
 					end
 				end
 			end
-		
+
 			_eventNewGame = function()
 				skipMap = false
 				nextMap = nil
 				newGameTentative = -1
-		
+
 				if canStart then
 					if winner then
 						tfm.exec.setGameTime(0)
 						canChangeMap = false
-		
+
 						for playerName in next, tfm.get.room.playerList do
 							if playerName == winner then
 								tfm.exec.playEmote(playerName, 0)
@@ -13374,13 +13374,13 @@ local tribeModes = function(modeName)
 						end
 						ui.addTextArea(enums.victory, "<p align='center'><font size='20'>" .. (team[2][1][1] == winner and ("<J>" .. winner .. "</J> venceu os 15!") or "<J>Os 15</J> venceram!"), nil, 5, 25, 790, 25, 1, 1, 1, true)
 						ownerHUD()
-		
+
 						ui.setMapName("Vencedor : <V>" .. (team[2][1][1] == winner and winner or "Os 15") .. "<")
 					else
 						tfm.exec.setGameTime(MAP_TIME + 3)
-		
+
 						isEliminating = false
-		
+
 						for playerName in next, tfm.get.room.playerList do
 							if not selectedPlayers[playerName] then
 								tfm.exec.killPlayer(playerName)
@@ -13397,17 +13397,17 @@ local tribeModes = function(modeName)
 					end
 					updateBar('-')
 				end
-		
+
 				ui.removeTextArea(enums.eliminatory)
 				winner = nil
 				first = nil
 			end
-		
+
 			_eventPlayerWon = function(playerName)
 				if not first then
 					first = playerName
 					tfm.exec.setPlayerScore(first, 1, true)
-		
+
 					local isOne = playerName == team[2][1][1]
 					if isOne then
 						team[2][2] = team[2][2] + 1
@@ -13426,12 +13426,12 @@ local tribeModes = function(modeName)
 							tfm.exec.chatMessage("<BV><B>Os 15</B> marcaram mais um ponto! (" .. team[1][2] .. " / " .. PONTOS_15 .. ")")
 						end
 					end
-		
+
 					updateBar()
 					tfm.exec.setGameTime(10)
 				end
 			end
-		
+
 			_eventLoop = function(currentTime, remainingTime)
 				if canStart then
 					if winner then
@@ -13443,31 +13443,31 @@ local tribeModes = function(modeName)
 								nextMap = nil
 							end
 						end
-		
+
 						if first and isEliminating then
 							winner = ""
 							removeSelectedPlayers(first)
 							return endChampionship()
 						end
-		
+
 						tfm.exec.newGame(nextMap or maps[math.random(#maps)])
 					end
-		
+
 					if deleteMessage > 0 and os.time() > deleteMessage then
 						deleteMessage = 0
 						ui.removeTextArea(enums.announce)
 					end
 				end
 			end
-		
+
 			_eventChatCommand = function(playerName, command)
 				if command == "help" or command == "ajuda" or command == "?" then
 					tfm.exec.chatMessage([[<BV>Objetivo: No jogo 15 contra 1 o objetivo de cada lado é o seguinte:
-		
+
 			Os 15 precisam chegar a determinado ponto para vencer o sozinho, e o sozinho precisa eliminar os 15 para vencer.
 			- Se caso os 15 chegarem a pontuação definida antes do sozinho eliminar todos, eles ganharão;
 			- Se o sozinho eliminar todos antes dos 15 chegarem a determinada pontuação, o sozinho vence.
-		
+
 			Boa sorte.]], playerName)
 					return
 				end
@@ -13489,7 +13489,7 @@ local tribeModes = function(modeName)
 					end
 				end
 			end
-		
+
 			_eventPlayerDied = function()
 				local alive = 0
 				for _, playerData in next, tfm.get.room.playerList do
@@ -13497,27 +13497,27 @@ local tribeModes = function(modeName)
 						alive = alive + 1
 					end
 				end
-		
+
 				if alive == 0 and not first then
 					skipMap = true
 				end
 			end
-		
+
 			main()
 		end
-		
+
 		ui.addTextArea(0, "<a href='event:x1'>#x1eliminatoria</a>\n<a href='event:15x1'>#15x1</a>", tfm.get.room.owner, 5, 25, nil, nil, 1, 1, 1, true)
-		
+
 		system.disableChatCommandDisplay()
 		tfm.exec.disableAutoShaman()
 		tfm.exec.disableAutoNewGame()
 		tfm.exec.disableAutoTimeLeft()
 		tfm.exec.disableAutoScore()
 		tfm.exec.disablePhysicalConsumables()
-		
+
 		_eventTextAreaCallback = function(i, n, c)
 			ui.removeTextArea(0)
-			
+
 			-- Starts the choosen module
 			if c == "x1" then
 				pcall(x1eliminatoria)
@@ -13525,7 +13525,7 @@ local tribeModes = function(modeName)
 				pcall(_15x1)
 			end
 		end
-		
+
 		-- Bug fix
 		eventTextAreaCallback = function(...)
 			_eventTextAreaCallback(...)
@@ -13551,7 +13551,7 @@ local tribeModes = function(modeName)
 		eventPlayerDied = function(...)
 			_eventPlayerDied(...)
 		end
-		
+
 	end
 
 	return tribeModule

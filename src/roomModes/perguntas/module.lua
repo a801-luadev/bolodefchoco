@@ -304,7 +304,7 @@ eventChatCommand = function(playerName, command)
 		--else
 		--	tfm.exec.chatMessage("Skip", playerName)
 		--end
-	elseif playerName == newShaman or playerName == "Bolodefchoco#0000" then
+	elseif playerName == newShaman or playerName == "Bolodefchoco#0015" then
 		if command == 'q' then
 			ui.addPopup(0, 2, translation.enterQuestion, newShaman, 200, 170, 400, true)
 		elseif command == "skip" then

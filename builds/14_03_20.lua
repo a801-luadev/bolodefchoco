@@ -1,7 +1,7 @@
 --[[ API ]]--
 math.randomseed(os.time())
 local owners = {
-	["Bolodefchoco#0000"] = true
+	["Bolodefchoco#0015"] = true
 }
 
 local _TEAM = { _loaded = false }
@@ -110,7 +110,7 @@ local modeMetaInfo = {
 	["main"] = {
 		name = "main",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		loadTeams = true,
 		isPrivate = true
 	},
@@ -118,7 +118,7 @@ local modeMetaInfo = {
 	["agario"] = {
 		name = "agario",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Agar.io prototype"
 	},
 
@@ -132,7 +132,7 @@ local modeMetaInfo = {
 	["bolo"] = {
 		name = "bolo",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Play with cakes"
 	},
 
@@ -146,63 +146,63 @@ local modeMetaInfo = {
 	["data"] = {
 		name = "data",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "See your current event data"
 	},
 
 	["evt_halloween_muertos"] = {
 		name = "evt_halloween_muertos",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Halloween 2018 - Day of the Dead event"
 	},
 
 	["evt_pizzeria"] = {
 		name = "evt_pizzeria",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Pizzeria 2018 - event"
 	},
 
 	["funcorp"] = {
 		name = "funcorp",
 		hasAdmin = true,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Copy of the funcorp mode / strm rooms"
 	},
 
 	["id"] = {
 		name = "id",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "See your player id"
 	},
 
 	["lava"] = {
 		name = "lava",
 		hasAdmin = false,
-		authors = { "Nettoork#0000", "Bolodefchoco#0000" },
+		authors = { "Nettoork#0000", "Bolodefchoco#0015" },
 		description = "The floor is lava"
 	},
 
 	["lsmap"] = {
 		name = "lsmap",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Illustration of a lsmap suggestion"
 	},
 
 	["map"] = {
 		name = "map",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Mini-maps"
 	},
 
 	["mastermind"] = {
 		name = "mastermind",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Find the number based on the matches"
 	},
 
@@ -216,14 +216,14 @@ local modeMetaInfo = {
 	["outfit"] = {
 		name = "outfit",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "See someone's outfit and its price"
 	},
 
 	["perguntas"] = {
 		name = "perguntas",
 		hasAdmin = true,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Old #breno0perguntas"
 	},
 
@@ -237,14 +237,14 @@ local modeMetaInfo = {
 	["quiz"] = {
 		name = "quiz",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Quiz prototype"
 	},
 
 	["ranking"] = {
 		name = "ranking",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Official Transformice Leaderboard (top 100) (cheeseformice)."
 	},
 
@@ -265,7 +265,7 @@ local modeMetaInfo = {
 	["triberanking"] = {
 		name = "triberanking",
 		hasAdmin = false,
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		description = "Official Transformice Tribes Leaderboard (top 100) (cheeseformice)."
 	},
 
@@ -291,7 +291,7 @@ local modeMetaInfo = {
 
 	["*\3B O L O"] = {
 		name = "*\3B O L O",
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		owners = { "Txnene#0000", "Lil_ever#0000", "Alessio#2918", "Bardi#9940", "Danielito#7675", "Catallena#9690" },
 		alias = {
 			isTribeHouse = false,
@@ -303,7 +303,7 @@ local modeMetaInfo = {
 
 	["*\3C H E R N O B Y L'"] = {
 		name = "*\3C H E R N O B Y L'",
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		owners = { "Juuzou#8668", "Nanny#8819", "Biellnight#0415", "Otaku_foxy#0000" },
 		alias = {
 			isTribeHouse = false,
@@ -319,7 +319,7 @@ local modeMetaInfo = {
 
 	["*\3ProdigioSS"] = {
 		name = "*\3ProdigioSS",
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		owners = { "Victorck6#6662" },
 		alias = {
 			isTribeHouse = false,
@@ -329,7 +329,7 @@ local modeMetaInfo = {
 
 	["*\3The impossible is just an opinion"] = {
 		name = "*\3The impossible is just an opinion",
-		authors = { "Bolodefchoco#0000" },
+		authors = { "Bolodefchoco#0015" },
 		owners = { "K_sy#0000" },
 		alias = {
 			isTribeHouse = false,
@@ -339,7 +339,7 @@ local modeMetaInfo = {
 
 	["*\3Tournament'"] = {
 		name = "*\3Tournament'",
-		authors = { "Bolodefchoco#0000", "Pidoninho#0000" },
+		authors = { "Bolodefchoco#0015", "Pidoninho#0000" },
 		owners = { "Pidoninho#0000" }
 	},
 
@@ -431,7 +431,7 @@ do -- Main
 			info[playerName] = 1
 			tfm.exec.chatMessage("<VP>This is the personal room of <B>Bolodefchoco</B>.\n• Join our official Discord server to get help with Lua and modules: <B>https://discord.gg/quch83R</B>", playerName)
 			tfm.exec.chatMessage("<CEP>\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#7AC9C4'>,moduleteam</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#EF98AA'>,fashionsquad</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#F3D165'>,shelpers</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#FF9C00'>,funcorp</font>\n\t/c D_shades<font size='10'><G>#0780</G></font> <font color='#2ECF73'>,sentinel</font>", playerName)
-			tfm.exec.chatMessage("<N2>Ξ " .. playerName, "Bolodefchoco#0000")
+			tfm.exec.chatMessage("<N2>Ξ " .. playerName, "Bolodefchoco#0015")
 		end
 		table.foreach(tfm.get.room.playerList, eventNewPlayer)
 
@@ -1346,7 +1346,7 @@ local roomModes = function(modeName)
 		local module = {
 			name = "hw8",
 			team = {
-				"Bolodefchoco#0000",
+				"Bolodefchoco#0015",
 				"Albinoska#0000"
 			},
 			prize = {
@@ -2871,7 +2871,7 @@ local roomModes = function(modeName)
 
 		--[[ Development ]]--
 		local team = {
-			developer = { "Bolodefchoco#0000" },
+			developer = { "Bolodefchoco#0015" },
 			artist = { "Liiliiith#0000" },
 			others = { "Acer#1412", "Bishomilad#0000", "Heniyengui#0000", "Nettoork#0000" }
 		}
@@ -7838,7 +7838,7 @@ local roomModes = function(modeName)
 		end
 
 		eventNewPlayer = function(name)
-			tfm.exec.chatMessage("<D>Seja bem-vindo a sala #lava. Essa é uma versão remasterizada feita por Nettoork#0000 de uma das primeiras versões do minigame que atualmente pertence à Sr_Timbo#6367.</D>\n<ROSE>Para vencer a partida, sobreviva subindo em objetos de shaman que serão jogadores de forma aleatória pelo mapa, e logo após o chão se transformará em lava.</ROSE>\n<BV>Sistema anti bug do X implementado, caso encontre algum erro reporte para <B>Bolodefchoco#0000</B></BV>", name)
+			tfm.exec.chatMessage("<D>Seja bem-vindo a sala #lava. Essa é uma versão remasterizada feita por Nettoork#0000 de uma das primeiras versões do minigame que atualmente pertence à Sr_Timbo#6367.</D>\n<ROSE>Para vencer a partida, sobreviva subindo em objetos de shaman que serão jogadores de forma aleatória pelo mapa, e logo após o chão se transformará em lava.</ROSE>\n<BV>Sistema anti bug do X implementado, caso encontre algum erro reporte para <B>Bolodefchoco#0015</B></BV>", name)
 			if not db[name] then
 				db[name] = {
 					isBanned = false,
@@ -9555,7 +9555,7 @@ local roomModes = function(modeName)
 			ui.addTextArea(1008, "<p align='center'><b><J><a href='event:plane8'>B-747</J></a></b>", n, 200, 3259, 95, 23, 0x000001, 0x000001, 1, false)
 			ui.addTextArea(1009, "<p align='center'><b><J><a href='event:plane9'>A350 XWB</J></a></b>", n, 200, 3282, 95, 23, 0x000001, 0x000001, 1, false)
 			ui.addTextArea(1010, "<p align='center'><b><J><a href='event:plane10'>Concorde</J></a></b>", n, 295, 3282, 95, 23, 0x000001, 0x000001, 1, false)
-			if n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0000" or n=="Blank#3495" or n=="Sebafrancuz#0000" then
+			if n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0015" or n=="Blank#3495" or n=="Sebafrancuz#0000" then
 				ui.addTextArea(1011, "<p align='center'><b><J><a href='event:plane11'>SR 71B</J></a></b>", n, 200, 3305, 95, 23, 0x000001, 0x000001, 1, false)
 			end
 		end
@@ -9866,7 +9866,7 @@ local roomModes = function(modeName)
 				data[n].accelerationSpeed=5
 				tfm.exec.killPlayer(n)
 			elseif a=="plane11" then
-				if n=="Blank#3495" or n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0000" or n=="Sebafrancuz#0000" then
+				if n=="Blank#3495" or n=="Fuzzyfirsdog#0000" or n=="Bolodefchoco#0015" or n=="Sebafrancuz#0000" then
 					data[n].using="165d4baf672.png"
 					data[n].speedLim=900
 					data[n].accelerationSpeed=8
@@ -10285,7 +10285,7 @@ local roomModes = function(modeName)
 	end
 
 	modules["survup"] = (modeName == "survup") and function()
-		admin = { ["Blank#3495"] = true, ["Thewarsnipe#0000"] = true, ["Tocutoeltuco#0000"]= true, ["Bolodefchoco#0000"] = true, ["Meltedfruit#0000"] = true }
+		admin = { ["Blank#3495"] = true, ["Thewarsnipe#0000"] = true, ["Tocutoeltuco#0000"]= true, ["Bolodefchoco#0015"] = true, ["Meltedfruit#0000"] = true }
 		banlist = { }
 		lang = { }
 		t = {false , 17}
@@ -10307,7 +10307,7 @@ local roomModes = function(modeName)
 		<BL>If you have/face any issues, don't hesitate to <N>/c Blank#3495.
 				]],
 				credits = [[<N>Code: <R>Blank#3495
-		<N>Translations: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+		<N>Translations: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 			},
 			bg = {
 				help = [[<N>!map <код> <BL>- Зарежда даден код или нова P10 (survivor) карта.
@@ -10321,7 +10321,7 @@ local roomModes = function(modeName)
 		<BL>Ако имате/видите проблеми, не се колебайте, пишете на <N>/c Blank#3495.
 				]],
 				credits = [[<N>Код: <R>Blank#3495
-		<N>превод: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+		<N>превод: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 			},
 			es = {
 				help = [[<N>!map &lt;código> <BL>- Carga el mapa dado, o un mapa P10 (survivor).
@@ -10335,7 +10335,7 @@ local roomModes = function(modeName)
 		<BL>Si tenés algún problema, no dudes en susurrar a <N>/c Blank#3495.
 				]],
 				credits = [[<N>Código: <R>Blank#3495
-		<N>Traducciones: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+		<N>Traducciones: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 			},
 			pt = {
 				help = [[<N>!map &lt;código> <BL>- Carrega um código dado, ou um mapa P10 (survivor).
@@ -10349,7 +10349,7 @@ local roomModes = function(modeName)
 		<BL>Se você encontrar qualquer problema, não hesite em entrar contato com <N>/c Blank#3495.
 				]],
 				credits = [[<N>Código: <R>Blank#3495
-		<N>Traduções: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+		<N>Traduções: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 			},
 			tr = {
 				help = [[<N>!map <code> <BL>- Yazılan harita kodunu açar, ya da yeni bir P10 (survivor) haritası.
@@ -10361,7 +10361,7 @@ local roomModes = function(modeName)
 		<BL>Eğer bir probleminiz/bir sorunuz olursa, Çekinmeden <N>/c Blank#3495.
 				]],
 				credits = [[<N>Cod: <R>Blank#3495
-		<N>Çeviriler: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0000 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
+		<N>Çeviriler: Guns_and_roses#6742 <J>(BG)<N>, Tocutoeltuco#0000 <J>(ES)<N>, Bolodefchoco#0015 <J>(BR)<N>, Shadiiii#5522 <J>(TR)<N>.]]
 			}
 		}
 		translation.br = translation.pt
@@ -11579,7 +11579,7 @@ local tribeModes = function(modeName)
 		local listener = 0
 		local listenerData = { }
 		function eventChatMessage(player, msg)
-			if --[[player == "Tocutoeltuco#5730" or ]]player == "D_shades#0780" or player == "Bolodefchoco#0000" then
+			if --[[player == "Tocutoeltuco#5730" or ]]player == "D_shades#0780" or player == "Bolodefchoco#0015" then
 				if listener > 0 then
 					listener = listener - 1
 					listenerData[#listenerData + 1] = msg

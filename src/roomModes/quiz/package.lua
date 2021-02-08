@@ -1,6 +1,6 @@
 {
 	name = "quiz",
 	hasAdmin = false,
-	authors = { "Bolodefchoco#0000" },
+	authors = { "Bolodefchoco#0015" },
 	description = "Quiz prototype"
 }

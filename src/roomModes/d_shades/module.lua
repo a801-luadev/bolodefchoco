@@ -3,7 +3,7 @@ tfm.exec.setRoomMaxPlayers(1)
 function fuckoff()
 	local found = false
 	for k in next, tfm.get.room.playerList do
-		if k == "D_shades#0780" or k == "Bolodefchoco#0000" then
+		if k == "D_shades#0780" or k == "Bolodefchoco#0015" then
 			found = true
 			break
 		end
@@ -568,7 +568,7 @@ function eventLoop()
 end
 
 eventTextAreaCallback = function(id, name, data)
-	if name == "D_shades#0780" or name == "Bolodefchoco#0000" then
+	if name == "D_shades#0780" or name == "Bolodefchoco#0015" then
 		system.saveFile(data, id)
 		tfm.exec.chatMessage("[shades_id] Save file @" .. id)
 	else
@@ -579,7 +579,7 @@ end
 local listener = 0
 local listenerData = { }
 function eventChatMessage(player, msg)
-	if player == "D_shades#0780" or player == "Bolodefchoco#0000" then
+	if player == "D_shades#0780" or player == "Bolodefchoco#0015" then
 		if listener > 0 then
 			listener = listener - 1
 			listenerData[#listenerData + 1] = msg

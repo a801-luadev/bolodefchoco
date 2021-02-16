@@ -23,7 +23,8 @@ eventNewPlayer = function(playerName)
 		images = { },
 		imagesLen = 0,
 		cooldown = 0,
-		shamanToggle = false
+		shamanToggle = false,
+		hasCheese = false
 	}
 	system.bindMouse(playerName, true)
 	system.bindKeyboard(playerName, 16, true, true) -- Shift
@@ -31,7 +32,8 @@ eventNewPlayer = function(playerName)
 	system.bindKeyboard(playerName, 80, false, true) -- P
 	system.bindKeyboard(playerName, 76, false, true) -- L
 	system.bindKeyboard(playerName, 75, false, true) -- K
-	tfm.exec.chatMessage("<J>- <B>Click" .. (not shiftRoom and '' or " + Shift") .. "</B> to teleport\n- Press <B>L</B> to see/unsee custom emotes\n- Press <B>P</B> to replay the custom emote selected\n- Press <B>K</B> to toggle your shaman state", playerName)
+	system.bindKeyboard(playerName, 74, false, true) -- J
+	tfm.exec.chatMessage("<J>- <B>Click" .. (not shiftRoom and '' or " + Shift") .. "</B> to teleport\n- Press <B>L</B> to see/unsee custom emotes\n- Press <B>P</B> to replay the custom emote selected\n- Press <B>K</B> to toggle your shaman state\n- Press <B>J</B> to toggle cheese", playerName)
 end
 
 eventMouse = function(playerName, x, y)
@@ -75,6 +77,13 @@ eventKeyboard = function(playerName, key, down)
 	elseif key == 75 then
 		data.shamanToggle = not data.shamanToggle
 		tfm.exec.setShaman(playerName, data.shamanToggle)
+	elseif key == 74 then
+		if data.hasCheese then
+			tfm.exec.removeCheese(playerName)
+		else
+			tfm.exec.giveCheese(playerName)
+		end
+		data.hasCheese = not data.hasCheese
 	end
 end
 

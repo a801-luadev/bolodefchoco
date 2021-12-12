@@ -36,7 +36,7 @@ local updateList = function(playerName)
 			public[k].str = string.format(str, public[k].color, public[k].name, os.date("%H:%M:%S"))
 		end
 		Y = math.floor((k - 1) / 2)
-		ui.addTextArea(-k, public[k].str, playerName, 5 + ((k - 1) % 2) * 400, 25 + Y * 200, 390, 190 - (Y * 15), -1, 0x6A7495, 1, true)
+		ui.addTextArea(-k, public[k].str, playerName, 5 + ((k - 1) % 2) * 400, 25 + Y * 200, 390, 190 - (Y * 15), -1, 1, 1, true)
 		if not playerName then
 			for v in pairsByIndexes(public[k].list) do
 				system.loadPlayerData(v)
@@ -84,6 +84,7 @@ eventNewPlayer = function(playerName)
 	tfm.exec.chatMessage("<CEP>\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#7AC9C4'>,moduleteam</font>\n\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#EF98AA'>,fashionsquad</font>\n\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#F3D165'>,shelpers</font>\n\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#FF9C00'>,funcorp</font>\n\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#2ECF73'>,sentinel</font>\n\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#2F7FCC'>,mapcrew</font>", playerName)
 	tfm.exec.chatMessage("<VP>Type <B>!donate</B> if you would like to donate for this module!", playerName)
 	tfm.exec.chatMessage("<N2>Ξ " .. playerName, "Bolodefchoco#0015")
+	ui.setBackgroundColor("#1")
 end
 table.foreach(tfm.get.room.playerList, eventNewPlayer)
 
@@ -155,7 +156,7 @@ tfm.exec.disableAfkDeath()
 tfm.exec.disableMortCommand()
 tfm.exec.disablePhysicalConsumables()
 system.disableChatCommandDisplay("donate")
-tfm.exec.newGame('<C><P /><Z><S><S c="4" L="800" o="E0E0E" X="400" H="400" Y="200" T="12" P=",,,,,,," /><S c="4" L="10" o="6A7495" X="-2" H="10" Y="216" T="12" P=",,,,45,,," /><S c="4" L="10" o="6A7495" X="802" H="10" Y="216" T="12" P=",,,,45,,," /><S L="400" X="600" H="97" Y="420" T="6" P=",,.3,.2,,,," /><S L="10" X="395" H="71" Y="335" T="12" P=",,,,,,," /><S L="10" H="71" X="805" Y="335" T="12" P=",,,,,,," /></S><D><DS Y="360" X="600" /></D><O /></Z></C>')
+tfm.exec.newGame('<C><P /><Z><S><S c="4" L="800" o="E0E0E" X="400" H="400" Y="200" T="12" P=",,,,,,," /><S L="400" X="600" H="97" Y="420" T="6" P=",,.3,.2,,,," /><S L="10" X="395" H="71" Y="335" T="12" P=",,,,,,," /><S L="10" H="71" X="805" Y="335" T="12" P=",,,,,,," /></S><D><DS Y="360" X="600" /></D><O /></Z></C>')
 
 eventNewGame = function()
 	ui.setMapName("Ba dum tss")

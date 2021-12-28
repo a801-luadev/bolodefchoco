@@ -493,9 +493,7 @@ do -- Main
 		
 				Y = (Y + 1) % 2
 				ui.addTextArea(-k, public[k].str, playerName, 5 + X * 400, 20 + Y * 200, 390, 190 - (Y * 15), -1, 1, 1, false)
-				if Y == 1 then
-					X = X + 1
-				end
+				X = X + Y
 		
 				if not playerName then
 					for v in pairsByIndexes(public[k].list) do

@@ -106,6 +106,11 @@ local openList = function(playerName)
 	ui.addTextArea(4, "<VP><p align='center'><font size='14'><a href='event:@close'>Close</a>\n", playerName, 505, 325 + 54, 190, 20, 1, 1, .6, true)
 end
 
+eventNewGame = function()
+	ui.setBackgroundColor("#1")
+	ui.setMapName("Ba dum tss")
+end
+
 eventNewPlayer = function(playerName)
 	updateList(playerName)
 	tfm.exec.respawnPlayer(playerName)
@@ -178,11 +183,6 @@ eventLoop = function()
 		loaded = { }
 		updateList()
 	end
-end
-
-eventNewGame = function()
-	ui.setBackgroundColor("#1")
-	ui.setMapName("Ba dum tss")
 end
 
 tfm.exec.disableAutoNewGame()

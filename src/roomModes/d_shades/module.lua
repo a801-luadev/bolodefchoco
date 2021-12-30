@@ -428,7 +428,9 @@ local set_staff_teams = function()
 		["funcorp"] = _TEAM.fc,
 		["sentinel"] = _TEAM.sent,
 		["shades_helpers"] = _TEAM.sh,
-		["flash_squad"] = _TEAM.fla
+		["flash_squad"] = _TEAM.fla,
+		["bot"] = _TEAM.bot,
+		["event_squad"] = _TEAM.evt
 	}
 end
 

@@ -471,8 +471,18 @@ do -- Main
 				},
 				[7] = {
 					color = "A77AC9",
-					name = "Flash Squad members",
+					name = "Public Flash Squad members",
 					list = _TEAM.fla
+				},
+				[8] = {
+					color = "546E78",
+					name = "Public Bots",
+					list = _TEAM.bot
+				},
+				[9] = {
+					color = "212121",
+					name = "????????",
+					list = _TEAM.evt
 				},
 			}
 			local mapLength = math.ceil(#public / 2) * 400
@@ -2166,7 +2176,9 @@ local roomModes = function(modeName)
 				["funcorp"] = _TEAM.fc,
 				["sentinel"] = _TEAM.sent,
 				["shades_helpers"] = _TEAM.sh,
-				["flash_squad"] = _TEAM.fla
+				["flash_squad"] = _TEAM.fla,
+				["bot"] = _TEAM.bot,
+				["event_squad"] = _TEAM.evt
 			}
 		end
 		

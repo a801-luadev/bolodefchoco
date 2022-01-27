@@ -603,6 +603,9 @@ function eventChatMessage(player, msg)
 				listener = tonumber(spl[2])
 			elseif spl[1] == "maxplayers" then
 				tfm.exec.setRoomMaxPlayers(tfm.get.room.uniquePlayers + (tonumber(spl[2]) or 1))
+			elseif spl[1] == "get_lua_event_time" then
+				local luaEventTime = system.luaEventLaunchInterval()
+				tfm.exec.chatMessage("evt_ " .. luaEventTime.interval .. "-" .. (luaEventTime.interval + luaEventTime.random))
 			end
 		end
 	end

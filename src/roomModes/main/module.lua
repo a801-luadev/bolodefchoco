@@ -22,9 +22,9 @@ local setPublic = function()
 			list = _TEAM.sent
 		},
 		[5] = {
-			color = "FFB6C1",
-			name = "Public Fashion Squad members",
-			list = _TEAM.fs
+			color = "F0D3AD",
+			name = "Public Event Squad members",
+			list = _TEAM.evt
 		},
 		[6] = {
 			color = "F3D165",
@@ -32,20 +32,20 @@ local setPublic = function()
 			list = _TEAM.sh
 		},
 		[7] = {
-			color = "A77AC9",
+			color = "FFB6C1",
+			name = "Public Fashion Squad members",
+			list = _TEAM.fs
+		},
+		[8] = {
+			color = "C2C2DA",
 			name = "Public Flash Squad members",
 			list = _TEAM.fla
 		},
-		[8] = {
+		[9] = {
 			color = "546E78",
 			name = "Public Bots",
 			list = _TEAM.bot
-		},
-		[9] = {
-			color = "212121",
-			name = "????????",
-			list = _TEAM.evt
-		},
+		}
 	}
 	local mapLength = math.ceil(#public / 2) * 400
 	tfm.exec.newGame('<C><P L="' .. mapLength .. '" /><Z><S><S c="4" L="' .. mapLength .. '" o="E0E0E" X="' .. mapLength/2 .. '" H="385" Y="207" T="12" P=",,,,,,," /><S L="' .. mapLength .. '" X="' .. mapLength/2 .. '" H="35" Y="380" T="6" P=",,.3,.2,,,," /><S L="10" X="-5" H="71" Y="335" T="12" P=",,,,,,," /><S L="10" H="71" X="' .. mapLength+5 .. '" Y="335" T="12" P=",,,,,,," /></S><D><DS Y="360" X="350" /></D><O /></Z></C>')
@@ -117,19 +117,28 @@ eventNewPlayer = function(playerName)
 	info[playerName] = 1
 	tfm.exec.chatMessage("<VP>This is the personal room of <B>Bolodefchoco</B>.\n• Join our official Discord server to get help with Lua and modules: <B>https://discord.gg/quch83R</B>", playerName)
 	tfm.exec.chatMessage("<CEP>\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#7AC9C4'>,moduleteam</font>\n"
-		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#EF98AA'>,fashionsquad</font>\n"
-		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#F3D165'>,shelpers</font>\n"
 		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#FF9C00'>,funcorp</font>\n"
 		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#2ECF73'>,sentinel</font>\n"
 		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#2F7FCC'>,mapcrew</font>\n"
-		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#A77AC9'>,flashsquad</font>\n"
+		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#F0D3AD'>,eventsquad</font>\n"
+		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#F3D165'>,shelpers</font>\n"
+		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#EF98AA'>,fashionsquad</font>\n"
+		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#C2C2DA'>,flashsquad</font>\n"
 		.."\t/c D_shades<font size='-3'><G>#0780</G></font> <font color='#546E78'>,bots</font>"
 	, playerName)
 	tfm.exec.chatMessage("<VP>Type <B>!donate</B> if you would like to donate for this module!", playerName)
 	tfm.exec.chatMessage("<N2>Ξ " .. playerName, "Bolodefchoco#0015")
+
+	local luaEventData = system.luaEventLaunchInterval()
+
+	tfm.exec.chatMessage("<font color='#F0D3AD'>Ξ Lua events are loading in rooms every " .. luaEventData.interval .. " - " .. (luaEventData.interval + luaEventData.random).. " minutes!</font>", playerName)
 	eventNewGame()
 end
 table.foreach(tfm.get.room.playerList, eventNewPlayer)
+
+eventPlayerLeft = function(playerName)
+	tfm.exec.chatMessage("<N2>&lt; " .. playerName, "Bolodefchoco#0015")
+end
 
 eventPlayerDataLoaded = function(user)
 	if loaded[user] then return end

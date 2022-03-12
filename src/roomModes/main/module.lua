@@ -109,6 +109,12 @@ end
 eventNewGame = function()
 	ui.setBackgroundColor("#1")
 	ui.setMapName("Ba dum tss")
+
+	tfm.exec.addNPC("Bolodefchoco#0015", {
+		x = 350,
+		y = 350,
+		look = "165;111,16_474747+d1170b,0,32_d1170b+474747+780b08,17,0,50,0,18"
+	})
 end
 
 eventNewPlayer = function(playerName)
